@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <meta name="description" content="{{ .Description }}" />
+    <meta author="sqvrltastic" />
+    <meta
+      name="google-site-verification"
+      content="g68EkD7kyg-6Y2F5hxlb23UqmdmA7JUMu8C6PsStZAQ"
+    />
+    <meta name="msvalidate.01" content="49245F941408163450A78514E5746F77" />
+    <title>Enter...</title>
+    <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}" />
+    <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}" />
+  </head>
+  <body class="landing-bg">
+    {{ block "main" . }} {{ end }}
+  </body>
+</html>

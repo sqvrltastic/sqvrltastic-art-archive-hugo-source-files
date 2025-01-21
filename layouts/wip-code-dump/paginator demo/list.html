@@ -1,0 +1,16 @@
+{{ define "main" }}
+<h1>Updates</h1>
+{{ range sort .Paginator.Pages "Title" "desc" }}
+<h2>{{ .Title }}</h2>
+<p>{{ .Summary }}</p>
+{{ end }}
+<nav>
+  {{ if .Paginator.HasPrev }}
+  <a href="{{ .Paginator.Prev.URL }}">Previous</a>
+  {{ end }} {{ range .Paginator.Pagers }}
+  <a href="{{ .URL }}">{{ .PageNumber }}</a>
+  {{ end }} {{ if .Paginator.HasNext }}
+  <a href="{{ .Paginator.Next.URL }}">Next</a>
+  {{ end }}
+</nav>
+{{ end }}
