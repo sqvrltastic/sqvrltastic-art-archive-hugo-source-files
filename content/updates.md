@@ -14,6 +14,12 @@ _Last 20 site updates are displayed here._
 
 ---
 
+## January 28th 2025
+
+Posted new artwork: [my 2025 redraw](./gallery/montenegro-chan-boba-tea-challenge-2025.html) of my older "Montenegro-chan doing boba tea challenge" piece.
+
+Published [Markdown cheat sheet](./blog/markdown-cheat-sheet.html)
+
 ## January 21st 2025
 
 Posted three new artworks:
