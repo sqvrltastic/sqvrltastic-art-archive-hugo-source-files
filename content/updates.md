@@ -14,6 +14,10 @@ _Last 20 site updates are displayed here._
 
 ---
 
+## January 30th 2025
+
+Crazy to think that January is already ending. But, in any case, in today's update I added a whole new section to my website: [Links](./links)! I will be sharing other indie websites there, as well as resources that I find useful and just cool and funny stuff!
+
 ## January 28th 2025
 
 Posted new artwork: [my 2025 redraw](./gallery/montenegro-chan-boba-tea-challenge-2025.html) of my older "Montenegro-chan doing boba tea challenge" piece.

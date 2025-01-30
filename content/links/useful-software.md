@@ -6,7 +6,7 @@ url: "/links/useful-software.html"
 
 # Useful software
 
-**Last updated:** January 29th 2025
+**Last updated:** January 30th 2025
 
 _Also, be sure to check [coding resources links](./coding-resources-links-dump.html) and [art resources links](./art-resources-links-dump.html) for more software recommendations!_
 

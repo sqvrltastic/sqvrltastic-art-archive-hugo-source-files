@@ -1,13 +1,12 @@
 ---
 title: Coding resources links dump
 description: "Various resources for webmasters primarily for learning web development"
-date: 2025-01-29
 url: "/links/coding-resources-links-dump.html"
 ---
 
 # Coding resources links dump
 
-**Last updated:** January 29th 2025
+**Last updated:** January 30th 2025
 
 <a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a> — references and documentation on HTML, CSS and JavaScript; useful when you need to look up a particular tag or an attribute.
 
