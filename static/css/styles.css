@@ -80,7 +80,25 @@ summary:active {
 }
 
 figure {
+  padding: 1.5rem;
   margin: 1rem 0;
+  border: 0.01rem solid black;
+}
+
+figcaption {
+  margin-top: 0.3rem;
+}
+
+figure img {
+  border: 0.1rem solid transparent;
+}
+
+figure img:hover {
+  border: 0.1rem solid hotpink;
+}
+
+figure > img:active {
+  border: 0.1rem solid white;
 }
 
 pre {
@@ -109,6 +127,7 @@ main {
 }
 
 footer {
+  margin-top: 1rem;
   font-size: 0.7rem;
   text-align: center;
 }
@@ -394,5 +413,9 @@ footer {
 
   .mnav {
     font-size: 0.7rem;
+  }
+
+  figure {
+    padding: 1rem;
   }
 }
