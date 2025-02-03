@@ -5,22 +5,15 @@
 /* General styling */
 
 body {
-  background-color: whitesmoke;
-  font-family: "Courier New", "Courier", "Liberation Mono", monospace;
+  background-color: #bac0cb;
+  color: #1a2033;
+  font-family: monospace;
 }
 
 h1 {
-  font-size: larger;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
   text-align: center;
   margin: 2rem auto;
-}
-
-h2 {
-  font-size: medium;
-  font-weight: bold;
+  max-width: 25rem;
 }
 
 h3,
@@ -30,15 +23,15 @@ h4 {
 }
 
 a {
-  color: black;
+  color: #1a2033;
 }
 
 a:hover {
-  color: gray;
+  color: #516881;
 }
 
 a:active {
-  color: hotpink;
+  color: white;
 }
 
 hr {
@@ -64,7 +57,6 @@ header > pre {
   margin-bottom: 1.5rem;
   text-align: center;
   font-size: medium;
-  font-family: "Courier New", Courier, monospace;
 }
 
 nav {
@@ -78,6 +70,10 @@ main {
   margin: 0 auto;
 }
 
+main *:not(h1) {
+  font-size: 1.2rem;
+}
+
 footer {
   margin-top: 1rem;
   font-size: 0.7rem;
@@ -86,7 +82,7 @@ footer {
 
 details {
   margin: 1rem 0;
-  border: 0.01rem solid lightgray;
+  border: 0.1rem solid #a3adbd;
 }
 
 details > *:not(summary) {
@@ -95,7 +91,7 @@ details > *:not(summary) {
 
 summary {
   padding: 0.5rem;
-  background-color: lightgray;
+  background-color: #a3adbd;
   text-decoration: underline;
 }
 
@@ -105,11 +101,11 @@ summary > h3 {
 
 summary:hover {
   cursor: pointer;
-  background-color: gainsboro;
+  background-color: #919aae;
 }
 
 summary:active {
-  color: hotpink;
+  color: white;
 }
 
 figure {
@@ -291,7 +287,6 @@ figure > img:active {
 .landing > pre {
   text-align: center;
   font-size: 0.9rem;
-  font-family: "Courier New", Courier, monospace;
   inline-size: fit-content;
   margin: 0 auto;
 }
