@@ -10,6 +10,38 @@ body {
   font-family: monospace;
 }
 
+header {
+  margin: 2rem auto;
+}
+
+header > pre {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: medium;
+}
+
+nav {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 0.5rem;
+  font-size: 0.9rem;
+}
+
+main {
+  max-inline-size: 40rem;
+  margin: 0 auto;
+}
+
+main *:not(h1) {
+  font-size: 1.2rem;
+}
+
+footer {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
 h1 {
   text-align: center;
   margin: 2rem auto;
@@ -36,7 +68,7 @@ a:active {
 
 hr {
   border: none;
-  border-block-start: 0.1rem dotted lightgray;
+  border-block-start: 0.2rem dotted #a3adbd;
   margin: 1.5rem 0;
 }
 
@@ -49,40 +81,9 @@ pre {
   word-break: break-all;
 }
 
-header {
-  margin: 2rem auto;
-}
-
-header > pre {
-  margin-bottom: 1.5rem;
-  text-align: center;
-  font-size: medium;
-}
-
-nav {
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 0.5rem;
-}
-
-main {
-  max-inline-size: 40rem;
-  margin: 0 auto;
-}
-
-main *:not(h1) {
-  font-size: 1.2rem;
-}
-
-footer {
-  margin-top: 1rem;
-  font-size: 0.7rem;
-  text-align: center;
-}
-
 details {
   margin: 1rem 0;
-  border: 0.1rem solid #a3adbd;
+  border: 0.2rem solid #a3adbd;
 }
 
 details > *:not(summary) {
@@ -91,7 +92,6 @@ details > *:not(summary) {
 
 summary {
   padding: 0.5rem;
-  background-color: #a3adbd;
   text-decoration: underline;
 }
 
@@ -101,7 +101,7 @@ summary > h3 {
 
 summary:hover {
   cursor: pointer;
-  background-color: #919aae;
+  background-color: #a3adbd;
 }
 
 summary:active {
@@ -109,9 +109,9 @@ summary:active {
 }
 
 figure {
-  padding: 1.5rem;
-  margin: 1rem 0;
-  border: 0.01rem solid black;
+  padding: 1.25rem;
+  margin: 1rem auto;
+  border: 0.2rem solid #a3adbd;
 }
 
 figcaption {
@@ -119,11 +119,11 @@ figcaption {
 }
 
 figure img {
-  border: 0.1rem solid transparent;
+  border: 0.1rem solid #a3adbd;
 }
 
 figure img:hover {
-  border: 0.1rem solid hotpink;
+  border: 0.1rem solid #516881;
 }
 
 figure > img:active {
@@ -203,12 +203,12 @@ figure > img:active {
 .preview {
   overflow: hidden;
   position: relative;
-  border: 0.1rem solid transparent;
+  border: 0.1rem solid #a3adbd;
   display: block;
 }
 
 .preview:hover {
-  border: 0.1rem solid hotpink;
+  border: 0.1rem solid #516881;
   cursor: pointer;
 }
 
@@ -219,17 +219,6 @@ figure > img:active {
 .preview > img {
   inline-size: 100%;
   block-size: 100%;
-}
-
-.preview > p {
-  text-decoration: none;
-  font-weight: bold;
-  color: hotpink;
-  text-shadow: -0.05rem -0.05rem 0 white, 0.05rem -0.05rem 0 white,
-    -0.05rem 0.05rem 0 white, 0.05rem 0.05rem 0 white;
-  position: absolute;
-  inset-block-end: -1rem;
-  inset-inline-start: 0.2rem;
 }
 
 .full {
