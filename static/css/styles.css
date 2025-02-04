@@ -4,20 +4,25 @@
 
 /* General styling */
 
+/* 
+Colors: 
+lightest: #c7ccd6
+medium-light: #afb9c5
+medium: #a3adbd
+medium-dark: #516881
+darkest: #1a2033
+*/
+
 body {
-  background-color: #bac0cb;
+  background-color: #c7ccd6;
   color: #1a2033;
   font-family: monospace;
 }
 
-header {
-  margin: 2rem auto;
-}
-
 header > pre {
-  margin-bottom: 1.5rem;
   text-align: center;
-  font-size: medium;
+  font-size: 0.85rem;
+  margin: 1.5rem auto;
 }
 
 nav {
@@ -30,28 +35,30 @@ nav {
 main {
   max-inline-size: 40rem;
   margin: 0 auto;
-}
-
-main *:not(h1) {
   font-size: 1.2rem;
 }
 
 footer {
   margin-top: 1rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: center;
 }
 
 h1 {
-  text-align: center;
   margin: 2rem auto;
+  text-align: center;
   max-width: 25rem;
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.2rem;
 }
 
 h3,
 h4 {
-  font-size: medium;
   font-weight: normal;
+  font-size: 1.2rem;
 }
 
 a {
@@ -68,7 +75,7 @@ a:active {
 
 hr {
   border: none;
-  border-block-start: 0.2rem dotted #a3adbd;
+  border-block-start: 0.2rem dotted #afb9c5;
   margin: 1.5rem 0;
 }
 
@@ -81,9 +88,18 @@ pre {
   word-break: break-all;
 }
 
+code {
+  background-color: #afb9c5;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  padding: 0.04rem 0.1rem;
+  display: inline-block;
+  max-width: fit-content;
+}
+
 details {
   margin: 1rem 0;
-  border: 0.2rem solid #a3adbd;
+  border: 0.2rem solid #afb9c5;
 }
 
 details > *:not(summary) {
@@ -101,7 +117,7 @@ summary > h3 {
 
 summary:hover {
   cursor: pointer;
-  background-color: #a3adbd;
+  background-color: #afb9c5;
 }
 
 summary:active {
@@ -111,7 +127,7 @@ summary:active {
 figure {
   padding: 1.25rem;
   margin: 1rem auto;
-  border: 0.2rem solid #a3adbd;
+  border: 0.2rem solid #afb9c5;
 }
 
 figcaption {
@@ -119,7 +135,7 @@ figcaption {
 }
 
 figure img {
-  border: 0.1rem solid #a3adbd;
+  border: 0.1rem solid #afb9c5;
 }
 
 figure img:hover {
@@ -141,7 +157,7 @@ figure > img:active {
 }
 
 .text-colored {
-  color: crimson;
+  color: #000f94;
 }
 
 .text-breakall {
@@ -149,17 +165,17 @@ figure > img:active {
 }
 
 .icon {
-  width: 0.8rem;
+  height: 1rem;
 }
 
 .spoiler {
-  background-color: darkgray;
-  color: darkgray;
+  background-color: #1a2033;
+  color: #1a2033;
 }
 
 .spoiler:hover {
   background-color: transparent;
-  color: black;
+  color: #1a2033;
 }
 
 .h1 {
@@ -203,7 +219,7 @@ figure > img:active {
 .preview {
   overflow: hidden;
   position: relative;
-  border: 0.1rem solid #a3adbd;
+  border: 0.1rem solid #afb9c5;
   display: block;
 }
 
@@ -235,26 +251,33 @@ figure > img:active {
   margin: 0;
 }
 
-/* Responsive big banner */
-
-.responsive-img {
-  max-width: 100%;
-  height: auto;
-}
-
 /* Code box element */
 
 .btn-code {
   max-inline-size: 15rem;
   block-size: 4rem;
   padding: 0.5rem;
-  border: solid 0.01rem black;
+  border: solid 0.1rem #1a2033;
   background-color: white;
   overflow-y: scroll;
   overflow-x: hidden;
   font-size: 0.65rem;
   word-break: break-all;
   margin-top: 0.7rem;
+}
+
+.btn-code > code {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  display: inline;
+}
+
+/* Responsive big banner */
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* CSS for landing page */
@@ -270,7 +293,7 @@ figure > img:active {
   margin: auto;
   padding: 2rem;
   max-inline-size: 15rem;
-  border: solid 0.01rem black;
+  border: solid 0.1rem #1a2033;
 }
 
 .landing > pre {
@@ -314,12 +337,6 @@ figure > img:active {
 
 /* CSS for smaller screens */
 
-@media (max-width: 770px) {
-  header > pre {
-    font-size: small;
-  }
-}
-
 @media (max-width: 720px) {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
@@ -328,11 +345,7 @@ figure > img:active {
 
 @media (max-width: 580px) {
   header > pre {
-    font-size: x-small;
-  }
-
-  nav {
-    font-size: small;
+    font-size: 0.7rem;
   }
 
   details > *:not(summary) {
@@ -343,21 +356,14 @@ figure > img:active {
   .featured {
     gap: 0.3rem;
   }
-}
 
-@media (max-width: 510px) {
-  .preview > p {
-    font-size: 0.9rem;
-    inset-block-end: -0.9rem;
+  figure {
+    padding: 1rem;
   }
 }
 
 @media (max-width: 490px) {
   header > pre {
     font-size: 2vmin;
-  }
-
-  figure {
-    padding: 1rem;
   }
 }
