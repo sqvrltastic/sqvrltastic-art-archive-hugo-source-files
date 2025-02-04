@@ -44,6 +44,8 @@ Web accessibility 101:
 
 <a href="https://www.nvaccess.org/download/" target="_blank" rel="noopener noreferrer">NVDA</a> — free and open source screen reader. Useful for accessibility testing your website.
 
+<a href="https://addons.mozilla.org/en-US/firefox/addon/pranay-joshi/" target="_blank" rel="noopener noreferrer">Debug CSS Firefox extension</a> — useful for visualizing CSS box model.
+
 <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">HUGO static site generator</a> — for making and managing static websites like this one. There are _many_ SSGs out there, HUGO is just the one I personally use.
 
 Where to host (for free, OMG!):

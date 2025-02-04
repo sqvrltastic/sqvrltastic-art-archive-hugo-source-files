@@ -179,22 +179,22 @@ figure > img:active {
 }
 
 .h1 {
-  font-size: xx-large;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .h2 {
-  font-size: x-large;
+  font-size: 1.7rem;
   font-weight: bold;
 }
 
 .h3 {
-  font-size: large;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 
 .h4 {
-  font-size: medium;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -313,7 +313,7 @@ figure > img:active {
 .landing > p {
   margin: 0 auto;
   max-inline-size: 13rem;
-  font-size: small;
+  font-size: 0.9rem;
 }
 
 .landing > a {
@@ -346,6 +346,27 @@ figure > img:active {
 @media (max-width: 580px) {
   header > pre {
     font-size: 0.7rem;
+  }
+
+  nav,
+  footer {
+    font-size: 0.7rem;
+  }
+
+  main,
+  h2,
+  h3,
+  h4 {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+    margin: 1.5rem auto;
+  }
+
+  .icon {
+    height: 0.7rem;
   }
 
   details > *:not(summary) {
