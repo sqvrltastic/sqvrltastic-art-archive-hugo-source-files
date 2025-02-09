@@ -16,7 +16,8 @@ _Last 20 site updates are displayed here._
 
 ## February 9th 2025
 
-[My PC died](./blog/my-pc-died.html)... 😭
+- [My PC died](./blog/my-pc-died.html)... 😭
+- [Steam friend requests suck](./blog/steam-friend-requests-suck.html)
 
 ## February 4th 2025
 

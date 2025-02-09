@@ -57,7 +57,9 @@ Literally no reason. It doesn't mean anything. I'm just really bad with coming u
 
 <h2 id="about-me">About me</h2>
 
-I'm a pretty private person and don't like sharing a lot about myself online. I grew up in an age when everybody was still somewhat apprehensive of the internet and you were advised to never share your real name or photos online. Nowadays, it's the opposite and oversharing is normalized and honestly I kinda hate it. I hate that if you don't have an active social media account people see you as some sort of serial killer, but then again, people are stupid and I don't care what they think of me.
+I'm a pretty private person and don't like sharing a lot about myself online. I grew up in an age when everybody was still somewhat apprehensive of the internet and you were advised to never share your real name or photos online. 
+
+Nowadays, it's the opposite and oversharing is normalized and honestly I kinda hate it. I hate that if you don't have an active social media account people see you as some sort of serial killer, but then again, people are stupid and I don't care what they think of me.
 
 With that out of the way... I'm a somewhat introverted young woman in my mid-twenties. I speak three languages fluently: English, Montenegrin and Russian. Furthermore, I like tinkering with tech, playing old video games, watching old anime, cooking (check out my <a href="https://sqvrltastic.github.io/simple-recipes/" target="_blank" rel="noopener noreferrer">cooking website</a> by the way!), minimalism and tidiness and being an insufferable stuck up contrarian (_sometimes_). I guess you can say that I'm a tomboy with a very stereotypically male interests. INTJ-A (if you like your pseudoscientific zodiacs for nerds).
 

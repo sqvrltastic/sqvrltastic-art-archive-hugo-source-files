@@ -10,16 +10,14 @@ url: "/blog/idolization-of-the-old-web.html"
 
 I get a feeling that a lot of Neocities users are teens, or at least born after 2005 and never really experienced the "old web" personally. I'm saying this because people really need to stop idolizing the "old web" so much.
 
-This might seem
-hypocritical, after all, isn't my own website kinda oldish looking? Yes and
-no. While I do like a lot of design trends from a bygone era and despise a lot
-of modern web development trends, I still do recognize that there are a lot of
-things that sucked about the web 1.0.
+This might seem hypocritical, after all, isn’t my own website kinda oldish looking? Yes and no. While I do like a lot of design trends from a bygone era and despise a lot of modern web development trends, I still do recognize that there are a lot of things that sucked about the web 1.0.
 
 After all, I was born just in time during the turn of the millennia and while
 I can't call myself "the OG internet user" (I am not a millennial, I am a very
 old genZ), I still managed to catch a glimpse of the sunset of a static
-personal website and PHP BB forum era. I even developed my own websites
+personal website and PHP BB forum era. 
+
+I even developed my own websites
 despite not even being double digits old yet. I remember using tables to
 determine my website's layout and hand coding it all in Microsoft Frontpage 2003.
 
@@ -49,7 +47,9 @@ and knowledge at our disposal.
 
 Yes, overabundance of annoying ads sucks. Cookie banners suck. Unoptimized
 JavaScript sucks. Tracking sucks. Soulless cookie-cutter flat design UI trend
-sucks, yada yada yada. I'm not arguing against any of that. However, we've
+sucks, yada yada yada. I'm not arguing against any of that. 
+
+However, we've
 also learned how to make our websites more accessible to more people including
 disabled users and we learned of the importance of making our website look
 good on many different devices, so for example, people who can't afford a PC
@@ -60,7 +60,9 @@ Some things in design just work, while others don't. 90% of websites have
 black on white text because it works. Pastel-colored text with an elaborate
 display font on an animated background doesn't work. It might look “cute”, but
 it's not a good design because it makes interacting with the content harder
-even for non-disabled people. Thus, at least in my opinion, I'd rather have a
+even for non-disabled people. 
+
+Thus, at least in my opinion, I'd rather have a
 bland design that gets out of the way rather than an overly elaborate one that
 makes my life harder.
 
