@@ -14,6 +14,10 @@ _Last 20 site updates are displayed here._
 
 ---
 
+## February 9th 2025
+
+[My PC died](./blog/my-pc-died.html)... 😭
+
 ## February 4th 2025
 
 Minor website CSS changes! Just trying to make this website easier on the eyes. Also, I kept the main font being monospace, but now it will show as whatever default monospace font you have in your browser, not as _Courier New_ like before.
