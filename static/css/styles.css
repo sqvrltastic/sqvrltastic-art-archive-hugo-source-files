@@ -5,12 +5,12 @@
 /* General styling */
 
 /* 
-Colors: 
-lightest: #c7ccd6
-medium-light: #afb9c5
-medium: #a3adbd
-medium-dark: #516881
-darkest: #1a2033
+Color palette: 
+lightest: #c7ccd6 - background
+medium-light: #afb9c5 - code background
+medium: #a3adbd - background for some UI elements
+medium-dark: #516881 - hover state for links and image borders
+darkest: #1a2033 - text
 */
 
 body {
@@ -75,7 +75,7 @@ a:active {
 
 hr {
   border: none;
-  border-block-start: 0.2rem dotted #afb9c5;
+  border-block-start: 0.2rem dotted #a3adbd;
   margin: 1.5rem 0;
 }
 
@@ -99,7 +99,7 @@ code {
 
 details {
   margin: 1rem 0;
-  border: 0.2rem solid #afb9c5;
+  border: 0.2rem solid #a3adbd;
 }
 
 details > *:not(summary) {
@@ -117,7 +117,7 @@ summary > h3 {
 
 summary:hover {
   cursor: pointer;
-  background-color: #afb9c5;
+  background-color: #a3adbd;
 }
 
 summary:active {
@@ -127,7 +127,7 @@ summary:active {
 figure {
   padding: 1.25rem;
   margin: 1rem auto;
-  border: 0.2rem solid #afb9c5;
+  border: 0.2rem solid #a3adbd;
 }
 
 figcaption {
@@ -135,7 +135,7 @@ figcaption {
 }
 
 figure img {
-  border: 0.1rem solid #afb9c5;
+  border: 0.1rem solid #a3adbd;
 }
 
 figure img:hover {
@@ -219,7 +219,7 @@ figure > img:active {
 .preview {
   overflow: hidden;
   position: relative;
-  border: 0.1rem solid #afb9c5;
+  border: 0.1rem solid #a3adbd;
   display: block;
 }
 
