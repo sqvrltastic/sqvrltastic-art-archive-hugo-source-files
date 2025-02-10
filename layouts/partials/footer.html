@@ -1,8 +1,11 @@
 <footer>
   <p>
     &copy; 2025 Sqvrltastic Art Archive
-    <a href="{{ relURL "rss.xml" }}" target="_blank" rel="noopener noreferrer">
-      <img class="icon" src="{{ "images/icon-rss.avif" | relURL }}" alt="RSS icon" />
-    </a>
   </p>
-</footer>
+  <div class="subscribe">
+    <a href="{{ relURL "rss.xml" }}" target="_blank" rel="noopener noreferrer">
+      <img class="icon" src="{{ "images/icon-rss.avif" | relURL }}" alt="RSS feed icon" />
+    </a>
+    <a href="{{ relURL "/blog/how-to-subscribe.html" }}">Subscribe!</a>
+  </div>
+  </footer>

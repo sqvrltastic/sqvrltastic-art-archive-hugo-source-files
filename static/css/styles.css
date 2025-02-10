@@ -7,7 +7,7 @@
 /* 
 Color palette: 
 lightest: #c7ccd6 - background
-medium-light: #afb9c5 - code background
+medium-light: #afb9c5 - code snippet background
 medium: #a3adbd - background for some UI elements
 medium-dark: #516881 - hover state for links and image borders
 darkest: #1a2033 - text
@@ -19,36 +19,39 @@ body {
   font-family: monospace;
 }
 
+header, main, footer {
+  max-inline-size: 40rem;
+  margin: 0 auto;
+}
+
 header > pre {
   font-size: 0.85rem;
   inline-size: fit-content;
-  margin: 1.5rem auto;
+  margin: 0 auto 1.5rem;
 }
 
 nav {
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 0.5rem;
   font-size: 0.9rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0.5rem;
 }
 
 main {
-  max-inline-size: 40rem;
-  margin: 0 auto;
   font-size: 1.2rem;
 }
 
 footer {
-  margin-top: 1rem;
   font-size: 0.9rem;
   text-align: center;
+  margin-top: 1.5rem;
 }
 
 h1 {
-  margin: 2rem auto;
+  font-size: 1.5rem;
   text-align: center;
-  max-width: 25rem;
-  font-size: 1.8rem;
+  max-inline-size: 27rem;
+  margin: 1.8rem auto;
 }
 
 h2 {
@@ -57,8 +60,8 @@ h2 {
 
 h3,
 h4 {
-  font-weight: normal;
   font-size: 1.2rem;
+  font-weight: normal;
 }
 
 a {
@@ -89,12 +92,12 @@ pre {
 }
 
 code {
-  background-color: #afb9c5;
-  border-radius: 0.4rem;
   font-size: 1rem;
-  padding: 0.04rem 0.1rem;
+  background-color: #afb9c5;
   display: inline-block;
-  max-width: fit-content;
+  max-inline-size: fit-content;
+  padding: 0.04rem 0.1rem;
+  border-radius: 0.4rem;
 }
 
 details {
@@ -108,10 +111,10 @@ details > *:not(summary) {
 
 summary {
   padding: 0.5rem;
-  text-decoration: underline;
 }
 
 summary > h3 {
+  text-decoration: underline;
   display: inline;
 }
 
@@ -164,10 +167,6 @@ figure > img:active {
   word-break: break-all;
 }
 
-.icon {
-  height: 1rem;
-}
-
 .spoiler {
   background-color: #1a2033;
   color: #1a2033;
@@ -198,6 +197,12 @@ figure > img:active {
   font-weight: bold;
 }
 
+/* Icon */
+
+.icon {
+  block-size: 0.9rem;
+}
+
 /* Gallery */
 
 .gallery,
@@ -217,15 +222,14 @@ figure > img:active {
 }
 
 .preview {
-  overflow: hidden;
+  display: block;
   position: relative;
   border: 0.1rem solid #a3adbd;
-  display: block;
+  overflow: hidden;
 }
 
 .preview:hover {
   border: 0.1rem solid #516881;
-  cursor: pointer;
 }
 
 .preview:active {
@@ -254,16 +258,16 @@ figure > img:active {
 /* Code box element */
 
 .btn-code {
-  max-inline-size: 15rem;
-  block-size: 4rem;
-  padding: 0.5rem;
-  border: solid 0.1rem #1a2033;
-  background-color: white;
-  overflow-y: scroll;
-  overflow-x: hidden;
   font-size: 0.65rem;
   word-break: break-all;
+  max-inline-size: 15rem;
+  block-size: 4rem;
+  background-color: white;
+  border: solid 0.1rem #1a2033;
+  padding: 0.5rem;
   margin-top: 0.7rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .btn-code > code {
@@ -276,55 +280,41 @@ figure > img:active {
 /* Responsive big banner */
 
 .responsive-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Subscribe link */
-
-.subscribe {
-  background-color: #a3adbd;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 0.3rem 0.4rem;
+  max-inline-size: 100%;
 }
 
 /* CSS for landing page */
 
 .landing {
-  inline-size: fit-content;
-  block-size: fit-content;
+  font-size: 0.9rem;
   text-align: center;
+  inline-size: 15rem;
+  block-size: fit-content;
   position: absolute;
   inset: 0;
   margin: auto;
   padding: 2rem;
-  max-inline-size: 15rem;
   border: solid 0.1rem #1a2033;
 }
 
 .landing > pre {
-  text-align: center;
-  font-size: 0.9rem;
-  inline-size: fit-content;
   margin: 0 auto;
 }
 
 .landing > img {
-  display: block;
-  margin: 1.4rem auto 1.2rem;
   mix-blend-mode: multiply;
-  width: 75%;
+  display: block;
+  inline-size: 75%;
+  margin: 1.4rem auto 1.2rem;
 }
 
 .landing > p {
-  margin: 0 auto;
   max-inline-size: 13rem;
-  font-size: 0.9rem;
+  margin: 0 auto;
 }
 
 .landing > a {
-  font-size: x-large;
+  font-size: 1.5rem;
   display: block;
   margin: 1rem auto 0;
 }
@@ -381,10 +371,6 @@ figure > img:active {
 
   hr {
     margin: 1rem 0;
-  }
-
-  .icon {
-    height: 0.7rem;
   }
 
   details > *:not(summary) {
