@@ -20,8 +20,8 @@ body {
 }
 
 header > pre {
-  text-align: center;
   font-size: 0.85rem;
+  inline-size: fit-content;
   margin: 1.5rem auto;
 }
 
@@ -280,13 +280,20 @@ figure > img:active {
   height: auto;
 }
 
+/* Subscribe link */
+
+.subscribe {
+  background-color: #a3adbd;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.3rem 0.4rem;
+}
+
 /* CSS for landing page */
 
 .landing {
   inline-size: fit-content;
   block-size: fit-content;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   position: absolute;
   inset: 0;

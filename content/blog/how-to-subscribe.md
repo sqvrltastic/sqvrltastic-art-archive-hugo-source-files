@@ -4,7 +4,6 @@ description: "A guide on how to subscribe with RSS to Sqvrltastic Art Archive to
 date: 2025-02-10
 categories: ["Guides"]
 url: "/blog/how-to-subscribe.html"
-draft: true
 ---
 
 # How to subscribe to this website - a guide
