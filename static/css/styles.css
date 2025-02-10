@@ -47,6 +47,10 @@ footer {
   margin-top: 1.5rem;
 }
 
+footer > a > img {
+  block-size: 1.2rem;
+}
+
 h1 {
   font-size: 1.5rem;
   text-align: center;
@@ -137,15 +141,15 @@ figcaption {
   margin-top: 0.3rem;
 }
 
-figure img {
+figure > a > img {
   border: 0.1rem solid #a3adbd;
 }
 
-figure img:hover {
+figure > a > img:hover {
   border: 0.1rem solid #516881;
 }
 
-figure > img:active {
+figure > a > img:active {
   border: 0.1rem solid white;
 }
 
