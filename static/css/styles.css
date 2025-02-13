@@ -56,10 +56,10 @@ footer > p {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: center;
   max-inline-size: 27rem;
-  margin: 1.8rem auto;
+  margin: 1.6rem auto;
 }
 
 h2 {
@@ -264,17 +264,11 @@ figure > a > img:active {
   block-size: 100%;
 }
 
-.artwork > a {
-  display: block;
-  inline-size: fit-content;
-  block-size: fit-content;
-  margin: 0 auto;
-}
-
 .artwork > a > img {
   display: block;
   max-inline-size: 100%;
   max-block-size: 30rem;
+  margin: 0 auto
 }
 
 /* Code box element */
