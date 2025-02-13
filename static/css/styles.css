@@ -357,36 +357,53 @@ figure > a > img:active {
 
 /* CSS for smaller screens */
 
-@media (max-width: 720px) {
+@media (max-width: 660px) {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 500px) {
   header > pre {
-    font-size: 70%;
-  }
-
-  nav,
-  footer {
-    font-size: 70%;
-  }
-
-  main,
-  h2,
-  h3,
-  h4 {
-    font-size: 90%;
+    font-size: 2vmin;
+    margin-block-end: 0.9rem;
   }
 
   h1 {
-    font-size: 160%;
-    margin: 1.5rem auto;
+    font-size: 120%;
+    max-inline-size: 17rem;
+    margin: 1.2rem auto;
+  }
+
+  nav, footer {
+    font-size: 100%;
+  }
+
+  footer {
+    gap: 0.5rem;
+    margin-block-start: 1rem;
+  }
+
+  main, h2, h3, h4{
+    font-size: 110%;
+  }
+
+  code {
+    font-size: 90%;
   }
 
   hr {
-    margin: 1rem 0;
+    margin: 0.7rem 0;
+  }
+
+  .rss-btn {
+    font-size: 100%;
+    gap: 0.4rem;
+    padding: 0.4rem;
+  }
+
+  .btn-code {
+    font-size: 90%;
   }
 
   details > *:not(summary) {
@@ -400,11 +417,5 @@ figure > a > img:active {
 
   figure {
     padding: 1rem;
-  }
-}
-
-@media (max-width: 490px) {
-  header > pre {
-    font-size: 2vmin;
   }
 }

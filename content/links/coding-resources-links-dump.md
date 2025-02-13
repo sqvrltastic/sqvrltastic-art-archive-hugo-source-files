@@ -6,7 +6,7 @@ url: "/links/coding-resources-links-dump.html"
 
 # Coding resources links dump
 
-**Last updated:** February 4th 2025
+**Last updated:** February 13th 2025
 
 <a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a> — references and documentation on HTML, CSS and JavaScript; useful when you need to look up a particular tag or an attribute.
 
@@ -25,6 +25,8 @@ Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" targe
 <a href="https://css-tricks.com/css-logical-properties-and-values/" target="_blank" rel="noopener noreferrer">CSS Logical Properties and Values</a> by CSS-Tricks.
 
 <a href="https://developers.google.com/search/docs/appearance/structured-data/search-gallery" target="_blank" rel="noopener noreferrer">Structured data markup for Google Search</a> and <a href="https://schema.org/" target="_blank" rel="noopener noreferrer">Shema.org</a> — some _optional_ SEO stuff.
+
+<a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">PageSpeed Insights by Google</a> — gives your website performance rating.
 
 Get your website indexed and check search engine analytics:
 
