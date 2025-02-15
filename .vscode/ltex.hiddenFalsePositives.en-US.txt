@@ -1,8 +1,0 @@
-{"rule":"COMMA_COMPOUND_SENTENCE","sentence":"^\\QMy yeah old PC AMD PC that worked flawlessly and I had zero issues since building it, one day just randomly decided to die on me.\\E$"}
-{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QI did run EXPO with stock preset of 6000Mt/s, and a very minimal undervolt of the CPU, but other than that, everything was stock.\\E$"}
-{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QI was drawing in Photoshop and luckily I did save my work just in time (it's another a fan art of Kerillian!!!), when my PC decided to reboot itself again.\\E$"}
-{"rule":"COMMA_COMPOUND_SENTENCE","sentence":"^\\QI was drawing in Photoshop and luckily I did save my work just in time (it's another a fan art of Kerillian!!!), when my PC decided to reboot itself again.\\E$"}
-{"rule":"COMMA_COMPOUND_SENTENCE","sentence":"^\\QMy year old PC AMD PC that worked flawlessly and I had zero issues since building it, one day just randomly decided to die on me.\\E$"}
-{"rule":"COMMA_COMPOUND_SENTENCE","sentence":"^\\QMy year-old PC AMD PC that worked flawlessly and I had zero issues since building it, one day just randomly decided to die on me.\\E$"}
-{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QI did run EXPO with stock preset of 6000MT/s, and a very minimal undervolt of the CPU, but other than that, everything was stock.\\E$"}
-{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q&copy; 2025 Sqvrltastic Art Archive\\E$"}
