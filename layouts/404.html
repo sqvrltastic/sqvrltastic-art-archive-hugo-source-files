@@ -9,9 +9,8 @@
     />
     <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
     <title>404 Page not found</title>
-    <link rel="preload" href="{{ "css/styles.css" | relURL }}" as="style" />
-    <link rel="stylesheet" href="{{ "styles.css" | relURL }}" /> <link
-    rel="icon" type="image/x-icon" href="{{ "images/favicon.ico" | relURL }}" />
+    {{ $css := resources.Get "styles.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" /> 
   </head>
   <body>
     <div class="fourofour">
