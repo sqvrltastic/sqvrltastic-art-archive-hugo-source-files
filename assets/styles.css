@@ -264,7 +264,7 @@ figure > a > img:active {
   block-size: 100%;
 }
 
-.artwork > a > img {
+.artwork {
   display: block;
   max-inline-size: 100%;
   max-block-size: 30rem;

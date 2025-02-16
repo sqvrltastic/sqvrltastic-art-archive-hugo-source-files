@@ -1,7 +1,7 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 {{ with (index (.Resources.Match "*.jpg") 0) }}
-  <img src="{{ .RelPermalink }}" alt="{{ $.Description }}">
+  <img class="artwork" src="{{ .RelPermalink }}" alt="{{ $.Description }}">
   {{ else }}
   <p>No full-size image found.</p> <!-- Fallback text -->
   {{ end }}
