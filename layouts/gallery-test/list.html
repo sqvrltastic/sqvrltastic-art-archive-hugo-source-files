@@ -1,5 +1,29 @@
 {{ define "main" }}
-    <h1>Blog Posts</h1>
+    <h1>{{ .Title }}</h1>
+    <p class="text-center">All content is <strong>PG-13</strong> (at worst).</p>
+
+    <h2>Fan art:</h2>
+    <details>
+        <summary><h3>Legend of the Galactic Heroes</h3></summary>
+        <h4>2024 year</h4>
+        <div class="gallery">
+            {{ range .Pages }}
+            <a class="preview" href="{{ .RelPermalink }}">
+                {{ $postTitle := .Title }}
+                {{ with .Resources.GetMatch .Params.image }}
+                <img
+                src="{{ .RelPermalink }}"
+                alt='Preview thumbnail for artwork "{{ $postTitle }}"'
+                loading="lazy"
+                />
+                {{ else }}
+                <p>No image found</p>  <!-- Fallback text -->
+                {{ end }}
+            </a>
+            {{ end }}
+        </div>
+    </details>
+
     <ul>
         {{ range .Pages }}
         <li>
