@@ -2,6 +2,7 @@ baseURL = 'https://sqvrltastic.github.io/'
 languageCode = 'en-us'
 title = 'Sqvrltastic art archive'
 theme = 'CleanGallery'
+uglyURLs = true
 disableKinds = ["RSS"]
 [taxonomies]
     category = "categories"

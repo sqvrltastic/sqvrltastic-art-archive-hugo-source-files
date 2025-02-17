@@ -1,7 +1,6 @@
 ---
 title: Christmas Dusty Attenborough
 description: "Christmas-themed Legend of the Galactic Heroes fan art of Dusty Attenborough."
-url: "/gallery-test/lotgh-christmas-dusty.html"
 image: "lotgh-fanart-christmas-dusty.avif"
 categories: ["Lotgh", "2024"]
 ---

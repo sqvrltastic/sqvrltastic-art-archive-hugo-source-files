@@ -1,4 +1,5 @@
 {{ define "main" }}
+
     <h1>{{ .Title }}</h1>
     <p class="text-center">All content is <strong>PG-13</strong> (at worst).</p>
 
@@ -72,21 +73,77 @@
         </div>
     </details>
 
-    <!-- DELETE LATER 👇️ -->
-
-    <ul>
-        {{ range .Pages }}
-        <li>
-            <a href="{{ .RelPermalink }}">
+    <details>
+        <summary><h3>Dark Souls</h3></summary>
+        <h4>2021 year</h4>
+        <div class="gallery">
+            {{ range where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Dark Souls" "2021") }}
+            <a class="preview" href="{{ .RelPermalink }}">
                 {{ $postTitle := .Title }}
                 {{ with .Resources.GetMatch .Params.image }}
-                <img src="{{ .RelPermalink }}" alt='Preview thumbnail for artwork "{{ $postTitle }}"'>
+                <img
+                src="{{ .RelPermalink }}"
+                alt='Preview thumbnail for artwork "{{ $postTitle }}"'
+                loading="lazy"
+                />
                 {{ else }}
                 <p>No image found</p>  <!-- Fallback text -->
                 {{ end }}
-                <h2>{{ .Title }}</h2>
             </a>
-        </li>
-        {{ end }}
-    </ul>
+            {{ else }}
+            <p>No posts found</p> <!-- Fallback text -->
+            {{ end }}
+        </div>
+    </details>
+
+    <hr />
+
+    <h2>Original Content:</h2>
+    <details>
+        <summary><h3>Montenegro-chan & related</h3></summary>
+        <h4>2025 year</h4>
+        <div class="gallery">
+            {{ range where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Montenegro" "2025") }}
+            <a class="preview" href="{{ .RelPermalink }}">
+                {{ $postTitle := .Title }}
+                {{ with .Resources.GetMatch .Params.image }}
+                <img
+                src="{{ .RelPermalink }}"
+                alt='Preview thumbnail for artwork "{{ $postTitle }}"'
+                loading="lazy"
+                />
+                {{ else }}
+                <p>No image found</p>  <!-- Fallback text -->
+                {{ end }}
+            </a>
+            {{ else }}
+            <p>No posts found</p> <!-- Fallback text -->
+            {{ end }}
+        </div>
+
+        <!-- This one is updated variant -->
+        <h4>2020-2021 years</h4>
+        <div class="gallery">
+            {{ range where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Montenegro" "2020-2021") }}
+            {{ if eq (len (intersect .Params.categories (slice "Lotgh" "2024"))) 2 }}
+            <a class="preview" href="{{ .RelPermalink }}">
+                {{ $postTitle := .Title }}
+                {{ with .Resources.GetMatch .Params.image }}
+                <img
+                src="{{ .RelPermalink }}"
+                alt='Preview thumbnail for artwork "{{ $postTitle }}"'
+                loading="lazy"
+                />
+                {{ else }}
+                <p>No image found</p>  <!-- Fallback text -->
+                {{ end }}
+            </a>
+            {{ else }}
+            <p>No posts found</p> <!-- Fallback text -->
+            {{ end }}
+            {{ end }}
+        </div>
+
+    </details>
+
 {{ end }}
