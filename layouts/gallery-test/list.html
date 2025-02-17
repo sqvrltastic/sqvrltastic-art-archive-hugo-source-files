@@ -7,7 +7,7 @@
         <summary><h3>Legend of the Galactic Heroes</h3></summary>
         <h4>2024 year</h4>
         <div class="gallery">
-            {{ range .Pages }}
+            {{ range where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Lotgh" "Misc. OC") }}
             <a class="preview" href="{{ .RelPermalink }}">
                 {{ $postTitle := .Title }}
                 {{ with .Resources.GetMatch .Params.image }}
