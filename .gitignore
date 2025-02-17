@@ -1,3 +1,7 @@
 /public/
-/static/images/
-/static/favicon.ico
+*.avif
+*.jpg
+*.png
+*.gif
+*.svg
+*.ico

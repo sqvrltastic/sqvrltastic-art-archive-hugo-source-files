@@ -1,6 +1,7 @@
 ---
 title: Succubus lady
 description: "Lady succubus; original artwork."
+date: 2021-01-01
+categories: ["Misc. OC"]
 image: "succubus-lady.avif"
-categories: ["Misc. OC", "2020-2021"]
 ---

@@ -6,4 +6,4 @@ categories: ["Montenegro"]
 image: "montenegro-chan-boba-tea-challenge-2025.avif"
 ---
 
-**Note:** [link to older artwork](./montenegro-chan-boba-tea-challenge.html).
+[link to older artwork](./montenegro-chan-boba-tea-challenge.html).
