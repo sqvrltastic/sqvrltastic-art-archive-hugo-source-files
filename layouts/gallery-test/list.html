@@ -14,9 +14,9 @@
             {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Lotgh")) "Date.Year" 2024 }}
             <a class="preview" href="{{ .RelPermalink }}">
                 {{ $postTitle := .Title }}
-                {{ with .Resources.GetMatch .Params.image }}
+                {{ with .Params.preview }}
                 <img
-                src="{{ .RelPermalink }}"
+                src="{{ . | relURL }}"
                 alt='Preview thumbnail for artwork "{{ $postTitle }}"'
                 loading="lazy"
                 />
@@ -171,9 +171,9 @@
             {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Study")) "Date.Year" 2025 }}
             <a class="preview" href="{{ .RelPermalink }}">
                 {{ $postTitle := .Title }}
-                {{ with .Resources.GetMatch .Params.image }}
+                {{ with .Params.image }}
                 <img
-                src="{{ .RelPermalink }}"
+                src="{{ . | relURL }}"
                 alt='Preview thumbnail for artwork "{{ $postTitle }}"'
                 loading="lazy"
                 />
