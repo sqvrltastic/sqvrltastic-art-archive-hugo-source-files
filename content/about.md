@@ -1,7 +1,6 @@
 ---
 title: About
-description: "About me and this website"
-url: "/about.html"
+description: "About me and this website."
 ---
 
 # About

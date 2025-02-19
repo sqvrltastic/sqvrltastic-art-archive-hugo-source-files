@@ -1,5 +1,6 @@
 ---
 title: Gallery
+description: "Page with all of my artworks."
+url: "/gallery/"
 layout: "gallery"
-description: "Page with all of my artworks"
 ---

@@ -3,7 +3,6 @@ title: Plans for 2025 year
 description: "Search engine woes and custom domain soon, maybe??"
 date: 2025-01-03
 categories: ["Ramblings"]
-url: "/blog/plans-for-2025-year.html"
 ---
 
 # Plans for 2025 year

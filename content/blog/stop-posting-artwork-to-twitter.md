@@ -3,7 +3,6 @@ title: Please, stop posting your artwork to Twitter
 description: "... Just don't. Stop."
 date: 2025-01-05
 categories: ["Ramblings"]
-url: "/blog/stop-posting-artwork-to-twitter.html"
 ---
 
 # Please, stop posting your artwork to Twitter

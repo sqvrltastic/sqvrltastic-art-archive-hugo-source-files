@@ -1,18 +1,25 @@
 ---
 title: Updates
-description: "This website's update log"
-url: "/updates.html"
+description: "This website's update log."
 ---
 
 # Updates
 
-<img class="icon" src="./images/icon-rss.avif" alt="" /><a href="./rss.xml" target="_blank" rel="noopener noreferrer"> Subscribe with RSS</a>
+<img class="icon" src="./images/icons/icon-rss.avif" alt="" /><a href="./rss.xml" target="_blank" rel="noopener noreferrer"> Subscribe with RSS</a>
 
-<img class="icon" src="./images/icon-github.avif" alt="" /><a href="https://github.com/sqvrltastic/sqvrltastic.github.io" target="_blank" rel="noopener noreferrer"> GitHub repository</a>
+<img class="icon" src="./images/icons/icon-github.avif" alt="" /><a href="https://github.com/sqvrltastic/sqvrltastic.github.io" target="_blank" rel="noopener noreferrer"> GitHub repository</a>
 
 _Last 20 site updates are displayed here._
 
 ---
+
+## February 19th 2025
+
+Deleted two blogpost (I just didn't like them, I feel like they were too low effort).
+
+Changed my whole gallery template in HUGO to make it fully automated. This shouldn't affect anything too much for the end user though so you won't see many changes.
+
+Fixed some broken links, changed some stuff, yada yada, the usual. Not worth mentioning here.
 
 ## February 13th 2025
 
@@ -24,8 +31,9 @@ So if you haven't figured out how to do it already, hopefully how you will!
 
 ## February 9th 2025
 
-- [My PC died](./blog/my-pc-died.html)... 😭
-- [Steam friend requests suck](./blog/steam-friend-requests-suck.html)
+~~Two new blogposts:~~
+- ~~My PC died... 😭~~
+- ~~Steam friend requests suck~~
 
 ## February 4th 2025
 

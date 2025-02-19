@@ -3,7 +3,7 @@ title: Steam friend requests suck
 description: "Gamers just don't get it. I'm glad that you like my artwork, but I am not your friend."
 date: 2025-02-09
 categories: ["Ramblings"]
-url: "/blog/steam-friend-requests-suck.html"
+draft: true
 ---
 
 # Steam friend requests suck

@@ -1,7 +1,6 @@
 ---
 title: Art resources links dump
 description: "Various resources for learning art: tutorials, references, useful software, etc."
-url: "/links/art-resources-links-dump.html"
 ---
 
 # Art resources links dump

@@ -3,7 +3,6 @@ title: Neocities and the (misguided) idolization of the old web
 description: "Rambling about neoshitties, ugly websites, zoomers who idolize them and web accessibility."
 date: 2025-01-04
 categories: ["Ramblings"]
-url: "/blog/idolization-of-the-old-web.html"
 ---
 
 # Neocities and the (misguided) idolization of the old web

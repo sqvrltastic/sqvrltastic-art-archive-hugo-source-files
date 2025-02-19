@@ -1,7 +1,6 @@
 ---
 title: Useful software
 description: "Various lesser known software recommendations for desktop and mobile platforms that I find useful."
-url: "/links/useful-software.html"
 ---
 
 # Useful software

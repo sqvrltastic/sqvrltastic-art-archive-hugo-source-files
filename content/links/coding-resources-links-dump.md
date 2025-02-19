@@ -1,7 +1,6 @@
 ---
 title: Coding resources links dump
 description: "Various resources for webmasters primarily for learning web development"
-url: "/links/coding-resources-links-dump.html"
 ---
 
 # Coding resources links dump

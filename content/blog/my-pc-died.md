@@ -3,7 +3,7 @@ title: My PC died!!!
 description: "It's over. Press F in chat."
 date: 2025-02-09
 categories: ["Ramblings"]
-url: "/blog/my-pc-died.html"
+draft: true
 ---
 
 # My PC died!!!

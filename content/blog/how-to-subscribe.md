@@ -3,7 +3,6 @@ title: How to subscribe to this website — a guide
 description: "A guide on how to subscribe with RSS to Sqvrltastic Art Archive to get updates when I post new content or update this site."
 date: 2025-02-13
 categories: ["Guides"]
-url: "/blog/how-to-subscribe.html"
 ---
 
 # How to subscribe to this website — a guide
