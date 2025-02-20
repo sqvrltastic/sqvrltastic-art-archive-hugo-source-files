@@ -3,7 +3,8 @@ languageCode = 'en-us'
 title = 'Sqvrltastic art archive'
 theme = 'CleanGallery'
 uglyURLs = true
-disableKinds = ["RSS"]
+[outputFormats.RSS]
+  baseName = "rss"
 [taxonomies]
     category = "categories"
 [markup.goldmark.renderer]
@@ -15,7 +16,7 @@ disableKinds = ["RSS"]
   disableJS = false
   disableJSON = false
   disableSVG = false
-  disableXML = true
+  disableXML = false
   minifyOutput = true
   [minify.tdewolff]
     [minify.tdewolff.css]
