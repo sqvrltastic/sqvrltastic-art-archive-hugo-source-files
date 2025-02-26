@@ -3,8 +3,7 @@ languageCode = 'en-us'
 title = 'Sqvrltastic art archive'
 theme = 'CleanGallery'
 uglyURLs = true
-[outputFormats.RSS]
-  baseName = "rss"
+disableKinds = ["RSS"]
 [taxonomies]
     category = "categories"
 [markup.goldmark.renderer]
