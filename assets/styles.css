@@ -208,6 +208,7 @@ figure > a > img:active {
 
 .icon {
   block-size: 0.9rem;
+  inline-size: auto;
 }
 
 /* Footer RSS feed button */
@@ -223,7 +224,8 @@ figure > a > img:active {
 }
 
 .rss-btn > img {
-  block-size: 1.2rem;
+  inline-size: 1.2rem;
+  block-size: auto;
 }
 
 /* Gallery */
@@ -321,6 +323,7 @@ figure > a > img:active {
   mix-blend-mode: multiply;
   display: block;
   inline-size: 75%;
+  height: auto;
   margin: 1.4rem auto 1.2rem;
 }
 

@@ -5,9 +5,9 @@ description: "This website's update log."
 
 # Updates
 
-<img class="icon" src="./images/icons/icon-rss.avif" alt="" /><a href="./rss.xml" target="_blank" rel="noopener noreferrer"> Subscribe with RSS</a>
+<img class="icon" src="./images/icons/icon-rss.avif" alt="" width="64" height="64" /><a href="./rss.xml" target="_blank" rel="noopener noreferrer"> Subscribe with RSS</a>
 
-<img class="icon" src="./images/icons/icon-github.avif" alt="" /><a href="https://github.com/sqvrltastic/sqvrltastic.github.io" target="_blank" rel="noopener noreferrer"> GitHub repository</a>
+<img class="icon" src="./images/icons/icon-github.avif" alt="" width="64" height="64" /><a href="https://github.com/sqvrltastic/sqvrltastic.github.io" target="_blank" rel="noopener noreferrer"> GitHub repository</a>
 
 _Last 20 site updates are displayed here._
 
