@@ -13,6 +13,12 @@ _Last 20 site updates are displayed here._
 
 ---
 
+## March 5th 2025
+
+New Vermintide fan art; more elf girl! 🧝‍♀️
+
+- [Thinking face Kerillian 🤔](.gallery/vermintide-kerillian-thinking-face.html)
+
 ## February 19th 2025
 
 Deleted two blogpost (I just didn't like them, I feel like they were too low effort).
