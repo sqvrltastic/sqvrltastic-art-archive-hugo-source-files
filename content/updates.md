@@ -13,6 +13,10 @@ _Last 20 site updates are displayed here._
 
 ---
 
+## March 12th 2025
+
+New artwork: [Kerillian drinking Leaf Lover's Special beer](./gallery/vermintide-kerillian-drinking-leaf-lovers.html)
+
 ## March 5th 2025
 
 New Vermintide fan art; more elf girl! 🧝‍♀️
