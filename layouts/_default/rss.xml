@@ -11,7 +11,7 @@
 />
 <ttl>1440</ttl>
 <webMaster>{{ .Site.Params.email }}</webMaster>
-<lastBuildDate>Wed, 12 Mar 25 15:46:48 +0000</lastBuildDate>
+<lastBuildDate>{{ (index (sort .Site.RegularPages "Date" "desc") 0).Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</lastBuildDate>
 <language>en-us</language>
 
 {{- $allPosts := slice -}}
@@ -19,7 +19,7 @@
 {{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "blog") -}}
 {{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "log") -}}
 
-{{- $sortedPosts := sort $allPosts "Date" "desc" | first 26 -}}
+{{- $sortedPosts := sort $allPosts "Date" "desc" | first 20 -}}
 
 {{- range $sortedPosts }}
 <item>
@@ -30,7 +30,7 @@
 
 <title>
     {{- if eq .Section "log" -}}
-        Website update {{ .Title }}
+        Website update
     {{- else -}}
         {{ .Title }}
     {{- end -}}

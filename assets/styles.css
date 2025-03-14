@@ -156,6 +156,18 @@ figure > a > img:active {
   border: 0.1rem solid white;
 }
 
+article {
+  padding: 0.25rem 1.25rem;
+  margin: 1rem auto;
+  border: 0.2rem solid #a3adbd;
+}
+
+article > img {
+  border: 0.1rem solid #a3adbd;
+  width: 30%;
+  height: auto;
+}
+
 /* Ocasionally used text styles */
 
 .text-center {
