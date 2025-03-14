@@ -1,7 +1,10 @@
 {{ define "main" }}
+
 <h1>{{ .Title }}</h1>
-<p>Place where I write about whatever I feel like at the moment.</p>
+<p><i>{{ .Description }}</i></p>
+
 <hr />
+
 <h2>Ramblings</h2>
 <p><i>Mostly just rants, musings and word vomit.</i></p>
 <ul>
@@ -10,7 +13,9 @@
   <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
   {{ end }}
 </ul>
+
 <hr />
+
 <h2>Guides</h2>
 <p><i>Actually useful content!</i></p>
 <ul>
@@ -19,4 +24,5 @@
   <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
   {{ end }}
 </ul>
+
 {{ end }}

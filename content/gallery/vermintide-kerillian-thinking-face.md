@@ -5,6 +5,7 @@ date: 2025-03-04
 categories: ["Vermintide"]
 preview: "images/preview/vermintide-kerillian-thinking-face.avif"
 full: "images/full/vermintide-kerillian-thinking-face.jpg"
+length: "337638"
 ---
 
 🤔🧝‍♀️

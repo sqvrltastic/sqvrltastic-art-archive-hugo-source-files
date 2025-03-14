@@ -1,0 +1,63 @@
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML -}}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>{{ .Site.Title }}</title>
+<description>{{ .Site.Params.description }}</description>
+<link>{{ .Site.BaseURL }}rss.xml</link>
+<atom:link
+    href="{{ .Site.BaseURL }}rss.xml"
+    rel="self"
+    type="application/rss+xml"
+/>
+<ttl>1440</ttl>
+<webMaster>{{ .Site.Params.email }}</webMaster>
+<lastBuildDate>Wed, 12 Mar 25 15:46:48 +0000</lastBuildDate>
+<language>en-us</language>
+
+<!-- Artwork -->
+{{ with (where .Site.RegularPages "Section" "gallery" | first 8) }}
+{{ range . }}
+<item>
+<guid>{{ .Permalink }}</guid>
+<title>{{ .Title }}</title>
+<description>
+<img src="{{ .Site.BaseURL }}{{ .Params.full }}" />
+<p>{{ .Description }}</p>
+</description>
+<enclosure 
+    url="{{ .Site.BaseURL }}{{ .Params.full }}" 
+    type="image/jpeg" 
+    length="{{ .Params.length }}"
+/>
+<link>{{ .Permalink }}</link>
+<pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
+</item>
+{{ end }}
+{{ end }}
+
+<!-- Blogposts -->
+{{ with (where .Site.RegularPages "Section" "blog" | first 10) }}
+{{ range . }}
+<item>
+<guid>{{ .Permalink }}</guid>
+<title>{{ .Title }}</title>
+<description>{{ .Description }}</description>
+<link>{{ .Permalink }}</link>
+<pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
+</item>
+{{ end }}
+{{ end }}
+
+<!-- Log -->
+{{ with (where .Site.RegularPages "Section" "log" | first 10) }}
+{{ range . }}
+<item>
+<title>Website update {{ .Title }}</title>
+<description>{{ .Content | plainify | htmlUnescape }}</description>
+<pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
+</item>
+{{ end }}
+{{ end }}
+
+</channel>
+</rss>

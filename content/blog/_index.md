@@ -1,6 +1,6 @@
 ---
 title: Blog
-description: "Place for personal ramblings and occasional useful content."
+description: "Place where I write about whatever I feel like at the moment."
 url: "/blog/"
 layout: "blog"
 ---

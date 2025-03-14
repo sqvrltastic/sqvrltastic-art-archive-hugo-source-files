@@ -1,13 +1,29 @@
 baseURL = 'https://sqvrltastic.github.io/'
 languageCode = 'en-us'
-title = 'Sqvrltastic art archive'
+title = 'Sqvrltastic Art Archive'
 theme = 'CleanGallery'
 uglyURLs = true
-disableKinds = ["RSS"]
 [taxonomies]
     category = "categories"
 [markup.goldmark.renderer]
     unsafe = true
+
+[params]
+  description = "Hi, I'm sqvrltastic and I'm a digital artist. Welcome to my website! This is my main place for posting my artwork and sharing my thoughts."
+  email = "sqvrltastic@gmail.com"
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[outputFormats.RSS]
+  mediaType = "application/rss+xml"
+  baseName = "rss"  
+  isHTML = false
+  rel = "alternate"
+
+[services]
+  [services.rss]
+    limit = 30
 
 [minify]
   disableCSS = false

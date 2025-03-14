@@ -33,7 +33,7 @@ Fixed some broken links, changed some stuff, yada yada, the usual. Not worth men
 
 ## February 13th 2025
 
-My PC is still broken... In the meantime, I rewrote and cleaned up a lot of CSS code on the website. For you this mostly means that there are some minor layout changes. 
+~~My PC is still broken...~~ (it's fixed now). In the meantime, I rewrote and cleaned up a lot of CSS code on the website. For you this mostly means that there are some minor layout changes. 
 
 Also, I added **a big RSS feed button** down in the footer section and a simple guide on how to subscribe to this website's updates right there as well. 
 

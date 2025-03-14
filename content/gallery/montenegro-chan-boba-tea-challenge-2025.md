@@ -5,6 +5,7 @@ date: 2025-01-26
 categories: ["Montenegro"]
 preview: "images/preview/montenegro-chan-boba-tea-challenge-2025.avif"
 full: "images/full/montenegro-chan-boba-tea-challenge-2025.jpg"
+length: "724706"
 ---
 
 [link to older artwork](./montenegro-chan-boba-tea-challenge.html).
