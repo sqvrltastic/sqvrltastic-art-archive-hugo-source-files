@@ -14,49 +14,54 @@
 <lastBuildDate>Wed, 12 Mar 25 15:46:48 +0000</lastBuildDate>
 <language>en-us</language>
 
-<!-- Artwork -->
-{{ with (where .Site.RegularPages "Section" "gallery" | first 8) }}
-{{ range . }}
+{{- $allPosts := slice -}}
+{{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "gallery") -}}
+{{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "blog") -}}
+{{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "log") -}}
+
+{{- $sortedPosts := sort $allPosts "Date" "desc" | first 26 -}}
+
+{{- range $sortedPosts }}
 <item>
+
+{{- if ne .Section "log" -}}
 <guid>{{ .Permalink }}</guid>
-<title>{{ .Title }}</title>
+{{- end -}}
+
+<title>
+    {{- if eq .Section "log" -}}
+        Website update {{ .Title }}
+    {{- else -}}
+        {{ .Title }}
+    {{- end -}}
+</title>
+
 <description>
-<img src="{{ .Site.BaseURL }}{{ .Params.full }}" />
-<p>{{ .Description }}</p>
+    {{- if eq .Section "gallery" -}}
+        <img src="{{ .Site.BaseURL }}{{ .Params.full }}" />
+        <p>{{ .Description }}</p>
+    {{- else if eq .Section "log" -}}
+        {{ .Content | plainify | htmlUnescape }}
+    {{- else -}}
+        {{ .Description }}
+    {{- end -}}
 </description>
+
+{{- if eq .Section "gallery" -}}
 <enclosure 
     url="{{ .Site.BaseURL }}{{ .Params.full }}" 
     type="image/jpeg" 
     length="{{ .Params.length }}"
 />
-<link>{{ .Permalink }}</link>
-<pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
-</item>
-{{ end }}
-{{ end }}
+{{- end -}}
 
-<!-- Blogposts -->
-{{ with (where .Site.RegularPages "Section" "blog" | first 10) }}
-{{ range . }}
-<item>
-<guid>{{ .Permalink }}</guid>
-<title>{{ .Title }}</title>
-<description>{{ .Description }}</description>
+{{- if ne .Section "log" -}}
 <link>{{ .Permalink }}</link>
-<pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
-</item>
-{{ end }}
-{{ end }}
+{{- end -}}
 
-<!-- Log -->
-{{ with (where .Site.RegularPages "Section" "log" | first 10) }}
-{{ range . }}
-<item>
-<title>Website update {{ .Title }}</title>
-<description>{{ .Content | plainify | htmlUnescape }}</description>
 <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
+
 </item>
-{{ end }}
 {{ end }}
 
 </channel>
