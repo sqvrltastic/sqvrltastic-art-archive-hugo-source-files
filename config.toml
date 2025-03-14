@@ -14,6 +14,7 @@ uglyURLs = true
 
 [outputs]
   home = ["HTML", "RSS"]
+  section = ["HTML"]
 
 [outputFormats.RSS]
   mediaType = "application/rss+xml"

@@ -14,11 +14,10 @@
 </script>  
 <h1>{{ .Title }}</h1>
 {{ with .Params.full }}
-<img
-class="artwork"
-src="{{ . | relURL }}"
-alt="{{ $.Params.description }}"
-/>
+<figure>
+  <img class="artwork" src="{{ . | relURL }}" alt="" />
+  <figcaption>{{ $.Params.description }}</figcaption>
+</figure>
 {{ else }}
 <p>No image found</p>  <!-- Fallback text -->
 {{ end }}

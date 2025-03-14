@@ -141,7 +141,11 @@ figure {
 }
 
 figcaption {
-  margin-block-start: 0.3rem;
+  margin-block-start: 0.7rem;
+}
+
+figure > img {
+  border: 0.1rem solid #a3adbd;
 }
 
 figure > a > img {
