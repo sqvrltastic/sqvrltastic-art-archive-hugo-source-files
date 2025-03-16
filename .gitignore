@@ -1,5 +1,6 @@
 /public/
 *.avif
+*.webp
 *.jpg
 *.png
 *.gif
