@@ -7,7 +7,7 @@ categories: ["Guides"]
 
 <h1>Full guide to RSS</h1>
 
-<p><strong>Last updated:</strong> January 21st 2025</p>
+<p><strong>Last updated:</strong> March 16th 2025</p>
 
 <h2>Table of content</h2>
 <ul>
@@ -553,22 +553,8 @@ categories: ["Guides"]
     &#x3C;/rss&#x3E;</span></code></pre>
 </details>
 <p>
-  <strong>Tip about favicons:</strong> Some RSS readers seem to completely
-  ignore favicons, while some don't, it's a bit inconsistent. Although, after
-  some testing, I found that the most sure way to have an RSS reader actually
-  recognize and fetch your website's favicon is <em>to make sure</em> it's
-  located in the root directory of your website and that it's named something
-  like "favicon.ico".
-</p>
-<p>
-  Also, one more thing. When <strong>troubleshooting</strong> your RSS feed in
-  RSS readers, remember to occasionally unsubscribe and resubscribe and
-  <em>clear cache</em>! Because often you just need to refresh it for your
-  changes to show up.
-</p>
-<p>
-  Oh and lastly, if you want to include some
-  <strong>special characters</strong> like "&" for example, make sure to write
+  <strong>Tip:</strong> if you want to include some
+  <strong>special characters</strong> in your RSS feed, like "&" for example, make sure to write
   them as a HTML entity, so as "&#x26;#x26;" (without the quotation marks) in
   this case. Here is a basic
   <a
@@ -576,8 +562,52 @@ categories: ["Guides"]
     target="_blank"
     rel="noopener noreferrer"
   >
-    HTML entity encoder/decoder </a
+    HTML entity encoder/decoder</a
   >.
+</p>
+<p><i>After you have created the RSS feed itself, there is still some extra things you can do...</i></p>
+<p>
+  <strong>Regarding favicons:</strong> Some RSS readers seem to completely
+  ignore favicons, while some don't, it's a bit inconsistent. Although, after
+  some testing, I found that the most sure way to have an RSS reader actually
+  recognize and fetch your website's favicon is <em>to make sure</em> it's
+  located in the root directory of your website and that it's named something
+  like "favicon.ico".
+</p>
+<p>
+  <strong>Linking your RSS feed in the <code>&#x3C;head&#x3E;</code></strong>: 
+  After you have created your RSS feed, you can add a button to 
+  your site linking to it. But, in addition to that, you can 
+  also add a <code>&#x3C;link&#x3E;</code> tag inside your website's 
+  <code>&#x3C;head&#x3E;</code> tag and link your RSS feed there as well. 
+  You can even have multiple feeds, just give them descriptive 
+  names that make sense! See the code below...
+</p>
+<details>
+  <summary>Linking the RSS feed</summary>
+  <pre><code>&#x3C;link 
+    rel=&#x22;alternate&#x22; 
+    type=&#x22;application/rss+xml&#x22; 
+    title=&#x22;<i>RSS feed for my site</i>&#x22; 
+    href=&#x22;https://<i>my-website</i>/rss.xml&#x22; 
+/&#x3E;</code></pre>
+</details>
+<p>
+  What it does is it makes it your RSS feed autodiscoverable... 
+  Sorta. Well, back in the ye olden days, most browsers had a 
+  built-in RSS reader and they could automatically detect if a 
+  website had RSS feed. Nowadays, that functionality is mostly 
+  gone (shame!), but, fret not, at least for Firefox, there are 
+  extensions such as <a href="">Awesome RSS</a> that returns 
+  that functionality! After you install it, if a website has a 
+  fetchable RSS feed, at the corner of your browser's address 
+  bar you will see an RSS icon.
+</p>
+<p>
+  Also, one more thing. When <strong>troubleshooting</strong> your RSS feed in
+  RSS readers, remember to occasionally unsubscribe and resubscribe and
+  <em>clear cache</em>! Because often you just need to refresh it for your
+  changes to show up.
 </p>
 <p>
   You can read more about the official RSS documentation on

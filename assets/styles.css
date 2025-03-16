@@ -2,8 +2,6 @@
 
 @charset "UTF-8";
 
-/* General styling */
-
 /* 
 Color palette: 
 lightest: #c7ccd6 - background
@@ -12,6 +10,8 @@ medium: #a3adbd - background for some UI elements
 medium-dark: #516881 - hover state for links and image borders
 darkest: #1a2033 - text
 */
+
+/* General styling */
 
 body {
   background-color: #c7ccd6;

@@ -34,7 +34,7 @@ There is certainly something to be said about commodification of art in general 
 
 <h2 id="about-this-website">About this website</h2>
 
-This website was made with **HUGO website builder**, only using **HTML5** and **CSS** and as of _now_, it's hosted on **GitHub pages**.
+This website was made with **HUGO website builder**, only using **HTML5** and **CSS** and as of _now_, it's hosted on **GitHub pages**. Development source files are also hosted on GitHub, <a href="https://github.com/sqvrltastic/sqvrltastic-art-archive-hugo-source-files" target="_blank" rel="noopener noreferrer">here</a>, if you want to take a look at it.
 
 You might have noticed, but I do not have any ads, analytics or even JavaScript on my website. I understand that ads earn people money, but most of them are very distracting and resource heavy and therefore I have no moral qualms about people using ad blockers. Frankly, I think we need to find a better way to make offering free content sustainable.
 

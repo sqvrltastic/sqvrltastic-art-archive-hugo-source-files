@@ -28,4 +28,4 @@ Websites for timed figure gesture drawing exercises:
 - <a href="https://line-of-action.com/practice-tools/figure-drawing#" target="_blank" rel="noopener noreferrer">Line of Action</a>
 - <a href="https://www.adorkastock.com/sketch/" target="_blank" rel="noopener noreferrer">AdorkaStock</a>
 
-<a href="https://glaze.cs.uchicago.edu/downloads.html" target="_blank" rel="noopener noreferrer">Glaze</a> and <a href="https://nightshade.cs.uchicago.edu/whatis.html" target="_blank" rel="noopener noreferrer">Nightshade</a> — Windows-only software that adds a layer of protection to your images to prevent generative AI models from being successfully trained on them.
+<a href="https://glaze.cs.uchicago.edu/downloads.html" target="_blank" rel="noopener noreferrer">Glaze</a> and <a href="https://nightshade.cs.uchicago.edu/whatis.html" target="_blank" rel="noopener noreferrer">Nightshade</a> — Windows-only software that adds a layer of protection to your images to prevent generative AI models from being successfully trained on them. _Effectiveness is being disputed._

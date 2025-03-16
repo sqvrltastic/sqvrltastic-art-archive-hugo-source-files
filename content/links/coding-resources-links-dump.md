@@ -76,4 +76,5 @@ When using search engines, appending "site:www.reddit.com" or "site:stackoverflo
 - Debugger for Firefox
 - HTML CSS Support
 - JavaScript (ES6) code snippets
+- HUGO Language and Syntax Support
 - Live Server
