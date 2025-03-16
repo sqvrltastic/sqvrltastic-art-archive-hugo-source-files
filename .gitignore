@@ -1,4 +1,6 @@
 /public/
+/documents/
+/images/
 *.avif
 *.webp
 *.jpg
