@@ -79,6 +79,27 @@
 
     <details>
         <summary><h3>Legend of the Galactic Heroes</h3></summary>
+        <h4>2025 year</h4>
+        <div class="gallery">
+            {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Lotgh")) "Date.Year" 2025 }}
+            <a class="preview" href="{{ .RelPermalink }}">
+                {{ $postTitle := .Title }}
+                {{ with .Params.preview }}
+                <img
+                src="{{ . | relURL }}"
+                alt='Preview thumbnail for the artwork "{{ $postTitle }}"'
+                loading="lazy"
+                width="300"
+                height="300"
+                />
+                {{ else }}
+                <p>No image found</p>  <!-- Fallback text -->
+                {{ end }}
+            </a>
+            {{ else }}
+            <p>No posts found</p> <!-- Fallback text -->
+            {{ end }}
+        </div>
         <h4>2024 year</h4>
         <div class="gallery">
             {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Lotgh")) "Date.Year" 2024 }}
