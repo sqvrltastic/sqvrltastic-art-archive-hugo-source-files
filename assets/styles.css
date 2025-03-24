@@ -250,8 +250,6 @@ article > img {
 .featured {
   display: grid;
   gap: 0.5rem;
-  inline-size: fit-content;
-  block-size: fit-content;
 }
 
 .gallery {
@@ -265,8 +263,10 @@ article > img {
 .preview {
   position: relative;
   display: block;
-  border: 0.1rem solid #a3adbd;
+  block-size: 0;
+  padding-block-end: 100%;
   overflow: hidden;
+  border: 0.1rem solid #a3adbd;
 }
 
 .preview:hover {
@@ -278,8 +278,11 @@ article > img {
 }
 
 .preview > img {
+  position: absolute;
   inline-size: 100%;
   block-size: 100%;
+  inset-block-start: 0;
+  inset-inline-start: 0;
 }
 
 .artwork {
