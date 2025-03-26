@@ -292,28 +292,6 @@ article > img {
   margin: 0 auto
 }
 
-/* Code box element */
-
-.btn-code {
-  font-size: 0.65rem;
-  word-break: break-all;
-  max-inline-size: 15rem;
-  block-size: 4rem;
-  background-color: white;
-  border: solid 0.1rem #1a2033;
-  padding: 0.5rem;
-  margin-block-start: 0.7rem;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-.btn-code > code {
-  background-color: transparent;
-  border-radius: 0;
-  padding: 0;
-  display: inline;
-}
-
 /* Responsive big banner */
 
 .responsive-img {
