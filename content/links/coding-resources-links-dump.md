@@ -5,7 +5,7 @@ description: "Various resources for webmasters primarily for learning web develo
 
 # Coding resources links dump
 
-**Last updated:** February 13th 2025
+**Last updated:** March 26th 2025
 
 <a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a> — references and documentation on HTML, CSS and JavaScript; useful when you need to look up a particular tag or an attribute.
 
@@ -22,6 +22,8 @@ description: "Various resources for webmasters primarily for learning web develo
 Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener noreferrer">CSS flexbox</a> and <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" rel="noopener noreferrer">CSS grid</a> by CSS-Tricks; self-explanatory.
 
 <a href="https://css-tricks.com/css-logical-properties-and-values/" target="_blank" rel="noopener noreferrer">CSS Logical Properties and Values</a> by CSS-Tricks.
+
+<a href="https://www.smashingmagazine.com/2020/03/setting-height-width-images-important-again/" target="_blank" rel="noopener noreferrer">Setting Height And Width On Images</a> — useful read about embedding images on your site.
 
 <a href="https://developers.google.com/search/docs/appearance/structured-data/search-gallery" target="_blank" rel="noopener noreferrer">Structured data markup for Google Search</a> and <a href="https://schema.org/" target="_blank" rel="noopener noreferrer">Shema.org</a> — some _optional_ SEO stuff.
 

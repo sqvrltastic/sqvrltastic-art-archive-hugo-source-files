@@ -7,8 +7,6 @@
     class="icon" 
     src="./images/icons/icon-rss.avif" 
     alt="" 
-    width="64" 
-    height="64" 
 />
 <a 
     href="./rss.xml" 
@@ -23,8 +21,6 @@
     class="icon" 
     src="./images/icons/icon-github.avif" 
     alt="" 
-    width="64" 
-    height="64" 
 />
 <a 
     href="https://github.com/sqvrltastic/sqvrltastic.github.io" 
@@ -58,7 +54,7 @@
 
 
 {{- if eq .Section "gallery" -}}
-    <img src="{{ .Params.preview }}" alt='Preview thumbnail for the artwork "{{ .Title }}"' width="300" height="300"/>
+    <img src="{{ .Params.preview }}" alt='Preview thumbnail for the artwork "{{ .Title }}"' />
     <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
 {{- else if eq .Section "blog" -}}
     <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>

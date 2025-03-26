@@ -29,10 +29,12 @@
 {{- end -}}
 
 <title>
-    {{- if eq .Section "log" -}}
-        Website update
+    {{- if eq .Section "blog" -}}
+        {{ .Title }} [blog]
+    {{- else if eq .Section "gallery" -}}
+        {{ .Title }} [artwork]
     {{- else -}}
-        {{ .Title }}
+        Website update
     {{- end -}}
 </title>
 

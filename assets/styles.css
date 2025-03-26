@@ -167,9 +167,10 @@ article {
 }
 
 article > img {
+  display: block;
+  max-inline-size: 12rem;
+  aspect-ratio: 1 / 1;
   border: 0.1rem solid #a3adbd;
-  width: 30%;
-  height: auto;
 }
 
 /* Ocasionally used text styles */
@@ -223,8 +224,8 @@ article > img {
 /* Icon */
 
 .icon {
+  aspect-ratio: 1 / 1;
   block-size: 0.9rem;
-  inline-size: auto;
 }
 
 /* Footer RSS feed button */
@@ -240,8 +241,8 @@ article > img {
 }
 
 .rss-btn > img {
+  aspect-ratio: 1 / 1;
   inline-size: 1.2rem;
-  block-size: auto;
 }
 
 /* Gallery */
@@ -261,12 +262,14 @@ article > img {
 }
 
 .preview {
-  position: relative;
   display: block;
-  block-size: 0;
-  padding-block-end: 100%;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   border: 0.1rem solid #a3adbd;
+}
+
+.preview > img {
+  inline-size: 100%;
 }
 
 .preview:hover {
@@ -277,14 +280,6 @@ article > img {
   border: 0.1rem solid white;
 }
 
-.preview > img {
-  position: absolute;
-  inline-size: 100%;
-  block-size: 100%;
-  inset-block-start: 0;
-  inset-inline-start: 0;
-}
-
 .artwork {
   display: block;
   max-inline-size: 100%;
@@ -292,7 +287,7 @@ article > img {
   margin: 0 auto
 }
 
-/* Responsive big banner */
+/* Responsive images */
 
 .responsive-img {
   max-inline-size: 100%;
@@ -319,8 +314,8 @@ article > img {
 .landing > img {
   mix-blend-mode: multiply;
   display: block;
-  inline-size: 75%;
-  height: auto;
+  inline-size: 85%;
+  aspect-ratio: 16 / 9;
   margin: 1.4rem auto 1.2rem;
 }
 
