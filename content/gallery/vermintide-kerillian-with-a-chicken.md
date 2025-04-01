@@ -5,5 +5,5 @@ date: 2025-04-01
 categories: ["Vermintide"]
 preview: "images/preview/vermintide-kerillian-with-a-chicken.avif"
 full: "images/full/vermintide-kerillian-with-a-chicken.jpg"
-length: ""
+length: "650083"
 ---

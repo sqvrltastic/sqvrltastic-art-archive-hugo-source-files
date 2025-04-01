@@ -284,7 +284,8 @@ article > img {
   display: block;
   max-inline-size: 100%;
   max-block-size: 30rem;
-  margin: 0 auto
+  margin: 0 auto;
+  border: 0.1rem solid #a3adbd;
 }
 
 /* Responsive images */
