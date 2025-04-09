@@ -74,7 +74,6 @@ When using search engines, appending "site:www.reddit.com" or "site:stackoverflo
 - Atom One Dark Theme
 - <a href="https://ltex-plus.github.io/ltex-plus/index.html" target="_blank" rel="noopener noreferrer">LTeX+</a> — grammar and spell checker, _pairs well with <a href="https://docs.google.com" target="_blank" rel="noopener noreferrer">Google Docs</a> spell check_
 - Prettier code formatter
-- Discord Presence
 - Debugger for Firefox
 - HTML CSS Support
 - JavaScript (ES6) code snippets
