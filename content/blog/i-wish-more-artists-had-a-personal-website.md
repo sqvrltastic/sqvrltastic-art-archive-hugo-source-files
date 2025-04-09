@@ -1,7 +1,7 @@
 ---
 title: I wish more artist had a personal website...
 description: "Rambly blog post about wishing for a more human, more enriching web for artists specifically."
-date: 2025-04-04
+date: 2025-04-09
 categories: ["Ramblings"]
 ---
 
