@@ -30,6 +30,21 @@ header > pre {
   margin: 0 auto 1.5rem;
 }
 
+header > a {
+  position: absolute;
+  inset-inline-start: -10000px;
+  inset-block-start: auto;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+}
+
+header > a:focus {
+  position: static;
+  inline-size: auto;
+  block-size: auto;
+}
+
 nav {
   font-size: 0.9rem;
   text-align: center;
@@ -168,7 +183,7 @@ article {
 
 article > img {
   display: block;
-  max-inline-size: 12rem;
+  max-inline-size: 10rem;
   aspect-ratio: 1 / 1;
   border: 0.1rem solid #a3adbd;
 }

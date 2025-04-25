@@ -5,11 +5,19 @@ description: "Various resources for learning art: tutorials, references, useful 
 
 # Art resources links dump
 
-**Last updated:** January 30th 2025
+**Last updated:** April 26th 2025
 
 _**Content warning** for some mild artistic nudity in some links!_
 
 <a href="https://www.youtube.com/@ProkoTV" target="_blank" rel="noopener noreferrer">Proko YouTube channel</a> — feel like this is one of the best free resources out there for learning figure drawing
+
+Color theory and lighting:
+
+_**Sidenote:** I feel like 95% of all "color theory" videos and tutorials online are completely useless in practice. At least, they haven't helped me in the slightest in trying to understand how to paint light and pick colors. Things that actually helped me understand how light works is studying 3D rendering in Blender and some of the following videos:_
+
+- <a href="https://www.youtube.com/watch?v=9kQllLy_X4I" target="_blank" rel="noopener noreferrer">How to Choose Colours that Work!</a> by Sycra
+- <a href="https://www.youtube.com/watch?v=0FjjJha7HMI" target="_blank" rel="noopener noreferrer">The Secret to Painting the Right Color</a> from Proko channel
+- <a href="https://www.youtube.com/watch?v=OLi1t_81MA8" target="_blank" rel="noopener noreferrer">Warm Light = Cool Shadows? Or Is It A Myth?</a> by Lighting Mentor
 
 <a href="https://www.pureref.com/download.php" target="_blank" rel="noopener noreferrer">PureRef</a> — useful free little software for keeping and managing a reference board.
 
@@ -29,3 +37,5 @@ Websites for timed figure gesture drawing exercises:
 - <a href="https://www.adorkastock.com/sketch/" target="_blank" rel="noopener noreferrer">AdorkaStock</a>
 
 <a href="https://glaze.cs.uchicago.edu/downloads.html" target="_blank" rel="noopener noreferrer">Glaze</a> and <a href="https://nightshade.cs.uchicago.edu/whatis.html" target="_blank" rel="noopener noreferrer">Nightshade</a> — Windows-only software that adds a layer of protection to your images to prevent generative AI models from being successfully trained on them. _Effectiveness is being disputed._
+
+<a href="https://www.escapemotions.com/products/rebelle/about" target="_blank" rel="noopener noreferrer">Rebelle</a> — digital painting software that looks very promising, but I haven't personally tried it yet.

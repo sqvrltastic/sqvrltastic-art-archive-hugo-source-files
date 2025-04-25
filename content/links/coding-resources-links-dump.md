@@ -5,7 +5,7 @@ description: "Various resources for webmasters primarily for learning web develo
 
 # Coding resources links dump
 
-**Last updated:** March 26th 2025
+**Last updated:** April 26th 2025
 
 <a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a> — references and documentation on HTML, CSS and JavaScript; useful when you need to look up a particular tag or an attribute.
 
@@ -42,6 +42,7 @@ Web accessibility 101:
 - <a href="https://solaria.neocities.org/accessibility" target="_blank" rel="noopener noreferrer">Web accessibility</a>
 - <a href="https://solaria.neocities.org/beginnersaccessibility" target="_blank" rel="noopener noreferrer">Common accessibility problems</a>
 - <a href="https://stackoverflow.com/questions/58447538/accessibility-difference-between-img-alt-and-figcaption#58468470" target="_blank" rel="noopener noreferrer">Images: figcaption vs. alt text</a>
+- <a href="https://www.w3schools.com/accessibility/accessibility_skip_links.php" target="_blank" rel="noopener noreferrer">Accessibility Skip links</a>
 
 <a href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noopener noreferrer">WebAIM: Contrast Checker</a> — for checking if your colorful text is readable enough; useful for all you pastel lovers, _ahem_.
 
