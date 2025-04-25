@@ -5,5 +5,5 @@ date: 2025-04-26
 categories: ["Deep Rock Galactic"]
 preview: "images/preview/drg-female-roughneck-driller.avif"
 full: "images/full/drg-female-roughneck-driller.jpg"
-length: "824765"
+length: "824751"
 ---
