@@ -8,5 +8,5 @@ full: "images/full/purple-elf-girl-portrait.jpg"
 ---
 
 Alternative versions:
-- [No rim light](./images/full/purple-elf-girl-portrait/purple-elf-girl-portrait-norimlight.jpg)
-- [Process](./images/full/purple-elf-girl-portrait/purple-elf-girl-portrait-process.jpg)
+- [No rim light](../images/full/purple-elf-girl-portrait-norimlight.jpg)
+- [Process](../images/full/purple-elf-girl-portrait-process.jpg)
