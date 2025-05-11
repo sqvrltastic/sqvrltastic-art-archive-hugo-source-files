@@ -13,7 +13,7 @@ _**Content warning** for some mild artistic nudity in some links!_
 
 Color theory and lighting:
 
-_**Sidenote:** I feel like 95% of all "color theory" videos and tutorials online are completely useless in practice. At least, they haven't helped me in the slightest in trying to understand how to paint light and pick colors. Things that actually helped me understand how light works is studying 3D rendering in Blender and some of the following videos:_
+_Sidenote: I feel like 95% of all "color theory" videos and tutorials online are completely useless in practice. At least, they haven't helped me in the slightest in trying to understand how to paint light and pick colors. Things that actually helped me understand how light works is studying 3D rendering in Blender and some of the following videos:_
 
 - <a href="https://www.youtube.com/watch?v=9kQllLy_X4I" target="_blank" rel="noopener noreferrer">How to Choose Colours that Work!</a> by Sycra
 - <a href="https://www.youtube.com/watch?v=0FjjJha7HMI" target="_blank" rel="noopener noreferrer">The Secret to Painting the Right Color</a> from Proko channel
