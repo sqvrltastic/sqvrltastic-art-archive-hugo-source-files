@@ -11,8 +11,6 @@ description: "Various resources for webmasters primarily for learning web develo
 
 <a href="https://www.w3schools.com/" target="\_blank" rel="noopener noreferrer"> W3Schools</a> — similar to abovementioned MDN; lots of documentation and tutorials.
 
-<a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPT</a> — You don't have to use it if you are against generative AI in _all_ forms, but personally I think it can be helpful in supplementing your learning process. Just don't solely rely on it and beware of hallucinations.
-
 <a href="https://git-scm.com/downloads" target="_blank" rel="noopener noreferrer">Git</a> — version management software.
 
 [Full Guide to RSS](../../blog/full-guide-to-rss.html) — shameless self plug.
