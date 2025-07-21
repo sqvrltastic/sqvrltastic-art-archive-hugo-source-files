@@ -1,280 +1,284 @@
 {{ define "main" }}
 
-    <h1>{{ .Title }}</h1>
+<h1>{{ .Title }}</h1>
 
-    <!-- Gallery itself -->
+<!-- Gallery itself -->
 
-    <h2>Fan art:</h2>
+<h2>Fan art:</h2>
 
-    <details>
-        <summary><h3>Vermintide</h3></summary>
-        <p><i>Elgiposting!</i> 🧝‍♀️</p>
-        <h4>2025 year</h4>
-        <div class="gallery">
-            {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Vermintide")) "Date.Year" 2025 }}
-            <a class="preview" href="{{ .RelPermalink }}">
-                {{ $postTitle := .Title }}
-                {{ with .Params.preview }}
-                <img
-                src="{{ . | relURL }}"
-                alt="{{ $postTitle }}"
-                loading="lazy"
-                />
-                {{ else }}
-                <p>No image found</p>  <!-- Fallback text -->
-                {{ end }}
-            </a>
-            {{ else }}
-            <p>No posts found</p> <!-- Fallback text -->
-            {{ end }}
-        </div>
-        <h4>2021 year</h4>
-        <div class="gallery">
-            {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Vermintide")) "Date.Year" 2021 }}
-            <a class="preview" href="{{ .RelPermalink }}">
-                {{ $postTitle := .Title }}
-                {{ with .Params.preview }}
-                <img
-                src="{{ . | relURL }}"
-                alt="{{ $postTitle }}"
-                loading="lazy"
-                />
-                {{ else }}
-                <p>No image found</p>  <!-- Fallback text -->
-                {{ end }}
-            </a>
-            {{ else }}
-            <p>No posts found</p> <!-- Fallback text -->
-            {{ end }}
-        </div>
-    </details>
+<details>
+  <summary><h3>Vermintide</h3></summary>
+  <p><i>Elgiposting!</i> 🧝‍♀️</p>
+  <h4>2025 year</h4>
+  <div class="gallery">
+    {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
+    (slice "Vermintide")) "Date.Year" 2025 }}
+    <a class="preview" href="{{ .RelPermalink }}">
+      {{ $postTitle := .Title }} {{ with .Params.preview }}
+      <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" />
+      {{ else }}
+      <p>No image found</p>
+      <!-- Fallback text -->
+      {{ end }}
+    </a>
+    {{ else }}
+    <p>No posts found</p>
+    <!-- Fallback text -->
+    {{ end }}
+  </div>
+  <h4>2021 year</h4>
+  <div class="gallery">
+    {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
+    (slice "Vermintide")) "Date.Year" 2021 }}
+    <a class="preview" href="{{ .RelPermalink }}">
+      {{ $postTitle := .Title }} {{ with .Params.preview }}
+      <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" />
+      {{ else }}
+      <p>No image found</p>
+      <!-- Fallback text -->
+      {{ end }}
+    </a>
+    {{ else }}
+    <p>No posts found</p>
+    <!-- Fallback text -->
+    {{ end }}
+  </div>
+</details>
 
-    <details>
-        <summary><h3>Deep Rock Galactic</h3></summary>
-        <h4>2025 year</h4>
-        <div class="gallery">
-            {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Deep Rock Galactic")) "Date.Year" 2025 }}
-            <a class="preview" href="{{ .RelPermalink }}">
-                {{ $postTitle := .Title }}
-                {{ with .Params.preview }}
-                <img
-                src="{{ . | relURL }}"
-                alt="{{ $postTitle }}"
-                loading="lazy"
-                />
-                {{ else }}
-                <p>No image found</p>  <!-- Fallback text -->
-                {{ end }}
-            </a>
-            {{ else }}
-            <p>No posts found</p> <!-- Fallback text -->
-            {{ end }}
-        </div>
-    </details>
+<details>
+  <summary><h3>Deep Rock Galactic</h3></summary>
+  <h4>2025 year</h4>
+  <div class="gallery">
+    {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
+    (slice "Deep Rock Galactic")) "Date.Year" 2025 }}
+    <a class="preview" href="{{ .RelPermalink }}">
+      {{ $postTitle := .Title }} {{ with .Params.preview }}
+      <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" />
+      {{ else }}
+      <p>No image found</p>
+      <!-- Fallback text -->
+      {{ end }}
+    </a>
+    {{ else }}
+    <p>No posts found</p>
+    <!-- Fallback text -->
+    {{ end }}
+  </div>
+</details>
 
-    <details>
-        <summary><h3>Legend of the Galactic Heroes</h3></summary>
-        <h4>2025 year</h4>
-        <div class="gallery">
-            {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Lotgh")) "Date.Year" 2025 }}
-            <a class="preview" href="{{ .RelPermalink }}">
-                {{ $postTitle := .Title }}
-                {{ with .Params.preview }}
-                <img
-                src="{{ . | relURL }}"
-                alt="{{ $postTitle }}"
-                loading="lazy"
-                />
-                {{ else }}
-                <p>No image found</p>  <!-- Fallback text -->
-                {{ end }}
-            </a>
-            {{ else }}
-            <p>No posts found</p> <!-- Fallback text -->
-            {{ end }}
-        </div>
-        <h4>2024 year</h4>
-        <div class="gallery">
-            {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Lotgh")) "Date.Year" 2024 }}
-            <a class="preview" href="{{ .RelPermalink }}">
-                {{ $postTitle := .Title }}
-                {{ with .Params.preview }}
-                <img
-                src="{{ . | relURL }}"
-                alt="{{ $postTitle }}"
-                loading="lazy"
-                />
-                {{ else }}
-                <p>No image found</p>  <!-- Fallback text -->
-                {{ end }}
-            </a>
-            {{ else }}
-            <p>No posts found</p> <!-- Fallback text -->
-            {{ end }}
-        </div>
-    </details>
+<details>
+  <summary><h3>Legend of the Galactic Heroes</h3></summary>
+  <h4>2025 year</h4>
+  <div class="gallery">
+    {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
+    (slice "Lotgh")) "Date.Year" 2025 }}
+    <a class="preview" href="{{ .RelPermalink }}">
+      {{ $postTitle := .Title }} {{ with .Params.preview }}
+      <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" />
+      {{ else }}
+      <p>No image found</p>
+      <!-- Fallback text -->
+      {{ end }}
+    </a>
+    {{ else }}
+    <p>No posts found</p>
+    <!-- Fallback text -->
+    {{ end }}
+  </div>
+  <h4>2024 year</h4>
+  <div class="gallery">
+    {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
+    (slice "Lotgh")) "Date.Year" 2024 }}
+    <a class="preview" href="{{ .RelPermalink }}">
+      {{ $postTitle := .Title }} {{ with .Params.preview }}
+      <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" />
+      {{ else }}
+      <p>No image found</p>
+      <!-- Fallback text -->
+      {{ end }}
+    </a>
+    {{ else }}
+    <p>No posts found</p>
+    <!-- Fallback text -->
+    {{ end }}
+  </div>
+</details>
 
-    <details>
-        <summary><h3>Dark Souls</h3></summary>
-        <h4>2021 year</h4>
-        <div class="gallery">
-            {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Dark Souls")) "Date.Year" 2021 }}
-            <a class="preview" href="{{ .RelPermalink }}">
-                {{ $postTitle := .Title }}
-                {{ with .Params.preview }}
-                <img
-                src="{{ . | relURL }}"
-                alt="{{ $postTitle }}"
-                loading="lazy"
-                />
-                {{ else }}
-                <p>No image found</p>  <!-- Fallback text -->
-                {{ end }}
-            </a>
-            {{ else }}
-            <p>No posts found</p> <!-- Fallback text -->
-            {{ end }}
-        </div>
-    </details>
+<details>
+  <summary><h3>Dark Souls</h3></summary>
+  <h4>2021 year</h4>
+  <div class="gallery">
+    {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
+    (slice "Dark Souls")) "Date.Year" 2021 }}
+    <a class="preview" href="{{ .RelPermalink }}">
+      {{ $postTitle := .Title }} {{ with .Params.preview }}
+      <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" />
+      {{ else }}
+      <p>No image found</p>
+      <!-- Fallback text -->
+      {{ end }}
+    </a>
+    {{ else }}
+    <p>No posts found</p>
+    <!-- Fallback text -->
+    {{ end }}
+  </div>
+</details>
 
-    <hr />
+<hr />
 
-    <h2>Original Content:</h2>
+<h2>Original Content:</h2>
 
-    <details>
-        <summary><h3>Montenegro-chan & related</h3></summary>
-        <p><i>Montenegro-chan is an OC that I initially created to be the mascot for r/Montenegro subreddit. You are very much free to create your own artwork of her!</i></p>
-        <h4>2025 year</h4>
-        <div class="gallery">
-            {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Montenegro")) "Date.Year" 2025 }}
-            <a class="preview" href="{{ .RelPermalink }}">
-                {{ $postTitle := .Title }}
-                {{ with .Params.preview }}
-                <img
-                src="{{ . | relURL }}"
-                alt="{{ $postTitle }}"
-                loading="lazy"
-                />
-                {{ else }}
-                <p>No image found</p>  <!-- Fallback text -->
-                {{ end }}
-            </a>
-            {{ else }}
-            <p>No posts found</p> <!-- Fallback text -->
-            {{ end }}
-        </div>
-        <h4>2020-2021 years</h4>
-        <div class="gallery">
-            {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Montenegro")) "Date.Year" "in" (slice 2020 2021) }}            
-            <a class="preview" href="{{ .RelPermalink }}">
-                {{ $postTitle := .Title }}
-                {{ with .Params.preview }}
-                <img
-                src="{{ . | relURL }}"
-                alt="{{ $postTitle }}"
-                loading="lazy"
-                />
-                {{ else }}
-                <p>No image found</p>  <!-- Fallback text -->
-                {{ end }}
-            </a>
-            {{ else }}
-            <p>No posts found</p> <!-- Fallback text -->
-            {{ end }}
-        </div>
-    </details>
+<details>
+  <summary><h3>Montenegro-chan & related</h3></summary>
+  <p>
+    <i
+      >Montenegro-chan is an OC that I initially created to be the mascot for
+      r/Montenegro subreddit. You are very much free to create your own artwork
+      of her!</i
+    >
+  </p>
+  <h4>2025 year</h4>
+  <div class="gallery">
+    {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
+    (slice "Montenegro")) "Date.Year" 2025 }}
+    <a class="preview" href="{{ .RelPermalink }}">
+      {{ $postTitle := .Title }} {{ with .Params.preview }}
+      <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" />
+      {{ else }}
+      <p>No image found</p>
+      <!-- Fallback text -->
+      {{ end }}
+    </a>
+    {{ else }}
+    <p>No posts found</p>
+    <!-- Fallback text -->
+    {{ end }}
+  </div>
+  <h4>2020-2021 years</h4>
+  <div class="gallery">
+    {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
+    (slice "Montenegro")) "Date.Year" "in" (slice 2020 2021) }}
+    <a class="preview" href="{{ .RelPermalink }}">
+      {{ $postTitle := .Title }} {{ with .Params.preview }}
+      <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" />
+      {{ else }}
+      <p>No image found</p>
+      <!-- Fallback text -->
+      {{ end }}
+    </a>
+    {{ else }}
+    <p>No posts found</p>
+    <!-- Fallback text -->
+    {{ end }}
+  </div>
+</details>
 
-    <details>
-        <summary><h3>Various</h3></summary>
-        <h4>2020-2021 years</h4>
-        <div class="gallery">
-            {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Misc. OC")) "Date.Year" "in" (slice 2020 2021) }}            
-            <a class="preview" href="{{ .RelPermalink }}">
-                {{ $postTitle := .Title }}
-                {{ with .Params.preview }}
-                <img
-                src="{{ . | relURL }}"
-                alt="{{ $postTitle }}"
-                loading="lazy"
-                />
-                {{ else }}
-                <p>No image found</p>  <!-- Fallback text -->
-                {{ end }}
-            </a>
-            {{ else }}
-            <p>No posts found</p> <!-- Fallback text -->
-            {{ end }}
-        </div>
-    </details>
+<details>
+  <summary><h3>Various</h3></summary>
+  <h4>2025 year</h4>
+  <div class="gallery">
+    {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
+    (slice "Misc. OC")) "Date.Year" 2025 }}
+    <a class="preview" href="{{ .RelPermalink }}">
+      {{ $postTitle := .Title }} {{ with .Params.preview }}
+      <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" />
+      {{ else }}
+      <p>No image found</p>
+      <!-- Fallback text -->
+      {{ end }}
+    </a>
+    {{ else }}
+    <p>No posts found</p>
+    <!-- Fallback text -->
+    {{ end }}
+  </div>
+  <h4>2020-2021 years</h4>
+  <div class="gallery">
+    {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
+    (slice "Misc. OC")) "Date.Year" "in" (slice 2020 2021) }}
+    <a class="preview" href="{{ .RelPermalink }}">
+      {{ $postTitle := .Title }} {{ with .Params.preview }}
+      <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" />
+      {{ else }}
+      <p>No image found</p>
+      <!-- Fallback text -->
+      {{ end }}
+    </a>
+    {{ else }}
+    <p>No posts found</p>
+    <!-- Fallback text -->
+    {{ end }}
+  </div>
+</details>
 
-    <details>
-        <summary><h3>Studies</h3></summary>
-        <h4>2025 year</h4>
-        <div class="gallery">
-            {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Study")) "Date.Year" 2025 }}
-            <a class="preview" href="{{ .RelPermalink }}">
-                {{ $postTitle := .Title }}
-                {{ with .Params.preview }}
-                <img
-                src="{{ . | relURL }}"
-                alt="{{ $postTitle }}"
-                loading="lazy"
-                />
-                {{ else }}
-                <p>No image found</p>  <!-- Fallback text -->
-                {{ end }}
-            </a>
-            {{ else }}
-            <p>No posts found</p> <!-- Fallback text -->
-            {{ end }}
-        </div>
-        <h4>2021 year</h4>
-        <div class="gallery">
-            {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Study")) "Date.Year" 2021 }}
-            <a class="preview" href="{{ .RelPermalink }}">
-                {{ $postTitle := .Title }}
-                {{ with .Params.preview }}
-                <img
-                src="{{ . | relURL }}"
-                alt="{{ $postTitle }}"
-                loading="lazy"
-                />
-                {{ else }}
-                <p>No image found</p>  <!-- Fallback text -->
-                {{ end }}
-            </a>
-            {{ else }}
-            <p>No posts found</p> <!-- Fallback text -->
-            {{ end }}
-        </div>
-    </details>
+<details>
+  <summary><h3>Studies</h3></summary>
+  <h4>2025 year</h4>
+  <div class="gallery">
+    {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
+    (slice "Study")) "Date.Year" 2025 }}
+    <a class="preview" href="{{ .RelPermalink }}">
+      {{ $postTitle := .Title }} {{ with .Params.preview }}
+      <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" />
+      {{ else }}
+      <p>No image found</p>
+      <!-- Fallback text -->
+      {{ end }}
+    </a>
+    {{ else }}
+    <p>No posts found</p>
+    <!-- Fallback text -->
+    {{ end }}
+  </div>
+  <h4>2021 year</h4>
+  <div class="gallery">
+    {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
+    (slice "Study")) "Date.Year" 2021 }}
+    <a class="preview" href="{{ .RelPermalink }}">
+      {{ $postTitle := .Title }} {{ with .Params.preview }}
+      <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" />
+      {{ else }}
+      <p>No image found</p>
+      <!-- Fallback text -->
+      {{ end }}
+    </a>
+    {{ else }}
+    <p>No posts found</p>
+    <!-- Fallback text -->
+    {{ end }}
+  </div>
+</details>
 
-    <hr />
+<hr />
 
-    <h2>Blender 3D renders:</h2>
+<h2>Blender 3D renders:</h2>
 
-    <details>
-        <summary><h3>Various</h3></summary>
-        <p><i>Mostly me just recreating various props I found IRL or online from references.</i></p>
-        <h4>2020-2021 years</h4>
-        <div class="gallery">
-            {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Blender")) "Date.Year" 2021 }}
-            <a class="preview" href="{{ .RelPermalink }}">
-                {{ $postTitle := .Title }}
-                {{ with .Params.preview }}
-                <img
-                src="{{ . | relURL }}"
-                alt="{{ $postTitle }}"
-                loading="lazy"
-                />
-                {{ else }}
-                <p>No image found</p>  <!-- Fallback text -->
-                {{ end }}
-            </a>
-            {{ else }}
-            <p>No posts found</p> <!-- Fallback text -->
-            {{ end }}
-        </div>
-    </details>
+<details>
+  <summary><h3>Various</h3></summary>
+  <p>
+    <i
+      >Mostly me just recreating various props I found IRL or online from
+      references.</i
+    >
+  </p>
+  <h4>2020-2021 years</h4>
+  <div class="gallery">
+    {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
+    (slice "Blender")) "Date.Year" 2021 }}
+    <a class="preview" href="{{ .RelPermalink }}">
+      {{ $postTitle := .Title }} {{ with .Params.preview }}
+      <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" />
+      {{ else }}
+      <p>No image found</p>
+      <!-- Fallback text -->
+      {{ end }}
+    </a>
+    {{ else }}
+    <p>No posts found</p>
+    <!-- Fallback text -->
+    {{ end }}
+  </div>
+</details>
 
 {{ end }}
