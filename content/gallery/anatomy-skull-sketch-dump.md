@@ -1,6 +1,6 @@
 ---
 title: Skull anatomy sketch dump
-description: "Sketch studies of a human skull from different angles."
+description: "Sketch studies of a human skull from different angles"
 date: 2025-01-15
 categories: ["Study"]
 preview: "images/preview/anatomy-skull-sketch-dump.avif"

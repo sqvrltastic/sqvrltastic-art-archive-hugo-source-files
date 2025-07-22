@@ -1,6 +1,6 @@
 ---
 title: Waystalker Kerillian portrait
-description: "Vermintide fan art; portrait of Waystalker Kerillian."
+description: "Portrait of Waystalker Kerillian where she doesn't wear her usual face mask and is blushing slightly"
 date: 2021-01-01
 categories: ["Vermintide"]
 preview: "images/preview/vermintide-waystalker-kerillian-portrait.avif"

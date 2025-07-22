@@ -1,6 +1,6 @@
 ---
 title: Aquatic OC - Commission
-description: "Commission piece; digital drawing of a client's OC."
+description: "Purple-skinned girl with short purple hair and teal eyes and fish fins as ears, wearing black and teal crop top and black shorts."
 date: 2021-01-01
 categories: ["Misc. OC"]
 preview: "images/preview/commission-aquatic-oc.avif"

@@ -1,6 +1,6 @@
 ---
 title: Reinhard portrait
-description: "Legend of the Galactic Heroes fan art; portrait of Reinhard von Lohengramm."
+description: "Black and white pencil-style sketch portrait of Reinhard von Lohengramm"
 date: 2025-03-24
 categories: ["Lotgh"]
 preview: "images/preview/lotgh-reinhard-portrait.avif"

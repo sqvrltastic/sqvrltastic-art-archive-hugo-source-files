@@ -1,6 +1,6 @@
 ---
 title: Kerillian drinking Leaf Lover's Special beer
-description: "Vermintide fan art; elf Kerillian drinking Leaf Lover's Special beer (a reference to another co-op shooter game, Deep Rock Galactic)."
+description: "elf Kerillian drinking Leaf Lover's Special beer with an annoyed expression on her face"
 date: 2025-03-12
 categories: ["Vermintide"]
 preview: "images/preview/vermintide-kerillian-drinking-leaf-lovers.avif"

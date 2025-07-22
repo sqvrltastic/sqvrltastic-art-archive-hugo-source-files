@@ -1,6 +1,6 @@
 ---
 title: Angry Kerillian doodle
-description: "Vermintide fan art; sketch portrait of Waystalker Kerillian."
+description: "Sketchy drawing of a floating head Waystalker Kerillian with an angry expression"
 date: 2025-01-25
 categories: ["Vermintide"]
 preview: "images/preview/vermintide-angry-kerillian-doodle.avif"

@@ -1,6 +1,6 @@
 ---
-title: Kerillian with comically large elf ears
-description: "Vermintide fan art of Waystalker Kerillian with comically large elf ears."
+title: Kerillian with huge elf ears
+description: "Waystalker Kerillian with huge elf ears"
 date: 2025-01-25
 categories: ["Vermintide"]
 preview: "images/preview/vermintide-big-elf-ears-kerillian.avif"
