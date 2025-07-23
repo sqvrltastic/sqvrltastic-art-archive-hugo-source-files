@@ -37,7 +37,7 @@ body {
 header,
 main,
 footer {
-  max-inline-size: 40rem;
+  max-inline-size: 38rem;
   margin: 0 auto;
 }
 
@@ -61,6 +61,10 @@ nav {
 
 nav > span > img {
   block-size: 0.7rem;
+}
+
+main p {
+  font-size: 1.1rem;
 }
 
 footer {
@@ -146,9 +150,23 @@ figure {
 }
 
 article {
-  padding: 0.25rem 1.25rem;
+  padding: 1.25rem;
   margin: 1rem auto;
   border: 0.1rem solid black;
+}
+
+article > div {
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: 0.7rem;
+}
+
+article > div > h2 {
+  margin: 0;
+}
+
+article p {
+  margin: 0;
 }
 
 article > img {
@@ -156,6 +174,7 @@ article > img {
   max-inline-size: 10rem;
   aspect-ratio: 1 / 1;
   border: 0.07rem solid black;
+  margin-block-end: 0.7rem;
 }
 
 /* Ocasionally used text styles */

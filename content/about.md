@@ -56,7 +56,7 @@ Literally no reason. It doesn't mean anything. I'm just really bad with coming u
 
 <h2 id="about-me">About me</h2>
 
-I'm a pretty private person and don't like sharing a lot about myself online. I grew up in an age when everybody was still somewhat apprehensive of the internet and you were advised to never share your real name or photos online. 
+I'm a pretty private person and don't like sharing a lot about myself online. I grew up in an age when everybody was still somewhat apprehensive of the internet and you were advised to never share your real name or photos online.
 
 Nowadays, it's the opposite and oversharing is normalized and honestly I kinda hate it. I hate that if you don't have an active social media account people see you as some sort of serial killer, but then again, people are stupid and I don't care what they think of me.
 
@@ -65,11 +65,12 @@ With that out of the way... I'm a somewhat introverted young woman in my mid-twe
 ---
 
 <h2 id="favorite-media">Favorite media</h2>
+
 I'm an avid PC gamer and I love a lot of old school games with dark and gritty atmosphere, the likes of Thief, S.T.A.L.K.E.R., Half-life, Wolfenstein, Dark souls and Demon's souls, etc.
 
 A lot of those games evoke a certain feeling of solitude and isolation that I really gravitate too and find strangely comforting.
 
-In particular, the original "Thief" trilogy of games left the biggest impact on me in how I view game design as a whole and showed me what games as a medium can achieve, without trying to imitate movies like so many modern AAA games do (\*cough\* Sony \*cough\*).
+In particular, the original "Thief" trilogy of games left the biggest impact on me in how I view game design as a whole and showed me what games as a medium can achieve, without trying to imitate movies like so many modern AAA games do (\*cough\* Sony \*cough\*). Oh, and I'm a huge Warhammer fan, both 40K and Fantasy (not a fan of AoS though).
 
 I also love a lot of weird, artsy and dark 80s and 90s anime. Angel's egg, Jin Roh: The Wolf brigade, Ghost in the shell, Vampire hunter D: Bloodlust, Legend of the galactic heroes, Berserk and such. I rarely watch anime for the plot. I think in general we overestimate the importance of "plot" in film and other visual media.
 
@@ -109,4 +110,4 @@ Also, please don't repost my artwork on Steam to farm points or whatever since I
 
 Besides, while I do have most of my artworks watermarked, if you do share my artwork, I would still appreciate it if you explicitly credit me and maybe even link to this website. Thank you.
 
-<p class="text-center"><a href="#">| Back to top |</a></p>
+<p class="text-center"><a href="#"><span aria-hidden="true">[ </span>Back to top<span aria-hidden="true"> ]</span></a></p>

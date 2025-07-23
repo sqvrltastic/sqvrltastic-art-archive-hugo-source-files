@@ -10,15 +10,16 @@
 append (where .Site.RegularPages "Section" "log") -}} {{- $sortedPosts := sort
 $allPosts "Date" "desc" | first 20 -}} {{- range $sortedPosts }}
 <article>
-  <!-- Title -->
-  <h2>
-    {{- if eq .Section "gallery" -}} New artwork {{- else if eq .Section "blog"
-    -}} New blog post {{- else -}} Website update {{- end -}}
-  </h2>
+  <div>
+    <!-- Title -->
+    <h2>
+      {{- if eq .Section "gallery" -}} New artwork {{- else if eq .Section
+      "blog" -}} New blog post {{- else -}} Website update {{- end -}}
+    </h2>
 
-  <!-- Date -->
-  <p>{{ .Date.Format "2006-01-02" }}</p>
-
+    <!-- Date -->
+    <p><i>{{ .Date.Format "2006-01-02" }}</i></p>
+  </div>
   <!-- If it's an artwork it adds a picture -->
   {{- if eq .Section "gallery" -}}
   <img

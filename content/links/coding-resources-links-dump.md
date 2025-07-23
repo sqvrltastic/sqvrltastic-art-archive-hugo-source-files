@@ -61,7 +61,7 @@ Where to host a static site for free:
 - <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a> (my current hosting provider)
 - <a href="https://neocities.org/" target="_blank" rel="noopener noreferrer">Neocities</a>
 
-_Sidenote: I'm obviously biased, but I consider GitHub Pages to be the clearly superior option to Neocities, tech-wise and service-wise. Neocities whole shtick is that it has a "social media" functionality attached to it, which is both a blessing and a curse (more of a curse, IMO). Not to mention a very "specific" userbase that's full of literal children to boot..._
+_Sidenote: I'm obviously biased, but I consider GitHub Pages to be the clearly superior option to Neocities, tech-wise and service-wise. Neocities whole shtick is that it has a "social media" functionality attached to it, which is both a blessing and a curse (more of a curse, IMO)._
 
 <a href="../../documents/building-a-personal-website.pdf" target="_blank" rel="noopener noreferrer">"Building a personal website?"</a> — a PDF I saved from _somewhere_ I don't remember anymore, sorry. _If you want to be credited or want it removed from here, please [reach out](/../../contact.html) to me!_
 
