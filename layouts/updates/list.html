@@ -2,67 +2,36 @@
 
 <h1>{{ .Title }}</h1>
 <p><i>{{ .Description }}</i></p>
-<p>
-<img 
-    class="icon" 
-    src="./images/icons/icon-rss.avif" 
-    alt="" 
-/>
-<a 
-    href="./rss.xml" 
-    target="_blank" 
-    rel="noopener noreferrer"
->
-    Subscribe with RSS
-</a>
-</p>
-<p>
-<img 
-    class="icon" 
-    src="./images/icons/icon-github.avif" 
-    alt="" 
-/>
-<a 
-    href="https://github.com/sqvrltastic/sqvrltastic.github.io" 
-    target="_blank" 
-    rel="noopener noreferrer"
->
-    GitHub repository
-</a>
-</p>
-<p>🎂 Website's Birthday: <strong>December 3rd 2024</strong>.</p>
 
-{{- $allPosts := slice -}}
-{{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "gallery") -}}
-{{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "blog") -}}
-{{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "log") -}}
-{{- $sortedPosts := sort $allPosts "Date" "desc" | first 20 -}}
-{{- range $sortedPosts }}
+<!-- Updates listing and sorting algorithm -->
+{{- $allPosts := slice -}} {{- $allPosts = $allPosts | append (where
+.Site.RegularPages "Section" "gallery") -}} {{- $allPosts = $allPosts | append
+(where .Site.RegularPages "Section" "blog") -}} {{- $allPosts = $allPosts |
+append (where .Site.RegularPages "Section" "log") -}} {{- $sortedPosts := sort
+$allPosts "Date" "desc" | first 20 -}} {{- range $sortedPosts }}
 <article>
+  <!-- Title -->
+  <h2>
+    {{- if eq .Section "gallery" -}} New artwork {{- else if eq .Section "blog"
+    -}} New blog post {{- else -}} Website update {{- end -}}
+  </h2>
 
-<h2>
-    {{- if eq .Section "gallery" -}}
-        New artwork
-    {{- else if eq .Section "blog" -}}
-        New blog post
-    {{- else -}}
-        Website update
-    {{- end -}}
-</h2>
+  <!-- Date -->
+  <p>{{ .Date.Format "2006-01-02" }}</p>
 
-<p>{{ .Date.Format "2006-01-02" }}</p>
-
-
-{{- if eq .Section "gallery" -}}
-    <img src="{{ .Params.preview }}" alt='Preview thumbnail for the artwork "{{ .Title }}"' />
-    <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
-{{- else if eq .Section "blog" -}}
-    <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
-{{- else -}}
-    <p>{{ .Content | plainify | htmlUnescape }}</p>
-{{- end -}}
-
+  <!-- If it's an artwork it adds a picture -->
+  {{- if eq .Section "gallery" -}}
+  <img
+    src="{{ .Params.preview }}"
+    alt='Preview thumbnail for the artwork "{{ .Title }}"'
+  />
+  <!-- link to full -->
+  <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+  {{- else if eq .Section "blog" -}}
+  <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+  {{- else -}}
+  <!-- this is for when I use basic plain text update format -->
+  <p>{{ .Content | plainify | htmlUnescape }}</p>
+  {{- end -}}
 </article>
-{{ end }}
-
-{{ end }}
+{{ end }} {{ end }}

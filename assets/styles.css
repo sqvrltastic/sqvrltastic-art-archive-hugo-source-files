@@ -2,35 +2,18 @@
 
 @charset "UTF-8";
 
-/* 
-Color palette: 
-lightest: #c7ccd6 - background
-medium-light: #afb9c5 - code snippet background
-medium: #a3adbd - background for some UI elements
-medium-dark: #516881 - hover state for links and image borders
-darkest: #1a2033 - text
-*/
+/* Custom fonts */
 
-/* General styling */
-
-body {
-  background-color: #c7ccd6;
-  color: #1a2033;
-  font-family: monospace;
+.edu-tas-beginner-<uniquifier > {
+  font-family: "Edu TAS Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
-header, main, footer {
-  max-inline-size: 40rem;
-  margin: 0 auto;
-}
+/* Skip to main link */
 
-header > pre {
-  font-size: 0.85rem;
-  inline-size: fit-content;
-  margin: 0 auto 1.5rem;
-}
-
-header > a {
+.skip {
   position: absolute;
   inset-inline-start: -10000px;
   inset-block-start: auto;
@@ -39,74 +22,84 @@ header > a {
   overflow: hidden;
 }
 
-header > a:focus {
+.skip:focus {
   position: static;
   inline-size: auto;
   block-size: auto;
 }
 
-nav {
-  font-size: 0.9rem;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 0.5rem;
+/* General styling */
+
+body {
+  font-family: Calibri, sans-serif;
 }
 
-main {
-  font-size: 1.2rem;
+header,
+main,
+footer {
+  max-inline-size: 40rem;
+  margin: 0 auto;
+}
+
+header {
+  margin-block-end: 2rem;
+}
+
+header > p {
+  font-size: 2.2rem;
+  font-family: "Edu TAS Beginner", cursive;
+  text-align: center;
+  margin-block-end: 1.5rem;
+}
+
+nav {
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+nav > span > img {
+  block-size: 0.7rem;
 }
 
 footer {
-  font-size: 0.9rem;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  gap: 0.7rem;
-  margin-block-start: 1.5rem;
-}
-
-footer > p {
-  margin: 0;
-  align-self: center;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 0.3rem;
+  margin-block-start: 2rem;
 }
 
 h1 {
-  font-size: 1.4rem;
-  text-align: center;
-  max-inline-size: 27rem;
-  margin: 1.6rem auto;
+  font-size: 1.5rem;
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 h3,
 h4 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: normal;
 }
 
 a {
-  color: #1a2033;
+  color: black;
 }
 
 a:hover {
-  color: #516881;
+  color: gray;
 }
 
 a:active {
-  color: white;
+  color: gainsboro;
 }
 
 hr {
   border: none;
-  border-block-start: 0.2rem dotted #a3adbd;
-  margin: 1.5rem 0;
-}
-
-ul > li::marker {
-  content: "\003E \0020"/ "";
+  border-block-start: 0.1rem dotted gray;
+  margin: 1.3rem 0;
 }
 
 pre {
@@ -115,8 +108,9 @@ pre {
 }
 
 code {
-  font-size: 1rem;
-  background-color: #afb9c5;
+  font-family: Consolas, monospace;
+  font-size: 0.85rem;
+  background-color: lightgray;
   display: inline-block;
   max-inline-size: fit-content;
   padding: 0.04rem 0.1rem;
@@ -125,7 +119,7 @@ code {
 
 details {
   margin: 1rem 0;
-  border: 0.2rem solid #a3adbd;
+  border: 0.2rem solid lightgray;
 }
 
 details > *:not(summary) {
@@ -142,50 +136,26 @@ summary > h3 {
 
 summary:hover {
   cursor: pointer;
-  background-color: #a3adbd;
-}
-
-summary:active {
-  color: white;
+  background-color: lightgray;
 }
 
 figure {
   padding: 1.25rem;
   margin: 1rem auto;
-  border: 0.2rem solid #a3adbd;
-}
-
-figcaption {
-  margin-block-start: 0.7rem;
-}
-
-figure > img {
-  border: 0.1rem solid #a3adbd;
-}
-
-figure > a > img {
-  border: 0.1rem solid #a3adbd;
-}
-
-figure > a > img:hover {
-  border: 0.1rem solid #516881;
-}
-
-figure > a > img:active {
-  border: 0.1rem solid white;
+  border: 0.1rem solid black;
 }
 
 article {
   padding: 0.25rem 1.25rem;
   margin: 1rem auto;
-  border: 0.2rem solid #a3adbd;
+  border: 0.1rem solid black;
 }
 
 article > img {
   display: block;
   max-inline-size: 10rem;
   aspect-ratio: 1 / 1;
-  border: 0.1rem solid #a3adbd;
+  border: 0.07rem solid black;
 }
 
 /* Ocasionally used text styles */
@@ -240,24 +210,7 @@ article > img {
 
 .icon {
   aspect-ratio: 1 / 1;
-  block-size: 0.9rem;
-}
-
-/* Footer RSS feed button */
-
-.rss-btn {
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  inline-size: fit-content;
-  padding: 0.5rem;
-  border: 0.15rem solid #1a2033;
-}
-
-.rss-btn > img {
-  aspect-ratio: 1 / 1;
-  inline-size: 1.2rem;
+  block-size: 0.8rem;
 }
 
 /* Gallery */
@@ -280,7 +233,7 @@ article > img {
   display: block;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  border: 0.1rem solid #a3adbd;
+  border: 0.1rem solid lightgray;
 }
 
 .preview > img {
@@ -288,11 +241,11 @@ article > img {
 }
 
 .preview:hover {
-  border: 0.1rem solid #516881;
+  border: 0.1rem solid gray;
 }
 
 .preview:active {
-  border: 0.1rem solid white;
+  border: 0.1rem solid whitesmoke;
 }
 
 .artwork {
@@ -300,7 +253,7 @@ article > img {
   max-inline-size: 100%;
   max-block-size: 30rem;
   margin: 0 auto;
-  border: 0.1rem solid #a3adbd;
+  border: 0.07rem solid black;
 }
 
 /* Responsive images */
@@ -380,7 +333,8 @@ article > img {
     margin-block-end: 0.9rem;
   }
 
-  nav, footer {
+  nav,
+  footer {
     font-size: 0.9rem;
   }
 
@@ -389,7 +343,10 @@ article > img {
     margin-block-start: 1rem;
   }
 
-  main, h2, h3, h4{
+  main,
+  h2,
+  h3,
+  h4 {
     font-size: 1rem;
   }
 

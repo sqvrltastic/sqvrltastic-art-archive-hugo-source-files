@@ -5,7 +5,11 @@ description: "Various resources for webmasters primarily for learning web develo
 
 # Coding resources links dump
 
-**Last updated:** April 26th 2025
+**Last updated:** July 23rd 2025
+
+---
+
+## Web dev related
 
 <a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a> — references and documentation on HTML, CSS and JavaScript; useful when you need to look up a particular tag or an attribute.
 
@@ -42,6 +46,8 @@ Web accessibility 101:
 - <a href="https://stackoverflow.com/questions/58447538/accessibility-difference-between-img-alt-and-figcaption#58468470" target="_blank" rel="noopener noreferrer">Images: figcaption vs. alt text</a>
 - <a href="https://www.w3schools.com/accessibility/accessibility_skip_links.php" target="_blank" rel="noopener noreferrer">Accessibility Skip links</a>
 
+<a href="https://manningkrull.com/digital-philosophy/alt-text-101-for-bluesky/" target="_blank" rel="noopener noreferrer">Alt text 101 for BlueSky</a> — this guide is written for Bluesky, but it’s applicable for writing alt text for website images as well.
+
 <a href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noopener noreferrer">WebAIM: Contrast Checker</a> — for checking if your colorful text is readable enough; useful for all you pastel lovers, _ahem_.
 
 <a href="https://www.nvaccess.org/download/" target="_blank" rel="noopener noreferrer">NVDA</a> — free and open source screen reader. Useful for accessibility testing your website.
@@ -50,11 +56,12 @@ Web accessibility 101:
 
 <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">HUGO static site generator</a> — for making and managing static websites like this one. There are _many_ SSGs out there, HUGO is just the one I personally use.
 
-Where to host (for free, OMG!):
+Where to host a static site for free:
 
 - <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a> (my current hosting provider)
 - <a href="https://neocities.org/" target="_blank" rel="noopener noreferrer">Neocities</a>
-- <a href="https://nekoweb.org/" target="_blank" rel="noopener noreferrer">Nekoweb</a>
+
+_Sidenote: I'm obviously biased, but I consider GitHub Pages to be the clearly superior option to Neocities, tech-wise and service-wise. Neocities whole shtick is that it has a "social media" functionality attached to it, which is both a blessing and a curse (more of a curse, IMO). Not to mention a very "specific" userbase that's full of literal children to boot..._
 
 <a href="../../documents/building-a-personal-website.pdf" target="_blank" rel="noopener noreferrer">"Building a personal website?"</a> — a PDF I saved from _somewhere_ I don't remember anymore, sorry. _If you want to be credited or want it removed from here, please [reach out](/../../contact.html) to me!_
 
@@ -68,7 +75,9 @@ Where to host (for free, OMG!):
 
 When using search engines, appending "site:www.reddit.com" or "site:stackoverflow.com" at the end of a search query helps a lot when looking for a solution to a specific coding issue by filtering results to only those sites. Example: _"How to center a div site:www.reddit.com/r/webdev"_.
 
-## My Visual Studio Code extensions:
+---
+
+## My Visual Studio Code extensions
 
 - Atom One Dark Theme
 - <a href="https://ltex-plus.github.io/ltex-plus/index.html" target="_blank" rel="noopener noreferrer">LTeX+</a> — grammar and spell checker, _pairs well with <a href="https://docs.google.com" target="_blank" rel="noopener noreferrer">Google Docs</a> spell check_

@@ -1,24 +1,20 @@
 <header>
   <a href="#main" class="skip">Skip to main content</a>
-  <pre aria-label='ASCII art "sqvrltastic" logo' role="img">
-                           ____             __  _     
-    _________ __   _______/ / /_____ ______/ /_(_)____
-   / ___/ __ `/ | / / ___/ / __/ __ `/ ___/ __/ / ___/
-  (__  ) /_/ /| |/ / /  / / /_/ /_/ (__  ) /_/ / /__  
- /____/\__, / |___/_/  /_/\__/\__,_/____/\__/_/\___/  
-         /_/ </pre>
+
+  <p class="logo"><strong>Sqvrltastic Art Archive</strong></p>
   <nav>
-    <p>|
-      <a href="{{ relURL "home.html" }}">Home</a> | 
-      <a href="{{ relURL "gallery" }}">Gallery</a> |
-      <a href="{{ relURL "blog" }}">Blog</a> |
-      <a href="{{ relURL "about.html" }}">About</a> |
-    </p>
-    <p>|
-      <a href="{{ relURL "contact.html" }}">Contact</a> |
-      <a href="{{ relURL "links" }}">Links</a> |
-      <a href="{{ relURL "buttons.html" }}">Buttons</a> |
-      <a href="{{ relURL "updates.html" }}">Updates</a> |
-    </p>
+    <a href="{{ relURL "" }}">Home</a>
+    <a href="{{ relURL "updates.html" }}">Updates</a>
+    <a href="{{ relURL "gallery" }}">Gallery</a>
+    <a href="{{ relURL "blog" }}">Blog</a>
+    <a href="{{ relURL "links" }}">Links</a>
+    <a href="{{ relURL "about.html" }}">About</a>
+    <a href="{{ relURL "contact.html" }}">Contact</a>
+    <a href="{{ relURL "buttons.html" }}">Buttons</a>
+    <span><a href="{{ relURL "./rss.xml" }}" target="_blank">RSS</a> <img 
+    src="{{ "images/icons/icon-rss.png" | relURL }}" 
+    alt="RSS feed icon" 
+  /></span>
   </nav>
+
 </header>
