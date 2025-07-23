@@ -41,8 +41,12 @@ footer {
   margin: 0 auto;
 }
 
-header {
-  margin-block-end: 2rem;
+.divider {
+  inline-size: 38rem;
+  block-size: 0.15rem;
+  margin: 1.5rem auto;
+  border-block-start: solid 0.07rem black;
+  border-block-end: solid 0.07rem black;
 }
 
 header > p {
@@ -68,10 +72,10 @@ main p {
 }
 
 footer {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: center;
-  line-height: 0.3rem;
-  margin-block-start: 2rem;
+  line-height: 0.4rem;
+  margin: 2rem auto;
 }
 
 h1 {
@@ -90,6 +94,7 @@ h4 {
 
 a {
   color: black;
+  transition: color 0.3s;
 }
 
 a:hover {
@@ -98,12 +103,13 @@ a:hover {
 
 a:active {
   color: gainsboro;
+  transition: none;
 }
 
 hr {
   border: none;
   border-block-start: 0.1rem dotted gray;
-  margin: 1.3rem 0;
+  margin: 1.3rem auto;
 }
 
 pre {
@@ -185,55 +191,6 @@ article > img {
   margin-block-end: 0.7rem;
 }
 
-/* Ocasionally used text styles */
-
-.text-center {
-  text-align: center;
-}
-
-.text-uppercase {
-  text-transform: uppercase;
-}
-
-.text-colored {
-  color: #000f94;
-}
-
-.text-breakall {
-  word-break: break-all;
-}
-
-.spoiler {
-  background-color: black;
-  color: black;
-  transition: background-color 0.3s;
-}
-
-.spoiler:hover {
-  background-color: transparent;
-  color: black;
-}
-
-.h1 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.h2 {
-  font-size: 1.7rem;
-  font-weight: bold;
-}
-
-.h3 {
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-.h4 {
-  font-size: 1rem;
-  font-weight: bold;
-}
-
 /* Gallery */
 
 .gallery,
@@ -303,11 +260,61 @@ article > img {
 
 .fourofour > h1 {
   font-size: 4rem;
-  margin-block-end: 1rem;
+  margin: 0 auto;
 }
 
 .fourofour > p {
   font-size: 1rem;
+  margin: 0 auto 1rem;
+}
+
+/* Ocasionally used text styles */
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-colored {
+  color: #000f94;
+}
+
+.text-breakall {
+  word-break: break-all;
+}
+
+.spoiler {
+  background-color: black;
+  color: black;
+  transition: background-color 0.3s;
+}
+
+.spoiler:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.h4 {
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 /* CSS for smaller screens */
@@ -316,65 +323,21 @@ article > img {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 500px) {
-  header > pre {
-    font-size: 0.6rem;
-    margin-block-end: 0.9rem;
-  }
-
-  nav,
-  footer {
-    font-size: 0.9rem;
-  }
-
-  footer {
-    gap: 0.5rem;
-    margin-block-start: 1rem;
-  }
-
-  main,
-  h2,
-  h3,
-  h4 {
-    font-size: 1rem;
-  }
-
-  h1 {
-    font-size: 1.2rem;
-    max-inline-size: 17rem;
-    margin: 1.2rem auto;
-  }
-
-  code {
-    font-size: 0.8rem;
-  }
-
-  hr {
-    margin: 0.7rem 0;
-  }
-
-  .rss-btn {
-    font-size: 1rem;
-    gap: 0.4rem;
-    padding: 0.4rem;
-  }
-
-  .btn-code {
-    font-size: 0.9rem;
-  }
-
   details > *:not(summary) {
-    margin: 1rem 0.5rem;
+    margin: 0.8rem;
   }
 
   .gallery,
   .featured {
     gap: 0.3rem;
-  }
-
-  figure {
-    padding: 1rem;
   }
 }

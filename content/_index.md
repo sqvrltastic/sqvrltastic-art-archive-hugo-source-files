@@ -3,9 +3,7 @@ title: Home
 description: "Hi, I'm sqvrltastic and I'm a digital artist.  Welcome to my website! This is my main place for posting my artwork and sharing my thoughts."
 ---
 
----
-
-# \# Welcome
+# Welcome
 
 <div class="featured"><a class="preview" href="./gallery/montenegro-chan-hugging-a-cat.html"><img src="../images/featured/montenegro-chan-hugging-a-cat.avif" alt="Montenegro-chan holding a cat in her arms and hugging it. She has long straight black hair, brown eyes and is wearing a red t-shirt and traditional black and red montenegrin cap.">
 </a><a class="preview" href="./gallery/pink-elf-girl-portrait.html"><img src="../images/featured/pink-elf-girl-portrait.avif" alt="Portrait of a pink-skinned elf girl with pink curly hair. She is dressed in purple dress and is wearing a silver pendant on her neck with a purple gemstone while looking at the viewer a neutral expression.">
@@ -24,5 +22,3 @@ If you want to reach me, your best bet is to shoot me an email at <a href="mailt
 I also have a profile on <a href="https://github.com/sqvrltastic" target="_blank" rel="noopener noreferrer">GitHub</a> and I post my art on <a href="https://www.reddit.com/user/sqvrltastic/" target="_blank" rel="noopener noreferrer">Reddit</a>, but I'm not as active there as I'm trying to limit my use of social media to art-related use cases only.
 
 Commission status: **closed**.
-
----
