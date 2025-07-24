@@ -72,6 +72,16 @@
   font-style: italic;
 }
 
+/* Display */
+
+/* Regular */
+@font-face {
+  font-family: "SlacksideOne";
+  src: url("./fonts/SlacksideOne-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* Skip to main link */
 
 .skip {
@@ -112,8 +122,8 @@ footer {
 }
 
 header > p {
-  font-size: 2rem;
-  font-family: cursive;
+  font-size: 2.3rem;
+  font-family: SlacksideOne, cursive;
   text-align: center;
   margin: 1rem auto;
 }
@@ -406,6 +416,10 @@ article > img {
 }
 
 @media (max-width: 500px) {
+  header > p {
+    font-size: 2rem;
+  }
+
   details > *:not(summary) {
     margin: 0.8rem;
   }

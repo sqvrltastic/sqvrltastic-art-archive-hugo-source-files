@@ -60,7 +60,14 @@ I'm a pretty private person and don't like sharing a lot about myself online. I 
 
 Nowadays, it's the opposite and oversharing is normalized and honestly I kinda hate it. I hate that if you don't have an active social media account people see you as some sort of serial killer, but then again, people are stupid and I don't care what they think of me.
 
-With that out of the way... I'm a somewhat introverted young woman in my mid-twenties. I speak three languages fluently: English, Montenegrin and Russian. Furthermore, I like tinkering with tech, playing old video games, watching old anime, cooking (check out my <a href="https://sqvrltastic.github.io/simple-recipes/" target="_blank" rel="noopener noreferrer">cooking website</a> by the way!), minimalism and tidiness and being an insufferable stuck up contrarian (_sometimes_). I guess you can say that I'm a tomboy with a very stereotypically male interests. INTJ-A (if you like your pseudoscientific zodiacs for nerds).
+With that out of the way... I'm a somewhat introverted young woman in my mid-twenties. I speak three languages fluently: English, Montenegrin and Russian. Furthermore, I like tinkering with tech, playing old video games, watching old anime, cooking (check out my <a href="https://sqvrltastic.github.io/simple-recipes/" target="_blank" rel="noopener noreferrer">cooking website</a> by the way!), minimalism and tidiness and being an insufferable stuck up contrarian (_sometimes_). I guess you can say that I'm a tomboy with a very stereotypically male interests.
+
+Some random facts about me:
+
+- I have grapheme-color synestesia (it's when you see colored letters and numbers in your head)
+- I like my tea and <a href="https://sqvrltastic.art/simple-recipes/drinks/turkish-coffee.html" target="_blank" rel="noopener noreferrer">_turkish-style_</a> coffee black and strong and bitter and I _despise_ adding anything to them, like sugar or milk. It ruins them for me.
+- I'm an avid, unhinged, old-school fujoshi. Kuroshit, Hetalia and TF2 was my "awakening"
+- My MBTI type is INTJ-A, if you care about that sort of stuff...
 
 ---
 
