@@ -20,16 +20,20 @@ $allPosts "Date" "desc" | first 20 -}} {{- range $sortedPosts }}
     <!-- Date -->
     <p><i>{{ .Date.Format "2006-01-02" }}</i></p>
   </div>
+
   <!-- If it's an artwork it adds a picture -->
   {{- if eq .Section "gallery" -}}
   <img
     src="{{ .Params.preview }}"
     alt='Preview thumbnail for the artwork "{{ .Title }}"'
   />
-  <!-- link to full -->
+  <!-- and a link to full -->
   <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+
+  <!-- if it's a blog -->
   {{- else if eq .Section "blog" -}}
   <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+  <p class="desc">{{ .Description }}</p>
   {{- else -}}
   <!-- this is for when I use basic plain text update format -->
   <p>{{ .Content | plainify | htmlUnescape }}</p>
