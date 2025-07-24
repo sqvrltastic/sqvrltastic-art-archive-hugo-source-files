@@ -137,6 +137,19 @@ details > *:not(summary) {
   margin: 1rem 1.25rem;
 }
 
+details[open] > *:not(summary) {
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 summary {
   padding: 0.5rem;
   transition: background-color 0.3s;
