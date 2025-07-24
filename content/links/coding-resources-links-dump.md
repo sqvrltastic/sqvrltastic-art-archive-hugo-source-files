@@ -29,6 +29,8 @@ Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" targe
 
 <a href="https://developers.google.com/search/docs/appearance/structured-data/search-gallery" target="_blank" rel="noopener noreferrer">Structured data markup for Google Search</a> and <a href="https://schema.org/" target="_blank" rel="noopener noreferrer">Shema.org</a> — some _optional_ SEO stuff.
 
+<a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">Google Fonts</a> — free to use fonts.
+
 <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">PageSpeed Insights by Google</a> — gives your website performance rating.
 
 Get your website indexed and check search engine analytics:

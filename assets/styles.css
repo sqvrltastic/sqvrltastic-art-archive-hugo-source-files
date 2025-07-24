@@ -4,11 +4,72 @@
 
 /* Custom fonts */
 
-.edu-tas-beginner-<uniquifier > {
-  font-family: "Edu TAS Beginner", cursive;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
+/* Sans-serif */
+
+/* Regular */
+@font-face {
+  font-family: "OpenSans";
+  src: url("./fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: "OpenSans";
+  src: url("./fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Italic */
+@font-face {
+  font-family: "OpenSans";
+  src: url("./fonts/OpenSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: "OpenSans";
+  src: url("./fonts/OpenSans-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Monospace */
+
+/* Regular */
+@font-face {
+  font-family: "GoogleSansCode";
+  src: url("./fonts/GoogleSansCode-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: "GoogleSansCode";
+  src: url("./fonts/GoogleSansCode-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Italic */
+@font-face {
+  font-family: "GoogleSansCode";
+  src: url("./fonts/GoogleSansCode-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: "GoogleSansCode";
+  src: url("./fonts/GoogleSansCode-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
 }
 
 /* Skip to main link */
@@ -31,7 +92,8 @@
 /* General styling */
 
 body {
-  font-family: Calibri, sans-serif;
+  font-family: OpenSans, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
 }
 
 header,
@@ -44,43 +106,44 @@ footer {
 .divider {
   inline-size: 33rem;
   block-size: 0.15rem;
-  margin: 1.2rem auto 0;
+  margin: 1.1rem auto 0;
   border-block-start: solid 0.07rem black;
   border-block-end: solid 0.07rem black;
 }
 
 header > p {
   font-size: 2.1rem;
-  font-family: "Edu TAS Beginner", cursive;
+  font-family: cursive;
   text-align: center;
   margin: 1rem auto;
+  color: white;
 }
 
 nav {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   display: flex;
   justify-content: space-between;
   gap: 1rem;
 }
 
 footer {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   text-align: center;
   line-height: 0.35rem;
   margin: 1.4rem auto;
 }
 
 h1 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 h2 {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 h3,
 h4 {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: normal;
 }
 
@@ -113,8 +176,8 @@ pre {
 }
 
 code {
-  font-family: Consolas, monospace;
-  font-size: 0.85rem;
+  font-family: GoogleSansCode, Consolas, monospace;
+  font-size: 0.75rem;
   background-color: #e3e3e3;
   display: inline-block;
   max-inline-size: fit-content;
