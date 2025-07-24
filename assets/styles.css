@@ -37,23 +37,23 @@ body {
 header,
 main,
 footer {
-  max-inline-size: 38rem;
+  max-inline-size: 33rem;
   margin: 0 auto;
 }
 
 .divider {
-  inline-size: 38rem;
+  inline-size: 33rem;
   block-size: 0.15rem;
-  margin: 1.5rem auto;
+  margin: 1.2rem auto 0;
   border-block-start: solid 0.07rem black;
   border-block-end: solid 0.07rem black;
 }
 
 header > p {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   font-family: "Edu TAS Beginner", cursive;
   text-align: center;
-  margin-block-end: 1.5rem;
+  margin: 1rem auto;
 }
 
 nav {
@@ -63,23 +63,15 @@ nav {
   gap: 1rem;
 }
 
-nav > span > img {
-  block-size: 0.7rem;
-}
-
-main p {
-  font-size: 1.1rem;
-}
-
 footer {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-align: center;
-  line-height: 0.4rem;
-  margin: 2rem auto;
+  line-height: 0.35rem;
+  margin: 1.4rem auto;
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 h2 {
@@ -106,10 +98,13 @@ a:active {
   transition: none;
 }
 
+li {
+  line-height: 1.3rem;
+}
+
 hr {
   border: none;
   border-block-start: 0.1rem dotted gray;
-  margin: 1.3rem auto;
 }
 
 pre {
@@ -128,7 +123,7 @@ code {
 }
 
 details {
-  margin: 1rem 0;
+  margin: 1rem auto;
   border: 0.1rem solid black;
   border-radius: 0.2rem;
 }
@@ -206,8 +201,7 @@ article > img {
 
 /* Gallery */
 
-.gallery,
-.featured {
+.gallery {
   display: grid;
   gap: 0.5rem;
 }
@@ -217,7 +211,9 @@ article > img {
 }
 
 .featured {
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
 }
 
 .preview {
@@ -238,7 +234,7 @@ article > img {
 }
 
 .preview:active {
-  border: 0.07rem solid whitesmoke;
+  border: 0.07rem solid gainsboro;
 }
 
 .artwork {
@@ -277,7 +273,6 @@ article > img {
 }
 
 .fourofour > p {
-  font-size: 1rem;
   margin: 0 auto 1rem;
 }
 
@@ -332,19 +327,31 @@ article > img {
 
 /* CSS for smaller screens */
 
-@media (max-width: 660px) {
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 1rem 3rem;
+    justify-content: center;
+  }
+
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  nav {
-    flex-wrap: wrap;
-    gap: 1rem 2rem;
-    justify-content: center;
+  .featured > a:last-child {
+    display: none;
   }
 }
 
 @media (max-width: 500px) {
+  header > p {
+  }
+
+  nav {
+    font-size: 1rem;
+    gap: 0.7rem 3rem;
+  }
+
   details > *:not(summary) {
     margin: 0.8rem;
   }

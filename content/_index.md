@@ -5,9 +5,11 @@ description: "Hi, I'm sqvrltastic and I'm a digital artist.  Welcome to my websi
 
 # Welcome
 
-<div class="featured"><a class="preview" href="./gallery/montenegro-chan-hugging-a-cat.html"><img src="../images/featured/montenegro-chan-hugging-a-cat.avif" alt="Montenegro-chan holding a cat in her arms and hugging it. She has long straight black hair, brown eyes and is wearing a red t-shirt and traditional black and red montenegrin cap.">
-</a><a class="preview" href="./gallery/pink-elf-girl-portrait.html"><img src="../images/featured/pink-elf-girl-portrait.avif" alt="Portrait of a pink-skinned elf girl with pink curly hair. She is dressed in purple dress and is wearing a silver pendant on her neck with a purple gemstone while looking at the viewer a neutral expression.">
-</a><a class="preview" href="./gallery/vermintide-shade-kerillian-moonfire-bow.html"><img src="../images/featured/vermintide-shade-kerillian-moonfire-bow.avif" alt="Shade Kerillian holding the Moonfire bow. She is standing in the darkness of the night with a huge green moon in the background."></a></div>
+<div class="featured"><a class="preview" href="/gallery/vermintide-kerillian-with-a-chicken.html"><img src="/images/preview/vermintide-kerillian-with-a-chicken.avif" alt="Kerillian with a chicken">
+</a><a class="preview" href="/gallery/vermintide-kerillian-drinking-leaf-lovers.html"><img src="/images/preview/vermintide-kerillian-drinking-leaf-lovers.avif" alt="Kerillian drinking Leaf Lover's Special beer">
+</a><a class="preview" href="/gallery/vermintide-kerillian-thinking-face.html"><img src="/images/preview/vermintide-kerillian-thinking-face.avif" alt="Thinking face Kerillian">
+</a><a class="preview" href="/gallery/vermintide-kerillian-smug-asuka.html"><img src="/images/preview/vermintide-kerillian-smug-asuka.avif" alt="Kerillian redraw as smug Asuka">
+</a></div>
 
 Hi, I'm sqvrltastic and I'm a digital artist. Welcome to my website! 🎨
 
