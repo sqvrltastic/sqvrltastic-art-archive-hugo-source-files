@@ -114,7 +114,7 @@ footer {
 }
 
 .divider {
-  inline-size: 33rem;
+  max-inline-size: 33rem;
   block-size: 0.15rem;
   margin: 1.1rem auto 0;
   border-block-start: solid 0.07rem black;
