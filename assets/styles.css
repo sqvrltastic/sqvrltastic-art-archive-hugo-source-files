@@ -360,7 +360,7 @@ article > .desc {
 }
 
 .text-colored {
-  color: #000f94;
+  color: #0000f5;
 }
 
 .text-breakall {
@@ -399,23 +399,20 @@ article > .desc {
 }
 
 /* Styles for users who prefer dark mode at the OS level */
+
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: black;
-    color: white;
+    background-color: #141414;
+    color: #dedede;
   }
 
   .divider {
-    border-block-start: solid 0.07rem white;
-    border-block-end: solid 0.07rem white;
+    border-block-start: solid 0.07rem #dedede;
+    border-block-end: solid 0.07rem #dedede;
   }
 
   a {
-    color: white;
-  }
-
-  a:hover {
-    color: gray;
+    color: #dedede;
   }
 
   a:active {
@@ -425,19 +422,37 @@ article > .desc {
   details,
   article,
   figure {
-    border: 0.1rem solid white;
+    border: 0.1rem solid #dedede;
   }
 
   .preview,
   .artwork,
   figure > img,
   article > img {
-    border: 0.07rem solid white;
+    border: 0.07rem solid #dedede;
+  }
+
+  .preview:active {
+    border: 0.07rem solid #1f1f1f;
   }
 
   code,
   summary:hover {
-    background-color: #3d3d3d;
+    background-color: #333333;
+  }
+
+  .text-colored {
+    color: greenyellow;
+  }
+
+  .spoiler {
+    background-color: #dedede;
+    color: #dedede;
+  }
+
+  .spoiler:hover {
+    background-color: transparent;
+    color: #dedede;
   }
 }
 
