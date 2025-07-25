@@ -66,7 +66,7 @@ Some random facts about me:
 
 - I have grapheme-color synestesia (it's when you see colored letters and numbers in your head)
 - I like my tea and <a href="https://sqvrltastic.art/simple-recipes/drinks/turkish-coffee.html" target="_blank" rel="noopener noreferrer">_turkish-style_</a> coffee black and strong and bitter and I _despise_ adding anything to them, like sugar or milk. It ruins them for me.
-- I'm an avid, unhinged, old-school fujoshi. Kuroshit, Hetalia and TF2 was my "awakening"
+- I'm an old-school fujoshi; Kuroshit and TF2 were my "fujo awakening".
 - My MBTI type is INTJ-A, if you care about that sort of stuff...
 
 ---
