@@ -36,7 +36,7 @@ There is certainly something to be said about commodification of art in general 
 
 This website was made with **HUGO website builder**, only using **HTML5** and **CSS** and as of _now_, it's hosted on **GitHub pages**. Development source files are also hosted on GitHub, <a href="https://github.com/sqvrltastic/sqvrltastic-art-archive-hugo-source-files" target="_blank" rel="noopener noreferrer">here</a>, if you want to take a look at it.
 
-You might have noticed, but I do not have any ads, analytics or even JavaScript on my website. I understand that ads earn people money, but most of them are very distracting and resource heavy and therefore I have no moral qualms about people using ad blockers. Frankly, I think we need to find a better way to make offering free content sustainable.
+You might have noticed, but I do not have any ads, analytics ~~or even JavaScript~~ (_as of now I do use JS just for the theme toggle switcher_) on my website. I understand that ads earn people money, but most of them are very distracting and resource heavy and therefore I have no moral qualms about people using ad blockers. Frankly, I think we need to find a better way to make offering free content sustainable.
 
 I created this website the way it is because I don't want it to look "professional". I want it to be... Honest. To be _mine_. I'm not trying to appeal to any sort of LinkedIn recruiter or to make it digestible for everyone. Also, I just really dislike the "round corners fruity colored blob" design trend that's so prevalent with Big Tech websites.
 
