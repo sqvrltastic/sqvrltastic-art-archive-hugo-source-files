@@ -305,7 +305,6 @@ article > .desc {
 }
 
 .preview:hover {
-  border: 0.07rem solid black;
   filter: brightness(1.15);
 }
 
@@ -322,8 +321,6 @@ article > .desc {
   max-inline-size: 100%;
   max-block-size: 30rem;
   margin: 0 auto;
-  border-inline-start: 0.07rem solid black;
-  border-inline-end: 0.07rem solid black;
 }
 
 /* Responsive images */
@@ -399,6 +396,49 @@ article > .desc {
 .h4 {
   font-size: 1rem;
   font-weight: bold;
+}
+
+/* Styles for users who prefer dark mode at the OS level */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+
+  .divider {
+    border-block-start: solid 0.07rem white;
+    border-block-end: solid 0.07rem white;
+  }
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: gray;
+  }
+
+  a:active {
+    color: #1f1f1f;
+  }
+
+  details,
+  article,
+  figure {
+    border: 0.1rem solid white;
+  }
+
+  .preview,
+  .artwork,
+  figure > img,
+  article > img {
+    border: 0.07rem solid white;
+  }
+
+  code,
+  summary:hover {
+    background-color: #3d3d3d;
+  }
 }
 
 /* CSS for smaller screens */
