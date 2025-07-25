@@ -3,3 +3,22 @@
   <p>&copy; 2025 Sqvrltastic Art Archive</p>
   <p>Powered by Hugo & GitHub Pages</p>
 </footer>
+<script>
+  const toggle = document.getElementById("toggle-theme");
+  const html = document.documentElement;
+
+  toggle.addEventListener("click", () => {
+    const currentTheme = html.getAttribute("data-theme");
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+    html.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
+
+    // Change the icon
+    toggle.textContent = newTheme === "dark" ? "🌙" : "☀️";
+  });
+
+  // Set correct icon on load
+  const initialTheme = html.getAttribute("data-theme");
+  toggle.textContent = initialTheme === "dark" ? "🌙" : "☀️";
+</script>

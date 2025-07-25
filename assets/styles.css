@@ -101,7 +101,31 @@
 
 /* General styling */
 
+:root {
+  --bg-color: #f2f2f2;
+  --main-color: black;
+  --click-color: gainsboro;
+  --bg-extra-color: #d9d9d9;
+  --main-extra-color: gray;
+  --colored-text: #0000f5;
+}
+
+html[data-theme="dark"] {
+  --bg-color: #141414;
+  --main-color: #dedede;
+  --click-color: #1f1f1f;
+  --bg-extra-color: #333333;
+  --main-extra-color: gray;
+  --colored-text: greenyellow;
+}
+
+* {
+  transition: background-color 0.3s, color 0.3s;
+}
+
 body {
+  background-color: var(--bg-color);
+  color: var(--main-color);
   font-family: OpenSans, "Segoe UI", sans-serif;
   font-size: 0.85rem;
 }
@@ -117,8 +141,8 @@ footer {
   max-inline-size: 33rem;
   block-size: 0.15rem;
   margin: 1.1rem auto 0;
-  border-block-start: solid 0.07rem black;
-  border-block-end: solid 0.07rem black;
+  border-block-start: solid 0.07rem var(--main-color);
+  border-block-end: solid 0.07rem var(--main-color);
 }
 
 header > p {
@@ -157,26 +181,21 @@ h4 {
 }
 
 a {
-  color: black;
+  color: var(--main-color);
   transition: color 0.3s;
 }
 
 a:hover {
-  color: gray;
+  color: var(--main-extra-color);
 }
 
 a:active {
-  color: gainsboro;
+  color: var(--click-color);
   transition: none;
 }
 
 li {
   line-height: 1.3rem;
-}
-
-hr {
-  border: none;
-  border-block-start: 0.1rem dotted gray;
 }
 
 pre {
@@ -187,16 +206,21 @@ pre {
 code {
   font-family: GoogleSansCode, Consolas, monospace;
   font-size: 0.75rem;
-  background-color: #e3e3e3;
+  background-color: var(--bg-extra-color);
   display: inline-block;
   max-inline-size: fit-content;
   padding: 0.04rem 0.1rem;
   border-radius: 0.4rem;
 }
 
+hr {
+  border: none;
+  border-block-start: 0.1rem dotted var(--main-extra-color);
+}
+
 details {
   margin: 1rem auto;
-  border: 0.1rem solid black;
+  border: 0.1rem solid var(--main-color);
   border-radius: 0.2rem;
 }
 
@@ -228,24 +252,24 @@ summary > h3 {
 
 summary:hover {
   cursor: pointer;
-  background-color: #e3e3e3;
+  background-color: var(--bg-extra-color);
 }
 
 figure {
   padding: 1.25rem;
   margin: 1rem auto;
-  border: 0.1rem solid black;
+  border: 0.1rem solid var(--main-color);
   border-radius: 0.2rem;
 }
 
 figure > img {
-  border: 0.07rem solid black;
+  border: 0.07rem solid var(--main-color);
 }
 
 article {
   padding: 1.25rem;
   margin: 1rem auto;
-  border: 0.1rem solid black;
+  border: 0.1rem solid var(--main-color);
   border-radius: 0.2rem;
 }
 
@@ -267,7 +291,7 @@ article > img {
   display: block;
   max-inline-size: 10rem;
   aspect-ratio: 1 / 1;
-  border: 0.07rem solid black;
+  border: 0.07rem solid var(--main-color);
   margin-block-end: 0.7rem;
 }
 
@@ -296,7 +320,7 @@ article > .desc {
   display: block;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  border: 0.07rem solid black;
+  border: 0.07rem solid var(--main-color);
   transition: filter 0.3s;
 }
 
@@ -309,11 +333,11 @@ article > .desc {
 }
 
 .preview:active {
-  border: 0.07rem solid gainsboro;
+  border: 0.07rem solid var(--click-color);
 }
 
 .artwork {
-  border: 0.07rem solid black;
+  border: 0.07rem solid var(--main-color);
 }
 
 .artwork > img {
@@ -360,7 +384,7 @@ article > .desc {
 }
 
 .text-colored {
-  color: #0000f5;
+  color: var(--colored-text);
 }
 
 .text-breakall {
@@ -368,14 +392,14 @@ article > .desc {
 }
 
 .spoiler {
-  background-color: black;
-  color: black;
+  background-color: var(--main-color);
+  color: var(--main-color);
   transition: background-color 0.3s;
 }
 
 .spoiler:hover {
   background-color: transparent;
-  color: black;
+  color: var(--main-color);
 }
 
 .h1 {
@@ -398,61 +422,16 @@ article > .desc {
   font-weight: bold;
 }
 
-/* Styles for users who prefer dark mode at the OS level */
+/* 🌙 🌃 🌌 Respect user system preference for dark theme (only if no theme is set manually) */
 
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: #141414;
-    color: #dedede;
-  }
-
-  .divider {
-    border-block-start: solid 0.07rem #dedede;
-    border-block-end: solid 0.07rem #dedede;
-  }
-
-  a {
-    color: #dedede;
-  }
-
-  a:active {
-    color: #1f1f1f;
-  }
-
-  details,
-  article,
-  figure {
-    border: 0.1rem solid #dedede;
-  }
-
-  .preview,
-  .artwork,
-  figure > img,
-  article > img {
-    border: 0.07rem solid #dedede;
-  }
-
-  .preview:active {
-    border: 0.07rem solid #1f1f1f;
-  }
-
-  code,
-  summary:hover {
-    background-color: #333333;
-  }
-
-  .text-colored {
-    color: greenyellow;
-  }
-
-  .spoiler {
-    background-color: #dedede;
-    color: #dedede;
-  }
-
-  .spoiler:hover {
-    background-color: transparent;
-    color: #dedede;
+  html:not([data-theme]) {
+    --bg-color: #141414;
+    --main-color: #dedede;
+    --click-color: #1f1f1f;
+    --bg-extra-color: #333333;
+    --main-extra-color: gray;
+    --colored-text: greenyellow;
   }
 }
 
