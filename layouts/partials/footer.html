@@ -4,8 +4,12 @@
   <p>Powered by Hugo & GitHub Pages</p>
 </footer>
 <script>
-  const toggle = document.getElementById("toggle-theme");
+  const toggle = document.getElementById("theme-toggle");
+  const icon = document.getElementById("theme-icon");
   const html = document.documentElement;
+
+  const sunIcon = "/images/icons/sun.png";
+  const moonIcon = "/images/icons/moon.png";
 
   toggle.addEventListener("click", () => {
     const currentTheme = html.getAttribute("data-theme");
@@ -14,11 +18,13 @@
     html.setAttribute("data-theme", newTheme);
     localStorage.setItem("theme", newTheme);
 
-    // Change the icon
-    toggle.textContent = newTheme === "dark" ? "🌙" : "☀️";
+    // Update icon
+    icon.src = newTheme === "dark" ? moonIcon : sunIcon;
+    icon.alt = newTheme === "dark" ? "Dark theme ON" : "Light theme ON";
   });
 
-  // Set correct icon on load
+  // On page load: set icon to match current theme
   const initialTheme = html.getAttribute("data-theme");
-  toggle.textContent = initialTheme === "dark" ? "🌙" : "☀️";
+  icon.src = initialTheme === "dark" ? moonIcon : sunIcon;
+  icon.alt = initialTheme === "dark" ? "Dark theme ON" : "Light theme ON";
 </script>

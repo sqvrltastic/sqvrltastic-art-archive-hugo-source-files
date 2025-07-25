@@ -113,7 +113,7 @@
 html[data-theme="dark"] {
   --bg-color: #141414;
   --main-color: #dedede;
-  --click-color: #1f1f1f;
+  --click-color: #262626;
   --bg-extra-color: #333333;
   --main-extra-color: gray;
   --colored-text: greenyellow;
@@ -157,6 +157,35 @@ nav {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button > img {
+  display: block;
+  aspect-ratio: 1 / 1;
+  block-size: 1rem;
+  transition: filter 0.3s;
+}
+
+button > img:hover {
+  filter: opacity(0.5);
+}
+
+button > img:active {
+  filter: opacity(0.1);
+  transition: none;
 }
 
 footer {
@@ -422,7 +451,7 @@ article > .desc {
   font-weight: bold;
 }
 
-/* 🌙 🌃 🌌 Respect user system preference for dark theme (only if no theme is set manually) */
+/* 🌙 🌃 🌌 OS dark theme preference if not manually set */
 
 @media (prefers-color-scheme: dark) {
   html:not([data-theme]) {
@@ -456,6 +485,16 @@ article > .desc {
 @media (max-width: 500px) {
   header > p {
     font-size: 2rem;
+    margin-block-start: 0;
+  }
+
+  nav {
+    gap: 1rem 2.5rem;
+    font-size: 0.85rem;
+  }
+
+  nav > button > img {
+    block-size: 0.85rem;
   }
 
   details > *:not(summary) {
