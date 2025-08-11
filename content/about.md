@@ -7,14 +7,37 @@ description: "About me and this website."
 
 ## Table of content
 
+- [About me](#about-me)
+- [Why "sqvrltastic"?](#why-sqvrltastic)
 - [Why I created Sqvrltastic Art Archive](#why-i-created-sqvrltastic-art-archive)
 - [About this website](#about-this-website)
-- [Why "sqvrltastic"?](#why-sqvrltastic)
-- [About me](#about-me)
 - [Favorite media](#favorite-media)
 - [Tools I use](#tools-i-use)
 - [AI image generation](#ai-image-generation)
 - [Reposting my artwork](#reposting-my-artwork)
+
+---
+
+<h2 id="about-me">About me</h2>
+
+I'm a pretty private person and don't like sharing a lot about myself online. I grew up in an age when everybody was still somewhat apprehensive of the internet and you were advised to never share your real name or photos online.
+
+Nowadays, it's the opposite and oversharing is normalized and honestly I kinda hate it. I hate that if you don't have an active social media account people see you as some sort of serial killer, but then again, people are stupid and I don't care what they think of me.
+
+With that out of the way... I'm a somewhat introverted young woman in my mid-twenties. I speak three languages fluently: English, Montenegrin and Russian. Furthermore, I like tinkering with tech, playing old video games, watching old anime, cooking (check out my <a href="https://sqvrltastic.github.io/simple-recipes/" target="_blank" rel="noopener noreferrer">cooking website</a> by the way!), minimalism and tidiness and being an insufferable stuck up contrarian (_sometimes_). I guess you can say that I'm a tomboy with a very stereotypically male interests.
+
+Some random facts about me:
+
+- I have grapheme-color synestesia (it's when you see colored letters and numbers in your head)
+- I like my tea and <a href="https://sqvrltastic.art/simple-recipes/drinks/turkish-coffee.html" target="_blank" rel="noopener noreferrer">_turkish-style_</a> coffee black and strong and bitter and I _despise_ adding anything to them, like sugar or milk. It ruins them for me.
+- I'm an old-school fujoshi; Kuroshit and TF2 were my "fujo awakening".
+- My MBTI type is INTJ-A, if you care about that sort of stuff...
+
+---
+
+<h2 id="why-sqvrltastic">Why "sqvrltastic"?</h2>
+
+Literally no reason. It doesn't mean anything. I'm just really bad with coming up with catchy, unique and memorable usernames. Uh oh!
 
 ---
 
@@ -48,29 +71,6 @@ This website was created on **December 3rd 2024**.
 
 ---
 
-<h2 id="why-sqvrltastic">Why "sqvrltastic"?</h2>
-
-Literally no reason. It doesn't mean anything. I'm just really bad with coming up with catchy, unique and memorable usernames. Uh oh!
-
----
-
-<h2 id="about-me">About me</h2>
-
-I'm a pretty private person and don't like sharing a lot about myself online. I grew up in an age when everybody was still somewhat apprehensive of the internet and you were advised to never share your real name or photos online.
-
-Nowadays, it's the opposite and oversharing is normalized and honestly I kinda hate it. I hate that if you don't have an active social media account people see you as some sort of serial killer, but then again, people are stupid and I don't care what they think of me.
-
-With that out of the way... I'm a somewhat introverted young woman in my mid-twenties. I speak three languages fluently: English, Montenegrin and Russian. Furthermore, I like tinkering with tech, playing old video games, watching old anime, cooking (check out my <a href="https://sqvrltastic.github.io/simple-recipes/" target="_blank" rel="noopener noreferrer">cooking website</a> by the way!), minimalism and tidiness and being an insufferable stuck up contrarian (_sometimes_). I guess you can say that I'm a tomboy with a very stereotypically male interests.
-
-Some random facts about me:
-
-- I have grapheme-color synestesia (it's when you see colored letters and numbers in your head)
-- I like my tea and <a href="https://sqvrltastic.art/simple-recipes/drinks/turkish-coffee.html" target="_blank" rel="noopener noreferrer">_turkish-style_</a> coffee black and strong and bitter and I _despise_ adding anything to them, like sugar or milk. It ruins them for me.
-- I'm an old-school fujoshi; Kuroshit and TF2 were my "fujo awakening".
-- My MBTI type is INTJ-A, if you care about that sort of stuff...
-
----
-
 <h2 id="favorite-media">Favorite media</h2>
 
 I'm an avid PC gamer and I love a lot of old school games with dark and gritty atmosphere, the likes of Thief, S.T.A.L.K.E.R., Half-life, Wolfenstein, Dark souls and Demon's souls, etc.
@@ -91,7 +91,7 @@ In general, I am of the opinion that art shouldn't really teach you anything per
 
 <h2 id="tools-i-use">Tools I use</h2>
 
-I use **Adobe Photoshop (2019 version)** as my drawing software of choice. By the way, I'd argue that, not only is it _not_ morally wrong, it is, in fact, every artist's moral imperative to pirate Adobe's Software!..
+I use **Adobe Photoshop (2019 version)** as my drawing software of choice. ~~By the way, I'd argue that, not only is it _not_ morally wrong, it is, in fact, every artist's moral imperative to pirate Adobe's Software!..~~ For legal reasons, this is a joke.
 
 My graphic tablet is **Wacom Cintiq Pro DTH-1320**.
 

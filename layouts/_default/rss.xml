@@ -41,7 +41,7 @@
 <description>
     {{- if eq .Section "gallery" -}}
         <img src="{{ .Site.BaseURL }}{{ .Params.full }}" />
-        <p>{{ .Description }}</p>
+        <p>[alt text] {{ .Description }}</p>
     {{- else if eq .Section "log" -}}
         {{ .Content | plainify | htmlUnescape }}
     {{- else -}}
