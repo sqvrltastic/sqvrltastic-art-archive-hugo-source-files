@@ -5,11 +5,8 @@ description: "Hi, I'm sqvrltastic and I'm a digital artist.  Welcome to my websi
 
 # Welcome
 
-<div class="featured"><a class="preview" href="/gallery/vermintide-kerillian-with-a-chicken.html"><img src="/images/preview/vermintide-kerillian-with-a-chicken.avif" alt="Kerillian with a chicken">
-</a><a class="preview" href="/gallery/vermintide-kerillian-drinking-leaf-lovers.html"><img src="/images/preview/vermintide-kerillian-drinking-leaf-lovers.avif" alt="Kerillian drinking Leaf Lover's Special beer">
-</a><a class="preview" href="/gallery/vermintide-kerillian-thinking-face.html"><img src="/images/preview/vermintide-kerillian-thinking-face.avif" alt="Thinking face Kerillian">
-</a><a class="preview" href="/gallery/vermintide-kerillian-smug-asuka.html"><img src="/images/preview/vermintide-kerillian-smug-asuka.avif" alt="Kerillian redraw as smug Asuka">
-</a></div>
+<a class="pfp" href="/gallery/vermintide-kerillian-smug-asuka.html"><img src="/images/preview/vermintide-kerillian-smug-asuka.avif" alt="Kerillian redraw as smug Asuka">
+</a>
 
 Hi, I'm sqvrltastic and I'm a digital artist. Welcome to my website! 🎨
 
@@ -25,4 +22,4 @@ I also have a profile on <a href="https://github.com/sqvrltastic" target="_blank
 
 Commission status: **closed**.
 
-I don't take commissions at the moment because honestly I just don't feel ready yet. For now, I am still focused on growing and developing a semi-consistent and efficient drawing process.
+I don't take commissions at the moment because, honestly, I just don't feel ready yet. For now, I am still focused on growing and developing a semi-consistent and efficient drawing process.
