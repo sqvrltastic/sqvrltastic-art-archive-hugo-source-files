@@ -24,3 +24,5 @@ If you want to reach me, your best bet is to shoot me an email at <a href="mailt
 I also have a profile on <a href="https://github.com/sqvrltastic" target="_blank" rel="noopener noreferrer">GitHub</a> and I post my art on <a href="https://www.reddit.com/user/sqvrltastic/" target="_blank" rel="noopener noreferrer">Reddit</a>, but I'm not as active there as I'm trying to limit my use of social media to art-related use cases only.
 
 Commission status: **closed**.
+
+I don't take commissions at the moment because honestly I just don't feel ready yet. For now, I am still focused on growing and developing a semi-consistent and efficient drawing process.
