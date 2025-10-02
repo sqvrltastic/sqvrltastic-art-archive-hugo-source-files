@@ -5,9 +5,6 @@ description: "Hi, I'm sqvrltastic and I'm a digital artist.  Welcome to my websi
 
 # Welcome
 
-<a class="pfp" href="/gallery/vermintide-kerillian-smug-asuka.html"><img src="/images/preview/vermintide-kerillian-smug-asuka.avif" alt="Kerillian redraw as smug Asuka">
-</a>
-
 Hi, I'm sqvrltastic and I'm a digital artist. Welcome to my website! 🎨
 
 This is my main place for posting my artworks and sharing my thoughts. It's also an archive of all my work and my home base in case all social media sites become unusable hellscapes.
