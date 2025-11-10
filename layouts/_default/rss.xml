@@ -1,0 +1,70 @@
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML -}}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>{{ .Site.Title }}</title>
+<description>{{ .Site.Params.description }}</description>
+<link>{{ .Site.BaseURL }}rss.xml</link>
+<atom:link
+    href="{{ .Site.BaseURL }}rss.xml"
+    rel="self"
+    type="application/rss+xml"
+/>
+<ttl>1440</ttl>
+<webMaster>{{ .Site.Params.email }}</webMaster>
+<lastBuildDate>{{ (index (sort .Site.RegularPages "Date" "desc") 0).Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</lastBuildDate>
+<language>en-us</language>
+
+{{- $allPosts := slice -}}
+{{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "gallery") -}}
+{{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "blog") -}}
+{{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "log") -}}
+
+{{- $sortedPosts := sort $allPosts "Date" "desc" | first 20 -}}
+
+{{- range $sortedPosts }}
+<item>
+
+{{- if ne .Section "log" -}}
+<guid>{{ .Permalink }}</guid>
+{{- end -}}
+
+<title>
+    {{- if eq .Section "blog" -}}
+        {{ .Title }} [blog]
+    {{- else if eq .Section "gallery" -}}
+        {{ .Title }} [artwork]
+    {{- else -}}
+        Website update
+    {{- end -}}
+</title>
+
+<description>
+    {{- if eq .Section "gallery" -}}
+        <img src="{{ .Site.BaseURL }}{{ .Params.full }}" />
+        <p>[alt text] {{ .Description }}</p>
+    {{- else if eq .Section "log" -}}
+        {{ .Content | plainify | htmlUnescape }}
+    {{- else -}}
+        {{ .Description }}
+    {{- end -}}
+</description>
+
+{{- if eq .Section "gallery" -}}
+<enclosure 
+    url="{{ .Site.BaseURL }}{{ .Params.full }}" 
+    type="image/jpeg" 
+    length="{{ .Params.length }}"
+/>
+{{- end -}}
+
+{{- if ne .Section "log" -}}
+<link>{{ .Permalink }}</link>
+{{- end -}}
+
+<pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
+
+</item>
+{{ end }}
+
+</channel>
+</rss>

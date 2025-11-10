@@ -1,0 +1,53 @@
+baseURL = 'https://sqvrltastic.art/'
+languageCode = 'en-us'
+title = 'Sqvrltastic Art Archive'
+theme = 'CleanGallery'
+uglyURLs = true
+[taxonomies]
+    category = "categories"
+[markup.goldmark.renderer]
+    unsafe = true
+
+[params]
+  description = "Hi, I'm sqvrltastic and I'm a digital artist. Welcome to my website! This is my main place for posting my artwork and sharing my thoughts."
+  email = "sqvrltastic@gmail.com"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML"]
+
+[outputFormats.RSS]
+  mediaType = "application/rss+xml"
+  baseName = "rss"  
+  isHTML = false
+  rel = "alternate"
+
+[services]
+  [services.rss]
+    limit = 30
+
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  minifyOutput = true
+  [minify.tdewolff]
+    [minify.tdewolff.css]
+      decimals = -1
+      keepCSS2 = true
+    [minify.tdewolff.html]
+      keepConditionalComments = true
+      keepDefaultAttrVals = true
+      keepDocumentTags = true
+      keepEndTags = true
+      keepQuotes = false
+      keepWhitespace = false
+    [minify.tdewolff.js]
+    [minify.tdewolff.json]
+    [minify.tdewolff.svg]
+      decimals = -1
+    [minify.tdewolff.xml]
+      keepWhitespace = false

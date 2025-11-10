@@ -1,0 +1,29 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{{ .Description }}" />
+  <meta author="sqvrltastic" />
+  <title>{{ .Title }} | Sqvrltastic Art Archive</title>
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      } else {
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        document.documentElement.setAttribute(
+          "data-theme",
+          prefersDark ? "dark" : "light"
+        );
+      }
+    })();
+  </script>
+  <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}" /> {{
+  $css := resources.Get "styles.css" | resources.Minify | resources.Fingerprint
+  }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+  <link rel="alternate" type="application/rss+xml" title="RSS feed for
+  Sqvrltastic Art Archive" href="{{ "rss.xml" | absURL }}" />
+</head>

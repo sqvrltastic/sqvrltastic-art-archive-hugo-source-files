@@ -1,0 +1,8 @@
+name = 'Clean Gallery'
+license = 'MIT'
+description = 'Clean, minimalistm, retro inspired theme for a image gallery website'
+
+# If the theme has a single author
+[author]
+  name = 'sqvrltastic'
+  homepage = 'Your website'

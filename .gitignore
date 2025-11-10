@@ -1,0 +1,11 @@
+/public/
+/documents/
+/images/
+/.vscode/
+*.avif
+*.webp
+*.jpg
+*.png
+*.gif
+*.svg
+*.ico

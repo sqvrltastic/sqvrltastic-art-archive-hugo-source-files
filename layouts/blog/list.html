@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+<p><i>{{ .Description }}</i></p>
+
+<hr />
+
+<h2>Ramblings</h2>
+<p><i>Stream of consciousness.</i></p>
+<ul>
+  {{ range where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice
+  "Ramblings") }}
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+  {{ end }}
+</ul>
+
+<hr />
+
+<h2>Guides</h2>
+<p><i>Actually useful content!</i></p>
+<ul>
+  {{ range where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice
+  "Guides") }}
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+  {{ end }}
+</ul>
+
+{{ end }}

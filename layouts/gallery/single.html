@@ -1,0 +1,23 @@
+{{ define "main" }}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "VisualArtwork",
+    "name": "{{ .Title }}",
+    "isFamilyFriendly": true,
+    "artMedium": "digital",
+    "creator": {
+      "@type": "Person",
+      "name": "Sqvrltastic"
+    }
+  }
+</script>
+<h1>{{ .Title }}</h1>
+{{ with .Params.full }}
+<div class="artwork">
+  <img src="{{ . | relURL }}" alt="{{ $.Params.description }}" />
+</div>
+{{ else }}
+<p>No image found</p>
+<!-- Fallback text -->
+{{ end }} {{ .Content }} {{ end }}
