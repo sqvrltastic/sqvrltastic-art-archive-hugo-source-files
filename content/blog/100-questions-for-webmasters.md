@@ -1,13 +1,13 @@
 ---
 title: "100 Questions for Webmasters"
 description: "A fun questionaire I found, made by mouseling. I was itching to write something lately and this is a perfect way to warm up my writing muscles. Warning for brutal honesty ahead."
-date: 2025-11-10
+date: 2025-11-11
 categories: ["Ramblings"]
 ---
 
 # 100 Questions for Webmasters
 
-A fun questionnaire I found, made by <a href="https://mouseling.net/100webmaster" target="_blank" rel="noopener noreferrer">mouseling</a>. I was itching to write something lately and this is a perfect way to warm up my writing muscles. Warning for brutal honesty ahead.
+A fun questionnaire I found, made by <a href="https://mouseling.net/100webmaster" target="_blank" rel="noopener noreferrer">mouseling</a>. I was itching to write something lately (and I'll probably update this site a bit later as well) and this is a perfect way to warm up my writing muscles. Warning for brutal honesty ahead.
 
 <i>Also, I fixed a few of the author's typos and grammatical errors in the questions themselves here and there, just FYI.</i>
 
@@ -15,25 +15,25 @@ Anyway...
 
 <b>1. Please introduce yourself.</b>
 
-I'm sqvrltastic, a 20-something female Montenegrin artist and indie web enthusiast.
+I'm sqvrltastic, a young woman in my mid 20s from Montenegro. I am an artist and an indie web enthusiast. I game and watch old anime in my spare time.
 
 <b>2. How long have you been making websites?</b>
 
 I think I made my first website waaay back in the late 2000/early 2010 era. It was a fan site for an anime Tokyo Mew Mew that I hand coded in Microsoft Frontpage. I think I hosted it at narod.ru at first, but when they removed the HTML editor I moved to uCoz. I don't remember what happened, but eventually I deleted it.
 
-However, that was a long time ago and I stopped after a while. Honestly, I kind of always knew a bit of front end coding, I would study it and then forget it from time to time. Eventually I decided to actually learn website development _for real_ this time and I would say that it took me around a year to get up to this level.
+However, that was a long time ago and I abandoned coding after a while and got busy with other things. However, around a year ago I decided to actually learn website development _for real_ this time and I spent my free time pretty much learning most things from scratch, since a lot of web dev practices changed a lot since the late 2000s.
 
 <b>3. And what got you into the hobby?</b>
 
-I initially decided to create my first website at around 10 years old because I got inspired by this beautiful website called <a href="https://rainbow-knights.narod.ru/main01.htm" target="_blank" rel="noopener noreferrer">Рыцари Радуги — фан сайт (Rainbow Knight fan site</a>, hosted on narod.ru. It's dedicated to a Russian comic I loved at that time. I still think fondly of it, despite it being borderline lost media. _Me remembers._ Also, I loved the <a href="https://web.archive.org/web/20240904105245/https://yula-jurnal.narod.ru/" target="_blank" rel="noopener noreferrer">_Yula_ fan site</a> (archived copy) and the <a href="https://web.archive.org/web/20080106105145/https://www.yula-best.ru/" target="_blank" rel="noopener noreferrer">official _Yula_ magazine page</a> (archived copy). There are some other anime related websites that I remember, I even remember the visuals, but I don't remember what they were called, unfortunately.
+I initially decided to create my first website at around 10 years old because I got inspired by this beautiful website called <a href="https://rainbow-knights.narod.ru/main01.htm" target="_blank" rel="noopener noreferrer">Рыцари Радуги — фан сайт (Rainbow Knight fan site</a>, hosted on narod.ru. It's dedicated to a Russian comic I loved at that time. I still think fondly of it, despite it being borderline lost media. _I remember._ Also, I loved the <a href="https://web.archive.org/web/20240904105245/https://yula-jurnal.narod.ru/" target="_blank" rel="noopener noreferrer">_Yula_ fan site</a> (archived copy) and the <a href="https://web.archive.org/web/20080106105145/https://www.yula-best.ru/" target="_blank" rel="noopener noreferrer">official _Yula_ magazine page</a> (archived copy). There are some other anime related websites that I remember, I even remember the visuals, but I don't remember what they were called, unfortunately.
 
 I remember this one site in particular that had some shoujo anime graphics, specifically a large banner at the top, a small chatbox/guestbook on the right side, and I think the content was in the center. I think the overall color palette was on the warmer side... I remember chatting with the webmistress and I remember she has a section on her site where you could send your own site for review and critique and it would then be featured there, and I sent mine and got some good feedback. 🙂 Unfortunately, I can't remember the site's name.
 
-And I got into the hobby again because I became disillusioned with the state of the modern internet and social media. I needed a place to serve as a safe haven for my art, and none of the social media really met my criteria anymore.
+And I got into the hobby again because I became disillusioned with the state of the modern internet and social media. Also, I needed a place to serve as a safe haven for my art, and none of the social media really met my criteria anymore.
 
 <b>4. What kind of website are you most interested in?</b>
 
-I would love it if the fanartists and fic writers that I follow on social media made a website for their works. Doesn't have to be anything fancy, in fact I prefer designs that are straightforward and don't get in the way. Just something that has RSS so I can follow them outside of their shitty walled garden platforms like Tumblr or Twitter.
+I would love it if the fanartists and fic writers that I follow on social media made a website for their works. Doesn't have to be anything fancy, in fact I prefer designs that are straightforward and don't get in the way. Just something that has an RSS fedd so I can follow them outside of their shitty walled garden platforms like Tumblr or Twitter.
 
 <b>5. What's your workflow? Do you plan your websites out thoroughly or do you come up with the design as you go along?</b>
 
@@ -49,11 +49,11 @@ Honestly, I'm not sure. I guess I really like organizing things and cleaning up 
 
 <b>8. And the thing you struggle with the most?</b>
 
-Good design lol. Or rather, a _good_ maximalist, elaborate design that looks both pretty _and_ doesn't compromise the usability of the site and doesn't detract from the main content of the site. I think most webmasters at places like Neocities fail at both, if I'm being honest. That's the main reason I stick with a somewhat bland, _true minimalist_ design.
+Good design lol. Or rather, a _good_ maximalist, elaborate design that looks both pretty _and_ doesn't compromise the usability of the site and doesn't detract from the main content of the site. I think most webmasters at places like Neocities fail at both, if I'm being honest. That's the main reason I stick with a somewhat bland, _true minimalist_ design. I would like to design my own fancy graphics for my site, maybe one day...
 
 <b>9. Do you keep the same layout on all of your pages? Or do you use different ones?</b>
 
-Same layout on the entire site. I despise it when I click on a link and the whole layout changes, it's usually done really poorly and feels disorienting, like I accidentally landed on a whole different website. Genuinely, fuck websites with inconsistent layouts. Sorry not sorry.
+Same layout on the entire site. I despise it when I click on a link and the whole layout changes, it feels really disorienting, like I accidentally landed on a whole different website. They can be done well, but most of the time they are done extremely poorly IMO.
 
 <b>10. How confident are you with CSS?</b>
 
@@ -65,7 +65,7 @@ I had to google it. Never used it before.
 
 <b>12. What is your favorite HTML element?</b>
 
-Kind of a silly question. Favorite HTML _tag_? What is this, kindergarten? Do you want me to sign your friendship book too, maybe?.. ~~Actually, it's <code>&#x3C;~~details~~&#x3E;</code>~~.
+Kind of a silly question. Favorite HTML _tag_? Do you want me to sign your friendship book too, maybe?.. ~~Actually, it's <code>&#x3C;~~details~~&#x3E;</code>~~.
 
 <b>13. If you're making a new web page from scratch, what is the first thing you do?</b>
 
@@ -265,7 +265,7 @@ I guess my design is a bit too plain, but it works.
 
 <b>62. What is your ideal website? Are you striving for that, or for something else?</b>
 
-A website that's focused on good quality content and with a design that's distinct yet elegant and not overwhelming.
+A website that's focused on good quality content and with a design that's distinct yet elegant and not overwhelming. I do try to improve my site when I feel that _it's time_ and my skills have grown enough to fulfill my new vision.
 
 <b>63. Are you an artist? Do you draw or design your own assets?</b>
 
@@ -377,7 +377,7 @@ I wrote hello world in Python once. Jokes aside, no, I don't code aside from my 
 
 <b>90. Speaking of programs that help you make websites, what do you think of static site generators (SSGs)? Have you ever used one?</b>
 
-I use HUGO and aside from a steep learning curve, I like it. I think it's an invaluable tool and you should absolutely learn one if you want to make something like an art website or a blog.
+I use HUGO and aside from a steep learning curve, I like it. I'd say one minor downside is that it's a bit opinionated and kinda forces you into a blog format by default, but you can "tame it", so to say. Nonetheless, I think any SSG is an invaluable tool and you should absolutely learn one if you want to make something like an art website or a blog.
 
 <b>91. Do you keep a hitcounter? Why or why not?</b>
 
