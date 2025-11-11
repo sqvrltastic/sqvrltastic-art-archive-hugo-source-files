@@ -93,7 +93,7 @@ Yes! I love my domain name. 💖
 
 <b>19. What do you think of nostalgia-focused or "retro" websites?</b>
 
-Hoo boy... Here it comes. Well, if I'm being _brutally honest_, I think most of them are pretty terrible, to put it mildly. Bunch of shit code filled with self-absorbed navel-gazers with no style or substance. I truly wish the whole 90s Neocities LARP trend just fucking dies already. Also, a lot of actual web 1.0 sites were, in fact, pretty well-designed for the time and had quality content on them.
+Hoo boy... Here it comes. Well, if I'm being _brutally honest_, I think most of them are pretty terrible, to put it mildly. I get that a lot of Neocities users are kinds, but still... Bunch of shit code filled with self-absorbed navel-gazers with no style or substance. I truly wish the whole 90s Neocities LARP trend just fucking dies already. Also, a lot of actual web 1.0 sites were, in fact, pretty well-designed for the time and had quality content on them.
 
 <b>20. Is your HTML valid? Do you even check?</b>
 
