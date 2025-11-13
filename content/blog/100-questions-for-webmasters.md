@@ -397,7 +397,7 @@ I don't think that I have that level of notoriety to be considered this or that 
 
 <b>95. Are you embarrassed of your old work? Have you ever deleted everything out of shame?</b>
 
-I think some of my work is a bit, well, beginner-y, like yes it's bad, but I also recognize that it was a necessary stepping stone and I look at it with some sense of fondness.
+I think my old work is, well, beginner-y, like yes it's bad, but I also recognize that it was a necessary stepping stone and I look at it with some sense of fondness.
 
 <b>96. Would you close down your website if you couldn't update it, or would you leave an archive?</b>
 
