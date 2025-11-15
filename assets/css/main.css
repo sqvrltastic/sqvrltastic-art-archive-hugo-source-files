@@ -2,36 +2,35 @@
 
 @charset "UTF-8";
 
-/* Custom typeface — Montserrat (sans-serif) */
+/* Custom typeface — Open Sans (sans-serif) */
 
-/* Regular */
 @font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 /* Bold */
 @font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 /* Italic */
 @font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Italic.ttf") format("truetype");
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
 }
 
 /* Bold Italic */
 @font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-BoldItalic.ttf") format("truetype");
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
 }
@@ -124,7 +123,7 @@ html[data-theme="dark"] {
 body {
   background-color: var(--bg-color);
   color: var(--main-color);
-  font-family: Montserrat, "Segoe UI", sans-serif;
+  font-family: OpenSans, "Segoe UI", sans-serif;
   font-size: 0.85rem;
 }
 
