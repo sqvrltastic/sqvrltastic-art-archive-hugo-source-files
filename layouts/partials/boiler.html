@@ -8,7 +8,7 @@
   <meta property="og:description" content="{{ .Description }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sqvrltastic.art/">
-  <meta property="og:image" content="https://sqvrltastic.art/assets/images/placeholder.jpg">
+  <meta property="og:image" content='{{ .Param "preview" | absURL }}'>
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
@@ -16,7 +16,7 @@
   <meta property="twitter:url" content="https://sqvrltastic.art">
   <meta name="twitter:title" content="{{ .Title }} | Sqvrltastic Art Archive">
   <meta name="twitter:description" content="{{ .Description }}">
-  <meta name="twitter:image" content="https://milenaboreta.github.io/assets/images/placeholder.jpg">
+  <meta name="twitter:image" content='{{ .Param "preview" | absURL }}'>
 
   <title>{{ .Title }} | Sqvrltastic Art Archive</title>
   <script>
