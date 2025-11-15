@@ -3,8 +3,8 @@ title: Christmas Dusty Attenborough
 description: "Sketchy drawing of Dusty wearing an ugly Christmas sweater and holding a champagne bottle while smiling"
 date: 2024-12-23
 categories: ["Lotgh"]
-preview: "images/preview/lotgh-christmas-dusty-attenborough.avif"
-full: "images/full/lotgh-christmas-dusty-attenborough.jpg"
+preview: "assets/images/preview/lotgh-christmas-dusty-attenborough.avif"
+full: "assets/images/full/lotgh-christmas-dusty-attenborough.jpg"
 length: "527069"
 ---
 

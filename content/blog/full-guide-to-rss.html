@@ -21,9 +21,7 @@ categories: ["Guides"]
     <a href="#for-users">For users: How to use RSS</a>
   </li>
   <li>
-    <a href="#for-developers"
-      >For developers: How to add an RSS feed to your website</a
-    >
+    <a href="#for-developers">For developers: How to add an RSS feed to your website</a>
   </li>
 </ul>
 
@@ -32,12 +30,7 @@ categories: ["Guides"]
 <h2 id="what-is-rss">What is RSS?</h2>
 <p>
   From
-  <a
-    href="https://en.wikipedia.org/wiki/RSS"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Wikipedia:</a
-  >
+  <a href="https://en.wikipedia.org/wiki/RSS" target="_blank" rel="noopener noreferrer">Wikipedia:</a>
 </p>
 <blockquote cite="https://en.wikipedia.org/wiki/RSS">
   <i>
@@ -60,20 +53,12 @@ categories: ["Guides"]
 <p>
   There are <em>a lot</em> of RSS readers out there, both for PC and mobile,
   personally I use
-  <a
-    href="https://apps.microsoft.com/detail/9p71fc94lrh8?hl=en-us&gl=US"
-    target="_blank"
-    rel="noopener noreferrer"
-    >"Fluent Reader"</a
-  >
+  <a href="https://apps.microsoft.com/detail/9p71fc94lrh8?hl=en-us&gl=US" target="_blank"
+    rel="noopener noreferrer">"Fluent Reader"</a>
   on my Windows PC; you can get it from Microsoft Store. It's completely free
   and the code is open source. On mobile, I use
-  <a
-    href="https://f-droid.org/packages/com.nononsenseapps.feeder/"
-    target="_blank"
-    rel="noopener noreferrer"
-    >"Feeder"</a
-  >.
+  <a href="https://f-droid.org/packages/com.nononsenseapps.feeder/" target="_blank"
+    rel="noopener noreferrer">"Feeder"</a>.
 </p>
 
 <hr />
@@ -109,9 +94,7 @@ categories: ["Guides"]
   On mobile, as previously mentioned, I use Feeder, but you can just search for
   "RSS reader" in whichever app store you have installed on your phone. Also,
   there is the
-  <a href="https://f-droid.org/" target="_blank" rel="noopener noreferrer"
-    >F-Droid</a
-  >
+  <a href="https://f-droid.org/" target="_blank" rel="noopener noreferrer">F-Droid</a>
   app store that has only
   <abbr title="free open source software">FOSS</abbr> apps there, meaning, those
   are usually apps that don't track you and don't show you ads or beg you to buy
@@ -119,12 +102,8 @@ categories: ["Guides"]
 </p>
 <p>
   First, go to the website you want to subscribe to. Look for the RSS logo that
-  usually looks like a Wi-Fi symbol over an orange background (<img
-    src="../images/icons/rss.svg"
-    alt=""
-    width="15px"
-    height="15px"
-  />). Click on it; it should take you to the website's RSS feed. Simply copy
+  usually looks like a Wi-Fi symbol over an orange background (<img src="../assets/images/icons/rss.svg" alt=""
+    width="15px" height="15px">). Click on it; it should take you to the website's RSS feed. Simply copy
   the URL, launch your RSS feed reader, look for a button that says something
   along the lines of "add new source" and paste it there.
 </p>
@@ -147,19 +126,13 @@ categories: ["Guides"]
 </p>
 <p>
   <strong>Bluesky:</strong>
-  <span class="text-breakall"
-    >https://bsky.app/profile/<i>username</i>/rss</span
-  >
+  <span class="text-breakall">https://bsky.app/profile/<i>username</i>/rss</span>
 </p>
 <p>
   <strong>Reddit:</strong>
-  <span class="text-breakall"
-    >https://www.reddit.com/r/<em>subredditname</em>.rss</span
-  >
+  <span class="text-breakall">https://www.reddit.com/r/<em>subredditname</em>.rss</span>
   or
-  <span class="text-breakall"
-    >https://www.reddit.com/u/<em>username</em>.rss</span
-  >
+  <span class="text-breakall">https://www.reddit.com/u/<em>username</em>.rss</span>
 </p>
 <p>
   <strong>YouTube:</strong> Requires a bit of code digging, unfortunately. On
@@ -174,31 +147,22 @@ categories: ["Guides"]
     <li>Search for "browse_id" (without the quotation marks).</li>
     <li>
       You should find a part of the code that looks like this:
-      <code class="text-breakall"
-        >{"key":"browse_id","value":"<i>UC_x5XG1OV2P6uZZ5FSM9Ttw</i>"}</code
-      >, copy the string of random letters and numbers that is inside the
+      <code class="text-breakall">{"key":"browse_id","value":"<i>UC_x5XG1OV2P6uZZ5FSM9Ttw</i>"}</code>, copy the string
+      of random letters and numbers that is inside the
       "value" field, that is the channel's ID.
     </li>
     <li>
       Create a working URL to YouTube's channel RSS feed by replacing the
       "CHANNELID" part inside this URL template:
-      <span class="text-breakall"
-        >https://www.youtube.com/feeds/videos.xml?channel_id=<i
-          >CHANNELID</i
-        ></span
-      >
+      <span class="text-breakall">https://www.youtube.com/feeds/videos.xml?channel_id=<i>CHANNELID</i></span>
       with the ID you just copied.
     </li>
   </ol>
 </details>
 <p>
   Alternatively, on Android, just use
-  <a
-    href="https://f-droid.org/packages/InfinityLoop1309.NewPipeEnhanced/"
-    target="_blank"
-    rel="noopener noreferrer"
-    >PipePipe</a
-  >
+  <a href="https://f-droid.org/packages/InfinityLoop1309.NewPipeEnhanced/" target="_blank"
+    rel="noopener noreferrer">PipePipe</a>
   (my current fav), NewPipe or whatever other software fork there is.
 </p>
 <p>
@@ -320,8 +284,7 @@ categories: ["Guides"]
     (show code)
   </summary>
   <p>
-    <i
-      >A more complex version of the previous example that can be used to
+    <i>A more complex version of the previous example that can be used to
       showcase artwork or photos. It also demonstrates how you can use some
       basic HTML tags inside the <code>&lt;description&gt;</code> field to add
       some optional extra functionality.
@@ -373,12 +336,8 @@ categories: ["Guides"]
   <code>&lt;lastBuildDate&gt;</code> — timestamp that shows the last time the
   RSS feed was updated, in RFC2822 format. You can generate an RFC 2822
   timestamp on sites like the
-  <a
-    href="https://timestampgenerator.com/"
-    target="_blank"
-    rel="noopener noreferrer"
-    >UNIX timestamp generator</a
-  >. It looks something like this when generated: Sat, 28 Dec 2024 16:26:14
+  <a href="https://timestampgenerator.com/" target="_blank" rel="noopener noreferrer">UNIX timestamp generator</a>. It
+  looks something like this when generated: Sat, 28 Dec 2024 16:26:14
   +0000.
 </p>
 <p>
@@ -388,16 +347,10 @@ categories: ["Guides"]
 </p>
 <p>
   <code>&lt;guid&gt;</code> — (from
-  <a
-    href="https://www.rssboard.org/rss-specification#ltguidgtSubelementOfLtitemgt"
-    target="_blank"
-    rel="noopener noreferrer"
-    >rssboard.org</a
-  >):
+  <a href="https://www.rssboard.org/rss-specification#ltguidgtSubelementOfLtitemgt" target="_blank"
+    rel="noopener noreferrer">rssboard.org</a>):
 </p>
-<blockquote
-  cite="https://www.rssboard.org/rss-specification#ltguidgtSubelementOfLtitemgt"
->
+<blockquote cite="https://www.rssboard.org/rss-specification#ltguidgtSubelementOfLtitemgt">
   <i>
     "<code>&lt;guid&gt;</code> is an optional sub-element of
     <code>&lt;item&gt;</code>. <strong>guid</strong> stands for <b>g</b>lobally
@@ -465,9 +418,7 @@ categories: ["Guides"]
     <code>length</code> and <code>type</code>. <code>url</code> is a link that
     points to your media file's location, <code>length</code> is the size of the
     file in bytes and <code>type</code> specifies the media type (<abbr
-      title="Multipurpose Internet Mail Extensions"
-      >MIME</abbr
-    >
+      title="Multipurpose Internet Mail Extensions">MIME</abbr>
     type).
   </p>
   <p>
@@ -478,8 +429,7 @@ categories: ["Guides"]
   <p>
     To get the <code>length</code> of a file (in my case, image), go to a folder
     where the image is located, open a bash terminal <em>in that folder</em> and
-    enter a command: <code>stat --format=%s <i>your-image-name.jpg</i></code
-    >. Copy the string of numbers you've got.
+    enter a command: <code>stat --format=%s <i>your-image-name.jpg</i></code>. Copy the string of numbers you've got.
   </p>
   <p>
     Since I'm on Windows I use Git Bash and I will assume that you know at least
@@ -557,19 +507,12 @@ categories: ["Guides"]
   <strong>special characters</strong> in your RSS feed, like "&" for example,
   make sure to write them as a HTML entity, so as "&#x26;#x26;" (without the
   quotation marks) in this case. Here is a basic
-  <a
-    href="https://mothereff.in/html-entities"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    HTML entity encoder/decoder</a
-  >.
+  <a href="https://mothereff.in/html-entities" target="_blank" rel="noopener noreferrer">
+    HTML entity encoder/decoder</a>.
 </p>
 <p>
-  <i
-    >After you have created the RSS feed itself, there is still some extra
-    things you can do...</i
-  >
+  <i>After you have created the RSS feed itself, there is still some extra
+    things you can do...</i>
 </p>
 <p>
   <strong>Regarding favicons:</strong> Some RSS readers seem to completely
@@ -580,8 +523,8 @@ categories: ["Guides"]
   like "favicon.ico".
 </p>
 <p>
-  <strong>Linking your RSS feed in the <code>&#x3C;head&#x3E;</code></strong
-  >: After you have created your RSS feed, you can add a button to your site
+  <strong>Linking your RSS feed in the <code>&#x3C;head&#x3E;</code></strong>: After you have created your RSS feed, you
+  can add a button to your site
   linking to it. But, in addition to that, you can also add a
   <code>&#x3C;link&#x3E;</code> tag inside your website's
   <code>&#x3C;head&#x3E;</code> tag and link your RSS feed there as well. You
@@ -603,11 +546,7 @@ categories: ["Guides"]
   could automatically detect if a website had RSS feed. Nowadays, that
   functionality is mostly gone (shame!), but, fret not, at least for Firefox,
   there are extensions such as
-  <a
-    href="https://addons.mozilla.org/en-US/firefox/addon/awesome-rss/"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
+  <a href="https://addons.mozilla.org/en-US/firefox/addon/awesome-rss/" target="_blank" rel="noopener noreferrer">
     Awesome RSS
   </a>
   that returns that functionality! After you install it, if a website has a
@@ -622,12 +561,7 @@ categories: ["Guides"]
 </p>
 <p>
   You can read more about the official RSS documentation on
-  <a
-    href="https://www.rssboard.org/rss-specification"
-    target="_blank"
-    rel="noopener noreferrer"
-    >RSS Advisory Board</a
-  >.
+  <a href="https://www.rssboard.org/rss-specification" target="_blank" rel="noopener noreferrer">RSS Advisory Board</a>.
 </p>
 
 <hr />
@@ -640,9 +574,6 @@ categories: ["Guides"]
   </i>
 </p>
 <p class="text-center">
-  <a href="#"
-    ><span aria-hidden="true">[ </span>Back to top<span aria-hidden="true">
-      ]</span
-    ></a
-  >
+  <a href="#"><span aria-hidden="true">[ </span>Back to top<span aria-hidden="true">
+      ]</span></a>
 </p>

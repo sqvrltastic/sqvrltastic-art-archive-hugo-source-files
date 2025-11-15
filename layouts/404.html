@@ -7,7 +7,7 @@
   <meta name="description" content="Error 404: this page doesn't exist.">
   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
   <title>404 Page not found</title>
-  {{ $css := resources.Get "css/main.css" | resources.Fingerprint }}
+  {{ $css := resources.Get "assets/css/main.css" | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 </head>
 

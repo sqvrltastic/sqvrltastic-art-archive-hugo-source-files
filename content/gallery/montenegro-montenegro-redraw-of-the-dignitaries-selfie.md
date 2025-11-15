@@ -3,8 +3,8 @@ title: Redraw of the Montengrin dignitaries selfie
 description: "Redraw of the Montengrin dignitaries selfie photo from Vatican. Featuring (from left to right): a man in a sunglasses smilling, a woman with seductive gaze, a man with a disturbed expression on his face and an old man with a tired expression."
 date: 2025-05-11
 categories: ["Montenegro"]
-preview: "images/preview/montenegro-redraw-of-the-dignitaries-selfie.avif"
-full: "images/full/montenegro-redraw-of-the-dignitaries-selfie.jpg"
+preview: "assets/images/preview/montenegro-redraw-of-the-dignitaries-selfie.avif"
+full: "assets/images/full/montenegro-redraw-of-the-dignitaries-selfie.jpg"
 length: "232556"
 ---
 
