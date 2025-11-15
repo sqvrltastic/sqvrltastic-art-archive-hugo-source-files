@@ -1,8 +1,8 @@
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="{{ .Description }}" />
-  <meta author="sqvrltastic" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ .Description }}">
+  <meta author="sqvrltastic">
   <title>{{ .Title }} | Sqvrltastic Art Archive</title>
   <script>
     (function () {
@@ -20,9 +20,9 @@
       }
     })();
   </script>
-  <link rel="icon" type="image/x-icon" href="{{ " favicon.ico" | relURL }}" />
+  <link rel="icon" type="image/x-icon" href="{{ " favicon.ico" | relURL }}">
   {{ $css := resources.Get "css/main.css" | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
   <link rel="alternate" type="application/rss+xml" title="RSS feed for
-  Sqvrltastic Art Archive" href="{{ " rss.xml" | absURL }}" />
+  Sqvrltastic Art Archive" href="{{ " rss.xml" | absURL }}">
 </head>
