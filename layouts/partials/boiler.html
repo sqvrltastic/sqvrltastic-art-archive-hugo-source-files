@@ -2,7 +2,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ .Description }}">
-  <meta author="sqvrltastic">
+
+  <!-- Facebook Meta tags -->
+  <meta property="og:title" content="{{ .Title }} | Sqvrltastic Art Archive">
+  <meta property="og:description" content="{{ .Description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sqvrltastic.art/">
+  <meta property="og:image" content="https://sqvrltastic.art/assets/images/placeholder.jpg">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="sqvrltastic.art">
+  <meta property="twitter:url" content="https://sqvrltastic.art">
+  <meta name="twitter:title" content="{{ .Title }} | Sqvrltastic Art Archive">
+  <meta name="twitter:description" content="{{ .Description }}">
+  <meta name="twitter:image" content="https://milenaboreta.github.io/assets/images/placeholder.jpg">
+
   <title>{{ .Title }} | Sqvrltastic Art Archive</title>
   <script>
     (function () {
@@ -24,5 +39,5 @@
   {{ $css := resources.Get "css/main.css" | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
   <link rel="alternate" type="application/rss+xml" title="RSS feed for
-  Sqvrltastic Art Archive" href="{{ " rss.xml" | absURL }}">
+  Sqvrltastic Art Archive" href='{{ absURL "rss.xml" }}'>
 </head>
