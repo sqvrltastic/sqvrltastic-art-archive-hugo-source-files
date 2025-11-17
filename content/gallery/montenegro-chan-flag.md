@@ -4,5 +4,6 @@ description: "Montenegro-chan holding the flag of Montenegro on a pole. She has 
 date: 2020-01-01
 categories: ["Montenegro"]
 preview: "assets/images/preview/montenegro-chan-flag.avif"
+compressed: "assets/images/compressed/montenegro-chan-flag.avif"
 full: "assets/images/full/montenegro-chan-flag.jpg"
 ---

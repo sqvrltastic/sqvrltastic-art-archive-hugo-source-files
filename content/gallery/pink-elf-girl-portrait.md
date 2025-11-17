@@ -4,6 +4,7 @@ description: "Portrait of a pink-skinned elf girl with pink curly hair. She is d
 date: 2021-01-01
 categories: ["Misc. OC"]
 preview: "assets/images/preview/pink-elf-girl-portrait.avif"
+compressed: "assets/images/compressed/pink-elf-girl-portrait.avif"
 full: "assets/images/full/pink-elf-girl-portrait.jpg"
 ---
 

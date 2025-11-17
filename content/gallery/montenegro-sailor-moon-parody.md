@@ -4,6 +4,7 @@ description: "Anime-style drawing of three men dressed in Sailor Moon clothes"
 date: 2020-01-01
 categories: ["Montenegro"]
 preview: "assets/images/preview/montenegro-sailor-moon-parody.avif"
+compressed: "assets/images/compressed/montenegro-sailor-moon-parody.avif"
 full: "assets/images/full/montenegro-sailor-moon-parody.jpg"
 ---
 

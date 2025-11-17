@@ -4,6 +4,7 @@ description: "Montenegro-chan making a gangsta-style gesture with her hands whil
 date: 2020-01-01
 categories: ["Montenegro"]
 preview: "assets/images/preview/montenegro-chan-funny-pose.avif"
+compressed: "assets/images/compressed/montenegro-chan-funny-pose.avif"
 full: "assets/images/full/montenegro-chan-funny-pose.jpg"
 ---
 

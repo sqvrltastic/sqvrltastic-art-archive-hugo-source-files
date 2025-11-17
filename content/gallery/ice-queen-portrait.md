@@ -4,5 +4,6 @@ description: "Portrait of an blue-skinned lady with white hair and blue eyes wea
 date: 2021-01-01
 categories: ["Misc. OC"]
 preview: "assets/images/preview/ice-queen-portrait.avif"
+compressed: "assets/images/compressed/ice-queen-portrait.avif"
 full: "assets/images/full/ice-queen-portrait.jpg"
 ---

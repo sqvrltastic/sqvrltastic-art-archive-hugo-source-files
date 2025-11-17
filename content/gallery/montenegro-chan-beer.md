@@ -4,8 +4,9 @@ description: "Montenegro-chan is holding out a can of beer towards the viewer. S
 date: 2025-08-11
 categories: ["Montenegro"]
 preview: "assets/images/preview/montenegro-chan-beer.avif"
+compressed: "assets/images/compressed/montenegro-chan-beer.avif"
 full: "assets/images/full/montenegro-chan-beer.jpg"
-length: "536803"
+length: "150697"
 ---
 
 Not sure where I was going with this one tbh. I initially thought it was just going to be a quick shitpost, then I decided that I want to experiment with style a bit and then I gave up on coloring because I was tired...

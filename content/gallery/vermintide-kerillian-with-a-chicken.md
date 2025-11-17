@@ -4,8 +4,9 @@ description: 'elf Kerillian holding a chicken saying "The hell is that? That is 
 date: 2025-04-01
 categories: ["Vermintide"]
 preview: "assets/images/preview/vermintide-kerillian-with-a-chicken.avif"
+compressed: "assets/images/compressed/vermintide-kerillian-with-a-chicken.avif"
 full: "assets/images/full/vermintide-kerillian-with-a-chicken.jpg"
-length: "650083"
+length: "184645"
 ---
 
 IYKYK or else don't bother

@@ -4,5 +4,6 @@ description: "Montenegro-chan is sipping boba tea through a straw from a cup tha
 date: 2020-01-01
 categories: ["Montenegro"]
 preview: "assets/images/preview/montenegro-chan-boba-tea-challenge.avif"
+compressed: "assets/images/compressed/montenegro-chan-boba-tea-challenge.avif"
 full: "assets/images/full/montenegro-chan-boba-tea-challenge.jpg"
 ---

@@ -4,5 +4,6 @@ description: "Montenegro-chan is writing something in her notebook. There is a l
 date: 2020-01-01
 categories: ["Montenegro"]
 preview: "assets/images/preview/montenegro-chan-lofi-girl.avif"
+compressed: "assets/images/compressed/montenegro-chan-lofi-girl.avif"
 full: "assets/images/full/montenegro-chan-lofi-girl.jpg"
 ---

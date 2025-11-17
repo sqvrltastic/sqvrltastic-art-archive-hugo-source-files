@@ -4,5 +4,6 @@ description: "Montenegro-chan is standing still with one hand on her hip. She ha
 date: 2020-01-01
 categories: ["Montenegro"]
 preview: "assets/images/preview/montenegro-chan-traditional-clothes.avif"
+compressed: "assets/images/compressed/montenegro-chan-traditional-clothes.avif"
 full: "assets/images/full/montenegro-chan-traditional-clothes.jpg"
 ---

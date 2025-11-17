@@ -4,10 +4,11 @@ description: "Sister of the thorn Kerillian sipping healing potion through a str
 date: 2021-01-01
 categories: ["Vermintide"]
 preview: "assets/images/preview/vermintide-kerillian-sister-of-the-thorn-green-circles.avif"
+compressed: "assets/images/compressed/vermintide-kerillian-sister-of-the-thorn-green-circles.avif"
 full: "assets/images/full/vermintide-kerillian-sister-of-the-thorn-green-circles.jpg"
 ---
 
 Alternative versions:
 
-- [No background](../images/full/vermintide-kerillian-sister-of-the-thorn-green-circles-nobg.jpg)
-- [No color](../images/full/vermintide-kerillian-sister-of-the-thorn-green-circles-nocolor.jpg)
+- <a href="../assets/images/full/vermintide-kerillian-sister-of-the-thorn-green-circles-nobg.jpg" target="_blank" rel="noopener noreferrer">No background (.jpg)</a>
+- <a href="../assets/images/full/vermintide-kerillian-sister-of-the-thorn-green-circles-nocolor.jpg" target="_blank" rel="noopener noreferrer">No color (.jpg)</a>

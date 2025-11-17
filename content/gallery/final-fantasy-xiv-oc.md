@@ -4,5 +4,6 @@ description: "A girl wearing black leather longcoat and a black helmet with avia
 date: 2021-01-01
 categories: ["Misc. OC"]
 preview: "assets/images/preview/final-fantasy-xiv-oc.avif"
+compressed: "assets/images/compressed/final-fantasy-xiv-oc.avif"
 full: "assets/images/full/final-fantasy-xiv-oc.jpg"
 ---

@@ -4,5 +4,6 @@ description: "Zealot Victor Saltzpyre wearing pig onesie and swinging a flail wh
 date: 2021-01-01
 categories: ["Vermintide"]
 preview: "assets/images/preview/vermintide-zealot-victor-saltzpyre-pig-onesie.avif"
+compressed: "assets/images/compressed/vermintide-zealot-victor-saltzpyre-pig-onesie.avif"
 full: "assets/images/full/vermintide-zealot-victor-saltzpyre-pig-onesie.jpg"
 ---

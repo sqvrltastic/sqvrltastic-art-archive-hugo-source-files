@@ -4,6 +4,7 @@ description: "Montenegro-chan eating an ice-cream in a slightly suggestive way w
 date: 2020-01-01
 categories: ["Montenegro"]
 preview: "assets/images/preview/montenegro-chan-ice-cream.avif"
+compressed: "assets/images/compressed/montenegro-chan-ice-cream.avif"
 full: "assets/images/full/montenegro-chan-ice-cream.jpg"
 ---
 

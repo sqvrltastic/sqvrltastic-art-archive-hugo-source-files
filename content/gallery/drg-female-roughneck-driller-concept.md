@@ -4,6 +4,7 @@ description: "A female dwarf is grinning and looking at the viewer while holding
 date: 2025-04-25
 categories: ["Deep Rock Galactic"]
 preview: "assets/images/preview/drg-female-roughneck-driller.avif"
+compressed: "assets/images/compressed/drg-female-roughneck-driller.avif"
 full: "assets/images/full/drg-female-roughneck-driller.jpg"
-length: "824751"
+length: "225063"
 ---

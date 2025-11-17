@@ -4,8 +4,9 @@ description: "Driller and Scout are looking in each other's eyes in a romantic w
 date: 2025-05-27
 categories: ["Deep Rock Galactic"]
 preview: "assets/images/preview/drg-driller-scout-yaoi.avif"
+compressed: "assets/images/compressed/drg-driller-scout-yaoi.avif"
 full: "assets/images/full/drg-driller-scout-yaoi.jpg"
-length: "591060"
+length: "136975"
 ---
 
 _Yeah uh oh_

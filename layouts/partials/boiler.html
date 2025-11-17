@@ -2,13 +2,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ .Description }}">
-
   <!-- Facebook Meta tags -->
   <meta property="og:title" content="{{ .Title }} | Sqvrltastic Art Archive">
   <meta property="og:description" content="{{ .Description }}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://sqvrltastic.art/">
-  <meta property="og:image" content='{{ .Param "preview" | absURL }}'>
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content='{{ .Param "compressed" | absURL }}'>
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
@@ -16,7 +15,7 @@
   <meta property="twitter:url" content="https://sqvrltastic.art">
   <meta name="twitter:title" content="{{ .Title }} | Sqvrltastic Art Archive">
   <meta name="twitter:description" content="{{ .Description }}">
-  <meta name="twitter:image" content='{{ .Param "preview" | absURL }}'>
+  <meta name="twitter:image" content='{{ .Param "compressed" | absURL }}'>
 
   <title>{{ .Title }} | Sqvrltastic Art Archive</title>
   <script>
@@ -40,4 +39,5 @@
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
   <link rel="alternate" type="application/rss+xml" title="RSS feed for
   Sqvrltastic Art Archive" href='{{ absURL "rss.xml" }}'>
+  <link rel="canonical" href="{{ .Permalink }}">
 </head>

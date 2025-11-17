@@ -4,10 +4,11 @@ description: "Digital painting in a semi-realism artstyle depicting a floating h
 date: 2021-01-01
 categories: ["Misc. OC"]
 preview: "assets/images/preview/purple-elf-girl-portrait.avif"
+compressed: "assets/images/compressed/purple-elf-girl-portrait.avif"
 full: "assets/images/full/purple-elf-girl-portrait.jpg"
 ---
 
 Alternative versions:
 
-- [No rim light](../images/full/purple-elf-girl-portrait-norimlight.jpg)
-- [Process](../images/full/purple-elf-girl-portrait-process.jpg)
+- <a href="../assets/images/full/purple-elf-girl-portrait-norimlight.jpg" target="_blank" rel="noopener noreferrer">No rim light (.jpg)</a>
+- <a href="../assets/images/full/purple-elf-girl-portrait-process.jpg" target="_blank" rel="noopener noreferrer">Process (.jpg)</a>

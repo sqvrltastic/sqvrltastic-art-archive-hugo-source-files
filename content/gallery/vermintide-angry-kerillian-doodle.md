@@ -4,6 +4,7 @@ description: "Sketchy drawing of a floating head Waystalker Kerillian with an an
 date: 2025-01-25
 categories: ["Vermintide"]
 preview: "assets/images/preview/vermintide-angry-kerillian-doodle.avif"
+compressed: "assets/images/compressed/vermintide-angry-kerillian-doodle.avif"
 full: "assets/images/full/vermintide-angry-kerillian-doodle.jpg"
 length: "421745"
 ---

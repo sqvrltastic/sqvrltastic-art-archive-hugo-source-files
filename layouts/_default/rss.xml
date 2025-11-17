@@ -40,7 +40,7 @@
 
 <description>
     {{- if eq .Section "gallery" -}}
-        <img src="{{ .Site.BaseURL }}{{ .Params.full }}" />
+        <img src="{{ .Site.BaseURL }}{{ .Params.compressed }}" />
         <p>[alt text] {{ .Description }}</p>
     {{- else if eq .Section "log" -}}
         {{ .Content | plainify | htmlUnescape }}
@@ -51,8 +51,8 @@
 
 {{- if eq .Section "gallery" -}}
 <enclosure 
-    url="{{ .Site.BaseURL }}{{ .Params.full }}" 
-    type="image/jpeg" 
+    url="{{ .Site.BaseURL }}{{ .Params.compressed }}" 
+    type="image/avif" 
     length="{{ .Params.length }}"
 />
 {{- end -}}

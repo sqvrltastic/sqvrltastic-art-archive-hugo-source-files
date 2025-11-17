@@ -4,8 +4,9 @@ description: "elf waystalker Kerillian looking smug"
 date: 2025-02-26
 categories: ["Vermintide"]
 preview: "assets/images/preview/vermintide-kerillian-smug-asuka.avif"
+compressed: "assets/images/compressed/vermintide-kerillian-smug-asuka.avif"
 full: "assets/images/full/vermintide-kerillian-smug-asuka.jpg"
-length: "237089"
+length: "60305"
 ---
 
-[Version with no color](../images/full/vermintide-kerillian-smug-asuka-clear.jpg)
+<a href="../assets/images/full/vermintide-kerillian-smug-asuka-clear.jpg" target="_blank" rel="noopener noreferrer">Version with no color (.jpg)</a>

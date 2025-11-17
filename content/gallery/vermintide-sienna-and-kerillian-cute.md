@@ -4,5 +4,6 @@ description: "Sienna and Kerillian are standing together. Sienna has a bandaged 
 date: 2021-01-01
 categories: ["Vermintide"]
 preview: "assets/images/preview/vermintide-sienna-and-kerillian-cute.avif"
+compressed: "assets/images/compressed/vermintide-sienna-and-kerillian-cute.avif"
 full: "assets/images/full/vermintide-sienna-and-kerillian-cute.jpg"
 ---

@@ -4,8 +4,9 @@ description: "Redraw of the Montengrin dignitaries selfie photo from Vatican. Fe
 date: 2025-05-11
 categories: ["Montenegro"]
 preview: "assets/images/preview/montenegro-redraw-of-the-dignitaries-selfie.avif"
+compressed: "assets/images/compressed/montenegro-redraw-of-the-dignitaries-selfie.avif"
 full: "assets/images/full/montenegro-redraw-of-the-dignitaries-selfie.jpg"
-length: "232556"
+length: "104552"
 ---
 
 Originally posted to r/Montenegro. 

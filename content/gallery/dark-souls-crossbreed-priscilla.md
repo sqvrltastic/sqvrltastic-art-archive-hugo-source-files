@@ -4,6 +4,7 @@ description: "Crossbreed Priscilla looking at the viewer while holding her hands
 date: 2021-01-01
 categories: ["Dark Souls"]
 preview: "assets/images/preview/dark-souls-crossbreed-priscilla.avif"
+compressed: "assets/images/compressed/dark-souls-crossbreed-priscilla.avif"
 full: "assets/images/full/dark-souls-crossbreed-priscilla.jpg"
 ---
 

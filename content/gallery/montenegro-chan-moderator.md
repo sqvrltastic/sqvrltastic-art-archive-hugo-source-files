@@ -4,5 +4,6 @@ description: "Montenegro-chan is standing still while looking sternly at the vie
 date: 2020-01-01
 categories: ["Montenegro"]
 preview: "assets/images/preview/montenegro-chan-moderator.avif"
+compressed: "assets/images/compressed/montenegro-chan-moderator.avif"
 full: "assets/images/full/montenegro-chan-moderator.jpg"
 ---

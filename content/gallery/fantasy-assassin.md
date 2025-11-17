@@ -4,8 +4,9 @@ description: "Male dark fantasy assassin spellsword character. He is looking ove
 date: 2025-07-24
 categories: ["Misc. OC"]
 preview: "assets/images/preview/fantasy-assassin.avif"
+compressed: "assets/images/compressed/fantasy-assassin.avif"
 full: "assets/images/full/fantasy-assassin.jpg"
-length: "478245"
+length: "82283"
 ---
 
 Drew friends OC for his TTRPG campaign.
