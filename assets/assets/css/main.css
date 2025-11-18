@@ -268,12 +268,35 @@ details[open] > *:not(summary) {
 }
 
 summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0.5rem;
   transition: background-color 0.3s;
+  list-style: none;
 }
 
+/* Triangle */
+
+summary::after {
+  content: "";
+  transition: 0.2s;
+  border-top: 0.4rem solid #1c1c1c;
+  border-inline: 0.25rem solid transparent;
+}
+
+details[open] > summary::after {
+  transform: rotate(-180deg);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* end of triange snippet */
+
 summary > h3 {
-  display: inline;
+  margin: 0;
 }
 
 summary:hover {
