@@ -373,14 +373,6 @@ article > .desc {
   margin: 0 auto;
 }
 
-/* Main index page picture */
-
-.pfp > img {
-  border: 0.07rem solid var(--main-color);
-  border-radius: 50rem;
-  max-block-size: 6rem;
-}
-
 /* Responsive images */
 
 .responsive-img {
