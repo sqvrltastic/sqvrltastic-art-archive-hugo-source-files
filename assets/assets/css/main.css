@@ -208,7 +208,6 @@ h4 {
 
 a {
   color: var(--main-color);
-  transition: color 0.3s;
 }
 
 a:hover {
@@ -251,20 +250,7 @@ details {
 }
 
 details > *:not(summary) {
-  margin: 1rem 1.25rem;
-}
-
-details[open] > *:not(summary) {
-  animation: fadeIn 0.3s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  margin: 1rem;
 }
 
 summary {
@@ -272,16 +258,28 @@ summary {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
-  transition: background-color 0.3s;
   list-style: none;
+}
+
+details::details-content {
+  max-block-size: 0;
+  opacity: 0;
+  content-visibility: hidden;
+  transition: all 0.4s allow-discrete;
+}
+
+details[open]::details-content {
+  max-block-size: 60rem; /* hardcoded max-block-size for animation */
+  opacity: 1;
+  content-visibility: visible;
 }
 
 /* Triangle */
 
 summary::after {
   content: "";
-  transition: 0.2s;
-  border-top: 0.4rem solid #1c1c1c;
+  transition: 0.3s;
+  border-top: 0.4rem solid var(--main-color);
   border-inline: 0.25rem solid transparent;
 }
 
@@ -443,7 +441,6 @@ article > .desc {
 .spoiler {
   background-color: var(--main-color);
   color: var(--main-color);
-  transition: background-color 0.3s;
 }
 
 .spoiler:hover {
@@ -471,7 +468,7 @@ article > .desc {
   font-weight: bold;
 }
 
-/* 🌙 🌃 🌌 OS dark theme preference if not manually set */
+/* OS dark theme preference if not manually set */
 
 @media (prefers-color-scheme: dark) {
   html:not([data-theme]) {
