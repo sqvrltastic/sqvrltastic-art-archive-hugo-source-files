@@ -262,16 +262,12 @@ summary {
 }
 
 details::details-content {
-  max-block-size: 0;
   opacity: 0;
-  content-visibility: hidden;
-  transition: all 0.4s allow-discrete;
+  transition: opacity 0.5s;
 }
 
 details[open]::details-content {
-  max-block-size: 60rem; /* hardcoded max-block-size for animation */
   opacity: 1;
-  content-visibility: visible;
 }
 
 /* Triangle */
