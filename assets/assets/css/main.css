@@ -287,7 +287,25 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-/* end of triange snippet */
+/* end */
+
+/* <details> content slow fade-in and fade-out */
+
+details::details-content {
+  max-block-size: 0;
+  opacity: 0;
+  transition-property: max-block-size, opacity, content-visibility;
+  transition-duration: 1s linear;
+  transition-behavior: allow-discrete;
+}
+
+details[open]::details-content {
+  opacity: 1;
+  max-block-size: 70rem; /* max-block-size has to be hardcoded for the animation to work (unfortunately) */
+  overflow: hidden;
+}
+
+/* end of snippet */
 
 summary > h3 {
   margin: 0;
