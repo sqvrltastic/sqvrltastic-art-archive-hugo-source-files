@@ -285,9 +285,8 @@ summary::-webkit-details-marker {
 details::details-content {
   max-block-size: 0;
   opacity: 0;
-  transition-property: max-block-size, opacity, content-visibility;
-  transition-duration: 0.15s;
-  transition-timing-function: linear;
+  transition: opacity 0.5s, max-block-size 0.15s linear,
+    content-visibility 0.15s linear;
   transition-behavior: allow-discrete;
   overflow: hidden;
 }
@@ -298,7 +297,8 @@ details[open]::details-content {
 }
 
 .animation-medium::details-content {
-  transition-duration: 0.2s;
+  transition: opacity 0.5s, max-block-size 0.2s linear,
+    content-visibility 0.2s linear;
 }
 
 .animation-medium[open]::details-content {
@@ -306,7 +306,8 @@ details[open]::details-content {
 }
 
 .animation-long::details-content {
-  transition-duration: 0.25s;
+  transition: opacity 0.5s, max-block-size 0.25s linear,
+    content-visibility 0.25s linear;
 }
 
 .animation-long[open]::details-content {
@@ -314,7 +315,8 @@ details[open]::details-content {
 }
 
 .animation-extra-long::details-content {
-  transition-duration: 0.3s;
+  transition: opacity 0.5s, max-block-size 0.3s linear,
+    content-visibility 0.3s linear;
 }
 
 .animation-extra-long[open]::details-content {
