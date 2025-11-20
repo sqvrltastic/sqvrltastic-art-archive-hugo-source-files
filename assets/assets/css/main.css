@@ -261,15 +261,6 @@ summary {
   list-style: none;
 }
 
-details::details-content {
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-details[open]::details-content {
-  opacity: 1;
-}
-
 /* Triangle */
 
 summary::after {
@@ -295,7 +286,8 @@ details::details-content {
   max-block-size: 0;
   opacity: 0;
   transition-property: max-block-size, opacity, content-visibility;
-  transition-duration: 1s linear;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
   transition-behavior: allow-discrete;
 }
 
