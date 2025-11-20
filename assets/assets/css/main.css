@@ -261,7 +261,7 @@ summary {
   list-style: none;
 }
 
-/* Triangle */
+/* Rotating triangle for <details> */
 
 summary::after {
   content: "";
@@ -280,24 +280,48 @@ summary::-webkit-details-marker {
 
 /* end */
 
-/* <details> content slow fade-in and fade-out */
+/* <details> CSS-only animation, with presets for different sizes */
 
 details::details-content {
   max-block-size: 0;
   opacity: 0;
   transition-property: max-block-size, opacity, content-visibility;
-  transition-duration: 0.5s;
+  transition-duration: 0.15s;
   transition-timing-function: linear;
   transition-behavior: allow-discrete;
+  overflow: hidden;
 }
 
 details[open]::details-content {
   opacity: 1;
-  max-block-size: 70rem; /* max-block-size has to be hardcoded for the animation to work (unfortunately) */
-  overflow: hidden;
+  max-block-size: 15rem; /* max-block-size has to be hard-coded for the animation to work (unfortunately) */
 }
 
-/* end of snippet */
+.animation-medium::details-content {
+  transition-duration: 0.2s;
+}
+
+.animation-medium[open]::details-content {
+  max-block-size: 30rem;
+}
+
+.animation-long::details-content {
+  transition-duration: 0.25s;
+}
+
+.animation-long[open]::details-content {
+  max-block-size: 60rem;
+}
+
+.animation-extra-long::details-content {
+  transition-duration: 0.3s;
+}
+
+.animation-extra-long[open]::details-content {
+  max-block-size: 100rem;
+}
+
+/* end */
 
 summary > h3 {
   margin: 0;

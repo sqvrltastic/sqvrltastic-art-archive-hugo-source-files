@@ -138,7 +138,7 @@ categories: ["Guides"]
   <strong>YouTube:</strong> Requires a bit of code digging, unfortunately. On
   PC:
 </p>
-<details>
+<details class="animation-medium">
   <summary>(show steps)</summary>
   <ol>
     <li>Open the YouTube channel in your browser.</li>
@@ -193,7 +193,7 @@ categories: ["Guides"]
   Then, copy and paste the code below. Keep the overall structure and replace
   the content of each field with your own where applicable.
 </p>
-<details>
+<details class="animation-long">
   <summary>Base of your RSS feed (show code)</summary>
   <pre><code><span class="text-colored">&#x3C;?xml version=&#x22;1.0&#x22; encoding=&#x22;UTF-8&#x22;?&#x3E;
 &#x3C;rss version=&#x22;2.0&#x22; xmlns:atom=&#x22;http://www.w3.org/2005/Atom&#x22;&#x3E;
@@ -228,7 +228,7 @@ categories: ["Guides"]
   Next, you will want to add individual items or entries to your RSS feed. Below
   are code snippets that you can copy and paste.
 </p>
-<details>
+<details class="animation-medium">
   <summary>Basic feed item without any links (show code)</summary>
   <p>
     <i>
@@ -249,7 +249,7 @@ categories: ["Guides"]
     <span class="text-colored">&#x3C;/pubDate&#x3E;
 &#x3C;/item&#x3E;</span></code></pre>
 </details>
-<details>
+<details class="animation-long">
   <summary>Feed item that links to a full blog post (show code)</summary>
   <p>
     <i>
@@ -278,7 +278,7 @@ categories: ["Guides"]
     <span class="text-colored">&#x3C;/pubDate&#x3E;
 &#x3C;/item&#x3E;</span></code></pre>
 </details>
-<details>
+<details class="animation-long">
   <summary>
     Feed item with an image and a complex description that links to a site page
     (show code)
@@ -293,8 +293,8 @@ categories: ["Guides"]
   <p>
     <i>
       Do note that <code>&lt;a&gt;</code> tags (links) tend to bunch up at the
-      end of the paragraph all the time, even if they are placed in the middle
-      of it, <s>for some reason</s>...
+      end of the paragraph all the time (at least for me, in Fluent Reader), even if they are placed in the middle
+      of it. <s>I have no idea why.</s>
     </i>
   </p>
   <hr />
@@ -369,7 +369,7 @@ categories: ["Guides"]
   <code>&lt;guid&gt;</code> and <code>&lt;link&gt;</code>,
   <strong>don't do this</strong>:
 </p>
-<details>
+<details class="animation-medium">
   <summary>(show code)</summary>
   <pre><code><span class="text-colored text-uppercase">&#x3C;!-- Don't do this!--&#x3E;</span>
 &#x3C;item&#x3E;
@@ -409,9 +409,9 @@ categories: ["Guides"]
   <code>&lt;enclosure&gt;</code> element as well because it doesn't hurt I
   suppose.
 </p>
-<details>
+<details class="animation-medium">
   <summary>
-    Some more info about the <code>&lt;enclosure&gt;</code> element...
+    <span>Some more info about the <code>&lt;enclosure&gt;</code> element...</span>
   </summary>
   <p>
     <code>&lt;enclosure&gt;</code> has three attributes: <code>url</code>,
@@ -441,7 +441,7 @@ categories: ["Guides"]
   Now, hard part is over, now you just need to combine the two and fill your RSS
   feed with posts... Below is an example of how that might look like.
 </p>
-<details>
+<details class="animation-extra-long">
   <summary>Combining it all together (show code)</summary>
   <pre><code><span class="text-colored">&#x3C;?xml version=&#x22;1.0&#x22; encoding=&#x22;UTF-8&#x22;?&#x3E;
     &#x3C;rss version=&#x22;2.0&#x22; xmlns:atom=&#x22;http://www.w3.org/2005/Atom&#x22;&#x3E;
