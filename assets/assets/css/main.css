@@ -435,6 +435,14 @@ article > .desc {
   max-inline-size: 100%;
 }
 
+/* Title and date for some posts */
+
+.title-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* CSS for 404 page */
 
 .fourofour {
