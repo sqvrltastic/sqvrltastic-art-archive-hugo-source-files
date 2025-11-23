@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "OpenSans";
-  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 /* Bold */
 @font-face {
   font-family: "OpenSans";
-  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -22,7 +22,7 @@
 /* Italic */
 @font-face {
   font-family: "OpenSans";
-  src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
+  src: url("../fonts/OpenSans-Italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
 }
@@ -30,7 +30,7 @@
 /* Bold Italic */
 @font-face {
   font-family: "OpenSans";
-  src: url("../fonts/OpenSans-BoldItalic.ttf") format("truetype");
+  src: url("../fonts/OpenSans-BoldItalic.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
 }
@@ -40,7 +40,7 @@
 /* Regular */
 @font-face {
   font-family: "GoogleSansCode";
-  src: url("../fonts/GoogleSansCode-Regular.ttf") format("truetype");
+  src: url("../fonts/GoogleSansCode-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -48,7 +48,7 @@
 /* Bold */
 @font-face {
   font-family: "GoogleSansCode";
-  src: url("../fonts/GoogleSansCode-Bold.ttf") format("truetype");
+  src: url("../fonts/GoogleSansCode-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -56,7 +56,7 @@
 /* Italic */
 @font-face {
   font-family: "GoogleSansCode";
-  src: url("../fonts/GoogleSansCode-Italic.ttf") format("truetype");
+  src: url("../fonts/GoogleSansCode-Italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
 }
@@ -64,7 +64,7 @@
 /* Bold Italic */
 @font-face {
   font-family: "GoogleSansCode";
-  src: url("../fonts/GoogleSansCode-BoldItalic.ttf") format("truetype");
+  src: url("../fonts/GoogleSansCode-BoldItalic.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
 }
@@ -74,7 +74,7 @@
 /* Regular */
 @font-face {
   font-family: "SlacksideOne";
-  src: url("../fonts/SlacksideOne-Regular.ttf") format("truetype");
+  src: url("../fonts/SlacksideOne-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
