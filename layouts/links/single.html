@@ -2,7 +2,7 @@
 
 <div class="title-date">
     <h1>{{ .Title }}</h1>
-    <p><i>Updated: {{ now.Format "2006-01-02" }}</i></p>
+    <p><i>Updated: {{ .Date.Format "2006-01-02" }}</i></p>
 </div>
 
 {{ .Content }}

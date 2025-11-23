@@ -23,10 +23,7 @@ $allPosts "Date" "desc" | first 20 -}} {{- range $sortedPosts }}
 
   <!-- If it's an artwork it adds a picture -->
   {{- if eq .Section "gallery" -}}
-  <img
-    src="{{ .Params.preview }}"
-    alt='Preview thumbnail for the artwork "{{ .Title }}"'
-  />
+  <img src="{{ .Params.preview }}" alt='Preview thumbnail for the artwork "{{ .Title }}"'>
   <!-- and a link to full -->
   <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
 

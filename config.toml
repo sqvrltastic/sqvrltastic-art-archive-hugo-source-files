@@ -3,10 +3,15 @@ languageCode = 'en-us'
 title = 'Sqvrltastic Art Archive'
 theme = 'CleanGallery'
 uglyURLs = true
+
 [taxonomies]
-    category = "categories"
+  category = "categories"
+
 [markup.goldmark.renderer]
-    unsafe = true
+  unsafe = true
+
+[markup.goldmark.parser]
+  autoHeadingID = false
 
 [params]
   description = "Hi, I'm sqvrltastic and I'm a digital artist. Welcome to my website! This is my main place for posting my artwork and sharing my thoughts."
@@ -26,4 +31,3 @@ uglyURLs = true
 [services]
   [services.rss]
     limit = 30
-
