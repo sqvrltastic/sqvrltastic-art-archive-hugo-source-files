@@ -9,6 +9,7 @@
   src: url("../fonts/OpenSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 /* Bold */
@@ -17,6 +18,7 @@
   src: url("../fonts/OpenSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 /* Italic */
@@ -25,6 +27,7 @@
   src: url("../fonts/OpenSans-Italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
+  font-display: swap;
 }
 
 /* Bold Italic */
@@ -33,6 +36,7 @@
   src: url("../fonts/OpenSans-BoldItalic.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
+  font-display: swap;
 }
 
 /* Custom typeface — Google Sans Code (monospace) */
@@ -43,6 +47,7 @@
   src: url("../fonts/GoogleSansCode-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 /* Bold */
@@ -51,6 +56,7 @@
   src: url("../fonts/GoogleSansCode-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 /* Italic */
@@ -59,6 +65,7 @@
   src: url("../fonts/GoogleSansCode-Italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
+  font-display: swap;
 }
 
 /* Bold Italic */
@@ -67,6 +74,7 @@
   src: url("../fonts/GoogleSansCode-BoldItalic.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
+  font-display: swap;
 }
 
 /* Custom typeface — Slackside One (display font) */
@@ -77,6 +85,7 @@
   src: url("../fonts/SlacksideOne-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: block;
 }
 
 /* Skip to main link */
