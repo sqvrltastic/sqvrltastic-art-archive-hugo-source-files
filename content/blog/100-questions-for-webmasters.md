@@ -65,7 +65,7 @@ I had to google it. Never used it before.
 
 <b>12. What is your favorite HTML element?</b>
 
-Kind of a silly question. Favorite HTML _tag_? Do you want me to sign your friendship book too, maybe?.. ~~Actually, it's <code>&#x3C;~~details~~&#x3E;</code>~~.
+Kind of a silly question. Favorite HTML element? Do you want me to sign your friendship book too, maybe?.. ~~Actually, it's <code>&#x3C;~~details~~&#x3E;</code>~~.
 
 <b>13. If you're making a new web page from scratch, what is the first thing you do?</b>
 

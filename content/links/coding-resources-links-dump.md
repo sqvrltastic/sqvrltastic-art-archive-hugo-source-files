@@ -40,6 +40,8 @@ Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" targe
 
 <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">Google Fonts</a> — free to use fonts for your website.
 
+<a href="https://gwfh.mranftl.com/fonts" target="_blank" rel="noopener noreferrer">Google web fonts helper</a> — simple online tool to optimize your self-hosted fonts for your website. If you want an offline tool, look into <a href="https://github.com/arrowtype/fonttools-intro" target="_blank" rel="noopener noreferrer">Fonttools</a>.
+
 <a href="https://www.lipsum.com/feed/html" target="_blank" rel="noopener noreferrer">Lorem Ipsum</a> — placeholder text.
 
 <a href="https://10015.io/tools/css-background-pattern-generator" target="_blank" rel="noopener noreferrer">CSS Background Pattern Generator</a>.

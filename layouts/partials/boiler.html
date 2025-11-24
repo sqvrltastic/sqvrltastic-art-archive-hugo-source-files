@@ -8,7 +8,6 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:image" content='{{ .Param "compressed" | absURL }}'>
-
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="sqvrltastic.art">
@@ -16,28 +15,18 @@
   <meta name="twitter:title" content="{{ .Title }} | Sqvrltastic Art Archive">
   <meta name="twitter:description" content="{{ .Description }}">
   <meta name="twitter:image" content='{{ .Param "compressed" | absURL }}'>
-
   <title>{{ .Title }} | Sqvrltastic Art Archive</title>
-  <script>
-    (function () {
-      const savedTheme = localStorage.getItem("theme");
-      if (savedTheme) {
-        document.documentElement.setAttribute("data-theme", savedTheme);
-      } else {
-        const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
-        ).matches;
-        document.documentElement.setAttribute(
-          "data-theme",
-          prefersDark ? "dark" : "light"
-        );
-      }
-    })();
-  </script>
   <link rel="icon" type="image/x-icon" href='{{ relURL "favicon.ico" }}'>
   {{ $css := resources.Get "assets/css/main.css" | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
   <link rel="alternate" type="application/rss+xml" title="RSS feed for
   Sqvrltastic Art Archive" href='{{ absURL "rss.xml" }}'>
+  <!-- Self-hosted custom fonts -->
+  <link rel="preload" as="font" href='{{ relURL "../assets/fonts/OpenSans-Regular.woff2" }}' crossorigin>
+  <link rel="preload" as="font" href='{{ relURL "../assets/fonts/OpenSans-Bold.woff2" }}' crossorigin>
+  <link rel="preload" as="font" href='{{ relURL "../assets/fonts/OpenSans-Italic.woff2" }}' crossorigin>
+  <link rel="preload" as="font" href='{{ relURL "../assets/fonts/OpenSans-BoldItalic.woff2" }}' crossorigin>
+  <link rel="preload" as="font" href='{{ relURL "../assets/fonts/SlacksideOne-Regular.woff2" }}' crossorigin>
   <link rel="canonical" href="{{ .Permalink }}">
+  <script src='{{ relURL "../assets/js/theme-head.js"}}'></script>
 </head>
