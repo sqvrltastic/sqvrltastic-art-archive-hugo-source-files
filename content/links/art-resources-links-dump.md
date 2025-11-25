@@ -6,8 +6,6 @@ date: 2025-07-23
 
 _**Content Warning** for some mild artistic nudity in some links!_
 
----
-
 ## Art-related YouTube channels that I like
 
 <a href="https://www.youtube.com/@ProkoTV" target="_blank" rel="noopener noreferrer">Proko YouTube channel</a> — I feel like this is one of the best free resources out there for learning figure drawing.
@@ -18,8 +16,6 @@ _**Content Warning** for some mild artistic nudity in some links!_
 
 <a href="https://www.youtube.com/@artbookaddiction/videos">Artbook Addiction</a> — another relaxing channel with some thoughtful opinions on various art-related subjects.
 
----
-
 ## Color theory and lighting
 
 _Sidenote: I feel like 95% of all "color theory" videos and tutorials online are completely useless in practice. At least, they haven't helped me in the slightest in trying to understand how to paint light and pick colors. Things that actually helped me understand how light works is studying 3D rendering in Blender and some of the following videos:_
@@ -28,16 +24,12 @@ _Sidenote: I feel like 95% of all "color theory" videos and tutorials online are
 - <a href="https://www.youtube.com/watch?v=0FjjJha7HMI" target="_blank" rel="noopener noreferrer">The Secret to Painting the Right Color</a> from Proko channel
 - <a href="https://www.youtube.com/watch?v=OLi1t_81MA8" target="_blank" rel="noopener noreferrer">Warm Light = Cool Shadows? Or Is It A Myth?</a> by Lighting Mentor
 
----
-
 ## Websites for timed figure gesture drawing exercises
 
 - <a href="https://quickposes.com/en" target="_blank" rel="noopener noreferrer">Quickposes</a>
 - <a href="https://www.sketchdaily.net/en" target="_blank" rel="noopener noreferrer">SketchDaily</a>
 - <a href="https://line-of-action.com/practice-tools/figure-drawing#" target="_blank" rel="noopener noreferrer">Line of Action</a>
 - <a href="https://www.adorkastock.com/sketch/" target="_blank" rel="noopener noreferrer">AdorkaStock</a>
-
----
 
 ## Miscellaneous
 

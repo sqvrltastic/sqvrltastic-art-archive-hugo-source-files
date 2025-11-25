@@ -4,9 +4,7 @@ description: "Various resources for webmasters primarily for learning web develo
 date: 2025-07-23
 ---
 
-## Web dev related
-
-### <b>Start here</b>
+## Start here
 
 <a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a> — references and documentation on HTML, CSS and JavaScript; useful when you need to look up a particular tag or an attribute.
 
@@ -16,7 +14,7 @@ date: 2025-07-23
 
 <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">HUGO static site generator</a> — for making and managing static websites like this one. There are _many_ SSGs out there, HUGO is just the one I personally use.
 
-### <b>Specifics</b>
+## Specifics
 
 Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener noreferrer">CSS flexbox</a> and <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" rel="noopener noreferrer">CSS grid</a> by CSS-Tricks; self-explanatory.
 
@@ -46,7 +44,7 @@ Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" targe
 
 <a href="https://10015.io/tools/css-background-pattern-generator" target="_blank" rel="noopener noreferrer">CSS Background Pattern Generator</a>.
 
-### <b>SEO & optimization</b>
+## SEO & optimization
 
 <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">PageSpeed Insights by Google</a> — gives your website performance rating.
 
@@ -56,13 +54,13 @@ Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" targe
 
 <a href="https://www.opengraph.xyz/" target="_blank" rel="noopener noreferrer">OpenGraph</a> — preview social media share and generate metatags.
 
-### <b>Get your website indexed by search engines</b>
+## Get your website indexed by search engines
 
 <a href="https://search.google.com/search-console/about" target="_blank" rel="noopener noreferrer">Google Search Console</a>.
 
 <a href="https://www.bing.com/webmasters/about" target="_blank" rel="noopener noreferrer">Bing Webmaster tools</a>.
 
-### <b>Web accessibility 101</b>
+## Web accessibility 101
 
 <a href="https://www.w3.org/WAI/tips/designing/" target="_blank" rel="noopener noreferrer">Designing for Web Accessibility</a>.
 
@@ -86,7 +84,7 @@ Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" targe
 
 <a href="https://www.nvaccess.org/download/" target="_blank" rel="noopener noreferrer">NVDA</a> — free and open source screen reader. Useful for accessibility testing your website.
 
-### <b>Where to host a static site for free</b>
+## Where to host a static site for free
 
 <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a> — my current hosting provider.
 
@@ -94,15 +92,13 @@ Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" targe
 
 _Sidenote: I'm obviously biased, but I consider GitHub Pages to be the clearly superior option to Neocities, tech-wise and service-wise. Neocities whole shtick is that it has a "social media" functionality attached to it, which is both a blessing and a curse (more of a curse, IMO). There are of course, other free hosting providers, but I don't have any experience with them._
 
-### <b>Other resources</b>
+## Other resources
 
 <a href="../../documents/building-a-personal-website.pdf" target="_blank" rel="noopener noreferrer">"Building a personal website?"</a> — a PDF I saved from _somewhere_ I don't remember anymore, sorry. _If you want to be credited or want it removed from here, please reach out to me!_
 
 <a href="https://discourse.32bit.cafe/t/resources-list-for-the-personal-web/49" target="_blank" rel="noopener noreferrer">Resources List for the Personal Web</a> (from 32bit café) — another useful links list.
 
 When using search engines, appending "site:www.reddit.com" or "site:stackoverflow.com" at the end of a search query helps a lot when looking for a solution to a specific coding issue by filtering results to only those sites. Example: _"How to center a &#x3C;div&#x3E; site:www.reddit.com/r/webdev"_.
-
----
 
 ## My Visual Studio Code extensions
 
