@@ -1,6 +1,6 @@
 ---
 title: Montenegrin politicians Sailor Moon parody
-description: "Anime-style drawing of three men dressed in Sailor Moon clothes"
+alt: "Anime-style drawing of three men dressed in Sailor Moon clothes"
 date: 2020-01-01
 categories: ["Montenegro"]
 preview: "assets/images/preview/montenegro-sailor-moon-parody.avif"

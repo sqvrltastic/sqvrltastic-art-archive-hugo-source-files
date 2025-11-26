@@ -1,6 +1,6 @@
 ---
 title: Hair studies sketch dump
-description: "Four sketchy uncolored portraits of women's heads with various hairstyles"
+alt: "Four sketchy uncolored portraits of women's heads with various hairstyles"
 date: 2021-01-01
 categories: ["Study"]
 preview: "assets/images/preview/study-hair-sketch-dump.avif"

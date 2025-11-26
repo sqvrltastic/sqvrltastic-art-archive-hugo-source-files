@@ -1,6 +1,6 @@
 ---
 title: Kerillian redraw as smug Asuka
-description: "elf waystalker Kerillian looking smug"
+alt: "elf waystalker Kerillian looking smug"
 date: 2025-02-26
 categories: ["Vermintide"]
 preview: "assets/images/preview/vermintide-kerillian-smug-asuka.avif"

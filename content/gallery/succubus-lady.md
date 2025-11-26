@@ -1,6 +1,6 @@
 ---
 title: Succubus lady
-description: "Succubus woman standing still, dressed in a simple black leotard with a sizeable décolletage"
+alt: "Succubus woman standing still, dressed in a simple black leotard with a sizeable décolletage"
 date: 2021-01-01
 categories: ["Misc. OC"]
 preview: "assets/images/preview/succubus-lady.avif"

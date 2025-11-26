@@ -1,6 +1,6 @@
 ---
 title: Angry Kerillian doodle
-description: "Sketchy drawing of a floating head Waystalker Kerillian with an angry expression"
+alt: "Sketchy drawing of a floating head Waystalker Kerillian with an angry expression"
 date: 2025-01-25
 categories: ["Vermintide"]
 preview: "assets/images/preview/vermintide-angry-kerillian-doodle.avif"

@@ -1,6 +1,6 @@
 ---
 title: Kerillian with huge elf ears
-description: "Waystalker Kerillian with huge elf ears"
+alt: "Waystalker Kerillian with huge elf ears"
 date: 2025-01-25
 categories: ["Vermintide"]
 preview: "assets/images/preview/vermintide-big-elf-ears-kerillian.avif"

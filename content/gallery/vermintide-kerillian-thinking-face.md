@@ -1,6 +1,6 @@
 ---
 title: Thinking face Kerillian
-description: "elf Kerillian with a thinking expresion on her face"
+alt: "elf Kerillian with a thinking expresion on her face"
 date: 2025-03-04
 categories: ["Vermintide"]
 preview: "assets/images/preview/vermintide-kerillian-thinking-face.avif"

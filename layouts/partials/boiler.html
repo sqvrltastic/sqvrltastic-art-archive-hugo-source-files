@@ -1,7 +1,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ .Description }}">
+  {{ with .Params.description }}
+  <meta name="description" content="{{ $.Description }}">
+  {{ else }}
+  <!-- no description available for this page -->
+  {{ end }}
   <!-- Facebook Meta tags -->
   <meta property="og:title" content="{{ .Title }} | Sqvrltastic Art Archive">
   <meta property="og:description" content="{{ .Description }}">

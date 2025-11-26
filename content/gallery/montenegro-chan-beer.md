@@ -1,6 +1,6 @@
 ---
 title: Montenegro-chan offering you a cold one
-description: "Montenegro-chan is holding out a can of beer towards the viewer. She is smirking. There is a speech bubble saying 'Beer?' She is dressed in a traditional montenegrin cap, a t-shirt and a pleated black skirt. She has long black straight hair and is wearing sunglasses."
+alt: "Montenegro-chan is holding out a can of beer towards the viewer. She is smirking. There is a speech bubble saying 'Beer?' She is dressed in a traditional montenegrin cap, a t-shirt and a pleated black skirt. She has long black straight hair and is wearing sunglasses."
 date: 2025-08-11
 categories: ["Montenegro"]
 preview: "assets/images/preview/montenegro-chan-beer.avif"
