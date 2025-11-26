@@ -15,7 +15,7 @@
 <h1>{{ .Title }}</h1>
 {{ with .Params.compressed }}
 <div class="artwork">
-  <img src="{{ . | relURL }}" alt="{{ $.Params.description }}">
+  <img src="{{ . | relURL }}" alt="{{ $.Params.alt }}">
 </div>
 {{ else }}
 <p><i>No image found</i></p>
