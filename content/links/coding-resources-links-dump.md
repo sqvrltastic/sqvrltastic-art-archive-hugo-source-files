@@ -46,6 +46,8 @@ Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" targe
 
 <a href="https://10015.io/tools/css-background-pattern-generator" target="_blank" rel="noopener noreferrer">CSS Background Pattern Generator</a>.
 
+<a href="https://www.deadlinkchecker.com/website-dead-link-checker.asp" target="_blank" rel="noopener noreferrer">Broken link checker tool</a>
+
 ## SEO & optimization
 
 <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">PageSpeed Insights by Google</a> — gives your website performance rating.
@@ -55,8 +57,6 @@ Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" targe
 <a href="https://www.digitalocean.com/community/tutorials/how-to-add-twitter-card-and-open-graph-social-metadata-to-your-webpage-with-html" target="_blank" rel="noopener noreferrer">How to add Twitter Cards and Open Graph Social Metadata to your Webpage</a> — you know how for example, on Discord, when you send a link to a news article to someone, it embeds a picture and some preview text? Well this is how to do it.
 
 <a href="https://www.opengraph.xyz/" target="_blank" rel="noopener noreferrer">OpenGraph</a> — preview social media share and generate metatags.
-
-<a href="https://www.deadlinkchecker.com/website-dead-link-checker.asp" target="_blank" rel="noopener noreferrer">Broken link checker tool</a>
 
 ## Get your website indexed by search engines
 
