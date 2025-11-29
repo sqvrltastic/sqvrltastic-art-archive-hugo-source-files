@@ -1,7 +1,8 @@
 ---
 title: Animating details HTML element with pure CSS (without calc-size(auto))
-description: ""
-date: 2025-11-27
+description: "I needed some ingenious solution to pretty-up my details element styling. This guide is a temporary
+workaround until the calc-size() CSS function becomes widely available."
+date: 2025-11-29
 categories: ["Guides"]
 tutorialCSS: "assets/css/tutorials.css"
 ---
@@ -14,7 +15,7 @@ tutorialCSS: "assets/css/tutorials.css"
   <i>
     This guide is a temporary workaround until the <code>calc-size()</code> <a
       href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/calc-size" target="_blank"
-      rel="noopener noreferrer">(MDN link)</a> CSS function becomes widely available.
+      rel="noopener noreferrer">(MDN Web Docs)</a> CSS function becomes widely available.
   </i>
 </p>
 <hr>
@@ -151,7 +152,7 @@ summary::-webkit-details-marker {
 </p>
 <h2>Adding a fade-in and fade-out effect on opening and closing the element</h2>
 <p>You can target the content inside the <code>&#x3C;details&#x3E;</code> element with the CSS pseudo-element
-  <code>::details-content</code>. I'm going to add simple opacity fade effect. Just something to spice-up the content
+  <code>::details-content</code>. I'm going to add a simple opacity fade effect. Just something to spice-up the content
   further!
 </p>
 <details class="details-three">
@@ -229,7 +230,7 @@ details[open]::details-content {
   idea.
 </p>
 <p>
-  Thankfully, I found a different approach, that only uses CSS and is widely supported. We are going to use CSS
+  Thankfully, I found a different approach, that only uses CSS and is widely supported. We are going to use the CSS
   property <code>max-block-size</code> (or, <code>max-height</code>), but the catch is... We will have to hardcode it. I
   am also going to create multiple CSS animation "presets" with different timings for <code>&#x3C;details&#x3E;</code>
   elements with different heights. Also, I will be assigning each HTML <code>&#x3C;details&#x3E;</code> element a
