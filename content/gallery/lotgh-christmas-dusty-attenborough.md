@@ -4,7 +4,7 @@ alt: "Sketchy drawing of Dusty wearing an ugly Christmas sweater and holding a c
 date: 2024-12-23
 categories: ["Lotgh"]
 preview: "assets/images/preview/lotgh-christmas-dusty-attenborough.avif"
-compressed: "assets/images/compresed/lotgh-christmas-dusty-attenborough.avif"
+compressed: "assets/images/compressed/lotgh-christmas-dusty-attenborough.avif"
 full: "assets/images/full/lotgh-christmas-dusty-attenborough.jpg"
 ---
 

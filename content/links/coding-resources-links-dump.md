@@ -30,6 +30,8 @@ Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" targe
 
 <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">W3C Markup Validation Service</a> — check to see if your HTML is valid.
 
+<a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener noreferrer">W3C CSS Validation Service</a> — same thing, but for CSS; migth give false positive warnings for newly added features sometimes.
+
 <a href="https://addons.mozilla.org/en-US/firefox/addon/pranay-joshi/" target="_blank" rel="noopener noreferrer">Debug CSS Firefox extension</a> — useful for visualizing CSS box model.
 
 <a href="https://mothereff.in/html-entities" target="_blank" rel="noopener noreferrer">HTML entity encoder/decoder</a> — useful when you need to include chunks of HTML code on your website as text.
@@ -54,6 +56,8 @@ Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" targe
 
 <a href="https://www.opengraph.xyz/" target="_blank" rel="noopener noreferrer">OpenGraph</a> — preview social media share and generate metatags.
 
+<a href="https://www.deadlinkchecker.com/website-dead-link-checker.asp" target="_blank" rel="noopener noreferrer">Broken link checker tool</a>
+
 ## Get your website indexed by search engines
 
 <a href="https://search.google.com/search-console/about" target="_blank" rel="noopener noreferrer">Google Search Console</a>.
@@ -70,9 +74,11 @@ Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" targe
 
 <a href="https://solaria.neocities.org/accessibility" target="_blank" rel="noopener noreferrer">Web accessibility</a>.
 
-<a href="https://solaria.neocities.org/beginnersaccessibility" target="_blank" rel="noopener noreferrer">Common accessibility problems</a>.
+<a href="https://solaria.neocities.org/guides/accessibility" target="_blank" rel="noopener noreferrer">Common accessibility problems</a>.
 
 <a href="https://stackoverflow.com/questions/58447538/accessibility-difference-between-img-alt-and-figcaption#58468470" target="_blank" rel="noopener noreferrer">Images: figcaption vs. alt text</a>.
+
+<a href="https://unagisoftware.com/articles/web-accessibility-a-quick-guide-on-how-to-use-aria-hidden/" target="_blank" rel="noopener noreferrer">Quick guide on How to use `aria-hidden`</a>.
 
 <a href="https://www.a11y-collective.com/blog/button-vs-link/" target="_blank" rel="noopener noreferrer">A Web Developer's guide to Buttons vs Links</a>.
 
@@ -92,9 +98,11 @@ Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" targe
 
 _Sidenote: I'm obviously biased, but I consider GitHub Pages to be the clearly superior option to Neocities, tech-wise and service-wise. Neocities whole shtick is that it has a "social media" functionality attached to it, which is both a blessing and a curse (more of a curse, IMO). There are of course, other free hosting providers, but I don't have any experience with them._
 
-## Other resources
+## Guestbook providers
 
-<a href="../../documents/building-a-personal-website.pdf" target="_blank" rel="noopener noreferrer">"Building a personal website?"</a> — a PDF I saved from _somewhere_ I don't remember anymore, sorry. _If you want to be credited or want it removed from here, please reach out to me!_
+<a href="https://atabook.org/" target="_blank" rel="noopener noreferrer">Atabook</a> — free guestbook provider. No ads and has a plenty of robust moderation options, such as banning the use of VPNs. My current guestbook provider.
+
+## Other resources
 
 <a href="https://discourse.32bit.cafe/t/resources-list-for-the-personal-web/49" target="_blank" rel="noopener noreferrer">Resources List for the Personal Web</a> (from 32bit café) — another useful links list.
 

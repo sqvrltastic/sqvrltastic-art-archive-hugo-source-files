@@ -4,12 +4,12 @@ description: "Markdown is a lightweight markup language that lets you add format
 elements to plaintext documents. Its main advantage is readability and simple syntax."
 date: 2025-01-28
 categories: ["Guides"]
+tutorialCSS: "assets/css/tutorials.css"
 ---
 
 <h1 id="markdown-cheat-sheet">Markdown cheat sheet</h1>
-
-<p><strong>Last updated:</strong> January 31st 2025</p>
-
+<p><strong>Last updated:</strong> 11/28/2025 — included actual semantic HTML elements as examples.</p>
+<hr>
 <p>
   Markdown is a lightweight markup language that lets you add formatting
   elements to plaintext documents. It's used by a lot of
@@ -22,7 +22,6 @@ categories: ["Guides"]
   platforms. This guide is mostly from my own perspective and includes info
   about features that I personally use the most.
 </p>
-
 <h2>Basic text formatting</h2>
 <p>
   You separate paragraphs by adding an empty line in between them. You can also
@@ -38,56 +37,50 @@ categories: ["Guides"]
   (Reddit only).
 </p>
 <blockquote>
-  &#x3E;Blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-  malesuada pellentesque erat quis pulvinar. Quisque sed sagittis diam.
-  Phasellus commodo mattis libero, et luctus tellus porta eu.
+  &#x3E;This is a blockquote. <span aria-hidden="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+    malesuada pellentesque erat quis pulvinar. Quisque sed sagittis diam.
+    Phasellus commodo mattis libero, et luctus tellus porta eu.</span>
 </blockquote>
-
 <h2>Headings</h2>
 <p>
-  You should put a blank line before and after the heading. Also, examples below
-  are not actual semantic HTML headers. It's just text formatted to look like
-  headings that I'm using to illustrate my point.
+  You should put a blank line before and after the heading.
 </p>
-<p class="h1"># Heading 1</p>
-<p class="h2">## Heading 2</p>
-<p class="h3">### Heading 3</p>
-<p class="h4">#### Heading 4</p>
-
+<h1 class="h1"># Heading 1</h1>
+<h2 class="h2">## Heading 2</h2>
+<h3 class="h3">### Heading 3</h3>
+<h4 class="h4">#### Heading 4</h4>
 <h2>Links</h2>
 <p>
   <a href="#">link</a>
 </p>
 <p>[link text](link URL)</p>
-
 <h2>Lists</h2>
 <h3>Ordered list:</h3>
-<p>
-  1. first <br>
-  2. second<br>
-  3. third<br>
-</p>
+<ol>
+  <li>first</li>
+  <li>second</li>
+  <li>third</li>
+</ol>
 <h3>Unordered list:</h3>
-<p>
-  - first<br>
-  - second<br>
-  - third<br>
-</p>
+<ul class="ul-hyphen">
+  <li>first</li>
+  <li>second</li>
+  <li>third</li>
+</ul>
 <p>or:</p>
-<p>
-  * first<br>
-  * second<br>
-  * third<br>
-</p>
+<ul class="ul-asterisk">
+  <li>first</li>
+  <li>second</li>
+  <li>third</li>
+</ul>
 <p>or, <em>sometimes:</em></p>
-<p>
-  + first<br>
-  + second<br>
-  + third<br>
-</p>
-
-<h2>Other stuff</h2>
-<h3>Horizontal rule (separator):</h3>
-<p>--- or ***</p>
-<h3>Image:</h3>
+<ul class="ul-plus">
+  <li>first</li>
+  <li>second</li>
+  <li>third</li>
+</ul>
+<h2>Image</h2>
 <p>![alt text](/path/to/image.jpg)</p>
+<h2>Horizontal rule (separator)</h2>
+<hr class="hr">
+<p>--- or ***</p>
