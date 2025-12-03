@@ -32,11 +32,11 @@
   {{ end }}
   <title>{{ .Title }} | Sqvrltastic Art Archive</title>
   <link rel="icon" type="image/x-icon" href='{{ relURL "favicon.ico" }}'>
-  {{ $css := resources.Get "assets/css/main.css" | resources.Fingerprint }}
+  {{ $css := resources.Get "assets/css/main.css" | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
   <!-- special css, only when needed -->
   {{ with .Params.tutorialCSS }}
-  {{ $tutorials := resources.Get "assets/css/tutorials.css" | resources.Fingerprint }}
+  {{ $tutorials := resources.Get "assets/css/tutorials.css" | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $tutorials.RelPermalink }}">
   {{ end }}
   <link rel="alternate" type="application/rss+xml" title="RSS feed for
