@@ -1,9 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  {{ partial "boiler.html" . }}
-  <body>
-    {{ partial "header.html" . }}
-    <main id="main">{{ block "main" . }} {{ end }}</main>
-    {{ partial "footer.html" . }}
-  </body>
+{{ partial "boiler.html" . }}
+
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <noscript>
+    <p>
+      <i>
+        <strong>Note:</strong> JavaScript is disabled in your browser. The core functionality of this site works
+        without JavaScript, but it is required for the theme switcher to work, as well as for displaying custom,
+        self-hosted fonts.
+      </i>
+    </p>
+    <style>
+      #theme-menu>* {
+        display: none;
+      }
+    </style>
+  </noscript>
+  <div class="flex-container">
+    {{ partial "sidebar.html" . }}
+    <div class="primary">
+      {{ partial "header.html" . }}
+      <main id="main">{{ block "main" . }} {{ end }}</main>
+    </div>
+  </div>
+  {{ partial "footer.html" . }}
+</body>
+
 </html>

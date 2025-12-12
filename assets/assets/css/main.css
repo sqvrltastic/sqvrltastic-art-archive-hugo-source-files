@@ -86,24 +86,7 @@
   font-display: block;
 }
 
-/* Skip to main link */
-
-.skip {
-  position: absolute;
-  inset-inline-start: -10000px;
-  inset-block-start: auto;
-  inline-size: 1px;
-  block-size: 1px;
-  overflow: hidden;
-}
-
-.skip:focus {
-  position: static;
-  inline-size: auto;
-  block-size: auto;
-}
-
-/* General styling */
+/* Global theme */
 
 :root {
   --bg-color: #f2f2f2;
@@ -134,32 +117,119 @@ body {
   font-size: 0.85rem;
 }
 
-header,
-main,
-footer {
-  max-inline-size: 35rem;
-  margin: 0 auto;
+/* Skip to main link */
+
+.skip-link {
+  position: absolute;
+  inset-inline-start: -10000px;
+  inset-block-start: auto;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
 }
 
-header > p {
-  font-size: 2.1rem;
-  font-family: SlacksideOne, monospace;
-  text-align: center;
-  margin: 1rem auto;
+.skip-link:focus {
+  position: static;
+  inline-size: auto;
+  block-size: auto;
+}
+
+/* Layout */
+
+.flex-container {
+  display: flex;
+  gap: 5rem;
+  margin: 0 auto;
+  max-inline-size: fit-content;
+  margin-block-start: 2rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.primary {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.latest-artwork {
+  all: revert;
+  margin: 0;
+  max-inline-size: fit-content;
+}
+
+.latest-artwork > a > img {
+  inline-size: 7rem;
+  aspect-ratio: 1/1;
 }
 
 nav {
-  font-size: 0.9rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 1rem;
-  margin-block-end: 1rem;
+  inline-size: fit-content;
+}
+
+nav > div {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.social-media {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social-media > li > a > img {
+  inline-size: 1.8rem;
+  aspect-ratio: 1/1;
+}
+
+.primary {
+  inline-size: 40rem;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+header * {
+  margin: 0;
+}
+
+.logo {
+  grid-row: span 2 / span 2;
+  font-family: SlackSideOne, monospace;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+#theme-menu {
+  grid-column-start: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  align-self: start;
+  justify-self: end;
+  inline-size: fit-content;
+}
+
+.version {
+  align-self: end;
+  justify-self: end;
+  inline-size: fit-content;
 }
 
 button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: 0;
   padding: 0;
   background-color: transparent;
@@ -170,9 +240,8 @@ button:hover {
 }
 
 button > img {
-  display: block;
-  aspect-ratio: 1 / 1;
   block-size: 1rem;
+  aspect-ratio: 1 / 1;
   transition: filter 0.3s;
 }
 
@@ -185,9 +254,11 @@ button > img:active {
   transition: none;
 }
 
-main {
-  border-block-start: 0.1rem dotted var(--main-extra-color);
-  border-block-end: 0.1rem dotted var(--main-extra-color);
+header > details {
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  display: none;
 }
 
 footer {
@@ -199,6 +270,7 @@ footer {
 
 h1 {
   font-size: 1.2rem;
+  margin-block-start: 0;
 }
 
 h2 {
@@ -223,6 +295,10 @@ a:hover {
 a:active {
   color: var(--click-color);
   transition: none;
+}
+
+img {
+  display: block;
 }
 
 li {
@@ -383,11 +459,10 @@ article p {
 }
 
 article > img {
-  display: block;
   max-inline-size: 10rem;
-  aspect-ratio: 1 / 1;
   border: 0.07rem solid var(--main-color);
   margin-block-end: 0.7rem;
+  aspect-ratio: 1 / 1;
 }
 
 article > .desc {
@@ -418,10 +493,10 @@ iframe {
 
 .preview {
   display: block;
-  aspect-ratio: 1 / 1;
   overflow: hidden;
   border: 0.07rem solid var(--main-color);
   transition: filter 0.3s;
+  aspect-ratio: 1 / 1;
 }
 
 .preview > img {
@@ -441,16 +516,9 @@ iframe {
 }
 
 .artwork > img {
-  display: block;
   max-inline-size: 100%;
   max-block-size: 30rem;
   margin: 0 auto;
-}
-
-/* Responsive images */
-
-.responsive-img {
-  max-inline-size: 100%;
 }
 
 /* Title and date for some posts */
@@ -523,26 +591,6 @@ iframe {
 }
 
 /* CSS for smaller screens */
-
-@media (max-width: 730px) {
-  nav {
-    font-size: 0.85rem;
-    flex-wrap: wrap;
-    gap: 1rem 3rem;
-    justify-content: center;
-  }
-
-  nav > button > img {
-    block-size: 0.85rem;
-  }
-}
-
-@media (max-width: 660px) {
-  header > p {
-    font-size: 1.5rem;
-    margin-block-start: 0;
-  }
-}
 
 @media (max-width: 600px) {
   .gallery {

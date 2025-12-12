@@ -1,33 +1,13 @@
 <header>
-  <a href="#main" class="skip">Skip to main content</a>
-  <noscript>
-    <p>
-      <i>
-        <strong>Note:</strong> JavaScript is disabled in your browser. The core functionality of this site works
-        without JavaScript, but it is required for the theme switcher to work, as well as for displaying custom,
-        self-hosted fonts.
-      </i>
-    </p>
-    <style>
-      #theme-toggle {
-        display: none;
-      }
-    </style>
-  </noscript>
-  <p class="logo"><span aria-hidden="true">🎄</span><strong>Sqvrltastic Art Archive</strong><span
-      aria-hidden="true">🎄</span></p>
-  <nav>
-    <a href='{{ relURL "" }}'>Home</a>
-    <a href='{{ relURL "updates.html" }}'>Updates</a>
-    <a href='{{ relURL "gallery" }}'>Gallery</a>
-    <a href='{{ relURL "blog" }}'>Blog</a>
-    <a href='{{ relURL "links" }}'>Links</a>
-    <a href='{{ relURL "about.html" }}'>About</a>
-    <a href='{{ relURL "buttons.html" }}'>Buttons</a>
-    <a href='{{ relURL "guestbook.html" }}'>Guestbook</a>
-    <a href='{{ relURL "rss.xml" }}' target="_blank">RSS</a>
+  <p class="logo"><strong>Sqvrltastic's<br>Homepage</strong></p>
+  <div id="theme-menu">
+    <p>Theme:</p>
     <button id="theme-toggle" aria-label="toggle theme">
       <img id="theme-icon" src='{{ relURL "assets/images/icons/sun.png" }}' alt="Light theme ON">
     </button>
-  </nav>
+  </div>
+  <p class="version">Version: 3.0.0.</p>
+  <details role="navigation"> <!-- Mobile navigation bar -->
+    <summary>Menu</summary>
+  </details>
 </header>

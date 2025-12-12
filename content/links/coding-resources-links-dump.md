@@ -18,6 +18,8 @@ date: 2025-07-23
 
 Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener noreferrer">CSS flexbox</a> and <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" rel="noopener noreferrer">CSS grid</a> by CSS-Tricks; self-explanatory.
 
+<a href="https://cssgridgenerator.io/" target="_blank" rel="noopener noreferrer">CSS grid generator</a>
+
 <a href="https://css-tricks.com/css-logical-properties-and-values/" target="_blank" rel="noopener noreferrer">CSS Logical Properties and Values</a> by CSS-Tricks.
 
 <a href="https://www.w3schools.com/cssref/css_colors.php" target="_blank" rel="noopener noreferrer">CSS Colors</a> — a cheat sheet from W3Schools.

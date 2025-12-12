@@ -5,13 +5,13 @@ date: 2025-11-11
 categories: ["Ramblings"]
 ---
 
-# 100 Questions for Webmasters
-
 A fun questionnaire I found, made by <a href="https://mouseling.net/100webmaster" target="_blank" rel="noopener noreferrer">mouseling</a>. I was itching to write something lately (and I'll probably update this site a bit later as well) and this is a perfect way to warm up my writing muscles. Warning for brutal honesty ahead.
 
 <i>Also, I fixed a few of the author's typos and grammatical errors in the questions themselves here and there, just FYI.</i>
 
 Anyway...
+
+---
 
 <b>1. Please introduce yourself.</b>
 
