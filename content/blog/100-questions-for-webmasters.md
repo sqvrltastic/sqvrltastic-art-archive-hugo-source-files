@@ -33,7 +33,7 @@ And I got into the hobby again because I became disillusioned with the state of 
 
 <b>4. What kind of website are you most interested in?</b>
 
-I would love it if the fanartists and fic writers that I follow on social media made a website for their works. Doesn't have to be anything fancy, in fact I prefer designs that are straightforward and don't get in the way. Just something that has an RSS fedd so I can follow them outside of their shitty walled garden platforms like Tumblr or Twitter.
+I would love it if the fanartists and fic writers that I follow on social media made a website for their works. Doesn't have to be anything fancy, in fact I prefer designs that are straightforward and don't get in the way. Just something that has an RSS feed so I can follow them outside of their shitty walled garden platforms like Tumblr or Twitter.
 
 <b>5. What's your workflow? Do you plan your websites out thoroughly or do you come up with the design as you go along?</b>
 

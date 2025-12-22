@@ -1,17 +1,16 @@
 <div class="sidebar">
     <figure class="latest-artwork">
         <a href="#">
-            <img src='{{ relURL "./assets/images/preview/vermintide-kerillian-drinking-leaf-lovers.avif" }}' alt="test">
+            <img class="preview"
+                src='{{ relURL "./assets/images/preview/vermintide-kerillian-drinking-leaf-lovers.avif" }}' alt="test">
         </a>
         <figcaption><strong>Latest artwork</strong><br> Published:<br> 09/12/2025</figcaption>
     </figure>
     <nav>
-        <strong><a href='{{ relURL "" }}'>Home</a></strong>
         <div>
-            <strong>Website</strong>
+            <a href='{{ relURL "" }}'>Home &#x2302;</a>
             <a href='{{ relURL "updates.html" }}'>Updates</a>
             <a href='{{ relURL "guestbook.html" }}'>Guestbook</a>
-            <a href='{{ relURL "rss.xml" }}' target="_blank">RSS feed</a>
         </div>
         <div>
             <strong>My work</strong>
@@ -40,12 +39,17 @@
     <ul class="social-media">
         <li>
             <a href="https://www.reddit.com/user/sqvrltastic/" target="_blank" rel="noopener noreferrer">
-                <img src='{{ relURL "assets/images/icons/reddit-logo.png" }}' alt="Reddit">
+                <img src='{{ relURL "assets/images/icons/reddit.png" }}' alt="Reddit">
             </a>
         </li>
         <li>
             <a href="https://github.com/sqvrltastic" target="_blank" rel="noopener noreferrer">
-                <img src='{{ relURL "assets/images/icons/github-logo.png" }}' alt="Github">
+                <img src='{{ relURL "assets/images/icons/github.png" }}' alt="Github">
+            </a>
+        </li>
+        <li>
+            <a href='{{ relURL "rss.xml" }}' target="_blank" rel="noopener noreferrer">
+                <img src='{{ relURL "assets/images/icons/rss.png" }}' alt="RSS">
             </a>
         </li>
         <li>
@@ -54,4 +58,11 @@
             </a>
         </li>
     </ul>
+    <footer>
+        <p>
+            &copy; 2025 Sqvrltastic<br>
+            Made with HUGO <br>
+            Hosted on GitHub Pages
+        </p>
+    </footer>
 </div>

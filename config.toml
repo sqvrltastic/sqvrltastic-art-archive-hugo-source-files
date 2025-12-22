@@ -1,6 +1,6 @@
 baseURL = 'https://sqvrltastic.art/'
 languageCode = 'en-us'
-title = 'Sqvrltastic Art Archive'
+title = "Sqvrltastic's Homepage"
 theme = 'CleanGallery'
 uglyURLs = true
 
