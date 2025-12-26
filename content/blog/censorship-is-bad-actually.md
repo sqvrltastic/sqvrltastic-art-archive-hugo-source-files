@@ -2,10 +2,7 @@
 title: Censorship is bad, actually
 description: "I usually prefer to avoid talking about hot-button political issues and controversial topics, but in light of recent events I decided to share my thoughts on the matter because it's closely related to my work and art as a whole."
 date: 2025-08-12
-categories: ["Ramblings"]
 ---
-
-# Censorship is bad, actually
 
 I usually prefer to avoid talking about hot-button political issues and controversial topics, but in light of _recent events_ I decided to share my thoughts on the matter because it's closely related to my work and art as a whole.
 

@@ -1,8 +1,8 @@
 <div class="sidebar">
     <figure class="latest-artwork">
-        <a href="#">
-            <img class="preview"
-                src='{{ relURL "./assets/images/preview/vermintide-kerillian-drinking-leaf-lovers.avif" }}' alt="test">
+        <a href="#" class="preview">
+            <img src='{{ relURL "./assets/images/art/preview/vermintide-kerillian-drinking-leaf-lovers.avif" }}'
+                alt="test">
         </a>
         <figcaption><strong>Latest artwork</strong><br> Published:<br> 09/12/2025</figcaption>
     </figure>
@@ -15,25 +15,29 @@
         <div>
             <strong>My work</strong>
             <a href='{{ relURL "gallery" }}'>Gallery</a>
-            <a href="">Guides</a>
+            <a href='{{ relURL "guides" }}'>Guides</a>
             <a href='{{ relURL "blog" }}'>Blog</a>
         </div>
         <div>
             <strong>Personal</strong>
-            <a href="">About me</a>
-            <a href="">My tools</a>
-            <a href="">Favorite media</a>
+            <a href='{{ relURL "about-me.html" }}'>About me</a>
+            <a href='{{ relURL "my-tools.html" }}'>My tools</a>
+            <a href='{{ relURL "favorite-media.html" }}'>Favorite media</a>
         </div>
         <div>
             <strong>Outbound links</strong>
-            <a href="">Resources lists</a>
-            <a href="">Other indie websites</a>
+            <a href='{{ relURL "resources" }}'>Resources</a>
+            <a href='{{ relURL "other-indie-websites.html" }}'>Other indie websites</a>
+        </div>
+        <div>
+            <strong>Website</strong>
+            <a href='{{ relURL "about-this-website.html" }}'>About this website</a>
+            <a href='{{ relURL "buttons-and-banners.html" }}'>Buttons and banners</a>
+            <a href='{{ relURL "old-designs-archive.html" }}'>Old designs archive</a>
         </div>
         <div>
             <strong>Other</strong>
-            <a href="">About this website</a>
-            <a href="">Buttons and banners</a>
-            <a href="">Art usage rights</a>
+            <a href='{{ relURL "art-usage-rights.html" }}'>Art usage rights</a>
         </div>
     </nav>
     <ul class="social-media">

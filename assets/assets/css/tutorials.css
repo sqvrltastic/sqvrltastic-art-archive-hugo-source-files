@@ -2,6 +2,16 @@
 
 /* Styles that are only used it tutorials for demonstation */
 
+.spoiler {
+  background-color: var(--main-color);
+  color: var(--main-color);
+}
+
+.spoiler:hover {
+  background-color: transparent;
+  color: var(--main-color);
+}
+
 .h1 {
   font-size: 2rem;
 }

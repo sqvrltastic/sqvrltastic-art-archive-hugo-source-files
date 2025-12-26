@@ -109,8 +109,9 @@ html[data-theme="dark"] .social-media > li > a > img {
   filter: invert(1);
 }
 
-* {
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s, filter 0.3s;
+html[data-theme="dark"] #guestbook {
+  filter: invert(1);
+  mix-blend-mode: lighten;
 }
 
 body {
@@ -118,7 +119,12 @@ body {
   color: var(--main-color);
   font-family: OpenSans, "Segoe UI", sans-serif;
   font-size: 0.9rem;
-  margin: 0;
+  scrollbar-gutter: stable;
+  overflow-y: scroll;
+}
+
+* {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, filter 0.3s;
 }
 
 /* Skip to main link */
@@ -153,8 +159,8 @@ body {
   gap: 1rem;
   flex-shrink: 0;
   position: sticky;
-  top: 0px;
-  block-size: calc(100vh - 1rem);
+  inset-block-start: 8px;
+  max-block-size: calc(100vh - 2rem);
   inline-size: 10rem;
   overflow-y: auto;
 }
@@ -163,18 +169,19 @@ body {
   inline-size: 35rem;
 }
 
+/* Sidebar content */
+
 .latest-artwork {
   all: revert;
   margin: 0;
-  max-inline-size: fit-content;
+  inline-size: 9rem;
   margin-block-start: 2rem;
   padding-block-end: 1rem;
-  border-block-end: 0.07rem solid var(--neutral-color);
+  border-block-end: 0.07rem solid var(--main-color);
 }
 
-.latest-artwork > a > .preview {
+.latest-artwork > .preview {
   inline-size: 7rem;
-  margin-block-end: 0.2rem;
 }
 
 nav {
@@ -186,6 +193,7 @@ nav {
 nav > div {
   display: flex;
   flex-direction: column;
+  gap: 0.2rem;
   white-space: nowrap;
 }
 
@@ -199,34 +207,41 @@ nav > div {
 
 .social-media > li > a > img {
   inline-size: 1.7rem;
-  aspect-ratio: 1/1;
 }
+
+footer {
+  inline-size: 9rem;
+  border-block-start: 0.07rem solid var(--main-color);
+  padding-block-start: 1rem;
+}
+
+footer > p {
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+/* Header & main section */
 
 header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  position: sticky;
-  top: 0px;
-  z-index: 999;
   padding: 2rem 0;
-  margin-block-end: 1rem;
-  background-color: var(--bg-color);
-  border-block-end: 0.07rem solid var(--neutral-color);
+  margin-block-end: 1.5rem;
+  border-block-end: 0.07rem solid var(--main-color);
 }
 
-header * {
+header > * {
   margin: 0;
 }
 
 .logo {
   grid-row: span 2 / span 2;
-  font-family: SlackSideOne, monospace;
+  font-family: SlackSideOne, sans-serif;
   font-size: 3rem;
   line-height: 3rem;
 }
 
 #theme-menu {
-  grid-column-start: 2;
   display: flex;
   align-items: center;
   gap: 0.3rem;
@@ -235,52 +250,43 @@ header * {
   inline-size: fit-content;
 }
 
-.version {
-  align-self: end;
-  justify-self: end;
-  inline-size: fit-content;
+#theme-menu > * {
+  margin: 0;
 }
 
-button {
+#theme-menu > button {
   border: 0;
   padding: 0;
   background-color: transparent;
 }
 
-button:hover {
+#theme-menu > button:hover {
   cursor: pointer;
 }
 
-button > img {
+#theme-menu > button > img {
   block-size: 1rem;
   aspect-ratio: 1 / 1;
-  transition: filter 0.3s;
 }
 
-button > img:hover {
+#theme-menu > button > img:hover {
   filter: opacity(0.5);
 }
 
-button > img:active {
+#theme-menu > button > img:active {
   filter: opacity(0.1);
   transition: none;
 }
 
-header > details {
-  grid-row: span 2 / span 2;
-  grid-column-start: 3;
-  grid-row-start: 1;
+#theme-no-js {
   display: none;
 }
 
-footer {
-  border-block-start: 0.07rem solid var(--neutral-color);
-  padding-block-start: 1rem;
-}
-
-footer > p {
-  font-size: 0.8rem;
-  margin: 0;
+.version {
+  grid-column-start: 2;
+  align-self: end;
+  justify-self: end;
+  inline-size: fit-content;
 }
 
 #main {
@@ -291,12 +297,10 @@ footer > p {
 
 h1 {
   font-size: 1.2rem;
-  margin-block-start: 0;
 }
 
 h2 {
   font-size: 1rem;
-  margin-block-start: 2rem;
 }
 
 h3,
@@ -322,8 +326,8 @@ img {
   display: block;
 }
 
-li {
-  line-height: 1.3rem;
+.img-inline {
+  display: inline;
 }
 
 pre {
@@ -371,9 +375,8 @@ summary {
   list-style: none;
 }
 
-/* Rotating triangle for <details> */
-
 summary::after {
+  /* Rotating triangle for <details> */
   content: "";
   transition: 0.3s;
   border-block-start: 0.4rem solid var(--main-color);
@@ -388,7 +391,7 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-/* end */
+/* End of segment */
 
 /* <details> CSS-only animation, with presets for different sizes */
 
@@ -436,7 +439,7 @@ details[open]::details-content {
   max-block-size: 100rem;
 }
 
-/* end */
+/* End of segment */
 
 summary > h3 {
   margin: 0;
@@ -454,47 +457,47 @@ figure {
   border-radius: 0.2rem;
 }
 
+figure > a,
 figure > img {
-  border: 0.07rem solid var(--main-color);
+  margin-block-end: 0.5rem;
 }
 
 article {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(2, 1fr);
   padding: 1.25rem;
   margin: 1rem auto;
   border: 0.1rem solid var(--main-color);
   border-radius: 0.2rem;
 }
 
-article > div {
-  display: flex;
-  justify-content: space-between;
-  margin-block-end: 0.7rem;
-}
-
-article > div > h2 {
+article > * {
   margin: 0;
 }
 
-article p {
-  margin: 0;
+article > .date {
+  justify-self: end;
+}
+
+article > img,
+article > a,
+article > .description {
+  grid-column: span 2 / span 2;
 }
 
 article > img {
   max-inline-size: 10rem;
   border: 0.07rem solid var(--main-color);
-  margin-block-end: 0.7rem;
   aspect-ratio: 1 / 1;
 }
 
-article > .desc {
-  margin-block-start: 0.7rem;
-}
-
-iframe {
+#guestbook {
   inline-size: 100%;
   block-size: 31.5rem;
   mix-blend-mode: darken;
   border: none;
+  transition: opacity;
 }
 
 /* Gallery */
@@ -508,17 +511,11 @@ iframe {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.featured {
-  display: flex;
-  justify-content: space-between;
-  gap: 0.5rem;
-}
+/* Specific image templates */
 
 .preview {
   display: block;
-  overflow: hidden;
   border: 0.07rem solid var(--main-color);
-  transition: filter 0.3s;
   aspect-ratio: 1 / 1;
 }
 
@@ -526,7 +523,8 @@ iframe {
   inline-size: 100%;
 }
 
-.preview:hover {
+.preview:hover,
+.btn-small:hover {
   filter: brightness(1.15);
 }
 
@@ -544,31 +542,57 @@ iframe {
   margin: 0 auto;
 }
 
-/* Title and date for some posts */
+.image-generic {
+  max-inline-size: 100%;
+  border: 0.07rem solid var(--main-color);
+  aspect-ratio: 16/9;
+}
 
-.title-date {
+.btn-small {
+  display: block;
+  inline-size: fit-content;
+}
+
+.btn-small > img {
+  /* code to make 88x31 buttons look crispier and negate browser zoom */
+  inline-size: 4.2rem;
+  image-rendering: crisp-edges;
+}
+
+/* Blog list page styles */
+
+.blog-list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.blog-item > div {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.blog-item > div > * {
+  margin: 0;
 }
 
 /* CSS for 404 page */
 
-.fourofour {
-  text-align: center;
-  inline-size: fit-content;
-  block-size: fit-content;
-  position: absolute;
-  inset: 0;
-  margin: auto;
+.four-o-four {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  block-size: 98vh;
 }
 
-.fourofour > h1 {
+.four-o-four > h1 {
   font-size: 4rem;
   margin: 0 auto;
 }
 
-.fourofour > p {
+.four-o-four > p {
   margin: 0 auto 1rem;
 }
 
@@ -590,16 +614,6 @@ iframe {
   word-break: break-all;
 }
 
-.spoiler {
-  background-color: var(--main-color);
-  color: var(--main-color);
-}
-
-.spoiler:hover {
-  background-color: transparent;
-  color: var(--main-color);
-}
-
 /* OS dark theme preference if not manually set */
 
 @media (prefers-color-scheme: dark) {
@@ -610,10 +624,15 @@ iframe {
     --main-extra-color: gray;
     --colored-text: greenyellow;
   }
-}
 
-html:not([data-theme]) .social-media > li > a > img {
-  filter: invert(1);
+  html:not([data-theme]) .social-media > li > a > img {
+    filter: invert(1);
+  }
+
+  html:not([data-theme]) #guestbook {
+    filter: invert(1);
+    mix-blend-mode: lighten;
+  }
 }
 
 /* CSS for smaller screens */

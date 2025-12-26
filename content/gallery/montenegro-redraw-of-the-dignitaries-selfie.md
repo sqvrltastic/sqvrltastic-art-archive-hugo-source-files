@@ -3,13 +3,13 @@ title: Redraw of the Montengrin dignitaries selfie
 alt: "Redraw of the Montengrin dignitaries selfie photo from Vatican. Featuring (from left to right): a man in a sunglasses smilling, a woman with seductive gaze, a man with a disturbed expression on his face and an old man with a tired expression."
 date: 2025-05-11
 categories: ["Montenegro"]
-preview: "assets/images/preview/montenegro-redraw-of-the-dignitaries-selfie.avif"
-compressed: "assets/images/compressed/montenegro-redraw-of-the-dignitaries-selfie.avif"
-full: "assets/images/full/montenegro-redraw-of-the-dignitaries-selfie.jpg"
+preview: "assets/images/art/preview/montenegro-redraw-of-the-dignitaries-selfie.avif"
+compressed: "assets/images/art/compressed/montenegro-redraw-of-the-dignitaries-selfie.avif"
+full: "assets/images/art/full/montenegro-redraw-of-the-dignitaries-selfie.jpg"
 length: "104552"
 ---
 
-Originally posted to r/Montenegro. 
+Originally posted to r/Montenegro.
 
 This is a joke, don't take this too seriously. If you didn't get it, that alright.
 

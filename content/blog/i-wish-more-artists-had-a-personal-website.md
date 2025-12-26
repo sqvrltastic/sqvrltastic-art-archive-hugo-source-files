@@ -2,7 +2,6 @@
 title: I wish more artists had a personal website...
 description: "Rambly blog post about wishing for a more human, more enriching web for artists specifically."
 date: 2025-04-09
-categories: ["Ramblings"]
 ---
 
 This is just a mild rant regarding something that I have been thinking about as of late and something of a continuation of my previous blog post titled [Please, stop posting your artwork to Twitter](./stop-posting-artwork-to-twitter.html)...

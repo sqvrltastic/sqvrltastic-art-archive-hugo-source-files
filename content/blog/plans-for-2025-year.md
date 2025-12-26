@@ -1,11 +1,8 @@
 ---
 title: Plans for 2025 year
-description: "Search engine woes and custom domain soon, maybe??"
+description: "Search engine woes and custom domain soon, maybe?"
 date: 2025-01-03
-categories: ["Ramblings"]
 ---
-
-# Plans for 2025 year
 
 I don't know why, but I keep struggling to get this website indexed by search
 engine crawler bots. Supposedly, it should be an automated process, but it

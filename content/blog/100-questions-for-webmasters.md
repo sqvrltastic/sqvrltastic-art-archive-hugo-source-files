@@ -2,7 +2,6 @@
 title: "100 Questions for Webmasters"
 description: "A fun questionaire I found, made by mouseling. I was itching to write something lately and this is a perfect way to warm up my writing muscles. Warning for brutal honesty ahead."
 date: 2025-11-11
-categories: ["Ramblings"]
 ---
 
 A fun questionnaire I found, made by <a href="https://mouseling.net/100webmaster" target="_blank" rel="noopener noreferrer">mouseling</a>. I was itching to write something lately (and I'll probably update this site a bit later as well) and this is a perfect way to warm up my writing muscles. Warning for brutal honesty ahead.
@@ -285,7 +284,7 @@ Have something to say. Don't just make a worthless nostalgiashit website because
 
 <b>67. Do you keep all your styling in CSS? Or do you hard-code some?</b>
 
-Everything in an external stylesheet.
+All my CSS is in an external stylesheet.
 
 <b>68. What do you think of frameset layouts?</b>
 
@@ -297,7 +296,7 @@ This brings me back to my years of making a Tokyo Mew Mew fan site on narod.ru..
 
 <b>70. Do you subscribe to the ideas of "one-column", "two-column" and "three-column" layouts? Do you use any of these?</b>
 
-I don't really think about layouts in that way to be honest. I guess I mostly use the single column, centered layout.
+I don't really think about layouts in that way to be honest. I guess I usually prefer single or two-column layouts.
 
 <b>71. Do you spend longer on HTML or CSS?</b>
 
@@ -317,7 +316,7 @@ I'd say advanced with HTML and CSS, but beginner with JavaScript (and Go for HUG
 
 <b>75. Do you have a habit of looking at the source code of websites you visit?</b>
 
-I sometimes use the "Inspect element" tool in Firefox, but other than that no, not really.
+I sometimes use the "Inspect element" tool in Firefox, but other than that no, not really, unless I want to know how something is made.
 
 <b>76. How did _you_ learn how to make websites?</b>
 
@@ -341,7 +340,7 @@ I would say Helvetica, but that joke stopped being funny in the 2000s. I do genu
 
 <b>81. Would you run a website with another person? How would that work?</b>
 
-I don't see the point.
+_No._
 
 <b>82. Do you surf the Web to find new personal websites very often?</b>
 

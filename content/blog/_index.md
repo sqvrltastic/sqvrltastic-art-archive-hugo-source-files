@@ -1,5 +1,5 @@
 ---
 title: Blog
-description: "Place where I write about whatever I feel like at the moment. Occasional guides and other useful content. Mostly just screaming into the void."
+description: "Rants and essays of varying quality. I mostly write on topics such as art, indie web and media that I enjoy."
 url: "/blog/"
 ---
