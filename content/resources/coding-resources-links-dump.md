@@ -124,3 +124,4 @@ When using search engines, appending "site:www.reddit.com" or "site:stackoverflo
 - JavaScript (ES6) code snippets
 - HUGO Language and Syntax Support
 - Live Server
+- CSS Nesting Syntax Highlighting

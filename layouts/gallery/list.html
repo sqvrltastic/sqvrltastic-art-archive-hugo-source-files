@@ -23,9 +23,9 @@
     <div class="gallery">
       {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
       (slice "Vermintide")) "Date.Year" 2025 }}
-      <a class="preview" href="{{ .RelPermalink }}">
+      <a href="{{ .RelPermalink }}">
         {{ $postTitle := .Title }} {{ with .Params.preview }}
-        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy">
+        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">
         {{ else }}
         <p>No image found</p>
         <!-- Fallback text -->
@@ -40,9 +40,9 @@
     <div class="gallery">
       {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
       (slice "Vermintide")) "Date.Year" 2021 }}
-      <a class="preview" href="{{ .RelPermalink }}">
+      <a href="{{ .RelPermalink }}">
         {{ $postTitle := .Title }} {{ with .Params.preview }}
-        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy">
+        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">
         {{ else }}
         <p>No image found</p>
         <!-- Fallback text -->
@@ -63,9 +63,9 @@
     <div class="gallery">
       {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
       (slice "Deep Rock Galactic")) "Date.Year" 2025 }}
-      <a class="preview" href="{{ .RelPermalink }}">
+      <a href="{{ .RelPermalink }}">
         {{ $postTitle := .Title }} {{ with .Params.preview }}
-        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy">
+        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">
         {{ else }}
         <p>No image found</p>
         <!-- Fallback text -->
@@ -86,9 +86,9 @@
     <div class="gallery">
       {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
       (slice "Lotgh")) "Date.Year" 2025 }}
-      <a class="preview" href="{{ .RelPermalink }}">
+      <a href="{{ .RelPermalink }}">
         {{ $postTitle := .Title }} {{ with .Params.preview }}
-        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy">
+        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">
         {{ else }}
         <p>No image found</p>
         <!-- Fallback text -->
@@ -103,9 +103,9 @@
     <div class="gallery">
       {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
       (slice "Lotgh")) "Date.Year" 2024 }}
-      <a class="preview" href="{{ .RelPermalink }}">
+      <a href="{{ .RelPermalink }}">
         {{ $postTitle := .Title }} {{ with .Params.preview }}
-        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy">
+        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">
         {{ else }}
         <p>No image found</p>
         <!-- Fallback text -->
@@ -126,9 +126,9 @@
     <div class="gallery">
       {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
       (slice "Dark Souls")) "Date.Year" 2021 }}
-      <a class="preview" href="{{ .RelPermalink }}">
+      <a href="{{ .RelPermalink }}">
         {{ $postTitle := .Title }} {{ with .Params.preview }}
-        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy">
+        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">
         {{ else }}
         <p>No image found</p>
         <!-- Fallback text -->
@@ -158,9 +158,9 @@
     <div class="gallery">
       {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
       (slice "Montenegro")) "Date.Year" 2025 }}
-      <a class="preview" href="{{ .RelPermalink }}">
+      <a href="{{ .RelPermalink }}">
         {{ $postTitle := .Title }} {{ with .Params.preview }}
-        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy">
+        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">
         {{ else }}
         <p>No image found</p>
         <!-- Fallback text -->
@@ -175,9 +175,9 @@
     <div class="gallery">
       {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
       (slice "Montenegro")) "Date.Year" "in" (slice 2020 2021) }}
-      <a class="preview" href="{{ .RelPermalink }}">
+      <a href="{{ .RelPermalink }}">
         {{ $postTitle := .Title }} {{ with .Params.preview }}
-        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy">
+        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">
         {{ else }}
         <p>No image found</p>
         <!-- Fallback text -->
@@ -198,9 +198,9 @@
     <div class="gallery">
       {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
       (slice "Misc. OC")) "Date.Year" 2025 }}
-      <a class="preview" href="{{ .RelPermalink }}">
+      <a href="{{ .RelPermalink }}">
         {{ $postTitle := .Title }} {{ with .Params.preview }}
-        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy">
+        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">
         {{ else }}
         <p>No image found</p>
         <!-- Fallback text -->
@@ -215,9 +215,9 @@
     <div class="gallery">
       {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
       (slice "Misc. OC")) "Date.Year" "in" (slice 2020 2021) }}
-      <a class="preview" href="{{ .RelPermalink }}">
+      <a href="{{ .RelPermalink }}">
         {{ $postTitle := .Title }} {{ with .Params.preview }}
-        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy">
+        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">
         {{ else }}
         <p>No image found</p>
         <!-- Fallback text -->
@@ -238,9 +238,9 @@
     <div class="gallery">
       {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
       (slice "Study")) "Date.Year" 2025 }}
-      <a class="preview" href="{{ .RelPermalink }}">
+      <a href="{{ .RelPermalink }}">
         {{ $postTitle := .Title }} {{ with .Params.preview }}
-        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy">
+        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">
         {{ else }}
         <p>No image found</p>
         <!-- Fallback text -->
@@ -255,9 +255,9 @@
     <div class="gallery">
       {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
       (slice "Study")) "Date.Year" 2021 }}
-      <a class="preview" href="{{ .RelPermalink }}">
+      <a href="{{ .RelPermalink }}">
         {{ $postTitle := .Title }} {{ with .Params.preview }}
-        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy">
+        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">
         {{ else }}
         <p>No image found</p>
         <!-- Fallback text -->
@@ -286,9 +286,9 @@
     <div class="gallery">
       {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
       (slice "Blender")) "Date.Year" 2021 }}
-      <a class="preview" href="{{ .RelPermalink }}">
+      <a href="{{ .RelPermalink }}">
         {{ $postTitle := .Title }} {{ with .Params.preview }}
-        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy">
+        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">
         {{ else }}
         <p>No image found</p>
         <!-- Fallback text -->

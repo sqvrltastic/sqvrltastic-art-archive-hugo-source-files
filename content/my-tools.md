@@ -21,3 +21,4 @@ My Visual Studio Code extensions:
 - JavaScript (ES6) code snippets
 - HUGO Language and Syntax Support
 - Live Server
+- CSS Nesting Syntax Highlighting

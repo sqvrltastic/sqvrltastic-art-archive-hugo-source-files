@@ -180,7 +180,7 @@ body {
   border-block-end: 0.07rem solid var(--main-color);
 }
 
-.latest-artwork > .preview {
+.latest-artwork > a:has(> .preview) {
   inline-size: 7rem;
 }
 
@@ -306,7 +306,6 @@ h2 {
 h3,
 h4 {
   font-size: 0.9rem;
-  font-weight: normal;
 }
 
 a {
@@ -513,50 +512,54 @@ article > img {
 
 /* Specific image templates */
 
-.preview {
+a:has(> .preview) {
   display: block;
   border: 0.07rem solid var(--main-color);
   aspect-ratio: 1 / 1;
 }
 
-.preview > img {
+.preview {
   inline-size: 100%;
 }
 
-.preview:hover,
-.btn-small:hover {
+a:has(> .preview):hover {
   filter: brightness(1.15);
 }
 
-.preview:active {
+a:has(> .preview):active {
   border: 0.07rem solid var(--neutral-color);
 }
 
-.artwork {
+div:has(> .artwork) {
   border: 0.07rem solid var(--main-color);
 }
 
-.artwork > img {
+.artwork {
   max-inline-size: 100%;
   max-block-size: 30rem;
   margin: 0 auto;
 }
 
-.image-generic {
+.generic-image {
   max-inline-size: 100%;
   border: 0.07rem solid var(--main-color);
   aspect-ratio: 16/9;
 }
 
-.btn-small {
+a:has(> .small-button) {
   display: block;
   inline-size: fit-content;
 }
 
-.btn-small > img {
+a:has(> .small-button):hover {
+  filter: brightness(1.15);
+}
+
+.small-button {
   /* code to make 88x31 buttons look crispier and negate browser zoom */
   inline-size: 4.2rem;
-  image-rendering: crisp-edges;
+  aspect-ratio: 88/31;
+  transform: scale(1);
 }
 
 /* Blog list page styles */
@@ -578,22 +581,81 @@ article > img {
   margin: 0;
 }
 
-/* CSS for 404 page */
+/* Old website designs showcase styles */
 
+.old-design {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.old-design > p {
+  margin: 0;
+}
+
+.old-design > a:has(> .generic-image) {
+  border: 0.07rem solid var(--main-color);
+  aspect-ratio: 16/9;
+}
+
+.old-design > a:has(> .generic-image):hover {
+  filter: brightness(1.15);
+}
+
+.old-design > a:has(> .generic-image):active {
+  border: 0.07rem solid var(--neutral-color);
+}
+
+.old-design > a > .generic-image {
+  border: none;
+  aspect-ratio: revert-layer;
+}
+
+/* Stamp collection */
+div:has(> .stamp) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.stamp {
+  inline-size: 4.6rem;
+  aspect-ratio: 99/56;
+  transform: scale(1);
+}
+
+.favorite-media {
+  display: flex;
+  gap: 1rem;
+  > img {
+    margin: 0;
+    aspect-ratio: 2/3;
+    block-size: 15.5rem;
+    border: 0.07rem solid var(--main-color);
+  }
+  > figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    > p {
+      margin: 0;
+    }
+  }
+}
+
+/* CSS for 404 page */
 .four-o-four {
   display: flex;
   flex-direction: column;
   justify-content: center;
   block-size: 98vh;
-}
-
-.four-o-four > h1 {
-  font-size: 4rem;
-  margin: 0 auto;
-}
-
-.four-o-four > p {
-  margin: 0 auto 1rem;
+  > h1 {
+    font-size: 4rem;
+    margin: 0 auto;
+  }
+  > p {
+    margin: 0 auto 1rem;
+  }
 }
 
 /* Ocasionally used text styles */
