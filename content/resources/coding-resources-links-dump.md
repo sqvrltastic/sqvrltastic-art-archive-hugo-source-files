@@ -121,7 +121,7 @@ When using search engines, appending "site:www.reddit.com" or "site:stackoverflo
 - ~~Prettier code formatter~~ _I no longer use it for HTML formatting because it adds trailing slashes to void elements_.
 - Debugger for Firefox
 - HTML CSS Support
+- CSS Nesting Syntax Highlighting
 - JavaScript (ES6) code snippets
 - HUGO Language and Syntax Support
 - Live Server
-- CSS Nesting Syntax Highlighting
