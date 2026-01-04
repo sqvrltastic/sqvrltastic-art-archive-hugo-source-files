@@ -4,10 +4,12 @@ description: "Search engine woes and custom domain soon, maybe?"
 date: 2025-01-03
 ---
 
-I don't know why, but I keep struggling to get this website indexed by search
+<div>
+
+~~I don't know why, but I keep struggling to get this website indexed by search
 engine crawler bots. Supposedly, it should be an automated process, but it
 just doesn't seem to work for me. I had to manually submit my page to Google
-for it to get it indexed, but it only worked with the landing page.
+for it to get it indexed, but it only worked with the landing page.~~ Update: It's indexed now!
 
 I don't know... To be honest, I'm at a loss of what causes it, but I suspect
 that the issue might be with GitHub itself. I looked it up and apparently
@@ -21,3 +23,5 @@ first.
 
 Also, if you had similar issues with search engines and found a solution, I'd
 appreciate it if you reach out to me and let me know what helped you...
+
+</div>

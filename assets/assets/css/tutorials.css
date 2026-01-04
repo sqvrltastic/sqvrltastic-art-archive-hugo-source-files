@@ -12,23 +12,11 @@
   color: var(--main-color);
 }
 
-.h1 {
-  font-size: 2rem;
-}
-
-.h2 {
-  font-size: 1.7rem;
-  margin-block-start: revert;
-}
-
-.h3 {
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
+.h1,
+.h2,
+.h3,
 .h4 {
-  font-size: 1rem;
-  font-weight: bold;
+  all: revert-layer;
 }
 
 .ul-hyphen > li::marker {
@@ -44,15 +32,15 @@
 }
 
 .hr {
-  border: revert;
-  margin: 1rem auto;
+  all: revert-layer;
+  inline-size: 100%;
 }
 
 .hr::before {
-  content: revert;
+  all: revert-layer;
 }
 
-.details,
+.details, /* Don't touch anything details-related, it's cursed */
 .details > *:not(summary),
 .details > summary,
 .details > summary::after,

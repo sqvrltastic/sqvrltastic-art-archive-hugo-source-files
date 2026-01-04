@@ -1,0 +1,14 @@
+<ul id="breadcrumbs">
+    {{- range .Ancestors.Reverse }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> / </li>
+    {{- end }}
+    <li>{{ .Title }}</li>
+</ul>
+<div>
+    <h1>{{ .Title }}</h1>
+    {{ if and .IsPage .Date }}
+    <p class="date">[{{ .Date.Format "01/03/2006" }}]</p>
+    {{ else }}
+    <!-- No date available, nothing will be output -->
+    {{ end }}
+</div>

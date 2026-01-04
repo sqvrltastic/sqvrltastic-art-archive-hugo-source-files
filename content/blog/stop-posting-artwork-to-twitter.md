@@ -4,6 +4,8 @@ description: "... Just don't. Stop."
 date: 2025-01-05
 ---
 
+<div>
+
 Yes, I know, it's "X" now. No, I don't care. I will be calling it Twitter in this blog post. "Man, have you seen that tweet on X?", said literally nobody. ~~Also, why is it still called a "tweet", if it's on X? Shouldn't it be called a xeet?..~~ I digress. Anyway... Here is why you should delete and uninstall Twitter like, right now...
 
 Let's start... _Twitter_. The infamous hellsite. No, muskrat did not ruin Twitter. It was always bad. Terrible even. The only good thing about Twitter is that it acts as a sort of containment board for annoying people.
@@ -47,3 +49,5 @@ If you stay on Twitter just to get discovered for the fan art you draw, I feel t
 I get that some people depend on marketing on social media like Twitter for their livelihood, but even then, at least try to only use it for those professional purposes and do have your own platform outside of Twitter. But, if you are just a hobby artist, please, make the jump, leave Twitter and hopefully more people will follow your footsteps.
 
 I would never want to be friends with someone who has an active Twitter account. Everybody who is active on Twitter is a loser. Yes, everybody. _No exceptions_.
+
+</div>

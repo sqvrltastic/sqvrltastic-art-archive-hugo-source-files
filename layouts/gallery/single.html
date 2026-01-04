@@ -12,24 +12,28 @@
     }
   }
 </script>
-<h1>{{ .Title }}</h1>
-<p><i>Published: {{ .Date.Format "02-01-2006" }}</i></p>
-{{ with .Params.compressed }}
 <div>
-  <img src="{{ . | relURL }}" alt="{{ $.Params.alt }}" class="artwork">
+  <h1>{{ .Title }}</h1>
+  <p><i>Published: {{ .Date.Format "02-01-2006" }}</i></p>
 </div>
-{{ else }}
-<p><i>No image found</i></p>
-<!-- Fallback text -->
-{{ end }}
+<div>
+  {{ with .Params.compressed }}
+  <div>
+    <img src="{{ . | relURL }}" alt="{{ $.Params.alt }}" class="artwork">
+  </div>
+  {{ else }}
+  <p><i>No image found</i></p>
+  <!-- Fallback text -->
+  {{ end }}
 
-{{ with .Params.full }}
-<p><strong><a href="{{ . | relURL }}" target="_blank" rel="noopener noreferrer">Download full
-      (.jpg)</a></strong></p>
-{{ else }}
-<p><i>No image found</i></p>
-<!-- Fallback text -->
-{{ end }}
+  {{ with .Params.full }}
+  <p><strong><a href="{{ . | relURL }}" target="_blank" rel="noopener noreferrer">Download full
+        (.jpg)</a></strong></p>
+  {{ else }}
+  <p><i>No image found</i></p>
+  <!-- Fallback text -->
+  {{ end }}
 
-{{ .Content }}
+  {{ .Content }}
+</div>
 {{ end }}

@@ -6,77 +6,97 @@ date: 2025-11-28
 tutorialCSS: "assets/css/tutorials.css"
 ---
 
-<p>
-  Markdown is a lightweight markup language that lets you add formatting
-  elements to plaintext documents. It's used by a lot of
-  <abbr title="Static Site Generators">SSGs</abbr> (like mine, HUGO), but also
-  in places like Discord and Reddit among others. Its main advantage is
-  readability and simple syntax.
-</p>
-<p>
-  Different implementations of Markdown vary a bit between software and
-  platforms. This guide is mostly from my own perspective and includes info
-  about features that I personally use the most.
-</p>
-<h2>Basic text formatting</h2>
-<p>
-  You separate paragraphs by adding an empty line in between them. You can also
-  add a bit of basic formatting to your text, like shown below.
-</p>
-<p>_<em>italics</em>_ or <em>*italics*</em></p>
-<p><strong>**bold**</strong></p>
-<p><s>~strike-through~</s> or <s>~~strike-through~~</s></p>
-<p><code>`code`</code></p>
-<p>
-  <span class="spoiler">||spoiler||</span> (Discord only), or
-  <span class="spoiler">&#x3E;!spoilers!&#x3C;</span>
-  (Reddit only).
-</p>
-<blockquote>
-  &#x3E;This is a blockquote. <span aria-hidden="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-    malesuada pellentesque erat quis pulvinar. Quisque sed sagittis diam.
-    Phasellus commodo mattis libero, et luctus tellus porta eu.</span>
-</blockquote>
-<h2>Headings</h2>
-<p>
-  You should put a blank line before and after the heading.
-</p>
-<h1 class="h1"># Heading 1</h1>
-<h2 class="h2">## Heading 2</h2>
-<h3 class="h3">### Heading 3</h3>
-<h4 class="h4">#### Heading 4</h4>
-<h2>Links</h2>
-<p>
-  <a href="#">link</a>
-</p>
-<p>[link text](link URL)</p>
-<h2>Lists</h2>
-<h3>Ordered list:</h3>
-<ol>
-  <li>first</li>
-  <li>second</li>
-  <li>third</li>
-</ol>
-<h3>Unordered list:</h3>
-<ul class="ul-hyphen">
-  <li>first</li>
-  <li>second</li>
-  <li>third</li>
-</ul>
-<p>or:</p>
-<ul class="ul-asterisk">
-  <li>first</li>
-  <li>second</li>
-  <li>third</li>
-</ul>
-<p>or, <em>sometimes:</em></p>
-<ul class="ul-plus">
-  <li>first</li>
-  <li>second</li>
-  <li>third</li>
-</ul>
-<h2>Image</h2>
-<p>![alt text](/path/to/image.jpg)</p>
-<h2>Horizontal rule (separator)</h2>
-<hr class="hr">
-<p>--- or ***</p>
+<div>
+  <p>
+    Markdown is a lightweight markup language that lets you add formatting
+    elements to plaintext documents. It's used by a lot of
+    <abbr title="Static Site Generators">SSGs</abbr> (like mine, HUGO), but also
+    in places like Discord and Reddit among others. Its main advantage is
+    readability and simple syntax.
+  </p>
+  <p>
+    Different implementations of Markdown vary a bit between software and
+    platforms. This guide is mostly from my own perspective and includes info
+    about features that I personally use the most.
+  </p>
+</div>
+
+<div>
+  <h2>Basic text formatting</h2>
+  <p>
+    You separate paragraphs by adding an empty line in between them. You can also
+    add a bit of basic formatting to your text, like shown below.
+  </p>
+  <p>_<em>italics</em>_ or <em>*italics*</em></p>
+  <p><strong>**bold**</strong></p>
+  <p><s>~strike-through~</s> or <s>~~strike-through~~</s></p>
+  <p><code>`code`</code></p>
+  <p>
+    <span class="spoiler">||spoiler||</span> (Discord only), or
+    <span class="spoiler">&#x3E;!spoilers!&#x3C;</span>
+    (Reddit only).
+  </p>
+  <blockquote>
+    &#x3E;This is a blockquote. <span aria-hidden="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+      malesuada pellentesque erat quis pulvinar. Quisque sed sagittis diam.
+      Phasellus commodo mattis libero, et luctus tellus porta eu.</span>
+  </blockquote>
+</div>
+
+<div>
+  <h2>Headings</h2>
+  <p>
+    You should put a blank line before and after the heading.
+  </p>
+  <h1 class="h1"># Heading 1</h1>
+  <h2 class="h2">## Heading 2</h2>
+  <h3 class="h3">### Heading 3</h3>
+  <h4 class="h4">#### Heading 4</h4>
+</div>
+
+<div>
+  <h2>Links</h2>
+  <p>
+    <a href="#">link</a>
+  </p>
+  <p>[link text](link URL)</p>
+</div>
+
+<div>
+  <h2>Lists</h2>
+  <h3>Ordered list:</h3>
+  <ol>
+    <li>first</li>
+    <li>second</li>
+    <li>third</li>
+  </ol>
+  <h3>Unordered list:</h3>
+  <ul class="ul-hyphen">
+    <li>first</li>
+    <li>second</li>
+    <li>third</li>
+  </ul>
+  <p>or:</p>
+  <ul class="ul-asterisk">
+    <li>first</li>
+    <li>second</li>
+    <li>third</li>
+  </ul>
+  <p>or, <em>sometimes:</em></p>
+  <ul class="ul-plus">
+    <li>first</li>
+    <li>second</li>
+    <li>third</li>
+  </ul>
+</div>
+
+<div>
+  <h2>Image</h2>
+  <p>![alt text](/path/to/image.jpg)</p>
+</div>
+
+<div>
+  <h2>Horizontal rule (separator)</h2>
+  <hr class="hr">
+  <p>--- or ***</p>
+</div>

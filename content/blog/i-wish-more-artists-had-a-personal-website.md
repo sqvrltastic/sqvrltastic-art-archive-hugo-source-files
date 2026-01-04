@@ -4,6 +4,8 @@ description: "Rambly blog post about wishing for a more human, more enriching we
 date: 2025-04-09
 ---
 
+<div>
+
 This is just a mild rant regarding something that I have been thinking about as of late and something of a continuation of my previous blog post titled [Please, stop posting your artwork to Twitter](./stop-posting-artwork-to-twitter.html)...
 
 So yeah... I wish that more artists, instead of looking for **"The Next App&#x2122;"** to post their work to, would make a personal website instead. Yeah, the learning curve can be a bit steep, especially if you want to learn (and I strongly recommend it for this use case) <abbr title="Static Site Generators">SSGs</abbr>, like HUGO. But I swear, it's _so_ worth it! It's also a pretty fun and useful hobby...
@@ -25,3 +27,5 @@ Another point to make is that social media promotes shallow, unfulfilling intera
 I know some people are shy and worry that they might be "cringy", in which case, <span class="text-uppercase">**stop!!! Really, stop being shy!!!**</span> It's not good for you! Just start small and just try to talk to strangers sometimes! It can be pretty fun and fulfilling!
 
 Lastly, I already said it before, but if you want to actually own Musk, **leave his platform**, instead of doing your lazy retweeting slacktivism and virtue signaling nonsense.
+
+</div>

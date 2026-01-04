@@ -4,6 +4,8 @@ description: "Rambling about neoshitties, ugly websites, zoomers who idolize the
 date: 2025-01-04
 ---
 
+<div>
+
 I get a feeling that a lot of Neocities users are teens, or at least born after 2005 and never really experienced the "old web" personally. I'm saying this because people really need to stop idolizing the "old web" so much.
 
 This might seem hypocritical, after all, isn’t my own website kinda oldish looking? Yes and no. While I do like a lot of design trends from a bygone era and despise a lot of modern web development trends, I still do recognize that there are a lot of things that sucked about the web 1.0.
@@ -68,3 +70,5 @@ but one that sees the issues with the state of the current modern web, keeps
 certain things from the past, but ultimately has its gaze turned towards the
 _future_ and is dedicated towards making the internet a better space with all
 the knowledge we have accumulated thus far.
+
+</div>

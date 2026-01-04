@@ -21,7 +21,7 @@
   <!-- Twitter Meta Tags -->
   <meta property="twitter:domain" content="sqvrltastic.art">
   <meta property="twitter:url" content="https://sqvrltastic.art">
-  <meta name="twitter:title" content="{{ .Title }} | Sqvrltastic Art Archive">
+  <meta name="twitter:title" content="{{ .Title }} | Sqvrltastic's Homepage">
   <meta name="twitter:description" content="{{ .Description }}">
   {{ with .Params.compressed }}
   <meta name="twitter:card" content="summary_large_image">
@@ -30,7 +30,7 @@
   {{ else }}
   <!-- no embed image available for this page -->
   {{ end }}
-  <title>{{ .Title }} | Sqvrltastic Art Archive</title>
+  <title>{{ .Title }} | Sqvrltastic's Homepage</title>
   <link rel="icon" type="image/x-icon" href='{{ relURL "favicon.ico" }}'>
   {{ $css := resources.Get "assets/css/main.css" | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
@@ -40,7 +40,7 @@
   <link rel="stylesheet" href="{{ $tutorials.RelPermalink }}">
   {{ end }}
   <link rel="alternate" type="application/rss+xml" title="RSS feed for
-  Sqvrltastic Art Archive" href='{{ absURL "rss.xml" }}'>
+  Sqvrltastic's Homepage" href='{{ absURL "rss.xml" }}'>
   <!-- Self-hosted custom fonts -->
   <link rel="preload" as="font" href='{{ relURL "../assets/fonts/SlacksideOne-Regular.woff2" }}'>
   <link rel="canonical" href="{{ .Permalink }}">

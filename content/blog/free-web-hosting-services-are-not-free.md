@@ -5,6 +5,8 @@ date: 2025-12-23
 categories: ["Ramblings"]
 ---
 
+<div>
+
 Lately I've been witnessing how Neocities is slowly falling apart, with Kyle only occasionally chiming in to solve only the most egregious and pressing technical issues and I have some thoughts on the matter...
 
 It's no secret that platforms like the aforementioned Neocities rapidly grew in popularity in recent years. While in theory, **"Creativity™ 🎨✨"** is "good", it has nonetheless led to the platform getting flooded with subjectively low quality, objectively extremely poorly optimized websites with stupidly large, bloated, uncompressed assets. I'm looking at you, _artists_ in particular. Please stop uploading your whole ass artworks as uncompressed 19MB PNGs and then dumping them all on one page for fuck's sake. Not to mention that some people blatantly break Neocities ToS and just treat it as a free file hosting service... Please stop doing that, use something like Catbox instead...
@@ -18,3 +20,5 @@ And it's really not that hard to keep your site optimized! Biggest thing for mos
 _"So what are you suggesting we do, sqvrltastic? Should we just kick every unoptimized, blinkie-overloaded amateur website off Neocities?!"_
 
 I am not suggesting anything. I am merely suggesting that you should treat _free_ web hosting not as an invitation to "do whatever you want _kween_ fuck social media amirite 🤪", but to approach it with more care and consideration. A free platform cannot exist, or it will be destined to introduce more aggressive monetization, if people keep flooding it with bloated, low quality content. I think you should either self-host, or pay for hosting if you don't care about being prudent about your file size weight.
+
+</div>

@@ -1,37 +1,41 @@
 {{ define "main" }}
 
 <h1>{{ .Title }}</h1>
-<p><i>{{ .Description }}</i></p>
 
-<!-- Updates listing and sorting algorithm -->
-{{- $allPosts := slice -}} {{- $allPosts = $allPosts | append (where
-.Site.RegularPages "Section" "gallery") -}} {{- $allPosts = $allPosts | append
-(where .Site.RegularPages "Section" "blog") -}} {{- $allPosts = $allPosts |
-append (where .Site.RegularPages "Section" "log") -}} {{- $sortedPosts := sort
-$allPosts "Date" "desc" | first 20 -}} {{- range $sortedPosts }}
-<article>
-  <!-- Title -->
-  <h2>
-    {{- if eq .Section "gallery" -}} New artwork {{- else if eq .Section
-    "blog" -}} New blog post {{- else -}} Website update {{- end -}}
-  </h2>
+<div>
+  <p><i>{{ .Description }}</i></p>
+  <!-- Updates listing and sorting algorithm -->
+  {{- $allPosts := slice -}} {{- $allPosts = $allPosts | append (where
+  .Site.RegularPages "Section" "gallery") -}} {{- $allPosts = $allPosts | append
+  (where .Site.RegularPages "Section" "blog") -}} {{- $allPosts = $allPosts |
+  append (where .Site.RegularPages "Section" "log") -}} {{- $sortedPosts := sort
+  $allPosts "Date" "desc" | first 20 -}} {{- range $sortedPosts }}
+  <article>
+    <!-- Title -->
+    <h2>
+      {{- if eq .Section "gallery" -}} New artwork {{- else if eq .Section
+      "blog" -}} New blog post {{- else -}} Website update {{- end -}}
+    </h2>
 
-  <!-- Date -->
-  <p class="date"><i>{{ .Date.Format "02-01-2006" }}</i></p>
+    <!-- Date -->
+    <p class="date"><i>{{ .Date.Format "02-01-2006" }}</i></p>
 
-  <!-- If it's an artwork it adds a picture -->
-  {{- if eq .Section "gallery" -}}
-  <img src="{{ .Params.preview }}" alt="{{ .Title }}">
-  <!-- and a link to full -->
-  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <!-- If it's an artwork it adds a picture -->
+    {{- if eq .Section "gallery" -}}
+    <img src="{{ .Params.preview }}" alt="{{ .Title }}">
+    <!-- and a link to full -->
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
 
-  <!-- if it's a blog -->
-  {{- else if eq .Section "blog" -}}
-  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-  <p class="description">{{ .Description }}</p>
-  {{- else -}}
-  <!-- this is for when I use basic plain text update format -->
-  <p class="description">{{ .Content | plainify | htmlUnescape }}</p>
-  {{- end -}}
-</article>
-{{ end }} {{ end }}
+    <!-- if it's a blog -->
+    {{- else if eq .Section "blog" -}}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <p class="description">{{ .Description }}</p>
+    {{- else -}}
+    <!-- this is for when I use basic plain text update format -->
+    <p class="description">{{ .Content | plainify | htmlUnescape }}</p>
+    {{- end -}}
+  </article>
+  {{ end }}
+</div>
+
+{{ end }}

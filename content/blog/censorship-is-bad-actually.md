@@ -4,6 +4,8 @@ description: "I usually prefer to avoid talking about hot-button political issue
 date: 2025-08-12
 ---
 
+<div>
+
 I usually prefer to avoid talking about hot-button political issues and controversial topics, but in light of _recent events_ I decided to share my thoughts on the matter because it's closely related to my work and art as a whole.
 
 I'll try to be as brief as possible and not repeat popular talking points that have already been made countless times before. Essentially, here is what my argument boils down to...
@@ -15,3 +17,5 @@ Art and/or porn is a reflection of reality and current societal norms and some o
 No, not a single person or group of people can or should ever be the ultimate arbiter of morality and what is acceptable in the media, and especially not the government and large payment processors, who are known for their very blunt, nuclear, and all encompassing approach when it comes to censorship.
 
 Remember, the slippery slope is very much a real phenomenon here, and the censorship will _never_ just end at what you personally find "yucky" or "weird". There was this one time when <a href="https://www.bbc.com/news/blogs-news-from-elsewhere-53319505" target="_blank" rel="noopener noreferrer">an ice-cream brand in Russia was accused of spreading "gay propaganda"</a> because of rainbow packaging, for example. A farce, it's what it is. Lastly, remember the old saying, **don't like, don't read**.
+
+</div>

@@ -6,18 +6,20 @@ date: 2025-11-29
 tutorialCSS: "assets/css/tutorials.css"
 ---
 
-<p>Table of contents:</p>
-<ul>
-  <li><a href="#introduction">Introduction</a></li>
-  <li><a href="#lets-begin">Let's begin...</a></li>
-  <li><a href="#changing-the-default-styles">Changing the default styles</a></li>
-  <li><a href="#changing-the-default-marker">Changing the default marker</a></li>
-  <li>
-    <a href="#animating-opening-and-closing">Animating opening and closing of the <code>&#x3C;details&#x3E;</code></a>
-  </li>
-</ul>
+<div>
+  <p>Table of contents:</p>
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#lets-begin">Let's begin...</a></li>
+    <li><a href="#changing-the-default-styles">Changing the default styles</a></li>
+    <li><a href="#changing-the-default-marker">Changing the default marker</a></li>
+    <li>
+      <a href="#animating-opening-and-closing">Animating opening and closing of the <code>&#x3C;details&#x3E;</code></a>
+    </li>
+  </ul>
+</div>
 
-<section>
+<div>
   <h2 id="introduction">Introduction</h2>
   <p>
     <i>
@@ -47,9 +49,9 @@ tutorialCSS: "assets/css/tutorials.css"
     element. While it also used to have some accessibility problems, most of
     them seem to be resolved by now. At the very least, it's standardized.
   </p>
-</section>
+</div>
 
-<section>
+<div>
   <h2 id="lets-begin">Let's begin...</h2>
   <p>
     Here is what a default
@@ -68,9 +70,9 @@ tutorialCSS: "assets/css/tutorials.css"
       </i>
     </p>
   </details>
-</section>
+</div>
 
-<section>
+<div>
   <h2 id="changing-the-default-styles">Changing the default styles</h2>
   <p>
     Let's start with adding some basic styling and changing a few things. We will
@@ -109,9 +111,9 @@ summary:hover {
     case with the buttons), you can change their display property to
     "inline" (since they are block elements by default) with CSS, or else they will look weird. <em>I won't
     </em> be doing that in this case, because I will be changing it to flexbox further down the line.
-</section>
+</div>
 
-<section>
+<div>
   <h2 id="changing-the-default-marker">Changing the default marker</h2>
   <p>
     Let's pretty-up the default marker next. First, I will move it to the end of
@@ -168,9 +170,9 @@ summary::-webkit-details-marker {
       rel="noopener noreferrer">SitePoint</a>
     (codepen.io) for the main idea.
   </p>
-</section>
+</div>
 
-<section>
+<div>
   <h2>Adding a fade-in and fade-out effect on opening and closing the element</h2>
   <p>You can target the content inside the <code>&#x3C;details&#x3E;</code> element with the CSS pseudo-element
     <code>::details-content</code>. I'm going to add a simple opacity fade effect. Just something to spice-up the
@@ -234,9 +236,9 @@ details[open]::details-content {
   opacity: 1;
 }</code></pre>
   </details>
-</section>
+</div>
 
-<section>
+<div>
   <h2 id="animating-opening-and-closing">... And <em>now</em> the thing you all came here for — animating the opening
     and closing of the
     &#x3C;details&#x3E;
@@ -502,7 +504,7 @@ details[open]::details-content {
     </p>
   </details>
   <p>That's it! Hopefully someone else migth find this guide useful.</p>
-</section>
+</div>
 <p class="text-center">
   <a href="#"><span aria-hidden="true">[ </span>Back to top<span aria-hidden="true">
       ]</span></a>

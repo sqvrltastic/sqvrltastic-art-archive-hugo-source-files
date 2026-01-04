@@ -1,9 +1,10 @@
 ---
 title: How to subscribe to this website — a guide
-description: "A guide on how to subscribe with RSS to Sqvrltastic Art Archive to get updates when I post new content or update this site."
+description: "A guide on how to subscribe with RSS to this website to get updates when I post new content or update this site."
 date: 2025-02-13
 ---
 
+<div>
 _Want to receive updates when I post new content? No need to sign up with email or create an account!_
 
 <p class="text-center h3"><strong>Here is how!👇️</strong></span>
@@ -27,3 +28,5 @@ Launch the app. Find a button that says something like: "add new feed", or "add 
 ---
 
 _If you want to read more about the technology behind RSS, I wrote a blog post on it: [Full guide to RSS](./full-guide-to-rss.html)._
+
+</div>

@@ -6,6 +6,8 @@ date: 2025-07-23
 
 _Shameless plug: check out my own [guides](../guides/) as well!_
 
+<div>
+
 ## Start here
 
 <a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a> — references and documentation on HTML, CSS and JavaScript; useful when you need to look up a particular tag or an attribute.
@@ -19,6 +21,10 @@ _Shameless plug: check out my own [guides](../guides/) as well!_
 <a href="https://web.pixelshannon.com/make/" target="\_blank" rel="noopener noreferrer">Make your own website</a> — a simple guide written for the author's 12-year-old daughter on how to actually make your own website.
 
 <a href="https://www.youtube.com/watch?v=K_EVuLegRZ0" target="\_blank" rel="noopener noreferrer">The only tags you need when first learning HTML</a> by Kevin Powell (video).
+
+</div>
+
+<div>
 
 ## Specifics
 
@@ -54,6 +60,10 @@ Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" targe
 
 <a href="https://www.deadlinkchecker.com/website-dead-link-checker.asp" target="_blank" rel="noopener noreferrer">Broken link checker tool</a>
 
+</div>
+
+<div>
+
 ## SEO & optimization
 
 <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">PageSpeed Insights by Google</a> — gives your website performance rating.
@@ -64,11 +74,19 @@ Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" targe
 
 <a href="https://www.opengraph.xyz/" target="_blank" rel="noopener noreferrer">OpenGraph</a> — preview social media share and generate metatags.
 
+</div>
+
+<div>
+
 ## Get your website indexed by search engines
 
 <a href="https://search.google.com/search-console/about" target="_blank" rel="noopener noreferrer">Google Search Console</a>.
 
 <a href="https://www.bing.com/webmasters/about" target="_blank" rel="noopener noreferrer">Bing Webmaster tools</a>.
+
+</div>
+
+<div>
 
 ## Web accessibility 101
 
@@ -96,6 +114,10 @@ Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" targe
 
 <a href="https://www.nvaccess.org/download/" target="_blank" rel="noopener noreferrer">NVDA</a> — free and open source screen reader. Useful for accessibility testing your website.
 
+</div>
+
+<div>
+
 ## Where to host a static site for free
 
 <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a> — my current hosting provider.
@@ -104,15 +126,27 @@ Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" targe
 
 _Sidenote: I'm obviously biased, but I consider GitHub Pages to be the clearly superior option to Neocities, tech-wise and service-wise. Neocities whole shtick is that it has a "social media" functionality attached to it, which is both a blessing and a curse (more of a curse, IMO). There are of course, other free hosting providers, but I don't have any experience with them._
 
+</div>
+
+<div>
+
 ## Guestbook providers
 
 <a href="https://atabook.org/" target="_blank" rel="noopener noreferrer">Atabook</a> — free guestbook provider. No ads and has a plenty of robust moderation options, such as banning the use of VPNs. My current guestbook provider.
+
+</div>
+
+<div>
 
 ## Other resources
 
 <a href="https://discourse.32bit.cafe/t/resources-list-for-the-personal-web/49" target="_blank" rel="noopener noreferrer">Resources List for the Personal Web</a> (from 32bit café) — another useful links list.
 
 When using search engines, appending "site:www.reddit.com" or "site:stackoverflow.com" at the end of a search query helps a lot when looking for a solution to a specific coding issue by filtering results to only those sites. Example: _"How to center a &#x3C;div&#x3E; site:www.reddit.com/r/webdev"_.
+
+</div>
+
+<div>
 
 ## My Visual Studio Code extensions
 
@@ -125,3 +159,5 @@ When using search engines, appending "site:www.reddit.com" or "site:stackoverflo
 - JavaScript (ES6) code snippets
 - HUGO Language and Syntax Support
 - Live Server
+
+</div>
