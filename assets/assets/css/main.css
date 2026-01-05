@@ -105,7 +105,7 @@ html[data-theme="dark"] {
   --colored-text: greenyellow;
 }
 
-html[data-theme="dark"] .social-media > li > a > img {
+html[data-theme="dark"] #social-media > li > a > img {
   filter: invert(1);
 }
 
@@ -532,6 +532,9 @@ ul:has(> .blog-item) {
 .blog-item > div {
   display: flex;
   gap: 0.7rem;
+  > time {
+    flex-shrink: 0;
+  }
 }
 
 .old-design {
@@ -649,7 +652,7 @@ div:has(> .stamp) {
     --colored-text: greenyellow;
   }
 
-  html:not([data-theme]) .social-media > li > a > img {
+  html:not([data-theme]) #social-media > li > a > img {
     filter: invert(1);
   }
 
