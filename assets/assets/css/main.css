@@ -362,6 +362,7 @@ hr {
 
 hr::before {
   content: "***";
+  color: var(--main-color);
   display: block;
   text-align: center;
 }
