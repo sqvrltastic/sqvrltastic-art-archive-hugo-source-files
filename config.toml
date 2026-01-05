@@ -2,7 +2,6 @@ baseURL = 'https://sqvrltastic.art/'
 languageCode = 'en-us'
 title = "Sqvrltastic's Homepage"
 theme = 'CleanGallery'
-uglyURLs = true
 
 [taxonomies]
   category = "categories"

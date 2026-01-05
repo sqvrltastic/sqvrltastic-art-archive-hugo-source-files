@@ -9,6 +9,6 @@ full: "assets/images/art/full/vermintide-kerillian-thinking-face.jpg"
 length: "91641"
 ---
 
-<a href="../assets/images/art/full/vermintide-kerillian-thinking-face-clear.jpg" target="_blank" rel="noopener noreferrer">Version with no color (.jpg)</a>
+<a href="/assets/images/art/full/vermintide-kerillian-thinking-face-clear.jpg" target="_blank" rel="noopener noreferrer">Version with no color (.jpg)</a>
 
 🤔🧝‍♀️

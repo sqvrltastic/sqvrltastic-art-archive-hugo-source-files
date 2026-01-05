@@ -10,5 +10,5 @@ full: "assets/images/art/full/vermintide-kerillian-sister-of-the-thorn-green-cir
 
 Alternative versions:
 
-- <a href="../assets/images/art/full/vermintide-kerillian-sister-of-the-thorn-green-circles-nobg.jpg" target="_blank" rel="noopener noreferrer">No background (.jpg)</a>
-- <a href="../assets/images/art/full/vermintide-kerillian-sister-of-the-thorn-green-circles-nocolor.jpg" target="_blank" rel="noopener noreferrer">No color (.jpg)</a>
+- <a href="/assets/images/art/full/vermintide-kerillian-sister-of-the-thorn-green-circles-nobg.jpg" target="_blank" rel="noopener noreferrer">No background (.jpg)</a>
+- <a href="/assets/images/art/full/vermintide-kerillian-sister-of-the-thorn-green-circles-nocolor.jpg" target="_blank" rel="noopener noreferrer">No color (.jpg)</a>

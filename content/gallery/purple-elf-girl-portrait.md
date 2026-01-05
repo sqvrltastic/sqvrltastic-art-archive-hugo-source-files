@@ -10,5 +10,5 @@ full: "assets/images/art/full/purple-elf-girl-portrait.jpg"
 
 Alternative versions:
 
-- <a href="../assets/images/art/full/purple-elf-girl-portrait-norimlight.jpg" target="_blank" rel="noopener noreferrer">No rim light (.jpg)</a>
-- <a href="../assets/images/art/full/purple-elf-girl-portrait-process.jpg" target="_blank" rel="noopener noreferrer">Process (.jpg)</a>
+- <a href="/assets/images/art/full/purple-elf-girl-portrait-norimlight.jpg" target="_blank" rel="noopener noreferrer">No rim light (.jpg)</a>
+- <a href="/assets/images/art/full/purple-elf-girl-portrait-process.jpg" target="_blank" rel="noopener noreferrer">Process (.jpg)</a>

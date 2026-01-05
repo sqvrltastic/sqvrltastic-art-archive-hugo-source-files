@@ -9,4 +9,4 @@ full: "assets/images/art/full/vermintide-kerillian-smug-asuka.jpg"
 length: "60305"
 ---
 
-<a href="../assets/images/art/full/vermintide-kerillian-smug-asuka-clear.jpg" target="_blank" rel="noopener noreferrer">Version with no color (.jpg)</a>
+<a href="/assets/images/art/full/vermintide-kerillian-smug-asuka-clear.jpg" target="_blank" rel="noopener noreferrer">Version with no color (.jpg)</a>
