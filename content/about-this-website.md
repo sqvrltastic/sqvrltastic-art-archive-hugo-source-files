@@ -3,8 +3,6 @@ title: About this website
 description: "Mostly just technical information about this website"
 ---
 
-<div>
-
 This website was made with **HUGO website builder** and as of now, it is hosted on **GitHub pages**. My domain provider is **Porkbun**.
 
 I created this site because I needed a place to host my artworks and social media sites and other "platforms" are becoming worse and worse by each day.
@@ -20,5 +18,3 @@ On a side note, I care a lot about web accessibility, so if you notice anything 
 Also, **do** feel free to copy some parts of the code of this website! Just don't rip everything word for word. No need to credit me either, although it is always appreciated.
 
 🎂 This website was created on **December 3rd 2024**. 🎂
-
-</div>

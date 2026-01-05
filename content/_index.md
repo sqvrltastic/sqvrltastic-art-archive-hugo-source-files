@@ -3,7 +3,6 @@ title: Home
 description: "Hi, I'm sqvrltastic and I'm a digital artist.  Welcome to my website! This is my main place for posting my artwork and sharing my thoughts."
 ---
 
-<div>
 Hi, I'm sqvrltastic and I'm a digital artist. Welcome to my website! 🎨
 
 This is my main place for posting my artworks and sharing my thoughts.
@@ -21,5 +20,3 @@ I also have a profile on <a href="https://github.com/sqvrltastic" target="_blank
 Commission status: **closed**.
 
 I don't take commissions at the moment because, honestly, I just don't feel ready yet. For now, I am still focused on growing and developing a semi-consistent and efficient drawing process.
-
-</div>

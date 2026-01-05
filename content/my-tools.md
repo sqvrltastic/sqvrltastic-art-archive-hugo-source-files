@@ -3,8 +3,6 @@ title: My tools
 description: "My drawing and coding tools"
 ---
 
-<div>
-
 I use **Adobe Photoshop (2019 version)** as my drawing software of choice. ~~By the way, I'd argue that, not only is it _not_ morally wrong, it is, in fact, every artist's moral imperative to pirate Adobe's Software!..~~ For legal reasons, this is a joke.
 
 My graphic tablet is **Wacom Cintiq Pro DTH-1320**.
@@ -24,4 +22,3 @@ My Visual Studio Code extensions:
 - JavaScript (ES6) code snippets
 - HUGO Language and Syntax Support
 - Live Server
-</div>

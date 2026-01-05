@@ -266,13 +266,8 @@ header {
   scroll-margin-block-start: 12rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
   padding: 2rem 0;
-  > div {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
 }
 
 /* General styling */
@@ -283,6 +278,9 @@ h1 {
 
 h2 {
   font-size: 1rem;
+  &:not(h1 + h2, article > h2) {
+    margin-block-start: 2rem;
+  }
 }
 
 h3,
