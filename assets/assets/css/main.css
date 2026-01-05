@@ -270,22 +270,45 @@ header {
   padding: 2rem 0;
 }
 
+.post-header {
+  all: revert-layer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-block-end: 1.5rem;
+  > ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 0.7rem;
+    > li {
+      display: inline;
+    }
+  }
+  > p {
+    margin-block-start: 0.1rem;
+  }
+}
+
 /* General styling */
 
 h1 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  word-break: keep-all;
 }
 
 h2 {
   font-size: 1rem;
-  &:not(h1 + h2, article > h2) {
-    margin-block-start: 2rem;
+  &:not(header + h2, article > h2) {
+    margin-block-start: 1.5rem;
   }
 }
 
 h3,
 h4 {
   font-size: 0.9rem;
+  font-weight: normal;
 }
 
 a {
@@ -350,7 +373,7 @@ article {
   padding: 1.25rem;
   border: 0.1rem solid var(--main-color);
   border-radius: 0.2rem;
-  > .date {
+  > time {
     justify-self: end;
   }
   > img {

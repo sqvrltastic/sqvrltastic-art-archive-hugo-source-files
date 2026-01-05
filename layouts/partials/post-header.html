@@ -1,14 +1,31 @@
-<ul id="breadcrumbs">
-    {{- range .Ancestors.Reverse }}
-    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> / </li>
-    {{- end }}
-    <li>{{ .Title }}</li>
-</ul>
-<div>
+<header class="post-header">
+    <ul>
+        {{- range .Ancestors.Reverse }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> /&nbsp;</li>
+        {{- end }}
+        <li>{{ .Title }}</li>
+    </ul>
+
     <h1>{{ .Title }}</h1>
-    {{ if and .IsPage .Date }}
-    <p class="date">[{{ .Date.Format "01/03/2006" }}]</p>
-    {{ else }}
-    <!-- No date available, nothing will be output -->
+
+    <!-- YYYY-MM-DD and MM/DD/YYYY -->
+
+    {{ if or (and .IsPage .Date) .Params.updated }}
+    <p>
+        {{if .Date }}
+        Published: <time datetime='{{ .Date | time.Format "2006-02-01" }}'>{{ .Date | time.Format
+            "01/02/2006" }}</time>
+        {{ end }}
+
+        {{ if and .Params.updated (and .Params.date) }}
+        |
+        {{ end }}
+
+        {{if .Params.updated }}
+        Updated: <time datetime='{{ .Params.updated | time.Format "2006-02-01" }}'>{{ .Params.updated | time.Format
+            "01/02/2006" }}</time>
+        {{ end }}
+    </p>
     {{ end }}
-</div>
+
+</header>

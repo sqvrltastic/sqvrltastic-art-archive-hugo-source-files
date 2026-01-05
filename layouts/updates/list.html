@@ -1,7 +1,5 @@
 {{ define "main" }}
 
-<h1>{{ .Title }}</h1>
-
 <p><i>{{ .Description }}</i></p>
 <!-- Updates listing and sorting algorithm -->
 {{- $allPosts := slice -}} {{- $allPosts = $allPosts | append (where
@@ -17,7 +15,7 @@ $allPosts "Date" "desc" | first 20 -}} {{- range $sortedPosts }}
   </h2>
 
   <!-- Date -->
-  <p class="date"><i>{{ .Date.Format "02-01-2006" }}</i></p>
+  <time datetime='{{ .Date.Format "2006-02-01" }}'>{{ .Date.Format "01/02/2006" }}</time>
 
   <!-- If it's an artwork it adds a picture -->
   {{- if eq .Section "gallery" -}}

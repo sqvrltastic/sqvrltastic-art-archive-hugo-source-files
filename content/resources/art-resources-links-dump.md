@@ -1,7 +1,7 @@
 ---
 title: Art resources links dump
 description: "Various resources for learning art: tutorials, references, useful software, etc."
-date: 2025-07-23
+updated: 2026-01-05
 ---
 
 _**Content Warning** for some mild artistic nudity in some links!_

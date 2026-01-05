@@ -26,7 +26,11 @@
         </style>
       </noscript>
       {{ partial "header.html" . }}
-      <main id="main">{{ block "main" . }} {{ end }}</main>
+      <main id="main">
+        {{ partial "post-header.html" . }}
+        {{ block "main" . }}
+        {{ end }}
+      </main>
     </div>
   </div>
   {{ $jsbody := resources.Get "assets/js/theme-body.js" | resources.Minify | resources.Fingerprint }}

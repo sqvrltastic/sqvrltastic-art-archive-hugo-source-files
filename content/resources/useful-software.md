@@ -1,7 +1,7 @@
 ---
 title: Useful software
 description: "Various lesser known software recommendations for desktop and mobile platforms that I find useful."
-date: 2025-01-30
+updated: 2026-01-05
 ---
 
 _Also, be sure to check the [coding resources links](./coding-resources-links-dump.html) and the [art resources links](./art-resources-links-dump.html) for more software recommendations!_

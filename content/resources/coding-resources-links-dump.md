@@ -1,7 +1,7 @@
 ---
 title: Coding resources links dump
 description: "Various resources for webmasters primarily for learning web development"
-date: 2025-07-23
+updated: 2026-01-05
 ---
 
 _Shameless plug: check out my own [guides](../guides/) as well!_
