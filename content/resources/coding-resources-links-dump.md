@@ -52,6 +52,8 @@ Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" targe
 
 <a href="https://css-tricks.com/almanac/properties/s/scrollbar-gutter/" target="_blank" rel="noopener noreferrer">CSS scrollbar-gutter property</a>.
 
+<a href="https://forum.freecodecamp.org/t/why-should-i-use-id-instead-of-class/673261" target="_blank" rel="noopener noreferrer">"Why should I use IDs instead of classes?"</a>
+
 <a href="https://www.deadlinkchecker.com/website-dead-link-checker.asp" target="_blank" rel="noopener noreferrer">Broken link checker tool</a>
 
 ## SEO & optimization

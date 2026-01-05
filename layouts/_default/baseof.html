@@ -3,10 +3,10 @@
 {{ partial "boiler.html" . }}
 
 <body>
-  <a href="#main" class="skip-link">Skip to main content</a>
-  <div class="flex-container">
-    {{ partial "sidebar.html" . }}
-    <div class="primary">
+  <a href="#main" id="skip-link">Skip to main content</a>
+  <div id="flex-container">
+    {{ partial "left.html" . }}
+    <div id="right">
       <noscript>
         <p>
           <i>

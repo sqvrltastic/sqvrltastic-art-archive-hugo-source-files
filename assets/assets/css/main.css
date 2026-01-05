@@ -131,31 +131,31 @@ body {
 
 /* Skip to main link */
 
-.skip-link {
+#skip-link {
   position: absolute;
   inset-inline-start: -10000px;
   inset-block-start: auto;
   inline-size: 1px;
   block-size: 1px;
   overflow: hidden;
-}
-
-.skip-link:focus {
-  position: static;
-  inline-size: auto;
-  block-size: auto;
+  &:focus {
+    position: sticky;
+    inset-block-start: 0px;
+    inline-size: auto;
+    block-size: auto;
+  }
 }
 
 /* Layout */
 
-.flex-container {
+#flex-container {
   display: flex;
   gap: 2rem;
   margin: 0 auto;
   max-inline-size: fit-content;
 }
 
-.sidebar {
+#left {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -167,13 +167,13 @@ body {
   overflow-y: auto;
 }
 
-.primary {
+#right {
   inline-size: 35rem;
 }
 
 /* Sidebar content */
 
-.latest-artwork {
+#latest-artwork {
   all: revert-layer;
   margin: 2rem 0 0;
   inline-size: 9rem;
@@ -197,7 +197,7 @@ nav {
   }
 }
 
-.social-media {
+#social-media {
   flex-direction: row;
   gap: 0.5rem;
   padding: 0;
@@ -225,7 +225,7 @@ header {
   border-block-end: 0.07rem solid var(--main-color);
 }
 
-.logo {
+#logo {
   grid-row: span 2 / span 2;
   font-family: SlackSideOne, sans-serif;
   font-size: 3rem;
@@ -256,7 +256,7 @@ header {
   display: none;
 }
 
-.version {
+#version {
   grid-column-start: 2;
   place-self: end;
   inline-size: fit-content;
@@ -270,7 +270,7 @@ header {
   padding: 2rem 0;
 }
 
-.post-header {
+#post-header {
   all: revert-layer;
   display: flex;
   flex-direction: column;
@@ -589,17 +589,17 @@ a:has(> .small-button) {
   }
 }
 
+.stamp {
+  inline-size: 4.6rem;
+  aspect-ratio: 99/56;
+  transform: scale(1);
+}
+
 div:has(> .stamp) {
   /* Stamp collection */
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-}
-
-.stamp {
-  inline-size: 4.6rem;
-  aspect-ratio: 99/56;
-  transform: scale(1);
 }
 
 /* CSS for 404 page */
