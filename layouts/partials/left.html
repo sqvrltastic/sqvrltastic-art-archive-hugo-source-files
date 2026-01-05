@@ -1,11 +1,25 @@
 <div id="left">
+
     <figure id="latest-artwork">
-        <a href="#">
-            <img src='{{ relURL "./assets/images/art/preview/vermintide-kerillian-drinking-leaf-lovers.avif" }}'
-                alt="test" class="preview">
+
+        {{ $latestArtwork := first 1 (where .Site.RegularPages "Section" "gallery") }}
+        {{ $latestArtwork := index $latestArtwork 0 }} <!-- Get the first element from the slice -->
+
+        <a href="{{ $latestArtwork.Permalink }}">
+            <!-- Check if the preview parameter exists, if it does, display it as an image -->
+            {{ if $latestArtwork.Params.preview }}
+            <img src="{{ $latestArtwork.Params.preview | absURL }}" alt="{{ $latestArtwork.Title }}" class="preview">
+            {{ else }}
+            <p>Something broke, uh oh.</p>
+            {{ end }}
         </a>
-        <figcaption><strong>Latest artwork</strong><br> Published:<br> 09/12/2025</figcaption>
+
+
+        <figcaption><strong>Latest artwork</strong><br> Published:<br> <time
+                datetime='{{ $latestArtwork.Date | time.Format "2006-02-01" }}'>{{ $latestArtwork.Date | time.Format
+                "01/02/2006" }}</time></figcaption>
     </figure>
+
     <nav>
         <div>
             <a href='{{ relURL "" }}'>Home &#x2302;</a>

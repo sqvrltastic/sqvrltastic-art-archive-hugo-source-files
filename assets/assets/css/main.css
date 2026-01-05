@@ -181,7 +181,7 @@ body {
   border-block-end: 0.07rem solid var(--main-color);
   > a:has(> .preview) {
     margin-block-end: 0.5rem;
-    inline-size: 7rem;
+    inline-size: 8.3rem;
   }
 }
 
