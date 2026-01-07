@@ -163,12 +163,16 @@ body {
   position: sticky;
   inset-block-start: 0px;
   max-block-size: calc(100vh - 2rem);
+  padding-inline-start: 1.5rem;
   inline-size: 10rem;
   overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
 }
 
 #right {
   inline-size: 35rem;
+  padding-inline-end: 1.5rem;
 }
 
 /* Sidebar content */
@@ -552,13 +556,15 @@ ul:has(> .blog-item) {
 
 a:has(> .preview) {
   display: block;
-  border: 0.07rem solid var(--main-color);
   aspect-ratio: 1 / 1;
+  border: 0.07rem solid var(--main-color);
+  transition: 0.15s;
   &:hover {
-    filter: brightness(1.15);
+    box-shadow: 0 0 1rem var(--main-extra-color);
+    transform: scale(1.03);
   }
   &:active {
-    border: 0.07rem solid var(--neutral-color);
+    transform: scale(1);
   }
 }
 
@@ -588,8 +594,13 @@ div:has(> .artwork) {
 a:has(> .small-button) {
   display: block;
   inline-size: fit-content;
+  transition: 0.15s;
   &:hover {
-    filter: brightness(1.15);
+    box-shadow: 0 0 0.7rem var(--main-extra-color);
+    transform: scale(1.03);
+  }
+  &:active {
+    transform: scale(1);
   }
 }
 
@@ -640,43 +651,4 @@ div:has(> .stamp) {
 
 .text-breakall {
   word-break: break-all;
-}
-
-/* OS dark theme preference if not manually set */
-
-@media (prefers-color-scheme: dark) {
-  html:not([data-theme]) {
-    --bg-color: #2b2b2b;
-    --main-color: #dedede;
-    --bg-extra-color: #454545;
-    --main-extra-color: gray;
-    --colored-text: greenyellow;
-  }
-
-  html:not([data-theme]) #social-media > li > a > img {
-    filter: invert(1);
-  }
-
-  html:not([data-theme]) #guestbook {
-    filter: invert(1);
-    mix-blend-mode: lighten;
-  }
-}
-
-/* CSS for smaller screens */
-
-@media (max-width: 600px) {
-  .gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 500px) {
-  details > *:not(summary) {
-    margin: 0.5rem;
-  }
-
-  .gallery {
-    gap: 0.3rem;
-  }
 }
