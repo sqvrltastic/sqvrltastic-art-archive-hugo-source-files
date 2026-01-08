@@ -4,7 +4,7 @@ description: "Various resources for webmasters primarily for learning web develo
 updated: 2026-01-05
 ---
 
-_Shameless plug: check out my own [guides](../guides/) as well!_
+_**Shameless plug:** check out my own [guides](../guides/) as well!_
 
 ## Start here
 
@@ -18,7 +18,7 @@ _Shameless plug: check out my own [guides](../guides/) as well!_
 
 <a href="https://web.pixelshannon.com/make/" target="\_blank" rel="noopener noreferrer">Make your own website</a> — a simple guide written for the author's 12-year-old daughter on how to actually make your own website.
 
-<a href="https://www.youtube.com/watch?v=K_EVuLegRZ0" target="\_blank" rel="noopener noreferrer">The only tags you need when first learning HTML</a> by Kevin Powell (video).
+<a href="https://www.youtube.com/watch?v=K_EVuLegRZ0" target="\_blank" rel="noopener noreferrer">The only tags you need when first learning HTML</a> — video by Kevin Powell; aslo a great YouTube channel about CSS!
 
 ## Specifics
 
@@ -49,6 +49,8 @@ Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" targe
 <a href="https://www.lipsum.com/feed/html" target="_blank" rel="noopener noreferrer">Lorem Ipsum</a> — placeholder text.
 
 <a href="https://10015.io/tools/css-background-pattern-generator" target="_blank" rel="noopener noreferrer">CSS Background Pattern Generator</a>.
+
+<a href="https://cssgradient.io/" target="_blank" rel="noopener noreferrer">CSS Gradient Generator</a>.
 
 <a href="https://css-tricks.com/almanac/properties/s/scrollbar-gutter/" target="_blank" rel="noopener noreferrer">CSS scrollbar-gutter property</a>.
 
@@ -104,7 +106,11 @@ Guide to <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" targe
 
 <a href="https://neocities.org/" target="_blank" rel="noopener noreferrer">Neocities</a> — ~~daycare for oldweb LARPers~~.
 
-_Sidenote: I'm obviously biased, but I consider GitHub Pages to be the clearly superior option to Neocities, tech-wise and service-wise. Neocities whole shtick is that it has a "social media" functionality attached to it, which is both a blessing and a curse (more of a curse, IMO). There are of course, other free hosting providers, but I don't have any experience with them._
+<div class="note-box">
+
+_**Sidenote:** I'm obviously biased, but I consider GitHub Pages to be the clearly superior option to Neocities, tech-wise and service-wise. Neocities whole shtick is that it has a "social media" functionality attached to it, which is both a blessing and a curse (more of a curse, IMO). There are of course, other free hosting providers, but I don't have any experience with them. Oh and Neocities allows porn, so there's that._
+
+</div>
 
 ## Guestbook providers
 

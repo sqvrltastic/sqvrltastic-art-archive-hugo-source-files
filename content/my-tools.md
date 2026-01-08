@@ -11,7 +11,7 @@ As for 3D, I use **Blender** to make the model itself and then later texture it 
 
 For coding and development I use **Visual Studio Code**.
 
-My Visual Studio Code extensions:
+**My Visual Studio Code extensions:**
 
 - Atom One Dark Theme
 - <a href="https://ltex-plus.github.io/ltex-plus/index.html" target="_blank" rel="noopener noreferrer">LTeX+</a> — grammar and spell checker, pairs well with Google Docs spell check

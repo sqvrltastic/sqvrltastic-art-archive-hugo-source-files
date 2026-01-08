@@ -7,7 +7,7 @@ description: "Things you can and can't do with my art"
 
 In general, I don't mind people reposting my artwork, but with a few caveats in mind. First, I would rather not have my artwork shared on platforms that use their content to train AI image generation models. So Instagram, Facebook, Twitter, and any other platform that are known to do so.
 
-Also, please don't repost my artwork on Steam to farm points or whatever since I already do post my artwork there. Furthermore, if you want to use my artwork for YouTube thumbnails, or something like that, please ask me first. As for using my artwork as pfps and things like that — do feel free to do so.
+Also, please don't repost my artwork on Steam to farm points or whatever since I already do post my artwork there. Furthermore, if you want to use my artwork for YouTube thumbnails, or something like that, please ask me first, if it's my **original drawing**. For fan art, feel free to use it, but please give proper credit to me in the description. As for using my artwork as pfps and things like that — just go ahead.
 
 Besides, while I do have most of my artworks watermarked, if you do share my artwork, I would still appreciate it if you explicitly credit me and maybe even link to this website. Thank you.
 

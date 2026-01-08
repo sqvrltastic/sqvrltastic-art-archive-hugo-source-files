@@ -1,5 +1,9 @@
 {{ define "main" }}
 
+<div class="top-message">
+  <p><strong>Site version 3.0.0 is live!</strong> Be sure to update any old backlinks!</p>
+</div>
+
 <p><i>{{ .Description }}</i></p>
 <!-- Updates listing and sorting algorithm -->
 {{- $allPosts := slice -}} {{- $allPosts = $allPosts | append (where
