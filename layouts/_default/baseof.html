@@ -11,8 +11,8 @@
         <p>
           <i>
             <strong>Note:</strong> JavaScript is disabled in your browser. The core functionality of this site works
-            without JavaScript, but it is required for the theme switcher to work, as well as for displaying custom,
-            self-hosted fonts.
+            without JavaScript, but it is required for the theme switcher to work, for the "scroll to top" button to
+            hide when not in use, as well as for displaying custom, self-hosted fonts.
           </i>
         </p>
         <style>
@@ -23,6 +23,12 @@
           #theme-no-js {
             display: inline;
           }
+
+          #scroll-to-top {
+            opacity: 0.5;
+            content-visibility: visible;
+            pointer-events: auto;
+          }
         </style>
       </noscript>
       {{ partial "header.html" . }}
@@ -31,10 +37,15 @@
         {{ block "main" . }}
         {{ end }}
       </main>
+      <a href="#main" id="scroll-to-top" aria-hidden="true">
+        <img src='{{ relURL "assets/images/icons/arrow-up.png" }}' alt="scroll to top" class="icon">
+      </a>
     </div>
   </div>
   {{ $jsbody := resources.Get "assets/js/theme-body.js" | resources.Minify | resources.Fingerprint }}
   <script src="{{ $jsbody.RelPermalink }}"></script>
+  {{ $jsscroll := resources.Get "assets/js/scroll-to-top.js" | resources.Minify | resources.Fingerprint }}
+  <script src="{{ $jsscroll.RelPermalink }}"></script>
 </body>
 
 </html>

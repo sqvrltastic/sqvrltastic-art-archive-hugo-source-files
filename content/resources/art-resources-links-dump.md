@@ -4,11 +4,7 @@ description: "Various resources for learning art: tutorials, references, useful 
 updated: 2026-01-05
 ---
 
-<div class="top-message">
-
-_**Content Warning** for some mild artistic nudity in some of the links!_
-
-</div>
+<p class="top-message"><strong>Content Warning</strong> for some mild artistic nudity in some of the links!</p>
 
 ## Art-related YouTube channels that I like
 

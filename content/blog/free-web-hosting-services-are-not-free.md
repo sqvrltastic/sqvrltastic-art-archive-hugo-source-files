@@ -9,7 +9,7 @@ Lately I've been witnessing how Neocities is slowly falling apart, with Kyle onl
 
 It's no secret that platforms like the aforementioned Neocities rapidly grew in popularity in recent years. While in theory, **"Creativity™ 🎨✨"** is "good", it has nonetheless led to the platform getting flooded with subjectively low quality, objectively extremely poorly optimized websites with stupidly large, bloated, uncompressed assets. I'm looking at you, _artists_ in particular. Please stop uploading your whole ass artworks as uncompressed 19MB PNGs and then dumping them all on one page for fuck's sake. Not to mention that some people blatantly break Neocities ToS and just treat it as a free file hosting service... Please stop doing that, use something like Catbox instead...
 
-_"But it's hurr durr free! Muh self-expression muh creativity! <span class="text-uppercase">Let people have fun goddamit!</span>_ 😡*"*
+_"But it's hurr durr free! Muh self-expression muh creativity! LET PEOPLE HAVE FUN GODDAMIT!_ 😡*"*
 
 Are you stupid? Do you realize that nothing is truly free? Somebody is paying for your "free" ~~lunch~~ web hosting. The 1GB free limit is very generous, but I think it encourages using Neocities as a file dump. I assure you, you can get away with something like, 200MB, or 500MB of disk space and it would be plenty. BTW... And this is totally a 100% humblebrag but, _my whole website_, with all assets, fonts, images, pages, everything; 300+ files in total — weighs just about 30MB at the time of writing this.
 

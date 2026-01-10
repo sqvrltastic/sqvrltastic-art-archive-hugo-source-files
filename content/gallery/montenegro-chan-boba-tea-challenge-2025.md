@@ -9,4 +9,4 @@ full: "assets/images/art/full/montenegro-chan-boba-tea-challenge-2025.jpg"
 length: "724706"
 ---
 
-[Link to older artwork](./montenegro-chan-boba-tea-challenge.html).
+[Link to older artwork](../montenegro-chan-boba-tea-challenge/).

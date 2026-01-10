@@ -4,7 +4,7 @@ description: "Various lesser known software recommendations for desktop and mobi
 updated: 2026-01-05
 ---
 
-_Be sure to check the [coding resources links](./coding-resources-links-dump.html) and the [art resources links](./art-resources-links-dump.html) for more software recommendations!_
+_Be sure to check the [coding resources links](../coding-resources-links-dump/) and the [art resources links](../art-resources-links-dump/) for more software recommendations!_
 
 ## For desktop (Windows & Linux)
 
