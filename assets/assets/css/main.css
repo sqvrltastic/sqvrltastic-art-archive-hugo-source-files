@@ -88,14 +88,21 @@
 
 /* Global theme */
 
+/* Smooth scrolling IF user doesn't have a preference due to motion sensitivities */
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 :root {
   --bg-color: #f2f2f2;
   --main-color: black;
   --neutral-color: rgba(128, 128, 128, 0.2);
   --bg-extra-color: #d9d9d9;
   --main-extra-color: gray;
-  --colored-text: #0000f5;
   --accent-color: #1a52be;
+  --colored-text: #0000f5;
 }
 
 html[data-theme="dark"] {
@@ -104,20 +111,22 @@ html[data-theme="dark"] {
   --bg-extra-color: #454545;
   --main-extra-color: gray;
   --colored-text: greenyellow;
-  --accent-color: #ff4fa7;
-  .icon {
-    filter: invert(1);
-  }
   #guestbook {
     filter: invert(1);
     mix-blend-mode: lighten;
   }
-}
-
-/* Smooth scrolling IF user doesn't have a preference due to motion sensitivities */
-@media screen and (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
+  .top-message {
+    color: var(--bg-color);
+    background-color: var(--main-color);
+    background-image: revert-layer;
+    box-shadow: revert-layer;
+  }
+  .icon {
+    filter: invert(1);
+  }
+  a:has(> .preview):hover {
+    box-shadow: revert-layer;
+    transform: scale(1.05);
   }
 }
 
@@ -307,15 +316,15 @@ header {
 }
 
 .top-message {
-  background: #ffc9e6;
+  background: #ffc7de;
   background: linear-gradient(
     90deg,
-    rgba(255, 201, 230, 1) 50%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(255, 199, 222, 1) 0%,
+    rgba(186, 218, 255, 1) 100%
   );
   padding: 0.2rem 0.7rem;
-  border-radius: 0.2rem 0 0 0.2rem;
-
+  border-radius: 0.2rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem var(--main-extra-color);
   &:not(:has(+ h2)) {
     margin-block-end: 1rem;
   }
@@ -719,9 +728,9 @@ div:has(> .stamp) {
 }
 
 #scroll-to-top {
+  z-index: 999;
   opacity: 0;
   pointer-events: none;
-  border-radius: 50%;
   position: fixed;
   inset-block-end: 1rem;
   inset-inline-end: 50%;
@@ -729,6 +738,7 @@ div:has(> .stamp) {
   padding: 1.3rem;
   background-color: var(--bg-color);
   border: 0.07rem solid var(--main-color);
+  border-radius: 50%;
   > img {
     aspect-ratio: 1/1;
     inline-size: 0.6rem;

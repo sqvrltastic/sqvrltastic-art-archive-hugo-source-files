@@ -25,7 +25,7 @@
           }
 
           #scroll-to-top {
-            opacity: 0.5;
+            opacity: 1;
             content-visibility: visible;
             pointer-events: auto;
           }
@@ -37,11 +37,11 @@
         {{ block "main" . }}
         {{ end }}
       </main>
-      <a href="#main" id="scroll-to-top" aria-hidden="true">
-        <img src='{{ relURL "assets/images/icons/arrow-up.png" }}' alt="scroll to top" class="icon">
-      </a>
     </div>
   </div>
+  <a href="#main" id="scroll-to-top">
+    <img src='{{ relURL "assets/images/icons/arrow-up.png" }}' alt="scroll to top" class="icon">
+  </a>
   {{ $jsbody := resources.Get "assets/js/theme-body.js" | resources.Minify | resources.Fingerprint }}
   <script src="{{ $jsbody.RelPermalink }}"></script>
   {{ $jsscroll := resources.Get "assets/js/scroll-to-top.js" | resources.Minify | resources.Fingerprint }}
