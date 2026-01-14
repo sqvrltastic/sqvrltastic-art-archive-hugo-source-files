@@ -18,7 +18,7 @@ _**Shameless plug:** check out my own [guides](../guides/) as well!_
 
 <a href="https://web.pixelshannon.com/make/" target="\_blank" rel="noopener noreferrer">Make your own website</a> — a simple guide written for the author's 12-year-old daughter on how to actually make your own website.
 
-<a href="https://www.youtube.com/watch?v=K_EVuLegRZ0" target="\_blank" rel="noopener noreferrer">The only tags you need when first learning HTML</a> — video by Kevin Powell; aslo a great YouTube channel about CSS!
+<a href="https://www.youtube.com/watch?v=K_EVuLegRZ0" target="\_blank" rel="noopener noreferrer">The only tags you need when first learning HTML</a> — video by Kevin Powell; also a great <strong>YouTube channel</strong> about CSS!
 
 ## Specifics
 
@@ -131,5 +131,5 @@ When using search engines, appending "site:www.reddit.com" or "site:stackoverflo
 - HTML CSS Support
 - CSS Nesting Syntax Highlighting
 - JavaScript (ES6) code snippets
-- HUGO Language and Syntax Support
+- Hugo Language and Syntax Support
 - Live Server

@@ -1,0 +1,56 @@
+<div id="right-column">
+
+    <figure id="latest-artwork">
+        {{ $latestArtwork := first 1 (where .Site.RegularPages "Section" "gallery") }}
+        {{ $latestArtwork := index $latestArtwork 0 }} <!-- Get the first element from the slice -->
+        <a href="{{ $latestArtwork.Permalink }}">
+            <!-- Check if the preview parameter exists, if it does, display it as an image -->
+            {{ if $latestArtwork.Params.preview }}
+            <img src="{{ $latestArtwork.Params.preview | absURL }}" alt="{{ $latestArtwork.Title }}" class="preview">
+            {{ else }}
+            <p>Something broke, uh oh.</p>
+            {{ end }}
+        </a>
+        <figcaption>
+            <strong>Latest artwork</strong><br>
+            Published:<br>
+            <time datetime='{{ $latestArtwork.Date | time.Format "2006-02-01" }}'>
+                {{ $latestArtwork.Date | time.Format "01/02/2006" }}
+            </time><br>
+            <a href="{{ $latestArtwork.Permalink }}">&#x3E;&#x3E;View here</a>
+        </figcaption>
+    </figure>
+
+    <ul id="social-media">
+        <li>
+            <a href="https://www.reddit.com/user/sqvrltastic/" target="_blank" rel="noopener noreferrer">
+                <img src='{{ relURL "assets/images/icons/reddit.png" }}' alt="Reddit" class="icon">
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/sqvrltastic" target="_blank" rel="noopener noreferrer">
+                <img src='{{ relURL "assets/images/icons/github.png" }}' alt="Github" class="icon">
+            </a>
+        </li>
+        <li>
+            <a href='{{ relURL "rss.xml" }}' target="_blank" rel="noopener noreferrer">
+                <img src='{{ relURL "assets/images/icons/rss.png" }}' alt="RSS" class="icon">
+            </a>
+        </li>
+        <li>
+            <a href="mailto:sqvrltastic@gmail.com">
+                <img src='{{ relURL "assets/images/icons/email.png" }}' alt="Email" class="icon">
+            </a>
+        </li>
+    </ul>
+
+    <footer>
+        <p>
+            &copy; 2026 Sqvrltastic<br>
+            Made with Hugo <br>
+            Hosted on GitHub Pages<br>
+            Version: 3.0.0
+        </p>
+    </footer>
+
+</div>

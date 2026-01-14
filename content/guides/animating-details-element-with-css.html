@@ -3,6 +3,7 @@ title: Animating details HTML element with pure CSS (without calc-size(auto))
 description: "I needed some ingenious solution to pretty-up my details element styling. This guide is a temporary
 workaround until the calc-size() CSS function becomes widely available."
 date: 2025-11-29
+updated: 2026-01-11
 tutorialCSS: "assets/css/tutorials.css"
 ---
 
@@ -15,6 +16,9 @@ tutorialCSS: "assets/css/tutorials.css"
     <li><a href="#changing-the-default-marker">Changing the default marker</a></li>
     <li>
       <a href="#animating-opening-and-closing">Animating opening and closing of the <code>&#x3C;details&#x3E;</code></a>
+    </li>
+    <li>
+      <a href="#adding-media-query">Bonus: Adding media query to respect user's reduced motion preferences</a>
     </li>
   </ul>
 </div>
@@ -491,9 +495,24 @@ details[open]::details-content {
     facilisis nulla cursus sit amet. Vivamus convallis neque sed diam rhoncus.
   </p>
 </details>
-<p>That's it! Hopefully someone else migth find this guide useful.</p>
-
-<p class="text-center">
-  <a href="#"><span aria-hidden="true">[ </span>Back to top<span aria-hidden="true">
-      ]</span></a>
+<h2 id="adding-media-query">Bonus: Adding media query to respect user's reduced motion preferences</h2>
+<p>
+  This is optional, but I'm adding it to improve accessibility of my animations. The <code>&#x3C;details&#x3E;</code>
+  element will look and work as intended, but won't have the smooth opening and closing animation.
 </p>
+<details>
+  <summary>Media query CSS code</summary>
+  <pre><code>@media screen and (prefers-reduced-motion: no-preference) {
+    /* Just paste the entire animation CSS code here, with all your presets */
+    ::details-content {
+    /* Your code here */
+    }
+    ::details-content[open] {
+    /* Your code here */
+    }
+    /* ... */
+  }
+  </code></pre>
+</details>
+<hr>
+<p><i>That's it! Hopefully someone else migth find this guide useful.</i></p>

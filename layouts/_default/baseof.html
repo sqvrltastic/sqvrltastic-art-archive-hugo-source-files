@@ -5,8 +5,8 @@
 <body>
   <a href="#main" id="skip-link">Skip to main content</a>
   <div id="flex-container">
-    {{ partial "left.html" . }}
-    <div id="right">
+    {{ partial "left-column.html" . }}
+    <div id="center-column">
       <noscript>
         <p>
           <i>
@@ -16,7 +16,7 @@
           </i>
         </p>
         <style>
-          #theme-menu>button {
+          #theme-switch>button {
             display: none;
           }
 
@@ -31,13 +31,13 @@
           }
         </style>
       </noscript>
-      {{ partial "header.html" . }}
       <main id="main">
         {{ partial "post-header.html" . }}
         {{ block "main" . }}
         {{ end }}
       </main>
     </div>
+    {{ partial "right-column.html" .}}
   </div>
   <a href="#main" id="scroll-to-top">
     <img src='{{ relURL "assets/images/icons/arrow-up.png" }}' alt="scroll to top" class="icon">

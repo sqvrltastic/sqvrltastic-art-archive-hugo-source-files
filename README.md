@@ -1,6 +1,6 @@
 These are the source files and templates I used to generate my personal website "Sqvrltastic's Homepage" (currently hosted on GitHub pages).
 
-I use HUGO SSG and I use my custom theme that I made from scratch.
+I use Hugo SSG and I use my custom theme that I made from scratch.
 
 Images are not included here, only the code itself.
 

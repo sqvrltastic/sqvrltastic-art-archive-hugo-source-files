@@ -24,7 +24,7 @@ Also, there is Instagram that doesn't even have full functionality on PC. Oh, an
 
 You also don't have an easy way to back up and transfer your data. Like sure, you can request all of your data to be archived and download it, but you usually just get this massive, poorly structured .zip archive. And then you have to wait for 24 hours for it to be created and you can't easily transfer it to another platform.
 
-Meanwhile, my entire HUGO website is just a bunch of files inside folders that I can copy and upload at any time, anywhere. I can easily go from one host to another if I don't like it.
+Meanwhile, my entire Hugo website is just a bunch of files inside folders that I can copy and upload at any time, anywhere. I can easily go from one host to another if I don't like it.
 
 Furthermore, when you are at someone else's platform, you are at their current content moderation policy's mercy. You can get banned for whatever just or unjust reason or lose access to your account and your posts.
 
