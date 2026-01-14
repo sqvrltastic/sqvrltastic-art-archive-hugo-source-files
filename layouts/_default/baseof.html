@@ -4,33 +4,36 @@
 
 <body>
   <a href="#main" id="skip-link">Skip to main content</a>
+  <noscript class="noscript">
+    <p>
+      <strong>Warning:</strong> JavaScript is disabled in your browser. The core functionality of this site works
+      without JavaScript, but it is required for some QoL features to work, as well as for displaying custom,
+      self-hosted fonts.
+    </p>
+    <style>
+      #logo {
+        font-size: 1.4em;
+        line-height: revert-layer;
+      }
+
+      #theme-switch {
+        display: none;
+      }
+
+      #theme-no-js {
+        display: inline;
+      }
+
+      #scroll-to-top {
+        opacity: 1;
+        content-visibility: visible;
+        pointer-events: auto;
+      }
+    </style>
+  </noscript>
   <div id="flex-container">
     {{ partial "left-column.html" . }}
     <div id="center-column">
-      <noscript>
-        <p>
-          <i>
-            <strong>Note:</strong> JavaScript is disabled in your browser. The core functionality of this site works
-            without JavaScript, but it is required for the theme switcher to work, for the "scroll to top" button to
-            hide when not in use, as well as for displaying custom, self-hosted fonts.
-          </i>
-        </p>
-        <style>
-          #theme-switch>button {
-            display: none;
-          }
-
-          #theme-no-js {
-            display: inline;
-          }
-
-          #scroll-to-top {
-            opacity: 1;
-            content-visibility: visible;
-            pointer-events: auto;
-          }
-        </style>
-      </noscript>
       <main id="main">
         {{ partial "post-header.html" . }}
         {{ block "main" . }}
