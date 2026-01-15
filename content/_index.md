@@ -7,7 +7,7 @@ Hi, I'm sqvrltastic and I'm a digital artist. **Welcome to my website!** 🎨
 
 This is my main place for posting my artworks and sharing my thoughts.
 
-The content on this site is SFW, but it is _not_ intended for children. Some artworks are slightly suggestive. Also, I swear, _occasionally_. Keep that in mind.
+The content on this site is **SFW**, but it is _not_ intended for children. Some artworks are slightly suggestive. Also, I swear, _occasionally_. Keep that in mind.
 
 You can **subscribe** to the website's RSS feed to receive news and updates when I post, _no email or signup necessary_. If you don't know what RSS is, I wrote an explanation [here](/guides/how-to-subscribe/).
 

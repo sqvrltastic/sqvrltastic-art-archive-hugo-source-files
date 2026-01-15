@@ -14,10 +14,10 @@ toggle.addEventListener("click", () => {
 
   // Update icon
   icon.src = newTheme === "dark" ? moonIcon : sunIcon;
-  icon.alt = newTheme === "dark" ? "Dark theme ON" : "Light theme ON";
+  icon.alt = newTheme === "dark" ? "dark theme is ON" : "light theme is ON";
 });
 
 // On page load: set icon to match current theme
 const initialTheme = html.getAttribute("data-theme");
 icon.src = initialTheme === "dark" ? moonIcon : sunIcon;
-icon.alt = initialTheme === "dark" ? "Dark theme ON" : "Light theme ON";
+icon.alt = initialTheme === "dark" ? "dark theme is ON" : "light theme is ON";

@@ -4,7 +4,7 @@
 
     <nav>
         <div>
-            <a href='{{ relURL "" }}'>Home &#x2302;</a>
+            <a href='{{ relURL "" }}'>Home</a>
             <a href='{{ relURL "updates" }}'>Updates</a>
             <a href='{{ relURL "guestbook" }}'>Guestbook</a>
         </div>
@@ -37,11 +37,10 @@
         </div>
     </nav>
 
-    <div id="theme-switch">
-        <button id="theme-toggle" aria-label="toggle theme">
-            <img id="theme-icon" class="icon" src='{{ relURL "assets/images/icons/sun.png" }}' alt="Light theme ON">
-        </button>
-    </div>
+    <button id="theme-toggle" aria-label="toggle theme">
+        <img id="theme-icon" class="icon" src='{{ relURL "assets/images/icons/sun.png" }}' alt="light theme is ON">
+    </button>
+
     <p id="theme-no-js">
         Theme-toggle:<br>
         [JavaScript required]

@@ -11,12 +11,7 @@
       self-hosted fonts.
     </p>
     <style>
-      #logo {
-        font-size: 1.4em;
-        line-height: revert-layer;
-      }
-
-      #theme-switch {
+      #theme-toggle {
         display: none;
       }
 
@@ -35,7 +30,7 @@
     {{ partial "left-column.html" . }}
     <div id="center-column">
       <main id="main">
-        {{ partial "post-header.html" . }}
+        {{ partial "header.html" . }}
         {{ block "main" . }}
         {{ end }}
       </main>
@@ -43,7 +38,7 @@
     {{ partial "right-column.html" .}}
   </div>
   <a href="#main" id="scroll-to-top">
-    <img src='{{ relURL "assets/images/icons/arrow-up.png" }}' alt="scroll to top" class="icon">
+    <img class="icon" src='{{ relURL "assets/images/icons/arrow-up.png" }}' alt="scroll to top" class="icon">
   </a>
   {{ $jsbody := resources.Get "assets/js/theme-body.js" | resources.Minify | resources.Fingerprint }}
   <script src="{{ $jsbody.RelPermalink }}"></script>

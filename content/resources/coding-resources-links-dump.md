@@ -18,7 +18,7 @@ _**Shameless plug:** check out my own [guides](../guides/) as well!_
 
 <a href="https://web.pixelshannon.com/make/" target="\_blank" rel="noopener noreferrer">Make your own website</a> — a simple guide written for the author's 12-year-old daughter on how to actually make your own website.
 
-<a href="https://www.youtube.com/watch?v=K_EVuLegRZ0" target="\_blank" rel="noopener noreferrer">The only tags you need when first learning HTML</a> — video by Kevin Powell; also a great <strong>YouTube channel</strong> about CSS!
+<a href="https://www.youtube.com/watch?v=K_EVuLegRZ0" target="\_blank" rel="noopener noreferrer">The only tags you need when first learning HTML</a> — video by <strong>Kevin Powell</strong>; also a great <strong>YouTube channel</strong> about CSS!
 
 ## Specifics
 
