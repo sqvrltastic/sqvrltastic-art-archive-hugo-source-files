@@ -1,6 +1,5 @@
 /public/
-/documents/
-/images/
+/static/
 /.vscode/
 *.avif
 *.webp
@@ -9,3 +8,5 @@
 *.gif
 *.svg
 *.ico
+*.ttf
+*.woff2
