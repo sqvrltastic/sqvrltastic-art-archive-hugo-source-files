@@ -21,7 +21,7 @@ $allPosts "Date" "desc" | first 20 -}} {{- range $sortedPosts }}
   <!-- If it's an artwork it adds a picture -->
   {{- if eq .Section "gallery" -}}
   <a href="{{ .RelPermalink }}">
-    <img class="preview" src="{{ .Params.preview | relURL }}" alt="{{ .Title }}">
+    <img class="preview" src="{{ .Params.preview | relURL }}" alt="{{ .Title }}" loading="lazy">
   </a>
   <!-- and a link to full -->
   <a href="{{ .RelPermalink }}">{{ .Title }}</a>

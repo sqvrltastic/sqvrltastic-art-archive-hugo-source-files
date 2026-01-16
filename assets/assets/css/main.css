@@ -1,28 +1,49 @@
 @charset "UTF-8";
 
+/* Custom typeface — Wix Madeor Text (sans-serif) */
+
+/* Regular */
 @font-face {
-  font-family: "Wix Make for Display";
-  src: url("../fonts/WixMadeforDisplay-VariableFont_wght.ttf")
-    format("truetype");
-  font-weight: 100 900;
+  font-family: "Wix Make for Text";
+  src: url("../fonts/wix-madefor-text-regular.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
+/* Italic */
 @font-face {
   font-family: "Wix Make for Text";
-  src: url("../fonts/WixMadeforText-VariableFont_wght.ttf") format("truetype");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Wix Make for Text";
-  src: url("../fonts/WixMadeforText-Italic-VariableFont_wght.ttf")
-    format("truetype");
-  font-weight: 100 900;
+  src: url("../fonts/wix-madefor-text-italic.woff2") format("woff2");
+  font-weight: 400;
   font-style: italic;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: "Wix Make for Text";
+  src: url("../fonts/wix-madefor-text-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: "Wix Make for Text";
+  src: url("../fonts/wix-madefor-text-700italic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Extra Bold */
+@font-face {
+  font-family: "Wix Make for Text";
+  src: url("../fonts/wix-madefor-text-800.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -64,13 +85,15 @@
   font-display: swap;
 }
 
+/* Custom typeface — Reenie Beanie (display) */
+
 /* Regular */
 @font-face {
   font-family: "Reenie Beanie";
-  src: url("../fonts/ReenieBeanie-Regular.ttf") format("truetype");
+  src: url("../fonts/reenie-beanie-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 /* Global styles */
@@ -99,7 +122,7 @@ html[data-theme="dark"] {
     mix-blend-mode: lighten;
   }
   #theme-toggle > img {
-    transform: translateX(1.2rem);
+    transform: translateX(1.4em);
   }
   .top-message {
     color: var(--bg-color);
@@ -164,7 +187,7 @@ body {
 
 #flex-container {
   display: flex;
-  gap: 5em;
+  gap: 4em;
   padding: 3em;
   margin: 0 auto;
   max-inline-size: fit-content;
@@ -342,7 +365,7 @@ header {
 
 .top-message {
   padding: 0.2rem 0.5rem;
-  background-color: #0477a445;
+  background-color: #0477a41f;
   border-radius: 0.3rem;
   &:not(:has(+ h2)) {
     margin-block-end: 1rem;
