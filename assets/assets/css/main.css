@@ -1,5 +1,32 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: "Perfect Time";
+  src: url("../fonts/Perfect Time.otf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Regular */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Regular */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Italic-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 /* Custom typeface — Wix Madeor Text (sans-serif) */
 
 /* Regular */
@@ -103,11 +130,11 @@ html {
 }
 
 :root {
-  --main-color: rgb(22, 22, 22);
-  --bg-color: rgb(245, 245, 245);
+  --main-color: #161616;
+  --bg-color: #f5f5f5;
   --bg-extra-color: #d9d9d9;
   --neutral-color: rgba(153, 153, 153, 0.2);
-  --link-color: #0477a4;
+  --link-color: #0069d9;
   --colored-text: #0000f5;
 }
 
@@ -122,7 +149,7 @@ html[data-theme="dark"] {
     mix-blend-mode: lighten;
   }
   #theme-toggle > img {
-    transform: translateX(1.4em);
+    transform: translateX(1.2em);
   }
   .top-message {
     color: var(--bg-color);
@@ -134,6 +161,10 @@ html[data-theme="dark"] {
   }
   a:has(> .icon) {
     text-decoration-color: var(--bg-color);
+  }
+
+  .teal {
+    color: #00d1b4;
   }
 }
 
@@ -147,7 +178,7 @@ html[data-theme="dark"] {
 body {
   background-color: var(--bg-color);
   color: var(--main-color);
-  font-family: "Wix Make for Text", Tahoma, sans-serif;
+  font-family: "Inter", "Tahoma", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
@@ -199,7 +230,7 @@ body {
 #left-column {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 1.7em;
   flex-shrink: 0;
   padding: 0 0.5em;
   position: sticky;
@@ -213,8 +244,8 @@ body {
 }
 
 #logo {
-  font-family: "Reenie Beanie", "Segoe Print", cursive;
-  font-size: 2.3em;
+  font-family: "Perfect Time", cursive;
+  font-size: 2.5em;
   line-height: 0.9em;
   color: var(--main-color);
   text-decoration: none;
@@ -223,7 +254,7 @@ body {
 nav {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: inherit;
   > div {
     display: flex;
     flex-direction: column;
@@ -231,7 +262,6 @@ nav {
   > div > a {
     text-decoration: none;
     color: var(--main-color);
-    font-weight: 400;
     &:hover {
       color: var(--link-color);
     }
@@ -239,12 +269,13 @@ nav {
 }
 
 #theme-toggle {
+  font-size: inherit;
   display: flex;
   align-content: center;
-  inline-size: 3rem;
+  inline-size: 3em;
   background-color: transparent;
   border: 0.1rem solid var(--main-color);
-  border-radius: 5rem;
+  border-radius: 5em;
   padding: 0;
   &:hover {
     cursor: pointer;
@@ -252,8 +283,8 @@ nav {
   > #theme-icon {
     /* This is an image element */
     filter: revert-layer;
-    margin: 0.3rem;
-    inline-size: 1rem;
+    margin: 0.3em;
+    inline-size: 1em;
   }
 }
 
@@ -525,7 +556,7 @@ a:has(> .icon) {
 
 h1 {
   font-size: 2em;
-  font-weight: 800;
+  font-weight: 900;
   line-height: 120%;
   word-break: keep-all;
 }
@@ -541,16 +572,25 @@ h2 {
 
 details > summary > h3,
 details > h4 {
-  font-weight: normal;
+  font-weight: inherit;
   font-size: inherit;
 }
 
 a {
   color: var(--link-color);
+  &:not([href*="sqvrltastic.art"])
+    :not([href^="#"])
+    :not([href^="/"])
+    :not([href^="./"])
+    :not([href^="../"])
+    :not([href^="mailto:"])
+    :not(:has(> img))::after {
+    content: "↗";
+  }
 }
 
 strong {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 ul,
@@ -567,7 +607,7 @@ dl {
 }
 
 dt {
-  font-weight: bold;
+  font-weight: 800;
 }
 
 dd {
@@ -592,8 +632,8 @@ pre {
 
 code,
 kbd {
-  font-family: GoogleSansCode, Consolas, monospace;
-  font-size: 0.8em;
+  font-family: "GoogleSansCode", "Consolas", monospace;
+  font-size: 0.85em;
   background-color: var(--neutral-color);
   display: inline-block;
   max-inline-size: fit-content;
@@ -725,7 +765,9 @@ summary::-webkit-details-marker {
   details::details-content {
     max-block-size: 0;
     opacity: 0;
-    transition: opacity 0.4s, max-block-size 0.15s linear,
+    transition:
+      opacity 0.4s,
+      max-block-size 0.15s linear,
       content-visibility 0.15s linear;
     transition-behavior: allow-discrete;
     overflow: hidden;
@@ -737,7 +779,9 @@ summary::-webkit-details-marker {
   }
 
   .animation-medium::details-content {
-    transition: opacity 0.4s, max-block-size 0.2s linear,
+    transition:
+      opacity 0.4s,
+      max-block-size 0.2s linear,
       content-visibility 0.2s linear;
     transition-behavior: allow-discrete;
   }
@@ -747,7 +791,9 @@ summary::-webkit-details-marker {
   }
 
   .animation-long::details-content {
-    transition: opacity 0.4s, max-block-size 0.25s linear,
+    transition:
+      opacity 0.4s,
+      max-block-size 0.25s linear,
       content-visibility 0.25s linear;
     transition-behavior: allow-discrete;
   }
@@ -757,7 +803,9 @@ summary::-webkit-details-marker {
   }
 
   .animation-extra-long::details-content {
-    transition: opacity 0.4s, max-block-size 0.3s linear,
+    transition:
+      opacity 0.4s,
+      max-block-size 0.3s linear,
       content-visibility 0.3s linear;
     transition-behavior: allow-discrete;
   }
@@ -774,6 +822,14 @@ summary::-webkit-details-marker {
 
 .text-breakall {
   word-break: break-all;
+}
+
+.red {
+  color: red;
+}
+
+.teal {
+  color: #00b7ad;
 }
 
 /* CSS for 404 page */

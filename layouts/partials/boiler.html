@@ -42,11 +42,12 @@
   <link rel="alternate" type="application/rss+xml" title="RSS feed for
   Sqvrltastic's Homepage" href='{{ absURL "rss.xml" }}'>
   <!-- Self-hosted custom fonts -->
+  {{/*
   <link rel="preload" as="font" href='{{ relURL "../assets/fonts/wix-madefor-text-regular.woff2" }}'>
   <link rel="preload" as="font" href='{{ relURL "../assets/fonts/wix-madefor-text-italic.woff2" }}'>
   <link rel="preload" as="font" href='{{ relURL "../assets/fonts/wix-madefor-text-700.woff2" }}'>
   <link rel="preload" as="font" href='{{ relURL "../assets/fonts/wix-madefor-text-700italic.woff2" }}'>
-  <link rel="preload" as="font" href='{{ relURL "../assets/fonts/wix-madefor-text-800.woff2" }}'>
+  <link rel="preload" as="font" href='{{ relURL "../assets/fonts/wix-madefor-text-800.woff2" }}'> */}}
   <link rel="preload" as="font" href='{{ relURL "../assets/fonts/reenie-beanie-regular.woff2" }}'>
   <link rel="canonical" href="{{ .Permalink }}">
   {{ $jshead := resources.Get "assets/js/theme-head.js" | resources.Minify | resources.Fingerprint }}

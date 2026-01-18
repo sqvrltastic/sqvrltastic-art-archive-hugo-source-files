@@ -4,9 +4,10 @@ description: "This website's buttons and banners. If you find this website inter
 it with others, you can put one of these banners on your own website."
 ---
 
+<h2>About buttons</h2>
 <p>
   If you find this website interesting and/or useful and want to share it with
-  others, you can put one of these 90s-style banners on your own website and
+  others, you can put one of these 90s-style buttons/banners on your own website and
   link back to me. Please <strong>do not hotlink the images</strong> and thank you.
 </p>
 <details class="animation-medium">
@@ -26,7 +27,24 @@ it with others, you can put one of these banners on your own website."
 <p>Image:</p>
 <img src="/assets/images/buttons/sqvrltastic.png" alt="Sqvrltastic's Homepage" class="small-button">
 <p>Code:</p>
-<pre><code>&#x3C;a href=&#x22;https://sqvrltastic.art/&#x22; target=&#x22;_blank&#x22; rel=&#x22;noopener noreferrer&#x22;&#x3E;
+<details>
+  <summary>HTML (show code)</summary>
+  <pre><code>&#x3C;a href=&#x22;https://sqvrltastic.art/&#x22; target=&#x22;_blank&#x22; rel=&#x22;noopener noreferrer&#x22;&#x3E;
   &#x3C;img src=&#x22;./images/button-sqvrltastic.png&#x22; alt=&#x22;Sqvrltastic&#x27;s Homepage&#x22;&#x3E;
 &#x3C;/a&#x3E;</code></pre>
+</details>
+
 <p>Replace the path to the image with your relative link!</p>
+<hr>
+<p>Optional: add CSS to negate browser default zoom level:</p>
+<details>
+  <summary>CSS (show code)</summary>
+  <pre><code>.small-button {
+  /* code to make 88x31 buttons look crispier and negate browser zoom */
+  inline-size: 4.2rem;
+  aspect-ratio: 88/31;
+  transform: scale(1);
+}</code></pre>
+</details>
+
+<p>IMO, don't add <code>image-rendering: pixelated;</code> because it makes it look really weird and ugly.</p>

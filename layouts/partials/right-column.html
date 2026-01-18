@@ -3,10 +3,10 @@
     <figure id="latest-artwork">
         {{ $latestArtwork := first 1 (where .Site.RegularPages "Section" "gallery") }}
         {{ $latestArtwork := index $latestArtwork 0 }} <!-- Get the first element from the slice -->
-        <a href="{{ $latestArtwork.Permalink }}">
+        <a href="{{ $latestArtwork.RelPermalink }}">
             <!-- Check if the preview parameter exists, if it does, display it as an image -->
             {{ if $latestArtwork.Params.preview }}
-            <img src="{{ $latestArtwork.Params.preview | absURL }}" alt="{{ $latestArtwork.Title }}" class="preview">
+            <img src="{{ $latestArtwork.Params.preview | relURL }}" alt="{{ $latestArtwork.Title }}" class="preview">
             {{ else }}
             <p>Something broke, uh oh.</p>
             {{ end }}
@@ -17,7 +17,7 @@
             <time datetime='{{ $latestArtwork.Date | time.Format "2006-02-01" }}'>
                 {{ $latestArtwork.Date | time.Format "01/02/2006" }}
             </time><br>
-            <a href="{{ $latestArtwork.Permalink }}">View here&#x2192;</a>
+            <a href="{{ $latestArtwork.RelPermalink }}">View here&#x2192;</a>
         </figcaption>
     </figure>
 
@@ -52,5 +52,14 @@
             Version: 3.0.0
         </p>
     </footer>
+
+    <button id="theme-toggle" aria-label="toggle theme">
+        <img id="theme-icon" class="icon" src='{{ relURL "assets/images/icons/sun.png" }}' alt="light theme is ON">
+    </button>
+
+    <p id="theme-no-js">
+        Theme-toggle:<br>
+        [JavaScript required]
+    </p>
 
 </div>
