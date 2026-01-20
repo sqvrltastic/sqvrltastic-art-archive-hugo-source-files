@@ -4,14 +4,11 @@
 <ul>
   {{ range .Pages.ByDate.Reverse }}
   <li class="blog-item">
-    <div>
-      <time datetime='{{ .Date | time.Format "2006-02-01" }}'>
-        {{ .Date | time.Format "01/02/2006" }}
-      </time>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    </div>
+    <time datetime='{{ .Date | time.Format "2006-02-01" }}'>
+      {{ .Date | time.Format "01/02/2006" }}
+    </time>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   </li>
   {{ end }}
 </ul>
-
 {{ end }}

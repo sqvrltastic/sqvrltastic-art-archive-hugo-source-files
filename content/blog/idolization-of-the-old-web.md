@@ -6,7 +6,7 @@ date: 2025-01-04
 
 I get a feeling that a lot of Neocities users are teens, or at least born after 2005 and never really experienced the "old web" personally. I'm saying this because people really need to stop idolizing the "old web" so much.
 
-This might seem hypocritical, after all, isn’t my own website kinda oldish looking? Yes and no. While I do like a lot of design trends from a bygone era and despise a lot of modern web development trends, I still do recognize that there are a lot of things that sucked about the web 1.0.
+~~This might seem hypocritical, after all, isn’t my own website kinda oldish looking? Yes and no.~~ While I do like a lot of design trends from a bygone era and despise a lot of modern web development trends, I still do recognize that there are a lot of things that sucked about the web 1.0.
 
 After all, I was born just in time during the turn of the millennia and while
 I can't call myself "the OG internet user" (I am not a millennial, I am a very
