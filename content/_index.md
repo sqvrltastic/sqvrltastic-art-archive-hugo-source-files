@@ -11,7 +11,7 @@ The content on this site is **SFW**, but it is _not_ intended for children. Some
 
 You can **subscribe** to the website's **RSS feed** to receive news and updates when I post, _no email or signup necessary_. If you don't know what RSS is, I wrote an explanation [here](/guides/how-to-subscribe/).
 
-If you want to reach me, your best bet is to shoot me an **email** at <a href="mailto:sqvrltastic@gmail.com">sqvrltastic@gmail.com</a>; I check my email inbox regularly.
+If you want to reach me, your best bet is to shoot me an **email** at [sqvrltastic@gmail.com](mailto:sqvrltastic@gmail.com); I check my email inbox regularly.
 
 You can also sign my [guestbook](/guestbook/)!
 

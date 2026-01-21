@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* Custom typeface — Inter (sans-serif) */
+/* Custom typeface — Inter (body text) */
 
 /* Regular */
 @font-face {
@@ -47,7 +47,7 @@
   font-display: swap;
 }
 
-/* Custom typeface — Google Sans Code (monospace) */
+/* Custom typeface — Google Sans Code (code) */
 
 /* Regular */
 @font-face {
@@ -85,7 +85,7 @@
   font-display: swap;
 }
 
-/* Custom typeface — Perfect Time (display) */
+/* Custom typeface — Perfect Time (logo) */
 
 @font-face {
   font-family: "Perfect Time";
@@ -167,7 +167,7 @@ body {
   inline-size: 1px;
   block-size: 1px;
   overflow: hidden;
-  &:focus {
+  &:focus-visible {
     position: sticky;
     inset-block-start: 0px;
     inline-size: auto;
@@ -298,8 +298,11 @@ nav {
   gap: 0.5rem;
   padding: 0;
   list-style: none;
-  > li > a > .icon {
-    inline-size: 1.35rem;
+  > li > a {
+    display: block;
+    > .icon {
+      inline-size: 1.35rem;
+    }
   }
 }
 
