@@ -228,6 +228,7 @@ nav {
     display: flex;
     flex-direction: column;
   }
+  > a,
   > div > a {
     text-decoration: none;
     color: var(--main-color);
