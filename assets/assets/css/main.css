@@ -104,18 +104,17 @@ html {
 :root {
   --main-color: #161616;
   --bg-color: #f3f3f3;
-  --bg-extra-color: #d9d9d9;
   --neutral-color: rgba(153, 153, 153, 0.2);
   --link-color: #0069d9;
-  --colored-text: #0000f5;
+  --thin-border: 0.07rem solid var(--main-color);
+  --thick-border: 0.1rem solid var(--main-color);
+  --rounded-edges: 0.5em;
 }
 
 html[data-theme="dark"] {
   --main-color: #dedede;
   --bg-color: #2b2b2b;
-  --bg-extra-color: #454545;
   --link-color: #ff5faa;
-  --colored-text: greenyellow;
   #guestbook {
     filter: invert(1);
     mix-blend-mode: lighten;
@@ -130,9 +129,11 @@ html[data-theme="dark"] {
   a:has(> .icon) {
     text-decoration-color: var(--bg-color);
   }
-
   .teal {
     color: #00d1b4;
+  }
+  .text-colored {
+    color: greenyellow;
   }
 }
 
@@ -168,8 +169,9 @@ body {
   block-size: 1px;
   overflow: hidden;
   &:focus-visible {
-    position: sticky;
-    inset-block-start: 0px;
+    position: fixed;
+    inset-block-start: 0.1em;
+    inset-inline-start: 0.1em;
     inline-size: auto;
     block-size: auto;
   }
@@ -200,6 +202,7 @@ body {
   flex-direction: column;
   gap: 1.7em;
   flex-shrink: 0;
+  white-space: nowrap;
   padding: 0 0.5em;
   position: sticky;
   inset-block-start: 3em;
@@ -208,7 +211,6 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
-  white-space: nowrap;
 }
 
 #logo {
@@ -251,6 +253,7 @@ nav {
   flex-direction: column;
   gap: 2em;
   flex-shrink: 0;
+  white-space: nowrap;
   padding: 0 0.5em;
   position: sticky;
   inset-block-start: 3em;
@@ -259,7 +262,6 @@ nav {
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
-  white-space: nowrap;
 }
 
 #left-column,
@@ -320,7 +322,7 @@ footer {
   align-content: center;
   inline-size: 3em;
   background-color: transparent;
-  border: 0.1rem solid var(--main-color);
+  border: var(--thick-border);
   border-radius: 5em;
   padding: 0;
   &:hover {
@@ -362,7 +364,7 @@ header {
 }
 
 #main {
-  scroll-margin-block-start: 5em;
+  scroll-margin-block-start: 3em;
   display: flex;
   flex-direction: column;
   gap: 1.5em;
@@ -373,15 +375,15 @@ header {
   opacity: 0;
   pointer-events: none;
   position: fixed;
-  inset-block-end: 1rem;
+  inset-block-end: 1em;
   inset-inline-end: 50%;
   transform: translateX(22.8em);
-  padding: 1.3rem;
+  padding: 1.3em;
   background-color: var(--bg-color);
-  border: 0.1rem solid var(--main-color);
+  border: var(--thick-border);
   border-radius: 50%;
   > .icon {
-    inline-size: 0.6rem;
+    inline-size: 0.6em;
   }
   &.show {
     opacity: 1;
@@ -391,131 +393,6 @@ header {
     inset-inline-end: 1rem;
     transform: revert-layer;
   }
-}
-
-/* Various UI elements */
-
-#guestbook {
-  inline-size: 100%;
-  block-size: 31.5em;
-  mix-blend-mode: darken;
-  border: none;
-  transition: opacity;
-}
-
-ul:has(> .blog-item) {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  list-style: none;
-}
-
-.blog-item {
-  display: flex;
-  > time {
-    inline-size: 6.5em;
-    flex-shrink: 0;
-  }
-}
-
-.note-box {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  border: 0.1rem dotted var(--main-color);
-  border-radius: 2em;
-  padding: 2em;
-  margin: 1em 0;
-  font-style: italic;
-}
-
-header + .note-box {
-  margin-block-start: 1.5em;
-}
-
-.note-box + h2 {
-  margin-block-start: 0.5em;
-}
-
-/* Specific image templates */
-
-.gallery {
-  display: grid;
-  gap: 0.5em;
-  grid-template-columns: repeat(4, 1fr);
-  > a:has(> .preview) {
-    outline: 0.1rem solid transparent;
-    &:hover {
-      outline: 0.1rem solid var(--link-color);
-    }
-    &:focus-visible {
-      transition: none;
-      outline: 0.1rem solid var(--link-color);
-    }
-  }
-}
-
-a:has(> .preview) {
-  display: block;
-  aspect-ratio: 1 / 1;
-  border: 0.07rem solid var(--main-color);
-}
-
-.preview {
-  inline-size: 100%;
-}
-
-.artwork {
-  max-inline-size: 100%;
-  max-block-size: 30em;
-  margin: 0 auto;
-}
-
-div:has(> .artwork) {
-  border: 0.07rem solid var(--main-color);
-}
-
-.big-image {
-  aspect-ratio: 16/9;
-  max-inline-size: 100%;
-  border: 0.07rem solid var(--main-color);
-}
-
-div:has(> .big-image) {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-}
-
-.small-button {
-  /* code to make 88x31 buttons look crispier and negate browser zoom */
-  inline-size: 4.2rem;
-  aspect-ratio: 88/31;
-  transform: scale(1);
-}
-
-.stamp {
-  /* code to make stamps look crispier and negate browser zoom */
-  inline-size: 4.6rem;
-  aspect-ratio: 99/56;
-  transform: scale(1);
-}
-
-div:has(> .stamp) {
-  /* Stamp collection */
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.icon {
-  color: var(--main-color); /* for alt text, in case image breaks */
-  aspect-ratio: 1/1;
-  opacity: 0.9;
-}
-
-a:has(> .icon) {
-  text-decoration-color: var(--main-color); /* for alt text underline color */
 }
 
 /* General styling */
@@ -558,6 +435,9 @@ a {
     :not([href^="mailto:"])
     :not(:has(> img))::after {
     content: "↗";
+  }
+  &:has(> img) {
+    display: block;
   }
 }
 
@@ -656,8 +536,8 @@ article {
   grid-template-columns: repeat(2, 1fr);
   gap: 1em;
   padding: 1.5em;
-  border: 0.1rem solid var(--main-color);
-  border-radius: 0.5em;
+  border: var(--thick-border);
+  border-radius: var(--rounded-edges);
   > h2 {
     margin-block-start: 0;
   }
@@ -680,10 +560,10 @@ figure {
   flex-direction: column;
   gap: 0.5em;
   padding: 1.5em;
-  border: 0.1rem solid var(--main-color);
-  border-radius: 0.5em;
+  border: var(--thick-border);
+  border-radius: var(--rounded-edges);
   > img {
-    border: 0.07rem solid var(--main-color);
+    border: var(--thin-border);
   }
 }
 
@@ -717,8 +597,8 @@ header + p:has(> i):has(+ h2) {
 }
 
 details {
-  border: 0.1rem solid var(--main-color);
-  border-radius: 0.5em;
+  border: var(--thick-border);
+  border-radius: var(--rounded-edges);
   overflow: hidden;
 }
 
@@ -734,7 +614,7 @@ summary {
   list-style: none;
   &:hover {
     cursor: pointer;
-    background-color: var(--bg-extra-color);
+    background-color: var(--neutral-color);
   }
 }
 
@@ -809,10 +689,135 @@ summary::-webkit-details-marker {
   }
 }
 
+/* Various UI elements */
+
+#guestbook {
+  inline-size: 100%;
+  block-size: 31.5em;
+  mix-blend-mode: darken;
+  border: none;
+  transition: opacity;
+}
+
+ul:has(> .list-page-item) {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style: none;
+}
+
+.list-page-item {
+  display: flex;
+  > time {
+    inline-size: 6.5em;
+    flex-shrink: 0;
+  }
+}
+
+.note-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border: 0.1rem dotted var(--main-color);
+  border-radius: 2em;
+  padding: 2em;
+  margin: 1em 0;
+  font-style: italic;
+}
+
+header + .note-box {
+  margin-block-start: 1.5em;
+}
+
+.note-box + h2 {
+  margin-block-start: 0.5em;
+}
+
+/* Specific image templates */
+
+.gallery {
+  display: grid;
+  gap: 0.5em;
+  grid-template-columns: repeat(4, 1fr);
+  > a:has(> .preview) {
+    outline: 0.1rem solid transparent;
+    &:hover {
+      outline: 0.1rem solid var(--link-color);
+    }
+    &:focus-visible {
+      transition: none;
+      outline: 0.1rem solid var(--link-color);
+    }
+  }
+}
+
+a:has(> .preview) {
+  display: block;
+  aspect-ratio: 1 / 1;
+  border: var(--thin-border);
+}
+
+.preview {
+  inline-size: 100%;
+}
+
+.artwork {
+  max-inline-size: 100%;
+  max-block-size: 30em;
+  margin: 0 auto;
+}
+
+div:has(> .artwork) {
+  border: var(--thin-border);
+}
+
+.big-image {
+  aspect-ratio: 16/9;
+  max-inline-size: 100%;
+  border: var(--thin-border);
+}
+
+div:has(> .big-image) {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.small-button {
+  /* code to make 88x31 buttons look crispier and negate browser zoom */
+  inline-size: 4.2rem;
+  aspect-ratio: 88/31;
+  transform: scale(1);
+}
+
+.stamp {
+  /* code to make stamps look crispier and negate browser zoom */
+  inline-size: 4.6rem;
+  aspect-ratio: 99/56;
+  transform: scale(1);
+}
+
+div:has(> .stamp) {
+  /* Stamp collection */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.icon {
+  color: var(--main-color); /* for alt text, in case image breaks */
+  aspect-ratio: 1/1;
+  opacity: 0.9;
+}
+
+a:has(> .icon) {
+  text-decoration-color: var(--main-color); /* for alt text underline color */
+}
+
 /* Ocasionally used text styles */
 
 .text-colored {
-  color: var(--colored-text);
+  color: blue;
 }
 
 .text-breakall {
