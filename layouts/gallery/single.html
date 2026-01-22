@@ -22,8 +22,7 @@
 {{ end }}
 
 {{ with .Params.full }}
-<p><strong><a href="{{ . | relURL }}" target="_blank" rel="noopener noreferrer">Download full
-      (.jpg)</a></strong></p>
+<a href="{{ . | relURL }}" target="_blank" rel="noopener noreferrer"><strong>View full (.jpg)</strong></a>
 {{ else }}
 <p><i>No image found</i></p>
 <!-- Fallback text -->
