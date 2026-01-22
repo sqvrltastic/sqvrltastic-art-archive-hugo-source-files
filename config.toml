@@ -56,3 +56,8 @@ theme = 'CleanGallery'
       decimals = -1
     [minify.tdewolff.xml]
       keepWhitespace = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      typographer = false
