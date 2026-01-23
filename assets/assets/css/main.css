@@ -253,11 +253,28 @@ nav {
   > div {
     display: flex;
     flex-direction: column;
+    > details {
+      border: none;
+      border-radius: 0;
+      &[open]::details-content {
+        max-block-size: 4.8em;
+      }
+      > * {
+        padding: 0;
+        margin: 0;
+      }
+      > a {
+        padding-inline-start: 1em;
+      }
+      > summary:hover {
+        background-color: revert-layer;
+      }
+    }
   }
-  > a,
-  > div > a {
+  a {
     text-decoration: none;
     color: var(--main-color);
+    display: block;
     inline-size: fit-content;
     &:hover {
       color: var(--link-color);

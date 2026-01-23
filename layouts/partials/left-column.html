@@ -6,7 +6,11 @@
         <a href='{{ relURL "" }}'>Home</a>
         <div>
             <strong>My work</strong>
-            <a href='{{ relURL "gallery" }}'>Gallery</a>
+            <details>
+                <summary>Gallery</summary>
+                <a href='{{ relURL "fanart" }}'>Fanart</a>
+                <a href='{{ relURL "originals" }}'>Originals</a>
+            </details>
             <a href='{{ relURL "guides" }}'>Guides</a>
             <a href='{{ relURL "blog" }}'>Blog</a>
         </div>
@@ -18,16 +22,16 @@
             <a href='{{ relURL "favorite-pairings" }}'>Favorite pairings</a>
         </div>
         <div>
-            <strong>Outbound links</strong>
-            <a href='{{ relURL "resources" }}'>Resources</a>
-            <a href='{{ relURL "other-indie-websites" }}'>Other indie websites</a>
-        </div>
-        <div>
             <strong>Website</strong>
             <a href='{{ relURL "guestbook" }}'>Guestbook</a>
             <a href='{{ relURL "buttons-and-banners" }}'>Buttons and banners</a>
             <a href='{{ relURL "about-this-website" }}'>About this website</a>
             <a href='{{ relURL "old-designs-archive" }}'>Old designs archive</a>
+        </div>
+        <div>
+            <strong>Outbound links</strong>
+            <a href='{{ relURL "resources" }}'>Resources</a>
+            <a href='{{ relURL "other-indie-websites" }}'>Other indie websites</a>
         </div>
         <div>
             <strong>Other</strong>

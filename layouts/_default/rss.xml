@@ -15,8 +15,9 @@
 <language>en-us</language>
 
 {{- $allPosts := slice -}}
-{{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "gallery") -}}
+{{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "in" (slice "fanart" "originals")) -}}
 {{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "blog") -}}
+{{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "guides") -}}
 {{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "log") -}}
 
 {{- $sortedPosts := sort $allPosts "Date" "desc" | first 20 -}}
@@ -31,7 +32,9 @@
 <title>
     {{- if eq .Section "blog" -}}
         {{ .Title }} [blog]
-    {{- else if eq .Section "gallery" -}}
+    {{- else if eq .Section "guides" -}}
+        {{ .Title }} [guide]
+    {{- else if or (eq .Section "fanart") (eq .Section "originals") -}}
         {{ .Title }} [artwork]
     {{- else -}}
         Website update
@@ -39,7 +42,7 @@
 </title>
 
 <description>
-    {{- if eq .Section "gallery" -}}
+    {{- if or (eq .Section "fanart") (eq .Section "originals") -}}
         <img src="{{ .Site.BaseURL }}{{ .Params.compressed }}" />
         <p>[alt text] {{ .Description }}</p>
     {{- else if eq .Section "log" -}}
@@ -49,7 +52,7 @@
     {{- end -}}
 </description>
 
-{{- if eq .Section "gallery" -}}
+{{- if or (eq .Section "fanart") (eq .Section "originals") -}}
 <enclosure 
     url="{{ .Site.BaseURL }}{{ .Params.compressed }}" 
     type="image/avif" 

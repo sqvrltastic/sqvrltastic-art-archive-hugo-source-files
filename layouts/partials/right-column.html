@@ -1,7 +1,7 @@
 <div id="right-column">
 
     <figure id="latest-artwork">
-        {{ $latestArtwork := first 1 (where .Site.RegularPages "Section" "gallery") }}
+        {{ $latestArtwork := first 1 (where .Site.RegularPages "Section" "in" (slice "fanart" "originals")) }}
         {{ $latestArtwork := index $latestArtwork 0 }} <!-- Get the first element from the slice -->
         <a href="{{ $latestArtwork.RelPermalink }}">
             <!-- Check if the preview parameter exists, if it does, display it as an image -->
