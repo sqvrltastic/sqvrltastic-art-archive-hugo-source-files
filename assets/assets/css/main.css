@@ -253,7 +253,8 @@ nav {
   > div {
     display: flex;
     flex-direction: column;
-    > details {
+    > #gallery {
+      /* details element */
       border: none;
       border-radius: 0;
       &[open]::details-content {
@@ -279,6 +280,17 @@ nav {
     &:hover {
       color: var(--link-color);
     }
+  }
+}
+
+/* Disable transitions during restore */
+html.restore-menu-open #gallery {
+  transition: none;
+  &::details-content {
+    transition: none;
+  }
+  > summary::after {
+    transition: none;
   }
 }
 
@@ -710,6 +722,7 @@ ul:has(> .list-page-item) {
 
 .list-page-item {
   display: flex;
+  word-break: keep-all;
   > time {
     inline-size: 6.6em;
     flex-shrink: 0;
@@ -826,8 +839,12 @@ a:has(> .icon) {
   color: blue;
 }
 
-.text-breakall {
+.text-break-all {
   word-break: break-all;
+}
+
+.text-no-break {
+  white-space: nowrap;
 }
 
 .red {

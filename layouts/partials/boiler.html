@@ -42,6 +42,9 @@
   <link rel="alternate" type="application/rss+xml" title="RSS feed for
   Sqvrltastic's Homepage" href='{{ absURL "rss.xml" }}'>
   <link rel="canonical" href="{{ .Permalink }}">
-  {{ $jshead := resources.Get "assets/js/theme-head.js" | resources.Minify | resources.Fingerprint }}
-  <script src="{{ $jshead.RelPermalink }}"></script>
+  <!-- I dont even know anymore but I guess it works so DONT TOUCH -->
+  {{ $jsthemehead := resources.Get "assets/js/theme-head.js" | resources.Minify | resources.Fingerprint }}
+  <script src="{{ $jsthemehead.RelPermalink }}"></script>
+  {{ $jsdetailshead := resources.Get "assets/js/details-head.js" | resources.Minify | resources.Fingerprint }}
+  <script src="{{ $jsdetailshead.RelPermalink }}"></script>
 </head>
