@@ -1,16 +1,16 @@
 {{ define "main" }}
+<!-- Structured data for Google rich search results -->
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org/",
-    "@type": "VisualArtwork",
-    "name": "{{ .Title }}",
-    "isFamilyFriendly": true,
-    "artMedium": "digital",
-    "creator": {
-      "@type": "Person",
-      "name": "Sqvrltastic"
-    }
-  }
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "ImageObject"
+  "contentUrl" (.Params.full | absURL)
+  "name" .Title
+  "description" .Params.alt
+  "datePublished" .Date
+  "creator" "sqvrltastic"
+-}}
+{{ $schema | jsonify }}
 </script>
 {{ with .Params.compressed }}
 <div>

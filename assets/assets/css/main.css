@@ -202,7 +202,7 @@ body {
 
 #left-column,
 #right-column {
-  display: none;
+  display: flex;
   flex-direction: column;
   flex-shrink: 0;
   white-space: nowrap;
@@ -257,6 +257,12 @@ nav {
       /* details element */
       border: none;
       border-radius: 0;
+      &::details-content {
+        transition:
+          opacity 0.3s,
+          max-block-size 0.15s linear,
+          content-visibility 0.15s linear;
+      }
       &[open]::details-content {
         max-block-size: 4.8em;
       }
@@ -264,8 +270,11 @@ nav {
         padding: 0;
         margin: 0;
       }
+      > *:not(summary) {
+        margin: 0.1em;
+      }
       > a {
-        padding-inline-start: 1em;
+        margin-inline-start: 1em;
       }
       > summary:hover {
         background-color: revert-layer;
