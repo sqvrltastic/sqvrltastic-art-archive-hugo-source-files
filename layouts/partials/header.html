@@ -1,4 +1,36 @@
 <header>
+    <!-- Structured data for Google rich search results -->
+
+    {{- $items := slice -}}
+    {{- $position := 1 -}}
+
+    {{- range .Ancestors.Reverse }}
+    {{- $items = $items | append (dict
+    "@type" "ListItem"
+    "position" $position
+    "name" .Title
+    "item" .Permalink
+    ) -}}
+    {{- $position = add $position 1 -}}
+    {{- end }}
+
+    {{- /* Current page */ -}}
+    {{- $items = $items | append (dict
+    "@type" "ListItem"
+    "position" $position
+    "name" .Title
+    "item" .Permalink
+    ) -}}
+
+    <script type="application/ld+json">
+        {{ dict
+            "@context" "https://schema.org"
+            "@type" "BreadcrumbList"
+            "itemListElement" $items
+            | jsonify | safeJS
+        }}
+    </script>
+
     <ul id="breadcrumbs">
         {{- range .Ancestors.Reverse }}
         <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> /&nbsp;</li>
