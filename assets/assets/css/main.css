@@ -279,7 +279,7 @@ html.restore-menu-open #gallery {
 #latest-artwork {
   /* It's a figure element */
   all: revert-layer;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 0.5em;
   margin: 0; /* Idk where it gets a margin from LMAO oops */
@@ -301,11 +301,11 @@ html.restore-menu-open #gallery {
 
 #social-media {
   flex-direction: row;
-  gap: 0.5em;
+  gap: 1em;
   padding: 0;
   list-style: none;
   > li > a > .icon {
-    inline-size: 1.35em;
+    inline-size: 1.5em;
   }
 }
 
@@ -862,5 +862,18 @@ a:has(> .icon) {
     > h1 {
       font-size: 4em;
     }
+  }
+}
+
+.test {
+  inline-size: 9em;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  > div > p {
+    font-size: 0.85em;
   }
 }

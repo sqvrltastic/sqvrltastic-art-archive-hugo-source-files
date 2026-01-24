@@ -26,4 +26,4 @@ Launch the app. Find a button that says something like: "add new feed", or "add 
 
 ---
 
-_If you want to read more about the technology behind RSS, I wrote a blog post on it: [Full guide to RSS](/guides/full-guide-to-rss/)._
+_If you want to read more about the technology behind RSS, I wrote a detailed guide: [Full guide to RSS](/guides/full-guide-to-rss/)._

@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<p><i>{{ .Description }}</i></p>
+<ul>
+  {{ range .Pages.ByDate.Reverse }}
+  <li class="list-page-item">
+    <time datetime='{{ .Date | time.Format "2006-02-01" }}'>
+      {{ .Date | time.Format "01/02/2006" }}
+    </time>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </li>
+  {{ end }}
+</ul>
+<hr>
+<p>
+  <i>
+    P. S. This section used to be called "Blog", but I changed it to "Journal" because the word "Blog"'s reputation has
+    been irreparably tarnished by its association with
+    trash SEO bait articles and Millenial
+    pseudo-intellectual thinkpieces.
+  </i>
+</p>
+{{ end }}

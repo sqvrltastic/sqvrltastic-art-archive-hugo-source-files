@@ -16,7 +16,7 @@
 
 {{- $allPosts := slice -}}
 {{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "in" (slice "fanart" "originals")) -}}
-{{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "blog") -}}
+{{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "journal") -}}
 {{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "guides") -}}
 {{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "log") -}}
 
@@ -30,8 +30,8 @@
 {{- end -}}
 
 <title>
-    {{- if eq .Section "blog" -}}
-        {{ .Title }} [blog]
+    {{- if eq .Section "journal" -}}
+        {{ .Title }} [journal]
     {{- else if eq .Section "guides" -}}
         {{ .Title }} [guide]
     {{- else if or (eq .Section "fanart") (eq .Section "originals") -}}

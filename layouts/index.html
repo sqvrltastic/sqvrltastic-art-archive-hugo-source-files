@@ -11,7 +11,7 @@
 <!-- Updates listing and sorting algorithm -->
 {{- $allPosts := slice -}}
 {{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "in" (slice "fanart" "originals")) -}}
-{{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "blog") -}}
+{{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "journal") -}}
 {{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "guides") -}}
 {{- $allPosts = $allPosts | append (where .Site.RegularPages "Section" "log") -}}
 {{- $sortedPosts := sort $allPosts "Date" "desc" | first 20 -}}
@@ -21,8 +21,8 @@
     <h2>
         {{- if or (eq .Section "fanart") (eq .Section "originals") -}}
         New artwork
-        {{- else if eq .Section "blog" -}}
-        New blog post
+        {{- else if eq .Section "journal" -}}
+        New journal post
         {{- else if eq .Section "guides" -}}
         New guide
         {{- else -}}
@@ -38,8 +38,8 @@
     </a>
     <!-- and a link to full -->
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    <!-- if it's a blog -->
-    {{- else if eq .Section "blog" -}}
+    <!-- if it's a journal post -->
+    {{- else if eq .Section "journal" -}}
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     <p class="description">{{ .Description }}</p>
     <!-- if it's a guide -->
