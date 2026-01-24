@@ -3,13 +3,13 @@ title: Animating details HTML element with pure CSS (without calc-size(auto))
 description: "I needed some ingenious solution to pretty-up my details element styling. This guide is a temporary
 workaround until the calc-size() CSS function becomes widely available."
 date: 2025-11-29
-updated: 2026-01-11
+updated: 2026-01-24
 tutorialCSS: "assets/css/tutorials.css"
 ---
 
 <div class="note-box">
   <p><strong>Table of contents:</strong></p>
-  <ul>
+  <ol>
     <li><a href="#introduction">Introduction</a></li>
     <li><a href="#lets-begin">Let's begin...</a></li>
     <li><a href="#changing-the-default-styles">Changing the default styles</a></li>
@@ -20,7 +20,7 @@ tutorialCSS: "assets/css/tutorials.css"
     <li>
       <a href="#adding-media-query">Bonus: Adding media query to respect user's reduced motion preferences</a>
     </li>
-  </ul>
+  </ol>
 </div>
 
 <h2 id="introduction">Introduction</h2>
@@ -84,23 +84,22 @@ tutorialCSS: "assets/css/tutorials.css"
 <details class="details-one">
   <summary>Changing the default styles a bit (show code)</summary>
   <pre><code>details {
-  margin: 1em auto;
-  border: 0.1em solid black;
-  border-radius: 0.2em;
-}
-
-details > *:not(summary) {
+  border: 0.1rem solid black; /* I prefer to use rems and ems */
+  border-radius: 0.5em;
+  overflow: hidden; /* or else the round edges clip */
+  /* Utilizing native CSS nesting */
+  > *:not(summary) {
   margin: 1em;
+  }
 }
 
  summary {
-  padding: 0.5em;
+  padding: 0.5em 0.7em;
   transition: background-color 0.3s;
-}
-
-summary:hover {
+  &:hover {
   cursor: pointer;
   background-color: lightgrey;
+  }
 }
 </code></pre>
 </details>
@@ -119,47 +118,40 @@ summary:hover {
 </p>
 <details class="details-two">
   <summary>Сhanging the look of the default marker (show code)</summary>
-  <pre><code>/* Base code */
-    
-details {
-  margin: 1em auto;
-  border: 0.1em solid black;
-  border-radius: 0.2em;
-}
-
-details > *:not(summary) {
+  <pre><code>details {
+  border: 0.1rem solid black; 
+  border-radius: 0.5em;
+  overflow: hidden;
+  > *:not(summary) {
   margin: 1em;
+  }
+  &[open] > summary::after {
+  /* this makes the marker actually rotate */
+  transform: rotate(-180deg);
+  }
 }
 
-summary {
-  display: flex;
+ summary {
+  display: flex; /* you need flexbox to put marker in place at the end */
   justify-content: space-between;
   align-items: center;
-  padding: 0.5em;
-  list-style: none;
-  transition: 0.3s;
-}
-
-summary:hover {
+  padding: 0.5em 0.7em;
+  transition: background-color 0.3s;
+  &:hover {
   cursor: pointer;
   background-color: lightgrey;
-}
-    
-/* Rotating triangle marker for &#x3C;details&#x3E; */
-
-summary::after {
+  }
+  &::after {
+  /* New triangle marker for &#x3C;details&#x3E; */
   content: "";
   transition: 0.3s;
   border-block-start: 0.4em solid black;
   border-inline: 0.25em solid transparent;
-}
-
-details[open] > summary::after {
-  transform: rotate(-180deg);
-}
-
-summary::-webkit-details-marker {
+  }
+  &::-webkit-details-marker {
+  /* For Safari browser */
   display: none;
+  }
 }</code></pre>
 </details>
 <p>
@@ -175,60 +167,49 @@ summary::-webkit-details-marker {
 </p>
 <details class="details-three">
   <summary>Fade-in effect (show code)</summary>
-  <pre><code>/* Base code */
-    
-details {
-  margin: 1em auto;
-  border: 0.1em solid black;
-  border-radius: 0.2em;
-}
-
-details > *:not(summary) {
+  <pre><code>details {
+  border: 0.1rem solid black; 
+  border-radius: 0.5em;
+  overflow: hidden;
+  > *:not(summary) {
   margin: 1em;
+  }
+  &[open] > summary::after {
+  transform: rotate(-180deg);
+  }
+  &::details-content {
+  /* pseudo-element to target the... 
+  actual content of details element, duh.
+  Adding fade-in effect */
+  opacity: 0;
+  transition: opacity 0.4s;
+  }
+  &[open]::details-content {
+  opacity: 1;
+  }
 }
 
  summary {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5em;
-  list-style: none;
-  transition: 0.3s;
-}
-
-summary:hover {
+  padding: 0.5em 0.7em;
+  transition: background-color 0.3s;
+  &:hover {
   cursor: pointer;
   background-color: lightgrey;
-}
-    
-/* Rotating triangle marker for &#x3C;details&#x3E; */
-
-summary::after {
-content: "";
+  }
+  &::after {
+  content: "";
   transition: 0.3s;
   border-block-start: 0.4em solid black;
   border-inline: 0.25em solid transparent;
-}
-
-details[open] > summary::after {
-  transform: rotate(-180deg);
-}
-
-summary::-webkit-details-marker {
+  }
+  &::-webkit-details-marker {
   display: none;
-  
+  }
 }
-
-/* Fade-in effect */
-
-details::details-content {
-  opacity: 0;
-  transition: opacity 0.4s;
-}
-
-details[open]::details-content {
-  opacity: 1;
-}</code></pre>
+</code></pre>
 </details>
 
 <h2 id="animating-opening-and-closing">... And <em>now</em> the thing you all came here for — animating the opening
@@ -278,113 +259,113 @@ details[open]::details-content {
 <p>Aaaanyway... Here is the code for you:</p>
 <details class="animation-extra-long">
   <summary>Fade-in and gradual opening and closing animation (show code)</summary>
-  <pre><code>/* Base code */
-    
-details {
-  margin: 1em auto;
-  border: 0.1em solid black;
-  border-radius: 0.2em;
-}
-
-details > *:not(summary) {
+  <pre><code>details {
+  border: 0.1rem solid black; 
+  border-radius: 0.5em;
+  overflow: hidden;
+  > *:not(summary) {
   margin: 1em;
+  }
+  &[open] > summary::after {
+  transform: rotate(-180deg);
+  }
+  &::details-content {
+  max-block-size: 0;
+  opacity: 0;
+  /* animation */
+  transition:
+    opacity 0.3s,
+    max-block-size 0.2s linear,
+    content-visibility 0.2s linear; /* fine tune the timings */
+  transition-behavior: allow-discrete;
+  overflow: hidden;
+  }
+  &[open]::details-content {
+  opacity: 1;
+  max-block-size: 10em; /* just an example */
+  /* max-block-size has to be hard-coded 
+  for the animation to work (unfortunately) */
+  }
 }
 
  summary {
-  display: flex;
+  display: flex; 
   justify-content: space-between;
   align-items: center;
-  padding: 0.5em;
-  list-style: none;
-  transition: 0.3s;
-}
-
-summary:hover {
+  padding: 0.5em 0.7em;
+  transition: background-color 0.3s;
+  &:hover {
   cursor: pointer;
   background-color: lightgrey;
-}
-    
-/* Rotating triangle marker for &#x3C;details&#x3E; */
-
-summary::after {
-content: "";
+  }
+  &::after {
+  content: "";
   transition: 0.3s;
   border-block-start: 0.4em solid black;
   border-inline: 0.25em solid transparent;
-}
-
-details[open] > summary::after {
-  transform: rotate(-180deg);
-}
-
-summary::-webkit-details-marker {
+  }
+  &::-webkit-details-marker {
   display: none;
-  
-}
-
-/* Animation */
-
-details::details-content {
-  max-block-size: 0;
-  opacity: 0;
-  transition: opacity 0.4s, max-block-size 0.3s linear,
-    content-visibility 0.3s linear; /* adjust the timings as needed */
-  transition-behavior: allow-discrete;
-  overflow: hidden;
-}
-
-details[open]::details-content {
-  opacity: 1;
-  max-block-size: 100em; /* adjust the size as needed */
+  }
 }</code></pre>
 </details>
 <p>And here are my animation presets and my timings that I picked for myself, both for opacity and movement:</p>
 <details class="animation-extra-long">
-  <summary>My CSS animation presets</summary>
-  <pre><code>/* details CSS-only animation, with presets for different sizes */
-
-details::details-content {
-  max-block-size: 0;
-  opacity: 0;
-  transition: opacity 0.4s, max-block-size 0.3s linear,
-    content-visibility 0.3s linear;
-  transition-behavior: allow-discrete;
-  overflow: hidden;
+  <summary>My own CSS animation presets</summary>
+  <pre><code>details {
+  &::details-content {
+    max-block-size: 0;
+    opacity: 0;
+    transition:
+      opacity 0.4s,
+      max-block-size 0.3s linear,
+      content-visibility 0.3s linear;
+    transition-behavior: allow-discrete;
+    overflow: hidden;
+  }
+  &[open]::details-content {
+    opacity: 1;
+    max-block-size: 55em; /* max-block-size has to be hard-coded for the animation to work (unfortunately) */
+  }
 }
 
-details[open]::details-content {
-  opacity: 1;
-  max-block-size: 55em; /* max-block-size has to be hard-coded for the animation to work (unfortunately) */
+.animation-medium {
+  &::details-content {
+    transition:
+      opacity 0.5s,
+      max-block-size 0.4s linear,
+      content-visibility 0.4s linear;
+    transition-behavior: allow-discrete; /* for some reason I have to repeat this rule every time, or else Edge (specifically) misbehaves */
+  }
+  &[open]::details-content {
+    max-block-size: 110em;
+  }
 }
 
-.animation-medium::details-content {
-  transition: opacity 0.5s, max-block-size 0.4s linear,
-    content-visibility 0.4s linear;
-  transition-behavior: allow-discrete; /* for some reason I have to repeat this rule every time, or else Edge (specifically) misbehaves */
+.animation-long {
+  &::details-content {
+    transition:
+      opacity 0.6s,
+      max-block-size 0.5s linear,
+      content-visibility 0.5s linear;
+    transition-behavior: allow-discrete;
+  }
+  &[open]::details-content {
+    max-block-size: 165em;
+  }
 }
 
-.animation-medium[open]::details-content {
-  max-block-size: 110em;
-}
-
-.animation-long::details-content {
-  transition: opacity 0.6s, max-block-size 0.5s linear,
-    content-visibility 0.5s linear;
-  transition-behavior: allow-discrete;
-}
-
-.animation-long[open]::details-content {
-  max-block-size: 165em;
-}
-
-.animation-extra-long::details-content {
-  transition: opacity 0.7s, max-block-size 0.6s linear,
-    content-visibility 0.6s linear;
-  transition-behavior: allow-discrete;
-}
-
-.animation-extra-long[open]::details-content {
-  max-block-size: 220em;
+.animation-extra-long {
+  &::details-content {
+    transition:
+      opacity 0.7s,
+      max-block-size 0.6s linear,
+      content-visibility 0.6s linear;
+    transition-behavior: allow-discrete;
+  }
+  &[open]::details-content {
+    max-block-size: 220em;
+  }
 }</code></pre>
 </details>
 <p>And here is how my final presets look:</p>
@@ -510,15 +491,15 @@ details[open]::details-content {
   <summary>Media query CSS code</summary>
   <pre><code>@media screen and (prefers-reduced-motion: no-preference) {
     /* Just paste the entire animation CSS code here, with all your presets */
-    ::details-content {
-    /* Your code here */
+    details {
+    &::details-content {
+      ...
     }
-    ::details-content[open] {
-    /* Your code here */
+    &[open]::details-content {
+      ...
     }
-    /* ... */
   }
-  </code></pre>
+}</code></pre>
 </details>
 <hr>
 <p><i>That's it! Hopefully someone else migth find this guide useful.</i></p>

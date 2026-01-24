@@ -503,6 +503,9 @@ img {
 pre {
   white-space: pre-wrap;
   word-break: break-all;
+  > code {
+    margin: 0;
+  }
 }
 
 code,
@@ -609,11 +612,12 @@ header + p:has(> i):has(+ h2) {
 details {
   border: var(--thick-border);
   border-radius: var(--rounded-edges);
-  overflow: hidden;
+  overflow: hidden; /* or else the round edges clip */
   > *:not(summary) {
     margin: 1.5em;
   }
   &[open] > summary::after {
+    /* this makes the marker actually rotate */
     transform: rotate(-180deg);
   }
 }
@@ -629,70 +633,74 @@ summary {
     background-color: var(--neutral-color);
   }
   &::after {
-    /* Rotating triangle at the end for details */
+    /* New triangle marker at the end for details */
     content: "";
     transition: 0.3s;
     border-block-start: 0.5rem solid var(--main-color);
     border-inline: 0.3rem solid transparent;
   }
   &::-webkit-details-marker {
-    /* for Safari */
+    /* for Safari browser */
     display: none;
   }
 }
 
 /* <details> CSS-only animation, with presets for different sizes */
 @media screen and (prefers-reduced-motion: no-preference) {
-  details::details-content {
-    max-block-size: 0;
-    opacity: 0;
-    transition:
-      opacity 0.4s,
-      max-block-size 0.3s linear,
-      content-visibility 0.3s linear;
-    transition-behavior: allow-discrete;
-    overflow: hidden;
+  details {
+    &::details-content {
+      max-block-size: 0;
+      opacity: 0;
+      transition:
+        opacity 0.4s,
+        max-block-size 0.3s linear,
+        content-visibility 0.3s linear;
+      transition-behavior: allow-discrete;
+      overflow: hidden;
+    }
+    &[open]::details-content {
+      opacity: 1;
+      max-block-size: 55em; /* max-block-size has to be hard-coded for the animation to work (unfortunately) */
+    }
   }
 
-  details[open]::details-content {
-    opacity: 1;
-    max-block-size: 55em; /* max-block-size has to be hard-coded for the animation to work (unfortunately) */
+  .animation-medium {
+    &::details-content {
+      transition:
+        opacity 0.5s,
+        max-block-size 0.4s linear,
+        content-visibility 0.4s linear;
+      transition-behavior: allow-discrete; /* for some reason I have to repeat this rule every time, or else Edge (specifically) misbehaves */
+    }
+    &[open]::details-content {
+      max-block-size: 110em;
+    }
   }
 
-  .animation-medium::details-content {
-    transition:
-      opacity 0.5s,
-      max-block-size 0.4s linear,
-      content-visibility 0.4s linear;
-    transition-behavior: allow-discrete; /* for some reason I have to repeat this rule every time, or else Edge (specifically) misbehaves */
+  .animation-long {
+    &::details-content {
+      transition:
+        opacity 0.6s,
+        max-block-size 0.5s linear,
+        content-visibility 0.5s linear;
+      transition-behavior: allow-discrete;
+    }
+    &[open]::details-content {
+      max-block-size: 165em;
+    }
   }
 
-  .animation-medium[open]::details-content {
-    max-block-size: 110em;
-  }
-
-  .animation-long::details-content {
-    transition:
-      opacity 0.6s,
-      max-block-size 0.5s linear,
-      content-visibility 0.5s linear;
-    transition-behavior: allow-discrete;
-  }
-
-  .animation-long[open]::details-content {
-    max-block-size: 165em;
-  }
-
-  .animation-extra-long::details-content {
-    transition:
-      opacity 0.7s,
-      max-block-size 0.6s linear,
-      content-visibility 0.6s linear;
-    transition-behavior: allow-discrete;
-  }
-
-  .animation-extra-long[open]::details-content {
-    max-block-size: 220em;
+  .animation-extra-long {
+    &::details-content {
+      transition:
+        opacity 0.7s,
+        max-block-size 0.6s linear,
+        content-visibility 0.6s linear;
+      transition-behavior: allow-discrete;
+    }
+    &[open]::details-content {
+      max-block-size: 220em;
+    }
   }
 }
 
@@ -738,6 +746,9 @@ ul:has(> .list-page-item) {
   padding: 2em;
   margin: 1em 0;
   font-style: italic;
+  &:has(ol) {
+    font-style: normal;
+  }
 }
 
 header + .note-box {
