@@ -253,41 +253,14 @@ nav {
   > div {
     display: flex;
     flex-direction: column;
-    > #gallery {
-      /* details element */
-      border: none;
-      border-radius: 0;
-      &::details-content {
-        transition:
-          opacity 0.3s,
-          max-block-size 0.15s linear,
-          content-visibility 0.15s linear;
+    > a {
+      text-decoration: none;
+      color: var(--main-color);
+      display: block;
+      inline-size: fit-content;
+      &:hover {
+        color: var(--link-color);
       }
-      &[open]::details-content {
-        max-block-size: 4.8em;
-      }
-      > * {
-        padding: 0;
-        margin: 0;
-      }
-      > *:not(summary) {
-        margin: 0.1em;
-      }
-      > a {
-        margin-inline-start: 1em;
-      }
-      > summary:hover {
-        background-color: revert-layer;
-      }
-    }
-  }
-  a {
-    text-decoration: none;
-    color: var(--main-color);
-    display: block;
-    inline-size: fit-content;
-    &:hover {
-      color: var(--link-color);
     }
   }
 }

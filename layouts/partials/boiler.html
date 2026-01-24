@@ -45,6 +45,4 @@
   <!-- I dont even know anymore but I guess it works so DONT TOUCH -->
   {{ $jsthemehead := resources.Get "assets/js/theme-head.js" | resources.Minify | resources.Fingerprint }}
   <script src="{{ $jsthemehead.RelPermalink }}"></script>
-  {{ $jsdetailshead := resources.Get "assets/js/details-head.js" | resources.Minify | resources.Fingerprint }}
-  <script src="{{ $jsdetailshead.RelPermalink }}"></script>
 </head>

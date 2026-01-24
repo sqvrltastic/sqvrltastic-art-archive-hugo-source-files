@@ -44,8 +44,6 @@
   <script src="{{ $jsthemebody.RelPermalink }}"></script>
   {{ $jsscroll := resources.Get "assets/js/scroll-to-top.js" | resources.Minify | resources.Fingerprint }}
   <script src="{{ $jsscroll.RelPermalink }}"></script>
-  {{ $jsdetailsbody := resources.Get "assets/js/details-body.js" | resources.Minify | resources.Fingerprint }}
-  <script src="{{ $jsdetailsbody.RelPermalink }}"></script>
 </body>
 
 </html>
