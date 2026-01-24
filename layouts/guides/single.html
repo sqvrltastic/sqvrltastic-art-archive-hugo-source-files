@@ -1,0 +1,16 @@
+{{ define "main" }}
+<!-- Structured data for Google rich search results -->
+<script type="application/ld+json">
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "TechArticle"
+  "contentUrl" .Permalink
+  "name" .Title
+  "description" .Params.description
+  "datePublished" .Date
+  "author" "sqvrltastic"
+-}}
+{{ $schema | jsonify }}
+</script>
+{{ .Content }}
+{{ end }}
