@@ -269,8 +269,13 @@ nav {
   gap: inherit;
   padding: 0;
   list-style: none;
-  > li > a > .icon {
-    inline-size: 1.5em;
+  margin-block-start: 0.3em;
+  > li > a {
+    display: block;
+    inline-size: fit-content;
+    > .icon {
+      inline-size: 1.5em;
+    }
   }
 }
 
@@ -333,6 +338,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
+  word-break: keep-all;
 }
 
 #scroll-to-top {
