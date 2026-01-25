@@ -3,6 +3,8 @@ title: About this website
 description: "Mostly just technical information about this website"
 ---
 
+## General
+
 This website was made with **HUGO website builder** and as of now, it is hosted on **GitHub pages**. My domain provider is **Porkbun**.
 
 I created this site because I needed a place to host my artworks and social media sites and other "platforms" are becoming worse and worse by each day.
@@ -18,3 +20,14 @@ This site is made to be browsed primarily **on desktop**, because that's the pat
 Also, **do** feel free to copy some parts of the code of this website! Just don't rip everything word for word. No need to credit me either, although it is always appreciated.
 
 This website was created on **December 3rd 2024**. 🎂
+
+## Credits
+
+<a href="https://themes.gohugo.io/themes/hugo-book/" target="_blank" rel="noopener noreferrer">Hugo Book Theme</a>
+for being the biggest inspiration for this site's current layout and style!
+
+Fonts:
+
+- <a href="https://www.dafont.com/perfect-time.font?text=Sqvrltastic%27s+Homepage" target="_blank" rel="noopener noreferrer">Perfect time font</a> — logo font
+- <a href="https://fonts.google.com/specimen/Inter" target="_blank" rel="noopener noreferrer">Inter</a> — body font
+- <a href="https://fonts.google.com/specimen/Google+Sans+Code" target="_blank" rel="noopener noreferrer">Google Sans Code</a> — code font

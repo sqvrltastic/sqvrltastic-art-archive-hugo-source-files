@@ -209,7 +209,7 @@ body {
   padding: 0 0.5em;
   position: sticky;
   inset-block-start: 3em;
-  min-inline-size: 10em;
+  inline-size: 10em;
   /* code for vertical scrollbar to appear when needed */
   max-block-size: calc(100vh - 7em);
   overflow-y: auto;
@@ -265,45 +265,35 @@ nav {
   }
 }
 
-/* Disable transitions during restore */
-html.restore-menu-open #gallery {
-  transition: none;
-  &::details-content {
-    transition: none;
-  }
-  > summary::after {
-    transition: none;
-  }
-}
-
-#latest-artwork {
-  /* It's a figure element */
-  all: revert-layer;
-  display: none;
+#featured-artwork {
+  display: flex;
   flex-direction: column;
-  gap: 0.5em;
-  margin: 0; /* Idk where it gets a margin from LMAO oops */
-  margin-block-start: 0.1em;
+  > strong {
+    margin-block-end: 0.1em;
+  }
   > a:has(> .preview) {
-    all: revert-layer;
-    display: block;
-    aspect-ratio: 1/1;
-    inline-size: 7em;
+    inline-size: 100%;
+    block-size: 5em;
     overflow: hidden;
-    box-sizing: border-box;
-    border-radius: 0.5em;
-    border: 0.07rem solid var(--neutral-color);
-    &:focus-visible {
-      outline: var(--focus-outline);
+    background-color: var(--bg-color);
+    > .preview {
+      transform: translateY(-1em);
+      filter: contrast(1.1);
+      mix-blend-mode: multiply;
     }
+  }
+  > a:nth-of-type(n + 2) {
+    /* really cool pseudo class */
+    margin-block-start: 0.5em;
   }
 }
 
 #social-media {
   flex-direction: row;
-  gap: 1em;
+  justify-content: space-between;
   padding: 0;
   list-style: none;
+  margin-block-start: 0.3em;
   > li > a > .icon {
     inline-size: 1.5em;
   }
@@ -862,18 +852,5 @@ a:has(> .icon) {
     > h1 {
       font-size: 4em;
     }
-  }
-}
-
-.test {
-  inline-size: 9em;
-}
-
-.wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  > div > p {
-    font-size: 0.85em;
   }
 }

@@ -1,49 +1,19 @@
 <div id="right-column">
 
-    <figure id="latest-artwork">
-        {{ $latestArtwork := first 1 (where .Site.RegularPages "Section" "in" (slice "fanart" "originals")) }}
-        {{ $latestArtwork := index $latestArtwork 0 }} <!-- Get the first element from the slice -->
-        <a href="{{ $latestArtwork.RelPermalink }}">
-            <!-- Check if the preview parameter exists, if it does, display it as an image -->
-            {{ if $latestArtwork.Params.preview }}
-            <img src="{{ $latestArtwork.Params.preview | relURL }}" alt="{{ $latestArtwork.Title }}" class="preview">
-            {{ else }}
-            <p>Something broke, uh oh.</p>
-            {{ end }}
+    <div id="featured-artwork">
+        <strong>Featured artwork:</strong>
+        <a href='{{ relURL "/originals/montenegro-chan-beer/" }}'>
+            <img src='{{ relURL "/assets/images/art/preview/montenegro-chan-beer.avif" }}'
+                alt="Montenegro-chan offering you a cold one" class="preview">
         </a>
-        <figcaption>
-            <strong>Latest artwork</strong><br>
-            Published:<br>
-            <time datetime='{{ $latestArtwork.Date | time.Format "2006-02-01" }}'>
-                {{ $latestArtwork.Date | time.Format "01/02/2006" }}
-            </time><br>
-            <a href="{{ $latestArtwork.RelPermalink }}">View here&#x2192;</a>
-        </figcaption>
-    </figure>
-
-    <div class="wrap">
-        <strong>Latest artworks</strong>
-        <div>
-            <a href="#" class="test">
-                <img src="http://localhost:1313/assets/images/art/preview/montenegro-chan-beer.avif" alt=""
-                    class="preview">
-            </a>
-            <p>Published: 12/05/24</p>
-        </div>
-        <div>
-            <a href="#" class="test">
-                <img src="http://localhost:1313/assets/images/art/preview/vermintide-kerillian-thinking-face.avif"
-                    alt="" class="preview">
-            </a>
-            <p>Published: 12/05/24</p>
-        </div>
-        <div>
-            <a href="#" class="test">
-                <img src="http://localhost:1313/assets/images/art/preview/vermintide-kerillian-drinking-leaf-lovers.avif"
-                    alt="" class="preview">
-            </a>
-            <p>Published: 12/05/24</p>
-        </div>
+        <a href='{{ relURL "/fanart/vermintide-kerillian-drinking-leaf-lovers/" }}'>
+            <img src='{{ relURL "/assets/images/art/preview/vermintide-kerillian-drinking-leaf-lovers.avif" }}'
+                alt="Kerillian drinking Leaf Lover's Special beer" class="preview">
+        </a>
+        <a href='{{ relURL "/fanart/lotgh-reinhard-portrait/" }}'>
+            <img src='{{ relURL "/assets/images/art/preview/lotgh-reinhard-portrait.avif" }}' alt="Reinhard portrait"
+                class="preview">
+        </a>
     </div>
 
     <ul id="social-media">
