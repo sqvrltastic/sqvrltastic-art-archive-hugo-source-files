@@ -1,21 +1,4 @@
 <div id="right-column">
-
-    <div id="featured-artwork">
-        <strong>Featured artwork:</strong>
-        <a href='{{ relURL "/originals/montenegro-chan-beer/" }}'>
-            <img src='{{ relURL "/assets/images/art/preview/montenegro-chan-beer.avif" }}'
-                alt="Montenegro-chan offering you a cold one" class="preview">
-        </a>
-        <a href='{{ relURL "/fanart/vermintide-kerillian-drinking-leaf-lovers/" }}'>
-            <img src='{{ relURL "/assets/images/art/preview/vermintide-kerillian-drinking-leaf-lovers.avif" }}'
-                alt="Kerillian drinking Leaf Lover's Special beer" class="preview">
-        </a>
-        <a href='{{ relURL "/fanart/lotgh-reinhard-portrait/" }}'>
-            <img src='{{ relURL "/assets/images/art/preview/lotgh-reinhard-portrait.avif" }}' alt="Reinhard portrait"
-                class="preview">
-        </a>
-    </div>
-
     <ul id="social-media">
         <li>
             <a href="https://www.reddit.com/user/sqvrltastic/" target="_blank" rel="noopener noreferrer">
@@ -38,7 +21,13 @@
             </a>
         </li>
     </ul>
-
+    <button id="theme-toggle" aria-label="toggle theme">
+        <img id="theme-icon" class="icon" src='{{ relURL "assets/images/icons/sun.png" }}' alt="light theme is ON">
+    </button>
+    <p id="theme-no-js">
+        Theme-toggle:<br>
+        [JavaScript required]
+    </p>
     <footer>
         <p>
             &copy; 2026 Sqvrltastic<br>
@@ -47,14 +36,4 @@
             Version: 3.0.0
         </p>
     </footer>
-
-    <button id="theme-toggle" aria-label="toggle theme">
-        <img id="theme-icon" class="icon" src='{{ relURL "assets/images/icons/sun.png" }}' alt="light theme is ON">
-    </button>
-
-    <p id="theme-no-js">
-        Theme-toggle:<br>
-        [JavaScript required]
-    </p>
-
 </div>
