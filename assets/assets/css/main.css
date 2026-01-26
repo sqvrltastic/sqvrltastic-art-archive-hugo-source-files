@@ -191,7 +191,7 @@ body {
 
 #flex-container {
   display: flex;
-  gap: 4em;
+  gap: 1.5em;
   padding: 3em;
   margin: 0 auto;
   max-inline-size: fit-content;
@@ -453,6 +453,10 @@ img {
   display: inline;
 }
 
+.img-border {
+  border: var(--thin-border);
+}
+
 pre {
   white-space: pre-wrap;
   word-break: break-all;
@@ -548,7 +552,7 @@ figure {
   }
 }
 
-.image-annotation {
+.figure-annotation {
   /* figure element */
   all: unset;
   > figcaption {
