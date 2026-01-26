@@ -191,12 +191,13 @@ body {
 
 #flex-container {
   display: flex;
-  gap: 1.5em;
+  gap: 3em;
   padding: 3em;
   margin: 0 auto;
   max-inline-size: fit-content;
   @media (max-width: 1200px) {
     flex-direction: column;
+    gap: 2.5em;
   }
 }
 
@@ -217,6 +218,8 @@ body {
   scrollbar-width: thin;
   @media (max-width: 1200px) {
     position: static;
+    inline-size: unset;
+    max-block-size: fit-content;
   }
 }
 
@@ -276,6 +279,9 @@ nav {
     > .icon {
       inline-size: 1.5em;
     }
+  }
+  @media (max-width: 1200px) {
+    flex-direction: row;
   }
 }
 
