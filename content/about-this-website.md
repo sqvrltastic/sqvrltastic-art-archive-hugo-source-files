@@ -36,6 +36,10 @@ for being the biggest inspiration for this site's current layout and style!
 
 Fonts:
 
-- <a href="https://www.dafont.com/perfect-time.font?text=Sqvrltastic%27s+Homepage" target="_blank" rel="noopener noreferrer">Perfect time font</a> — logo font
+- <a href="https://www.dafont.com/perfect-time.font" target="_blank" rel="noopener noreferrer">Perfect time font</a> — logo font
 - <a href="https://fonts.google.com/specimen/Inter" target="_blank" rel="noopener noreferrer">Inter</a> — body font
 - <a href="https://fonts.google.com/specimen/Google+Sans+Code" target="_blank" rel="noopener noreferrer">Google Sans Code</a> — code font
+
+---
+
+_P. S. There is a bunny hidden somewhere on this website!_ 🐰

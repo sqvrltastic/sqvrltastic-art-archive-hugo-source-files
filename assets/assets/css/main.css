@@ -476,18 +476,6 @@ dd {
   padding-inline-start: 2em;
 }
 
-img {
-  display: block;
-}
-
-.img-inline {
-  display: inline;
-}
-
-.img-border {
-  border: var(--thin-border);
-}
-
 pre {
   white-space: pre-wrap;
   word-break: break-all;
@@ -776,6 +764,18 @@ header + .note-box {
 
 /* Specific image templates */
 
+img {
+  display: block;
+}
+
+.img-inline {
+  display: inline;
+}
+
+.img-border {
+  border: var(--thin-border);
+}
+
 .gallery {
   display: grid;
   gap: 0.5em;
@@ -884,23 +884,6 @@ a:has(> .icon) {
   color: #00b7ad;
 }
 
-/* CSS for 404 page */
-
-.four-o-four {
-  scrollbar-gutter: revert;
-  overflow-y: revert;
-  > div {
-    display: grid;
-    place-content: center;
-    gap: 0.5em;
-    block-size: 100vh;
-    text-align: center;
-    > h1 {
-      font-size: 4em;
-    }
-  }
-}
-
 /* Mobile menu */
 
 #mobile-menu {
@@ -952,5 +935,24 @@ a:has(> .icon) {
     inset-block-start: 1em;
     inset-inline-end: 1em;
     transform: revert;
+  }
+}
+
+/* CSS for 404 page */
+
+.four-o-four {
+  scrollbar-gutter: revert;
+  overflow-y: revert;
+  > div {
+    display: grid;
+    place-content: center;
+    gap: 1em;
+    block-size: 100vh;
+    text-align: center;
+    > div:has(p) {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+    }
   }
 }
