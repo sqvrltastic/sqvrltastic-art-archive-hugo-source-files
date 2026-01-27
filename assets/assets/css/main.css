@@ -130,9 +130,6 @@ html[data-theme="dark"] {
   a:has(> .icon) {
     text-decoration-color: var(--bg-color);
   }
-  .teal {
-    color: #00d1b4;
-  }
   .text-colored {
     color: greenyellow;
   }
@@ -881,7 +878,21 @@ a:has(> .icon) {
 }
 
 .teal {
-  color: #00b7ad;
+  color: #01c8be;
+}
+
+.rainbow-text {
+  background-image: linear-gradient(
+    to right,
+    orchid,
+    royalblue,
+    mediumturquoise,
+    limegreen,
+    orange,
+    red
+  );
+  background-clip: text;
+  color: transparent;
 }
 
 /* Mobile menu */
