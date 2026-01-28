@@ -112,6 +112,34 @@ html {
   --focus-outline: 0.1rem solid var(--link-color);
 }
 
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) {
+    --main-color: #dedede;
+    --bg-color: #2b2b2b;
+    --link-color: #ff5faa;
+    #guestbook {
+      filter: invert(1);
+      mix-blend-mode: lighten;
+    }
+    #theme-toggle > img {
+      transform: translateX(1.2em);
+      @media (max-width: 1200px) {
+        transform: revert;
+      }
+    }
+    .icon {
+      color: var(--bg-color); /* alt text color */
+      filter: invert(1);
+    }
+    a:has(> .icon) {
+      text-decoration-color: var(--bg-color);
+    }
+    .text-colored {
+      color: greenyellow;
+    }
+  }
+}
+
 html[data-theme="dark"] {
   --main-color: #dedede;
   --bg-color: #2b2b2b;
@@ -349,6 +377,16 @@ nav {
   display: none;
   font-size: 0.75em;
   line-height: 150%;
+  @media (max-width: 1200px) {
+    position: fixed;
+    inset-inline-start: 50%;
+    inset-block-start: 1.5em;
+    transform: translateX(-24em);
+  }
+  @media (max-width: 650px) {
+    inset-inline-start: 0.5em;
+    transform: revert;
+  }
 }
 
 footer {
