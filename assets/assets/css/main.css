@@ -122,6 +122,9 @@ html[data-theme="dark"] {
   }
   #theme-toggle > img {
     transform: translateX(1.2em);
+    @media (max-width: 1200px) {
+      transform: revert;
+    }
   }
   .icon {
     color: var(--bg-color); /* alt text color */
@@ -188,14 +191,14 @@ body {
 
 #flex-container {
   display: flex;
-  gap: 3em;
+  gap: 6em;
   padding: 3em;
   margin: 0 auto;
   max-inline-size: fit-content;
   @media (max-width: 1200px) {
     flex-direction: column;
-    gap: 2.5em;
-    padding: 1em;
+    gap: 2em;
+    padding: 0;
   }
 }
 
@@ -215,9 +218,6 @@ body {
   overflow-x: hidden;
   scrollbar-width: thin;
   @media (max-width: 1200px) {
-    position: static;
-    inline-size: unset;
-    max-block-size: fit-content;
     overflow-y: revert;
     overflow-x: revert;
   }
@@ -225,18 +225,32 @@ body {
 
 #left-column {
   gap: 1.5em;
+  @media (max-width: 1200px) {
+    inline-size: 100%;
+    background-color: var(--bg-color);
+    border-block-end: 0.07em solid var(--neutral-color);
+    position: sticky;
+    inset-block-start: 0;
+    padding: 1em 0;
+  }
 }
 
 #center-column {
   inline-size: 38em;
   flex: 4;
   @media (max-width: 1200px) {
-    max-inline-size: 100%; /* don't touch this it's a bit finnicky */
+    max-inline-size: 95%; /* don't touch this it's a bit finnicky */
+    margin: 0 auto;
   }
 }
 
 #right-column {
   gap: 2.2em;
+  @media (max-width: 1200px) {
+    position: static;
+    inline-size: 95%;
+    margin: 0 auto;
+  }
 }
 
 #logo {
@@ -248,8 +262,9 @@ body {
   inline-size: fit-content;
   margin-block-start: 0.1em;
   @media (max-width: 1200px) {
+    margin-block-start: 0;
+    font-size: 1.55em;
     align-self: center;
-    margin-block-start: revert;
   }
 }
 
@@ -313,14 +328,17 @@ nav {
     inline-size: 1em;
   }
   @media (max-width: 1200px) {
-    position: absolute;
-    inset-block-start: 1em;
+    border: none;
+    inline-size: fit-content;
+    position: fixed;
+    inset-block-start: 1.3em;
     inset-inline-start: 50%;
     transform: translateX(-19em);
+    > #theme-icon {
+      inline-size: 1.5em;
+    }
   }
   @media (max-width: 690px) {
-    position: absolute;
-    inset-block-start: 1em;
     inset-inline-start: 1em;
     transform: revert;
   }
@@ -907,7 +925,7 @@ a:has(> .icon) {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    position: absolute;
+    position: fixed;
     inset-inline-end: 50%;
     inset-block-start: 1em;
     transform: translateX(19em);
@@ -942,8 +960,6 @@ a:has(> .icon) {
 
 @media (max-width: 690px) {
   #mobile-menu {
-    position: absolute;
-    inset-block-start: 1em;
     inset-inline-end: 1em;
     transform: revert;
   }
