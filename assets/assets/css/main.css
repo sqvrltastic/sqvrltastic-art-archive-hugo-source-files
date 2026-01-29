@@ -683,6 +683,14 @@ figure {
     flex-direction: column;
     gap: 1em;
   }
+  @media (max-width: 500px) {
+    flex-direction: column;
+    > img {
+      aspect-ratio: 2/3;
+      inline-size: 10em;
+      block-size: revert;
+    }
+  }
 }
 
 .figure-annotation {
