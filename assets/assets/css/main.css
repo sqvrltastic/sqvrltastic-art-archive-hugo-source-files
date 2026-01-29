@@ -98,6 +98,9 @@
 /* Global styles */
 
 html {
+  /* I don't think this is even 
+  necessary in my case, 
+  but it's here I guess */
   color-scheme: dark light;
 }
 
@@ -114,6 +117,7 @@ html {
 
 @media (prefers-color-scheme: dark) {
   html:not([data-theme]) {
+    color-scheme: dark;
     --main-color: #dedede;
     --bg-color: #2b2b2b;
     --link-color: #ff5faa;
@@ -141,6 +145,7 @@ html {
 }
 
 html[data-theme="dark"] {
+  color-scheme: dark;
   --main-color: #dedede;
   --bg-color: #2b2b2b;
   --link-color: #ff5faa;
@@ -167,9 +172,6 @@ html[data-theme="dark"] {
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  /* Smooth scrolling 
-  IF user doesn't have a preference 
-  due to motion sensitivities */
   html {
     scroll-behavior: smooth;
   }
@@ -362,6 +364,7 @@ nav {
     inset-block-start: 1.3em;
     inset-inline-start: 50%;
     transform: translateX(-18.4em);
+    z-index: 997;
     > #theme-icon {
       inline-size: 1.5em;
     }
@@ -382,6 +385,7 @@ nav {
     inset-inline-start: 50%;
     inset-block-start: 1.5em;
     transform: translateX(-24em);
+    z-index: 997;
   }
   @media (max-width: 650px) {
     inset-inline-start: 0.5em;
@@ -392,6 +396,9 @@ nav {
 footer {
   font-size: 0.7em;
   line-height: 150%;
+  @media (max-width: 1200px) {
+    margin-block-end: 1em;
+  }
 }
 
 header {
@@ -999,7 +1006,7 @@ a:has(> .icon) {
 
 @media (max-width: 650px) {
   #mobile-menu {
-    inset-inline-end: 0.5em;
+    inset-inline-end: 0.7em;
     transform: revert;
   }
 }

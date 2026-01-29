@@ -15,7 +15,7 @@ This website was created on **December 3rd 2024**. 🎂
 
 I created this website the way it is because I want it to be _mine_ and to appeal to me, first and foremost, design and content-wise.
 
-There is this notion that an "artist website" is supposed to be this very formal business-only thing with its only purpose being marketing. You constantly hear various buzzwords such as "conversion rate", "hero section", "SEO", "portfolio", "mailing list" (don't you fucking love more SPAM???), etc.
+There is this notion that an "artist website" is supposed to be this very formal business-only thing with its only purpose being marketing. You constantly hear various buzzwords such as "conversion rate", "hero section", "SEO", "call to action", "mailing list" (don't you fucking love more SPAM???), etc.
 
 Then there are the various arbitrary rules your website is supposed to adhere to, like, you _have to_ have your photo up (fuck you, NEVER DOING THAT! smh), because it builds "trust", supposedly (What?! How??? LMAO) and your various website sections are filled with these generic cringe-inducing marketing-speak BULLSHIT phrases like "We are bringing your ideas to life" (Who "we"? Do you have a split personality or something? FFS... 🙄).
 
