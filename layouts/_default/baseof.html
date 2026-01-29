@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 {{ partial "boiler.html" . }}
 
 <body>
@@ -26,6 +26,7 @@
       }
     </style>
   </noscript>
+  {{ partial "mobile-menu.html" . }}
   <div id="flex-container">
     {{ partial "left-column.html" . }}
     <div id="center-column">
@@ -37,7 +38,6 @@
     </div>
     {{ partial "right-column.html" . }}
   </div>
-  {{ partial "mobile-menu.html" . }}
   <a href="#main" id="scroll-to-top">
     <img class="icon" src='{{ relURL "assets/images/icons/arrow-up.png" }}' alt="scroll to top" class="icon">
   </a>

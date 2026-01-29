@@ -1,7 +1,7 @@
 ---
 title: '"Free" web hosting services are not free'
 description: "Lately I've been witnessing how Neocities is slowly falling apart, with Kyle only occasionally chiming in to solve only the most egregious and pressing technical issues and I have some thoughts on the matter..."
-date: 2025-12-23
+date: 2026-01-29
 categories: ["Ramblings"]
 ---
 
@@ -11,7 +11,7 @@ It's no secret that platforms like the aforementioned Neocities rapidly grew in 
 
 _"But it's hurr durr free! Muh self-expression muh creativity! LET PEOPLE HAVE FUN GODDAMIT!_ 😡*"*
 
-Are you stupid? Do you realize that nothing is truly free? Somebody is paying for your "free" ~~lunch~~ web hosting. The 1GB free limit is very generous, but I think it encourages using Neocities as a file dump. I assure you, you can get away with something like, 200MB, or 500MB of disk space and it would be plenty. BTW... And this is totally a 100% humblebrag but, _my whole website_, with all assets, fonts, images, pages, everything; 300+ files in total — weighs just about 30MB at the time of writing this.
+Are you stupid? Do you realize that nothing is truly free? Somebody is paying for your "free" ~~lunch~~ web hosting. The 1GB free limit is very generous, but I think it encourages using Neocities as a file dump. I assure you, you can get away with something like, 200MB, or 500MB of disk space and it would be plenty. BTW... And this is totally a 100% humblebrag but, _my whole website_, with all assets, fonts, images, pages, everything; 300+ files in total — weighs just about 70MB at the time of writing this.
 
 And it's really not that hard to keep your site optimized! Biggest thing for most people is definitely image optimization — use appropriately-sized images and use modern image formats with good compression, such as **AVIF**, or at least **JPEG**. Also, if you use custom fonts (like me! I love good typography), remember to **subset** them and use modern **WOFF2** format that is optimized for web.
 
