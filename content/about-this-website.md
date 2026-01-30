@@ -1,6 +1,8 @@
 ---
 title: About this website
 description: "Mostly just technical information about this website"
+date: null
+lastmod: 2026-01-29
 ---
 
 ## General

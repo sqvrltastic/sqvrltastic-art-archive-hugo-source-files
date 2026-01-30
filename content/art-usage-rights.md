@@ -1,6 +1,8 @@
 ---
 title: Art usage rights
 description: "Things you can and can't do with my art"
+date: null
+lastmod: 2026-01-29
 ---
 
 ## Reposting my artwork

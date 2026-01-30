@@ -41,23 +41,27 @@
     <h1>{{ .Title }}</h1>
 
     <!-- YYYY-MM-DD and MM/DD/YYYY -->
+    {{ if .IsPage }}
+    {{ $showPublished := .Params.date }}
+    {{ $showUpdated := and .Lastmod (ne .Lastmod .Date) }}
 
-    {{ if or (and .IsPage .Date) .Params.updated }}
+    {{ if or $showPublished $showUpdated }}
     <p>
-        {{if .Date }}
-        Published: <time datetime='{{ .Date | time.Format "2006-01-02" }}'>{{ .Date | time.Format
-            "01/02/2006" }}</time>
+        {{ if $showPublished }}
+        Published: <time datetime='{{ .Date | time.Format "2006-01-02" }}'>{{ .Date | time.Format "01/02/2006" }}</time>
         {{ end }}
 
-        {{ if and .Params.updated (and .Params.date) }}
+        {{ if and $showPublished $showUpdated }}
         |
         {{ end }}
 
-        {{if .Params.updated }}
-        Updated: <time datetime='{{ .Params.updated | time.Format "2006-01-02" }}'>{{ .Params.updated | time.Format
-            "01/02/2006" }}</time>
+        {{ if $showUpdated }}
+        Updated: <time datetime='{{ .Lastmod | time.Format "2006-01-02" }}'>{{ .Lastmod | time.Format "01/02/2006"
+            }}</time>
         {{ end }}
     </p>
     {{ end }}
+    {{ end }}
+
 
 </header>
