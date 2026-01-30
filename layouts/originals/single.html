@@ -1,7 +1,7 @@
 {{ define "main" }}
 <!-- Structured data for Google rich search results -->
 <script type="application/ld+json">
-{{- $schema := dict
+{{ dict
   "@context" "https://schema.org"
   "@type" "ImageObject"
   "contentUrl" (.Params.full | absURL)
@@ -9,8 +9,8 @@
   "description" .Params.alt
   "datePublished" .Date
   "creator" "sqvrltastic"
--}}
-{{ $schema | jsonify }}
+  | jsonify | safeJS
+}}
 </script>
 {{ with .Params.compressed }}
 <div>
