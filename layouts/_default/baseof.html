@@ -10,21 +10,6 @@
       without JavaScript, but it is required for some QoL features to work, as well as for displaying custom,
       self-hosted fonts.
     </p>
-    <style>
-      #theme-toggle {
-        display: none;
-      }
-
-      #theme-no-js {
-        display: inline;
-      }
-
-      #scroll-to-top {
-        opacity: 1;
-        content-visibility: visible;
-        pointer-events: auto;
-      }
-    </style>
   </noscript>
   {{ partial "mobile-menu.html" . }}
   <div id="flex-container">
@@ -39,7 +24,7 @@
     {{ partial "right-column.html" . }}
   </div>
   <a href="#main" id="scroll-to-top">
-    <img class="icon" src='{{ relURL "assets/images/icons/arrow-up.png" }}' alt="scroll to top" class="icon">
+    <img src='{{ relURL "assets/images/icons/arrow-up.png" }}' alt="scroll to top" class="icon">
   </a>
   {{ $jsthemebody := resources.Get "assets/js/theme-body.js" | resources.Minify | resources.Fingerprint }}
   <script src="{{ $jsthemebody.RelPermalink }}"></script>
