@@ -70,7 +70,10 @@
         {{- end -}}
     </h2>
     <!-- Date -->
-    <time datetime='{{ .Date.Format "2006-02-01" }}'>{{ .Date.Format "01/02/2006" }}</time>
+    <!-- IT HAS TO BE 2006 01 02 like those actual exact numbers,
+        if you switch places 02 and 01 it will switch date and month 
+        in final output. It's esoteric like that -->
+    <time datetime='{{ .Date.Format "2006-01-02" }}'>{{ .Date.Format "01/02/2006" }}</time>
     <!-- If it's an artwork it adds a picture -->
     {{- if or (eq .Section "fanart") (eq .Section "originals") -}}
     <a href="{{ .RelPermalink }}">

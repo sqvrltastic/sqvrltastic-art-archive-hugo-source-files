@@ -45,7 +45,7 @@
     {{ if or (and .IsPage .Date) .Params.updated }}
     <p>
         {{if .Date }}
-        Published: <time datetime='{{ .Date | time.Format "2006-02-01" }}'>{{ .Date | time.Format
+        Published: <time datetime='{{ .Date | time.Format "2006-01-02" }}'>{{ .Date | time.Format
             "01/02/2006" }}</time>
         {{ end }}
 
@@ -54,7 +54,7 @@
         {{ end }}
 
         {{if .Params.updated }}
-        Updated: <time datetime='{{ .Params.updated | time.Format "2006-02-01" }}'>{{ .Params.updated | time.Format
+        Updated: <time datetime='{{ .Params.updated | time.Format "2006-01-02" }}'>{{ .Params.updated | time.Format
             "01/02/2006" }}</time>
         {{ end }}
     </p>
