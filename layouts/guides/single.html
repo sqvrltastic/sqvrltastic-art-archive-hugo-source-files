@@ -3,12 +3,17 @@
 <script type="application/ld+json">
 {{ dict
   "@context" "https://schema.org"
-  "@type" "TechArticle"
+  "@type" "BlogPosting"
   "contentUrl" .Permalink
   "name" .Title
+  "headline" .Title
   "description" .Params.description
   "datePublished" .Date
-  "author" "sqvrltastic"
+  "author" (slice (dict
+    "@type" "Person"
+    "name" "sqvrltastic"
+    "url" "https://sqvrltastic.art/about-me/"
+  ))
   | jsonify | safeJS
 }}
 </script>
