@@ -11,9 +11,26 @@
       self-hosted fonts.
     </p>
   </noscript>
-  {{ partial "mobile-menu.html" . }}
   <div id="flex-container">
-    {{ partial "left-column.html" . }}
+    <div id="mobile-topbar">
+      <button id="mobile-theme-toggle" aria-label="toggle theme">
+        <img id="mobile-theme-icon" class="icon" src='{{ relURL "assets/images/icons/sun.png" }}'
+          alt="light theme is ON">
+      </button>
+      <p id="mobile-theme-no-js">
+        Theme-toggle:<br>
+        [JavaScript required]
+      </p>
+      <a id="mobile-logo" href='{{ relURL "" }}'>Sqvrltastic's Homepage</a>
+      <details id="mobile-menu">
+        <summary>Menu</summary>
+        {{ partial "navigation.html" . }}
+      </details>
+    </div>
+    <div id="left-column">
+      <a id="logo" href='{{ relURL "" }}'>Sqvrltastic's<br>Homepage</a>
+      {{ partial "navigation.html" . }}
+    </div>
     <div id="center-column">
       <main id="main">
         {{ partial "header.html" . }}
