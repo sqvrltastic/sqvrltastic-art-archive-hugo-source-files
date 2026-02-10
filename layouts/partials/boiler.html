@@ -46,18 +46,41 @@
   <script src="{{ $jsthemehead.RelPermalink }}"></script>
   <noscript>
     <style>
-      #theme-toggle {
+      #theme-toggle,
+      #mobile-theme-toggle {
         display: none;
       }
 
-      #theme-no-js {
+      #theme-no-js,
+      #mobile-theme-no-js {
         display: block;
+      }
+
+      @media (max-width: 1200px) {
+        #theme-no-js {
+          display: none;
+        }
       }
 
       #scroll-to-top {
         opacity: 1;
         content-visibility: visible;
         pointer-events: auto;
+      }
+
+      #mobile-menu {
+        &::details-content {
+          inset-block-start: 15em;
+          inset-inline-start: 0;
+          inset-inline-end: 0;
+          max-inline-size: 100%;
+          margin: 0 auto;
+          white-space: normal;
+        }
+      }
+
+      #main {
+        scroll-margin-block-start: 7em;
       }
     </style>
   </noscript>
