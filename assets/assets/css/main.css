@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/*-----------------------------------------------FONTS-----------------------------------------------------*/
+
 /* Custom typeface — Inter (body text) */
 
 /* Regular */
@@ -95,7 +97,7 @@
   font-display: block;
 }
 
-/* Global styles */
+/*-----------------------------------------------GLOBAL STYLES----------------------------------------------*/
 
 :root {
   color-scheme: dark light;
@@ -194,6 +196,14 @@ html[dir="rtl"] {
   }
 }
 
+* {
+  margin: 0;
+  transition:
+    all 0.3s,
+    color 0s;
+  scrollbar-color: gray var(--bg-color);
+}
+
 body {
   background-color: var(--bg-color);
   color: var(--main-color);
@@ -204,12 +214,6 @@ body {
   text-wrap: pretty; /* not supported in Firefox atm*/
   scrollbar-gutter: stable;
   overflow-y: scroll;
-}
-
-* {
-  margin: 0;
-  transition: all 0.3s;
-  scrollbar-color: gray var(--bg-color);
 }
 
 .noscript > p {
@@ -236,7 +240,7 @@ body {
   }
 }
 
-/* Layout */
+/*-----------------------------------------------LAYOUT-----------------------------------------------------*/
 
 #flex-container {
   display: flex;
@@ -344,6 +348,7 @@ nav {
       color: var(--main-color);
       display: block;
       inline-size: fit-content;
+      transition: color 0.3s;
       &:hover {
         color: var(--link-color);
       }
@@ -356,7 +361,7 @@ nav {
   gap: 1em;
   display: flex;
   flex-direction: column;
-  margin-inline-end: 0.5em;
+  margin-inline-end: 1em;
   > summary {
     inline-size: fit-content;
     background-color: var(--bg-color);
@@ -371,7 +376,6 @@ nav {
     grid-template-columns: repeat(2, 1fr);
   }
   &::details-content {
-    /* I'm going to fucking kms smh */
     background-color: var(--bg-color);
     border: var(--thick-border);
     border-radius: var(--rounded-edges);
@@ -420,7 +424,7 @@ nav {
 #mobile-theme-toggle {
   /* Button */
   font-size: inherit;
-  background-color: var(--bg-color);
+  background-color: transparent;
   border-radius: 5em;
   padding: 0;
   &:hover {
@@ -448,7 +452,7 @@ nav {
   inline-size: fit-content;
   block-size: fit-content;
   border: none;
-  margin-inline-start: 0.5em;
+  margin-inline-start: 1em;
 }
 
 #theme-icon {
@@ -532,7 +536,7 @@ header {
   }
 }
 
-/* General styling */
+/*----------------------------------------------ELEMENT STYLING--------------------------------------------*/
 
 h1 {
   font-size: 2em;
@@ -831,7 +835,7 @@ details[open] > summary:focus-visible {
   transition: none;
 }
 
-/* Various UI elements */
+/*---------------------------------------------MISC UI ELEMENTS---------------------------------------------*/
 
 #featured-artworks {
   display: flex;
@@ -906,7 +910,7 @@ header + .note-box {
   margin-block-start: 0.5em;
 }
 
-/* Specific image templates */
+/*-------------------------------------------IMAGE PRESETS-------------------------------------------------*/
 
 img {
   display: block;
@@ -1006,7 +1010,7 @@ a:has(> .icon) {
   text-decoration-color: var(--main-color);
 }
 
-/* Ocasionally used text styles */
+/*--------------------------------------------TEXT STYLES---------------------------------------------------*/
 
 .text-colored {
   color: blue;
@@ -1042,7 +1046,7 @@ a:has(> .icon) {
   color: transparent;
 }
 
-/* CSS for 404 page */
+/*-----------------------------------------------404 PAGE---------------------------------------------------*/
 
 .four-o-four {
   scrollbar-gutter: revert;
