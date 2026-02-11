@@ -68,15 +68,13 @@
         pointer-events: auto;
       }
 
-      #mobile-menu {
-        &::details-content {
-          inset-block-start: 15em;
-          inset-inline-start: 0;
-          inset-inline-end: 0;
-          max-inline-size: 100%;
-          margin: 0 auto;
-          white-space: normal;
-        }
+      #mobile-menu::details-content {
+        inset-block-start: 15em;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
+        max-inline-size: 100%;
+        margin: 0 auto;
+        white-space: normal;
       }
 
       #main {

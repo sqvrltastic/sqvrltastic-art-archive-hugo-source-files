@@ -58,7 +58,7 @@
 {{- range $sortedPosts }}
 <article>
     <!-- Title -->
-    <h2>
+    <h3>
         {{- if or (eq .Section "fanart") (eq .Section "originals") -}}
         New artwork
         {{- else if eq .Section "journal" -}}
@@ -68,7 +68,7 @@
         {{- else -}}
         Website update
         {{- end -}}
-    </h2>
+    </h3>
     <!-- Date -->
     <!-- IT HAS TO BE 2006 01 02 like those actual exact numbers,
         if you switch places 02 and 01 it will switch date and month 

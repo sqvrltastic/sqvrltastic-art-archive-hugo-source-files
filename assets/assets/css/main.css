@@ -333,7 +333,7 @@ body {
 
 #mobile-logo {
   font-family: "Perfect Time", cursive;
-  font-size: 2em;
+  font-size: 1.8em;
   line-height: 1.5em;
   color: var(--main-color);
   text-decoration: none;
@@ -381,10 +381,10 @@ nav {
   }
   &::details-content {
     background-color: var(--bg-color);
-    border: var(--thick-border);
+    border: 0.1rem solid transparent; /* I have to make it transparent in collapsed state or else it shows up on mobile for me */
     border-radius: var(--rounded-edges);
     position: fixed;
-    inset-block-start: 5em;
+    inset-block-start: 4.8em;
     z-index: 997;
     max-inline-size: fit-content;
     align-self: flex-end;
@@ -396,6 +396,9 @@ nav {
       background-color 0.3s,
       border-color 0.3s;
     transition-behavior: allow-discrete;
+  }
+  &[open]::details-content {
+    border: var(--thick-border);
   }
   @media (max-width: 650px) {
     &::details-content {
@@ -564,6 +567,9 @@ h2 {
   font-weight: 800;
   margin-block-start: 0.8em;
   scroll-margin-block-start: 1em;
+  @media (max-width: 1200px) {
+    scroll-margin-block-start: 4.5em;
+  }
 }
 
 header:not(:has(> p)) + h2 {
@@ -577,7 +583,6 @@ details + h2 {
 
 h3 {
   font-size: inherit;
-  font-weight: 400;
 }
 
 a {
@@ -590,8 +595,21 @@ a {
     :not([href^="../"])
     :not([href^="mailto:"])
     :not(:has(> img))::after {
-    content: "↗";
+    /* content: "↗"; */
+    content: "";
+    display: inline-block;
+    inline-size: 0.8em;
+    block-size: 0.8em;
+    aspect-ratio: 1/1;
+    margin-inline-start: 0.1em;
+
+    background-color: currentColor;
+    -webkit-mask: url("/assets/images/icons/external-link.svg") no-repeat
+      center / contain;
+    mask: url("/assets/images/icons/external-link.svg") no-repeat center /
+      contain;
   }
+  /* /assets/images/icons/external-link.svg */
   &:has(> img) {
     display: block;
   }
@@ -620,6 +638,9 @@ dl {
 
 dt {
   font-weight: 800;
+  @media (max-width: 1200px) {
+    scroll-margin-block-start: 5.5em;
+  }
 }
 
 dd {
