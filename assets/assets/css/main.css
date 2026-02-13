@@ -609,7 +609,7 @@ a {
     mask: url("/assets/images/icons/external-link.svg") no-repeat center /
       contain;
   }
-  /* /assets/images/icons/external-link.svg */
+
   &:has(> img) {
     display: block;
   }

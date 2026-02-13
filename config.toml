@@ -15,7 +15,6 @@ theme = 'CleanGallery'
 [params]
   description = "Hi, I'm sqvrltastic and I'm a digital artist. Welcome to my website! This is my main place for posting my artwork and sharing my thoughts."
   email = "sqvrltastic@gmail.com"
-  preview = "https://sqvrltastic.art/images/feature-image.jpg"
 
 [outputs]
   home = ["HTML", "RSS"]
