@@ -1,17 +1,4 @@
 {{ define "main" }}
-<!-- Structured data for Google rich search results -->
-<script type="application/ld+json">
-{{ dict
-  "@context" "https://schema.org"
-  "@type" "ImageObject"
-  "contentUrl" (.Params.full | absURL)
-  "name" .Title
-  "description" .Params.alt
-  "datePublished" .Date
-  "creator" "sqvrltastic"
-  | jsonify | safeJS
-}}
-</script>
 {{ with .Params.compressed }}
 <div>
   <img src="{{ . | relURL }}" alt="{{ $.Params.alt }}" class="artwork">
@@ -27,6 +14,18 @@
 <p><i>No image found</i></p>
 <!-- Fallback text -->
 {{ end }}
-
 {{ .Content }}
+<!-- Structured data for Google rich search results -->
+<script type="application/ld+json">
+{{ dict
+  "@context" "https://schema.org"
+  "@type" "ImageObject"
+  "contentUrl" (.Params.full | absURL)
+  "name" .Title
+  "description" .Params.alt
+  "datePublished" .Date
+  "creator" "sqvrltastic"
+  | jsonify | safeJS
+}}
+</script>
 {{ end }}

@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ .Content }}
 <!-- Structured data for Google rich search results -->
 <script type="application/ld+json">
 {{ dict
@@ -17,5 +18,4 @@
   | jsonify | safeJS
 }}
 </script>
-{{ .Content }}
 {{ end }}

@@ -1,4 +1,19 @@
 {{ define "main" }}
+{{ with .Params.compressed }}
+<div>
+  <img src="{{ . | relURL }}" alt="{{ $.Params.alt }}" class="artwork">
+</div>
+{{ else }}
+<p><i>No image found</i></p>
+<!-- Fallback text -->
+{{ end }}
+{{ with .Params.full }}
+<a href="{{ . | relURL }}" target="_blank" rel="noopener noreferrer"><strong>View full (.jpg)</strong></a>
+{{ else }}
+<p><i>No image found</i></p>
+<!-- Fallback text -->
+{{ end }}
+{{ .Content }}
 <!-- Structured data for Google rich search results -->
 <script type="application/ld+json">
 {{ dict
@@ -12,21 +27,4 @@
   | jsonify | safeJS
 }}
 </script>
-{{ with .Params.compressed }}
-<div>
-  <img src="{{ . | relURL }}" alt="{{ $.Params.alt }}" class="artwork">
-</div>
-{{ else }}
-<p><i>No image found</i></p>
-<!-- Fallback text -->
-{{ end }}
-
-{{ with .Params.full }}
-<a href="{{ . | relURL }}" target="_blank" rel="noopener noreferrer"><strong>View full (.jpg)</strong></a>
-{{ else }}
-<p><i>No image found</i></p>
-<!-- Fallback text -->
-{{ end }}
-
-{{ .Content }}
 {{ end }}

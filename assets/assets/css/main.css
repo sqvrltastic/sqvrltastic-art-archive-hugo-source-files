@@ -198,6 +198,8 @@ html[dir="rtl"] {
 
 * {
   margin: 0;
+  /* Edge kept sharting itself with 
+    transition: all 0.3s so I had to change it like this */
   transition:
     all 0.3s,
     color 0s;
@@ -215,6 +217,7 @@ body {
   font-weight: 400;
   line-height: 160%;
   text-wrap: pretty; /* not supported in Firefox atm*/
+  word-break: keep-all;
   scrollbar-gutter: stable;
   overflow-y: scroll;
 }
@@ -503,6 +506,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.8em;
+  margin-block-end: 1.5em;
   > *:not(h1) {
     font-size: 0.9em;
   }
@@ -524,7 +528,6 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
-  word-break: keep-all;
 }
 
 #scroll-to-top {
@@ -572,8 +575,8 @@ h2 {
   }
 }
 
-header:not(:has(> p)) + h2 {
-  margin-block-start: 0.5em;
+header + h2 {
+  margin-block-start: 0;
 }
 
 div + h2,
@@ -701,9 +704,6 @@ article {
   padding: 1.5em;
   border: var(--thick-border);
   border-radius: var(--rounded-edges);
-  > h2 {
-    margin-block-start: 0;
-  }
   > time {
     justify-self: end;
   }
@@ -760,11 +760,6 @@ figure {
     font-size: 0.75em;
     font-style: italic;
   }
-}
-
-header + p:has(> i):has(+ h2) {
-  /* this targets the p tag that has i and is followed by h2 */
-  margin-block-start: 0.8em;
 }
 
 details {
@@ -937,11 +932,15 @@ ul:has(> .list-page-item) {
 }
 
 header + .note-box {
-  margin-block-start: 1.5em;
+  margin-block-start: 0;
+}
+
+header + .note-box + h2 {
+  margin-block-start: 0.5em;
 }
 
 .note-box + h2 {
-  margin-block-start: 0.5em;
+  margin-block-start: 0.2em;
 }
 
 /*-------------------------------------------IMAGE PRESETS-------------------------------------------------*/
@@ -1026,7 +1025,8 @@ div:has(> .big-image) {
   transform: scale(1);
 }
 
-div:has(> .stamp) {
+div:has(> .stamp),
+div:has(> .badge) {
   /* Stamp collection */
   display: flex;
   flex-wrap: wrap;
