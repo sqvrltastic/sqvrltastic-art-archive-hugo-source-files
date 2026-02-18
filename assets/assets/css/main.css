@@ -217,9 +217,9 @@ body {
   font-weight: 400;
   line-height: 160%;
   text-wrap: pretty; /* not supported in Firefox atm*/
-  word-break: keep-all;
   scrollbar-gutter: stable;
   overflow-y: scroll;
+  word-break: keep-all;
 }
 
 .noscript > p {
@@ -227,7 +227,6 @@ body {
   color: rgb(170, 0, 0);
   background-color: rgb(255, 221, 221);
   text-align: center;
-  word-break: keep-all;
 }
 
 #skip-link {
@@ -294,7 +293,7 @@ body {
     border-block-end: 0.07em solid var(--neutral-color);
     position: sticky;
     inset-block-start: 0;
-    padding: 1em 0;
+    padding: 0.5em 0;
     z-index: 996;
   }
 }
@@ -369,6 +368,7 @@ nav {
   display: flex;
   flex-direction: column;
   margin-inline-end: 1em;
+  font-size: 0.9em;
   > summary {
     inline-size: fit-content;
     background-color: var(--bg-color);
@@ -561,17 +561,16 @@ h1 {
   font-size: 2em;
   font-weight: 900;
   line-height: 115%;
-  word-break: keep-all;
   text-wrap: balance;
 }
 
 h2 {
   font-size: 1.4em;
   font-weight: 800;
-  margin-block-start: 0.8em;
+  margin-block-start: 1.2em;
   scroll-margin-block-start: 1em;
   @media (max-width: 1200px) {
-    scroll-margin-block-start: 4.5em;
+    scroll-margin-block-start: 3.5em;
   }
 }
 
@@ -581,7 +580,7 @@ header + h2 {
 
 div + h2,
 details + h2 {
-  margin-block-start: 1.1em;
+  margin-block-start: 1.8em;
 }
 
 h3 {
@@ -653,6 +652,21 @@ dd {
   padding-inline-start: 2em;
 }
 
+th {
+  text-align: start;
+}
+
+th:first-child,
+td:first-child {
+  padding-inline-end: 1em;
+}
+
+@media (max-width: 650px) {
+  td {
+    word-break: break-all;
+  }
+}
+
 pre {
   white-space: pre-wrap;
   word-break: break-all;
@@ -680,7 +694,7 @@ a > kbd {
 
 hr {
   border: none;
-  margin: 0.3em auto 0;
+  margin: 0.6em auto 0;
 }
 
 hr::before {
@@ -695,6 +709,9 @@ blockquote {
   margin: 1em 0 1em 1em;
   padding-inline-start: 1.2em;
   border-inline-start: 0.15rem solid var(--main-color);
+  i {
+    font-style: normal;
+  }
 }
 
 article {
@@ -759,6 +776,9 @@ figure {
   > figcaption {
     font-size: 0.75em;
     font-style: italic;
+    i {
+      font-style: normal;
+    }
   }
 }
 
@@ -910,7 +930,6 @@ ul:has(> .list-page-item) {
 
 .list-page-item {
   display: flex;
-  word-break: keep-all;
   > time {
     inline-size: 6.6em;
     flex-shrink: 0;
@@ -932,15 +951,11 @@ ul:has(> .list-page-item) {
 }
 
 header + .note-box {
-  margin-block-start: 0;
+  margin-block-start: 0.3em;
 }
 
 header + .note-box + h2 {
-  margin-block-start: 0.5em;
-}
-
-.note-box + h2 {
-  margin-block-start: 0.2em;
+  margin-block-start: 0.7em;
 }
 
 /*-------------------------------------------IMAGE PRESETS-------------------------------------------------*/

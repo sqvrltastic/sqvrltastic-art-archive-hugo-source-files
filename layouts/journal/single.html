@@ -1,5 +1,6 @@
 {{ define "main" }}
-{{ .Content }}
+<!-- I really dont need <del> tags here so I replace them with <s> -->
+{{ printf "%s" .Content | replaceRE `<del>(.*?)</del>` `<s>$1</s>` | safeHTML }}
 <!-- Structured data for Google rich search results -->
 <script type="application/ld+json">
 {{ dict
