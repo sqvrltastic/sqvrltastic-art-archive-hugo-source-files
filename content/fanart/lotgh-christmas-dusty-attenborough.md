@@ -2,7 +2,7 @@
 title: Christmas Dusty Attenborough
 alt: "Sketchy drawing of Dusty wearing an ugly Christmas sweater and holding a champagne bottle while smiling"
 date: 2024-12-23
-categories: ["Lotgh"]
+categories: ["Misc. Fanart"]
 preview: "assets/images/art/preview/lotgh-christmas-dusty-attenborough.avif"
 compressed: "assets/images/art/compressed/lotgh-christmas-dusty-attenborough.avif"
 full: "assets/images/art/full/lotgh-christmas-dusty-attenborough.jpg"

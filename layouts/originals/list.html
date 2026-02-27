@@ -45,10 +45,10 @@
 </div>
 
 <h2>Various</h2>
-<h3>2025 year</h3>
+<h3>2025-2026 years</h3>
 <div class="gallery">
     {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
-    (slice "Misc. OC")) "Date.Year" 2025 }}
+    (slice "Misc. OC")) "Date.Year" "in" (slice 2025 2026) }}
     <a href="{{ .RelPermalink }}">
         {{ $postTitle := .Title }} {{ with .Params.preview }}
         <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">

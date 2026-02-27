@@ -9,4 +9,4 @@ full: "assets/images/art/full/vermintide-kerillian-with-a-chicken.jpg"
 length: "184645"
 ---
 
-IYKYK or else don't bother
+Deepest lore

@@ -5,7 +5,6 @@ the digital era. Countless guides on topics such as reducing your digital footpr
 OS and curbing your social media addiction have been written, some good, some mediocre and I'm about
 to add my own one to the growing pile..."
 date: 2026-02-18
-lastmod: 2026-02-24
 ---
 
 <div class="note-box">
@@ -293,31 +292,22 @@ lastmod: 2026-02-24
 <details class="animation-medium">
     <summary>Reddit Ublock Origin filters</summary>
     <pre><code>! Reddit settings
-www.reddit.com/r/*##.nd\:overflow-hidden.nd\:visible.h-\[210px\].block
-www.reddit.com/r/*##shreddit-app[pagetype="home"] #main-content
-www.reddit.com/r/*##shreddit-app[pagetype="popular"] #main-content
-www.reddit.com/r/*##.box-border.py-md.flex-col.flex
-www.reddit.com/r/*##reddit-recent-pages
-www.reddit.com/r/*##pdp-right-rail
-www.reddit.com/r/*##.pt-lg.xs\:px-0.px-md
-www.reddit.com/r/*##.right-sidebar-s.flex-grid--main-container-card.min-w-0.flex-\[1\].w-full.main &gt; .nd\:visible
-www.reddit.com/r/*##.carousel-item-cover.overflow-hidden.justify-end.flex-col.flex.rounded-\[16px\].relative.h-\[210px\]
-www.reddit.com/r/*##.carousel-item-cover.overflow-hidden.justify-end.flex-col.flex.rounded-4.relative.h-\[210px\]
-www.reddit.com/r/*##.nd\:visible &gt; faceplate-expandable-section-helper &gt; .rounded-none.border-none.bg-transparent.m-0.p-0
-www.reddit.com/r/*##left-nav-top-section
+www.reddit.com##.nd\:overflow-hidden.nd\:visible.h-\[210px\].block
+www.reddit.com##shreddit-app[pagetype="home"] #main-content
+www.reddit.com##shreddit-app[pagetype="popular"] #main-content
+www.reddit.com##.box-border.py-md.flex-col.flex
+www.reddit.com##reddit-recent-pages
+www.reddit.com##pdp-right-rail
+www.reddit.com##.pt-lg.xs\:px-0.px-md
+www.reddit.com##.right-sidebar-s.flex-grid--main-container-card.min-w-0.flex-\[1\].w-full.main &gt; .nd\:visible
+www.reddit.com##.carousel-item-cover.overflow-hidden.justify-end.flex-col.flex.rounded-\[16px\].relative.h-\[210px\]
+www.reddit.com##.carousel-item-cover.overflow-hidden.justify-end.flex-col.flex.rounded-4.relative.h-\[210px\]
+www.reddit.com##.nd\:visible &gt; faceplate-expandable-section-helper &gt; .rounded-none.border-none.bg-transparent.m-0.p-0
+www.reddit.com##left-nav-top-section
 ! Remove Google login popup
 ||accounts.google.com/gsi/iframe/select?client_id=705819728788-b2c1kcs7tst3b7ghv7at0hkqmtc68ckl.apps.googleusercontent.com&auto_select=true&ux_mode=popup&ui_mode=card&as=IH4Bxc7GDNXe8ta3uaTbAA&is_itp=true&channel_id=6df3f9a6920ef08ff4c32a7413f55d5b78e8cec3b4113eac8af88c14b2ea8056&origin=https%3A%2F%2Fwww.reddit.com&oauth2_auth_url=https%3A%2F%2Faccounts.google.com%2Fo%2Foauth2%2Fv2%2Fauth$subdocument
 </code></pre>
 </details>
-<p>
-    <strong><time datetime="2026-02-24">02/24/2026 update:</time></strong> I replaced <code>www.reddit.com</code> with
-    <code>www.reddit.com/r/*</code>
-    because the former rule had a quirk that it would remove posts from Reddit's /u/ profile section, even if those
-    posts didn't have any
-    of the blacklisted words. If any of the blacklisted words were present in any way in the HTML structure it would
-    still cause UBlock to remove them. The updated rule simply whitelists the individual's profile section, but the word
-    filter still works on the /r/ section a.k.a. the subreddits themselves.
-</p>
 <p>
     Also, although reddit doesn't really have an option to blacklist certain words or mute certain users (without
     outright blocking them), we can use Ublock to automatically hide from out feed posts that contain certain
