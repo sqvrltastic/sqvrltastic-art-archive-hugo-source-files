@@ -44,7 +44,6 @@
 <description>
     {{- if or (eq .Section "fanart") (eq .Section "originals") -}}
         <img src="{{ .Site.BaseURL }}{{ .Params.compressed }}" />
-        <p>[alt text] {{ .Description }}</p>
     {{- else if eq .Section "log" -}}
         {{ .Content | plainify | htmlUnescape }}
     {{- else -}}
