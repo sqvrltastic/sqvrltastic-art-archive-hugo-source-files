@@ -2,23 +2,25 @@
 title: Full guide to RSS
 description: "What is RSS, why you should use it and how to implement it on your own website, explained."
 date: 2025-01-21
+lastmod: 2026-02-27
 ---
 
 <div class="note-box">
   <p><strong>Table of contents:</strong></p>
   <ol>
+    <li><a href="#what-is-rss">What is RSS?</a></li>
+    <li><a href="#why-use-rss">Why use RSS?</a></li>
+    <li><a href="#for-users-how-to-use-rss">For users: How to use RSS</a></li>
     <li>
-      <a href="#what-is-rss">What is RSS?</a>
+      <a href="#for-developers-how-to-add-an-rss-feed-to-your-website">For developers: How to add an RSS feed to your
+        website</a>
     </li>
+    <li><a href="#detailed-explanation-of-each-rss-code-element">Detailed explanation of each RSS code element</a></li>
+    <li><a href="#favicons">Favicons</a></li>
     <li>
-      <a href="#why-use-rss">Why use RSS?</a>
+      <a href="#linking-your-rss-feed-in-the-head-section">Linking your RSS feed in the &#x3C;head&#x3E; section</a>
     </li>
-    <li>
-      <a href="#for-users">For users: How to use RSS</a>
-    </li>
-    <li>
-      <a href="#for-developers">For developers: How to add an RSS feed to your website</a>
-    </li>
+    <li><a href="#final-words">Final words</a></li>
   </ol>
 </div>
 
@@ -75,7 +77,7 @@ date: 2025-01-21
   newsletter with your email.
 </p>
 
-<h2 id="for-users">For users: How to use RSS</h2>
+<h2 id="for-users-how-to-use-rss">For users: How to use RSS</h2>
 <p>
   As I said already, you will need an RSS feed reader program. On PC, you can
   use Fluent Reader like I do, or choose whichever one you like the most. They
@@ -163,7 +165,7 @@ date: 2025-01-21
   but they can be hidden.
 </p>
 
-<h2 id="for-developers">
+<h2 id="for-developers-how-to-add-an-rss-feed-to-your-website">
   For developers: How to add an RSS feed to your website
 </h2>
 <p>
@@ -313,8 +315,7 @@ date: 2025-01-21
     <span class="text-colored">&#x3C;/pubDate&#x3E;
 &#x3C;/item&#x3E;</span></code></pre>
 </details>
-<hr>
-<p><strong>Further explanation of each field:</strong></p>
+<h2 id="detailed-explanation-of-each-rss-code-element">Detailed explanation of each RSS code element</h2>
 <p>
   <code>&lt;ttl&gt;</code> — "time to live"; tells your RSS reader how often to
   refresh the page. Time is set in minutes. Putting 1440 as value means that
@@ -492,32 +493,33 @@ date: 2025-01-21
         <span class="text-colored">&#x3C;/channel&#x3E;
     &#x3C;/rss&#x3E;</span></code></pre>
 </details>
-<hr>
+<div class="note-box">
+  <p>
+    <strong>Tip:</strong> if you want to include some
+    <strong>special characters</strong> in your RSS feed, like "&" for example,
+    make sure to write them as a HTML entity, so as "&#x26;#x26;" (without the
+    quotation marks) in this case. Here is a basic
+    <a href="https://mothereff.in/html-entities" target="_blank" rel="noopener noreferrer">
+      HTML entity encoder/decoder</a>.
+  </p>
+</div>
+<h2 id="favicons">Favicons</h2>
 <p>
-  <strong>Tip:</strong> if you want to include some
-  <strong>special characters</strong> in your RSS feed, like "&" for example,
-  make sure to write them as a HTML entity, so as "&#x26;#x26;" (without the
-  quotation marks) in this case. Here is a basic
-  <a href="https://mothereff.in/html-entities" target="_blank" rel="noopener noreferrer">
-    HTML entity encoder/decoder</a>.
-</p>
-<p>
-  <i>After you have created the RSS feed itself, there is still some extra
-    things you can do...</i>
-</p>
-<p>
-  <strong>Regarding favicons:</strong> Some RSS readers seem to completely
+  In my experience, some RSS readers seem to completely
   ignore favicons, while some don't, it's a bit inconsistent. Although, after
   some testing, I found that the most sure way to have an RSS reader actually
   recognize and fetch your website's favicon is <em>to make sure</em> it's
   located in the root directory of your website and that it's named something
   like "favicon.ico".
 </p>
+<h2 id="linking-your-rss-feed-in-the-head-section">Linking your RSS feed in the &#x3C;head&#x3E; section</h2>
 <p>
-  <strong>Linking your RSS feed in the <code>&#x3C;head&#x3E;</code></strong>: After you have created your RSS feed,
-  you
-  can add a button to your site
-  linking to it. But, in addition to that, you can also add a
+  After you have created your RSS feed,
+  you can add a button to your site
+  linking to it.
+</p>
+<p>
+  <em>But</em>, in addition to that, you can also add a
   <code>&#x3C;link&#x3E;</code> tag inside your website's
   <code>&#x3C;head&#x3E;</code> tag and link your RSS feed there as well. You
   can even have multiple feeds, just give them descriptive names that make
@@ -544,6 +546,7 @@ date: 2025-01-21
   fetchable RSS feed, at the corner of your browser's address bar you will see
   an RSS icon.
 </p>
+<h2 id="final-words">Final words</h2>
 <p>
   Also, one more thing. When <strong>troubleshooting</strong> your RSS feed in
   RSS readers, remember to occasionally unsubscribe and resubscribe and
