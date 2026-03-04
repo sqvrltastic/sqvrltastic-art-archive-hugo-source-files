@@ -612,7 +612,6 @@ a {
     mask: url("/assets/images/icons/external-link.svg") no-repeat center /
       contain;
   }
-
   &:has(> img) {
     display: block;
   }

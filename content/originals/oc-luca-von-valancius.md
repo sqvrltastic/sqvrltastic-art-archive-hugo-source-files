@@ -9,7 +9,7 @@ full: "assets/images/art/full/oc-luca-von-valancius.jpg"
 length: "584264"
 ---
 
-I will be honest, I spend something like 3+ months developing her character design and rendering her and I'm still not 100% satisfied with the final piece.
+I will be honest, I spent something like 3+ months developing her character design and rendering her and I'm still not 100% satisfied with the final piece.
 
 The "mostly" finished piece has been sitting on my disc for a while and yet here was just something about the piece that just felt off and unappealing to me, but I didn't know how to fix it. Still, I spent so much time and effort on it that I still wanted to showcase it, so I took out the WIP, fixed the most glaring mistakes and prettied it up to the point that I think it's "good enough".
 
