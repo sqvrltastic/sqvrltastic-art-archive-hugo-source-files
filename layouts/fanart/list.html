@@ -68,10 +68,10 @@
 </div>
 
 <h2>Deep Rock Galactic</h2>
-<h3>2025 year</h3>
+<h3>2025–2026 years</h3>
 <div class="gallery">
     {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
-    (slice "Deep Rock Galactic")) "Date.Year" 2025 }}
+    (slice "Deep Rock Galactic")) "Date.Year" "in" (slice 2025 2026) }}
     <a href="{{ .RelPermalink }}">
         {{ $postTitle := .Title }} {{ with .Params.preview }}
         <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">
@@ -87,7 +87,7 @@
 </div>
 
 <h2>Various</h2>
-<h3>2024-2025 years</h3>
+<h3>2024–2025 years</h3>
 <div class="gallery">
     {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
     (slice "Misc. Fanart")) "Date.Year" "in" (slice 2024 2025) }}
