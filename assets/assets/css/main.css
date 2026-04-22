@@ -632,6 +632,11 @@ ol {
   gap: 0.65em;
 }
 
+li > ul,
+li > ol {
+  margin-block-start: 0.65em;
+}
+
 dl {
   display: flex;
   flex-direction: column;

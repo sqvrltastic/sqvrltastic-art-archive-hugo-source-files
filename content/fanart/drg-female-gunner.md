@@ -1,7 +1,7 @@
 ---
 title: Deep Rock Galactic female gunner concept
 alt: "Female dwarf holding a revolver in one hand and smoking a cigar"
-date: 2026-04-13
+date: 2026-04-22
 categories: ["Deep Rock Galactic"]
 preview: "assets/images/art/preview/drg-female-gunner.avif"
 compressed: "assets/images/art/compressed/drg-female-gunner.avif"
