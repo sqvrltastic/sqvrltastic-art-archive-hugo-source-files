@@ -435,6 +435,30 @@ nav {
   }
 }
 
+#show-email {
+  all: revert;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  > summary {
+    padding: 0;
+    &:hover {
+      background-color: revert;
+    }
+    &::after {
+      all: revert;
+    }
+    > .icon {
+      inline-size: 1.5em;
+    }
+  }
+  > p {
+    font-size: 0.75em;
+    margin: 0;
+    block-size: 2em; /* hardcoded to prevent weird vertical spacing to change */
+  }
+}
+
 #theme-toggle,
 #mobile-theme-toggle {
   /* Button */
@@ -1040,7 +1064,7 @@ div:has(> .big-image) {
 .stamp {
   /* code to make stamps look crispier 
   and negate browser zoom */
-  inline-size: 4.6rem;
+  inline-size: 4.7rem;
   aspect-ratio: 99/56;
   transform: scale(1);
 }
