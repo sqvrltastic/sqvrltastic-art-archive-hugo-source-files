@@ -793,7 +793,7 @@ figure {
     flex-direction: column;
     > img {
       aspect-ratio: 2/3;
-      inline-size: 10em;
+      inline-size: 12em;
       block-size: revert;
     }
   }
