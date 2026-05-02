@@ -86,28 +86,11 @@
     {{ end }}
 </div>
 
-<h2>Various</h2>
+<h2>Legend of the Galactic Heroes</h2>
 <h3>2024–2025 years</h3>
 <div class="gallery">
     {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
-    (slice "Misc. Fanart")) "Date.Year" "in" (slice 2024 2025) }}
-    <a href="{{ .RelPermalink }}">
-        {{ $postTitle := .Title }} {{ with .Params.preview }}
-        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">
-        {{ else }}
-        <p>No image found</p>
-        <!-- Fallback text -->
-        {{ end }}
-    </a>
-    {{ else }}
-    <p>No posts found</p>
-    <!-- Fallback text -->
-    {{ end }}
-</div>
-<h3>2021 year</h3>
-<div class="gallery">
-    {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
-    (slice "Misc. Fanart")) "Date.Year" 2021 }}
+    (slice "lotgh")) "Date.Year" "in" (slice 2024 2025) }}
     <a href="{{ .RelPermalink }}">
         {{ $postTitle := .Title }} {{ with .Params.preview }}
         <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">
