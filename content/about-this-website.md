@@ -41,3 +41,7 @@ Fonts:
 - <a href="https://www.dafont.com/perfect-time.font" target="_blank" rel="noopener noreferrer">Perfect time font</a> — logo font
 - <a href="https://fonts.google.com/specimen/Inter" target="_blank" rel="noopener noreferrer">Inter</a> — body font
 - <a href="https://fonts.google.com/specimen/Google+Sans+Code" target="_blank" rel="noopener noreferrer">Google Sans Code</a> — code font
+
+---
+
+P.S. Also, can we please bring back email culture??? Like, I really don't want to make a Twitter/Tumblr account just to send a message to someone...

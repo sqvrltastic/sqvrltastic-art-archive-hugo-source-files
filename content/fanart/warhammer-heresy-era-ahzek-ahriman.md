@@ -11,7 +11,7 @@ length: "689630"
 
 This one took me roughly two months to finish. I am somewhat satisfied, even though I struggled a lot with coloring. I really wanted to try and incorporate some style aspects from older Warhammer art, mainly from artists such as John Blanche (RIP) and Adrian Smith. I enjoyed using a very limited Zorn palette, with some cerulean blue for details.
 
-I recently re-read "A Thousand Sons" by Graham McNeil and I loved Ahriman's antics in that book. He is a like a male equivalent of a witchy tarot wine mom astrology crystals girlie... 🗿💔
+I recently re-read "A Thousand Sons" by Graham McNeill and I loved Ahriman's antics in that book. He is a like a male equivalent of a witchy tarot wine mom astrology crystals girlie... 🗿💔
 
 Process:
 
