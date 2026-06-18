@@ -13,7 +13,7 @@ I created this site because I needed a place to host my artworks and social medi
 
 ## About the Indie Web
 
-There is a growing movement called "The web revival", or "Indie Web", or "Small Web" and while I have my... Gripes with it, on which [I've written extensively](/journal/idolization-of-the-old-web/) before, it's probably one of the few current day internet movements that truly feels grassroots. Very much "Alive Internet Theory" kinda stuff!
+There is a growing movement called "The web revival", or "Indie Web", or "Small Web" and while I have my... Gripes with it, it's probably one of the few current day internet movements that truly feels grassroots. Very much "Alive Internet Theory" kinda stuff!
 
 The point of the Web Revival movement is to move away from big platforms and social media and bring back the practice of making "unprofessional" personal websites on whatever topic you care about, like people did back in the 90s and early 2000s. It's about decentralizing, taking back control and making the internet a more healthy and positive experience.
 

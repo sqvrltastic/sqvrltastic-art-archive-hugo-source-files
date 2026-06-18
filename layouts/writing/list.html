@@ -1,0 +1,39 @@
+{{ define "main" }}
+
+<h2>Technical guides</h2>
+<ul>
+  {{ range where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Guide") }}
+  <li class="list-page-item">
+    <time datetime='{{ .Date | time.Format "2006-01-02" }}'>
+      {{ .Date | time.Format "01/02/2006" }}
+    </time>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </li>
+  {{ end }}
+</ul>
+
+<h2>Media reviews</h2>
+<ul>
+  {{ range where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Reviews") }}
+  <li class="list-page-item">
+    <time datetime='{{ .Date | time.Format "2006-01-02" }}'>
+      {{ .Date | time.Format "01/02/2006" }}
+    </time>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </li>
+  {{ end }}
+</ul>
+
+<h2>Other</h2>
+<ul>
+  {{ range where .Pages.ByDate.Reverse "Params.categories" "intersect" (slice "Other") }}
+  <li class="list-page-item">
+    <time datetime='{{ .Date | time.Format "2006-01-02" }}'>
+      {{ .Date | time.Format "01/02/2006" }}
+    </time>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </li>
+  {{ end }}
+</ul>
+
+{{ end }}

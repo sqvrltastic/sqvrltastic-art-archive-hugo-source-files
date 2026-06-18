@@ -2,6 +2,7 @@
 title: How to subscribe to this website (guide)
 description: "A guide on how to subscribe with RSS to this website to get updates when I post new content or update this site."
 date: 2025-02-13
+categories: ["Guide"]
 ---
 
 _Want to receive updates when I post new content? No need to sign up with email or create an account!_
@@ -26,4 +27,4 @@ Launch the app. Find a button that says something like: "add new feed", or "add 
 
 ---
 
-_If you want to read more about the technology behind RSS, I wrote a detailed guide: [Full guide to RSS](/guides/full-guide-to-rss/)._
+_If you want to read more about the technology behind RSS, I wrote a detailed guide: [Full guide to RSS](/writing/full-guide-to-rss/)._

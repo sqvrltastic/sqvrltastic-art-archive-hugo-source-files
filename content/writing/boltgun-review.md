@@ -2,6 +2,7 @@
 title: Boltgun review
 description: "Glimmers of greatness in the sea of mediocrity"
 date: 2026-04-30
+categories: ["Reviews"]
 ---
 
 ## Introduction
