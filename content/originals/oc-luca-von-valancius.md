@@ -18,3 +18,5 @@ I really wanted to challenge myself with this piece and learn how to paint more 
 ---
 
 As for the character herself, she was just a player character I envisioned when doing my first Rogue Trader playthrough. A sort of rogue-ish, asshole with a heart of gold voidborn ex-space pirate queen turned Rogue Trader by luck. I like dogmatic characters too, but I wanted a more flexible alignment for my 1st playthrough, so the crime lord background seemed more fitting.
+
+P.S. I really like the name "Luca" a lot because in my native language, "Luka" (spelled with "k") is a masculine name, while in some other languages, mainly Italian, "Luca" is a feminine name and means "light". I like it because it's unisex like that and suits this character well.

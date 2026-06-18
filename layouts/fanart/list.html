@@ -67,6 +67,29 @@
     {{ end }}
 </div>
 
+<h2>Warhammer 40.000 (and Horus Heresy)</h2>
+<p>
+    <strong>Disclaimer</strong> (<em>again</em>): This is all unofficial fan art. It is not monetized, or associated
+    with Games Workshop in any way...
+</p>
+<h3>2026 year</h3>
+<div class="gallery">
+    {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
+    (slice "Warhammer")) "Date.Year" 2026 }}
+    <a href="{{ .RelPermalink }}">
+        {{ $postTitle := .Title }} {{ with .Params.preview }}
+        <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">
+        {{ else }}
+        <p>No image found</p>
+        <!-- Fallback text -->
+        {{ end }}
+    </a>
+    {{ else }}
+    <p>No posts found</p>
+    <!-- Fallback text -->
+    {{ end }}
+</div>
+
 <h2>Deep Rock Galactic</h2>
 <h3>2025–2026 years</h3>
 <div class="gallery">
