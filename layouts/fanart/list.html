@@ -1,19 +1,11 @@
 {{ define "main"}}
 
-<h2>Vermintide</h2>
-<details>
-    <summary>Disclaimer ⚠️</summary>
-    <p>
-        The fan art displayed here is inspired by
-        <strong>Warhammer: End Times — Vermintide</strong>, a product owned by <strong>Fatshark</strong> and
-        <strong>Games
-            Workshop</strong>. All intellectual property
-        rights are the
-        property of Games Workshop and Fatshark. This
-        website is not affiliated with, endorsed by, or supported by Games Workshop or Fatshark. This fan art is
-        non-commercial, and no money is being made from its display on this website.
-    </p>
-</details>
+<h2>Verminfanart</h2>
+<p><strong>Disclaimer</strong> ⚠️</p>
+<p>
+    The characters and IP belong to Fatshark and Games Workshop. All artwork displayed here is fan-made, non-commercial
+    and is in no way associated with the IP holders.
+</p>
 <h3>2026 year</h3>
 <div class="gallery">
     {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
@@ -32,7 +24,6 @@
     {{ end }}
 </div>
 <h3>2025 year</h3>
-<p>Elgiposting! 🏹</p>
 <div class="gallery">
     {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
     (slice "Vermintide")) "Date.Year" 2025 }}
@@ -67,11 +58,7 @@
     {{ end }}
 </div>
 
-<h2>Warhammer 40.000 (and Horus Heresy)</h2>
-<p>
-    <strong>Disclaimer</strong> (<em>again</em>): This is all unofficial fan art. It is not monetized, or associated
-    with Games Workshop in any way...
-</p>
+<h2>WH doodles</h2>
 <h3>2026 year</h3>
 <div class="gallery">
     {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
