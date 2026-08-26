@@ -1,0 +1,71 @@
+---
+title: How to add an external link indicator with pure CSS
+description: "This is how I style external links on my own site. I couldn't find a comprehensive tutorial online so
+wrote my own."
+date: 2026-08-26
+categories: ["Guide"]
+---
+
+<h2>Introduction</h2>
+<p>
+    Do you know how some sites have all their external links marked with a special symbol? Well, I wrote a simple CSS
+    code that does so automatically for all links on your website!
+</p>
+<p>
+    Also, tip: I prefer to add <code>target="_blank" rel="noopener noreferrer"</code> HTML
+    attributes to all my external link tags, so that they open in a new window, like this: <a
+        href="https://neocities.org/" target="_blank" rel="noopener noreferrer">Neocities</a>.
+</p>
+<p>HTML code:</p>
+<p><code>&#x3C;a href=&#x22;https://neocities.org/&#x22; target=&#x22;_blank&#x22; rel=&#x22;noopener noreferrer&#x22;&#x3E;Neocities&#x3C;/a&#x3E;</code>
+</p>
+
+<h2>The code itself</h2>
+<p>You can use an image (preferably SVG) to add external link marker:</p>
+<details class="animation-medium">
+    <summary>(show code snippet)</summary>
+    <pre><code>/* This is a comment, you can delete all comments later if you prefer */
+    
+<span class="text-colored">a {</span> /* this a standard CSS link selector */
+<span class="text-colored">color: #0069d9;</span> /* any color you want, just make sure it meets accessibility requirements */
+/* everything selected with the :not selector will NOT have the external link CSS styles applied to it */
+<span class="text-colored">&:not([href*="sqvrltastic.art"])</span> /* replace with your own website domain name */
+<span class="text-colored">:not([href*="localhost:1313"])</span> /* this is for development only, so it works on the local server; replace 1313 with whatever port number you use, or delete it if you don't need it */
+<span class="text-colored">:not([href^="#"])
+:not([href^="/"])
+:not([href^="./"])
+:not([href^="../"])
+:not([href^="mailto:"]) 
+:not(:has(> img))::after {
+content: "";
+display: inline-block;
+inline-size: 0.8em;
+block-size: 0.8em;
+aspect-ratio: 1/1;
+margin-inline-start: 0.1em;
+background-color: currentColor;
+-webkit-mask: url("/assets/images/icons/external-link.svg") no-repeat
+center / contain;
+mask: url("/assets/images/icons/external-link.svg") no-repeat center /
+contain;
+}</span> /* Replace the image URL with your own image path and make sure you use an icon that isn't copyrighted */</code></pre>
+</details>
+<p>Alternatively, if you don't want to use an image icon, you can just add a Unicode symbol or an emoji:</p>
+<details>
+    <summary>(show code snippet)</summary>
+    <pre><code>a {
+color: #0069d9;
+&:not([href*="sqvrltastic.art"])
+:not([href*="localhost:1313"])
+:not([href^="#"])
+:not([href^="/"])
+:not([href^="./"])
+:not([href^="../"])
+:not([href^="mailto:"])
+:not(:has(> img))::after {
+content: "🔗";
+display: inline-block;
+margin-inline-start: 0.1em;
+font-size: 0.8em;
+}</code></pre>
+</details>

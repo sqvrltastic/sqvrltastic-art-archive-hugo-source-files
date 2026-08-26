@@ -622,7 +622,6 @@ a {
     :not([href^="../"])
     :not([href^="mailto:"])
     :not(:has(> img))::after {
-    /* content: "↗"; */ /* in case i want to revert to unicode arrow */
     content: "";
     display: inline-block;
     inline-size: 0.8em;
