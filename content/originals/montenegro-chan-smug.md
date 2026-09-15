@@ -6,7 +6,7 @@ categories: ["Montenegro"]
 preview: "assets/images/art/preview/montenegro-chan-smug.avif"
 compressed: "assets/images/art/compressed/montenegro-chan-smug.avif"
 full: "assets/images/art/full/montenegro-chan-smug.jpg"
-length: ""
+length: "27302"
 ---
 
 Experimenting with art style a bit. Initially, I really didn't like how she turned out, but after some time has passed, I think I mellowed out a bit and I decided to post it now.

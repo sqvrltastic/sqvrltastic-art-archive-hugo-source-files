@@ -6,7 +6,7 @@ categories: ["Misc. OC"]
 preview: "assets/images/art/preview/oc-luca-von-valancius.avif"
 compressed: "assets/images/art/compressed/oc-luca-von-valancius.avif"
 full: "assets/images/art/full/oc-luca-von-valancius.jpg"
-length: "584264"
+length: "42417"
 ---
 
 I will be honest, I spent something like 3+ months developing her character design and rendering her and I'm still not 100% satisfied with the final piece.

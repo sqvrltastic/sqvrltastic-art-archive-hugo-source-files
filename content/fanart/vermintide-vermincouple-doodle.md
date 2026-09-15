@@ -6,7 +6,7 @@ categories: ["Vermintide"]
 preview: "assets/images/art/preview/vermintide-vermincouple-doodle.avif"
 compressed: "assets/images/art/compressed/vermintide-vermincouple-doodle.avif"
 full: "assets/images/art/full/vermintide-vermincouple-doodle.jpg"
-length: "254869"
+length: "54505"
 ---
 
 Redraw of <a href="/assets/images/other/t-shirts-couple.avif" target="_blank" rel="noopener noreferrer">this viral image</a>.
