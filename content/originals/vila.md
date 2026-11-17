@@ -12,7 +12,7 @@ length: "42591"
 Some work in progress shots:
 
 - <a href="../../assets/images/art/full/vila-wip1.avif" target="_blank" rel="noopener noreferrer">WIP 1</a>
-- <a href="../../assets/images/art/full/vila-wip2.avif" target="_blank" rel="noopener noreferrer">WIP 1</a>
+- <a href="../../assets/images/art/full/vila-wip2.avif" target="_blank" rel="noopener noreferrer">WIP 2</a>
 
 Fun facts:
 

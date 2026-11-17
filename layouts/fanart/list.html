@@ -1,11 +1,13 @@
 {{ define "main"}}
 
-<h2>Verminfanart</h2>
-<p><strong>Disclaimer</strong> ⚠️</p>
 <p>
-    The characters and IP belong to Fatshark and Games Workshop. All artwork displayed here is fan-made, non-commercial
-    and is in no way associated with the IP holders.
+    <i>
+        <strong>Disclaimer:</strong> The characters depicted here belong to their respective IP holders. All artwork
+        displayed here is fan-made,
+        non-commercial and is in no way associated with the respective IP holders.
+    </i>
 </p>
+<h2>Vermintide</h2>
 <h3>2026 year</h3>
 <div class="gallery">
     {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
@@ -43,7 +45,7 @@
 <h3>2021 year</h3>
 <div class="gallery">
     {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
-    (slice "Vermintide")) "Date.Year" 2021 }}
+    (slice "Vermintide")) "Date.Year" 2024 }}
     <a href="{{ .RelPermalink }}">
         {{ $postTitle := .Title }} {{ with .Params.preview }}
         <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">
@@ -58,7 +60,7 @@
     {{ end }}
 </div>
 
-<h2>WH doodles</h2>
+<h2>Warhammer 40.000</h2>
 <h3>2026 year</h3>
 <div class="gallery">
     {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"

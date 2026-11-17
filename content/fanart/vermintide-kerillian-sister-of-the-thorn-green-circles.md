@@ -1,7 +1,7 @@
 ---
 title: Sister of the thorn Kerillian scoring most green circles
 alt: "Sister of the thorn Kerillian sipping healing potion through a straw with game's scoreboard in the background"
-date: 2021-01-01
+date: 2024-12-03
 categories: ["Vermintide"]
 preview: "assets/images/art/preview/vermintide-kerillian-sister-of-the-thorn-green-circles.avif"
 compressed: "assets/images/art/compressed/vermintide-kerillian-sister-of-the-thorn-green-circles.avif"

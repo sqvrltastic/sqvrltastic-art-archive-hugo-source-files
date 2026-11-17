@@ -1,7 +1,7 @@
 ---
 title: Pelvis bone anatomy sketch
 alt: "Black and white anatomy sketch of a pelvis bone"
-date: 2021-01-01
+date: 2024-12-03
 categories: ["Study"]
 preview: "assets/images/art/preview/anatomy-bones-pelvis-sketch.avif"
 compressed: "assets/images/art/compressed/anatomy-bones-pelvis-sketch.avif"

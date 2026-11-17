@@ -23,3 +23,5 @@ Some WIP shots:
 - adding more details, cleaning up, adding finishing touches and adding paper and noise texture
 
 The background is based on "Bridge" map from the Space Marine 2 PvP mode.
+
+Credits: <a href="https://www.deviantart.com/phelandavion/art/Sniper-STOCK-XVIII-479419345" target="_blank" rel="noopener noreferrer">reference image used</a> by PhelanDavion on DevianArt.

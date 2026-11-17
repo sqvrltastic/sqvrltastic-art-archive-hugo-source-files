@@ -1,7 +1,7 @@
 ---
 title: Modern day AU Kerillian
 alt: "elf Kerillian wearing a beautiful long green dress"
-date: 2021-01-01
+date: 2024-12-03
 categories: ["Vermintide"]
 preview: "assets/images/art/preview/vermintide-modern-day-kerillian.avif"
 compressed: "assets/images/art/compressed/vermintide-modern-day-kerillian.avif"

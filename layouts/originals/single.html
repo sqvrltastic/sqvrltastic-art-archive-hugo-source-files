@@ -8,14 +8,14 @@
 <!-- Fallback text -->
 {{ end }}
 {{ with .Params.full }}
-<a href="{{ . | relURL }}" target="_blank" rel="noopener noreferrer"><strong>View full (.jpg)</strong></a>
+<a href="{{ . | relURL }}" target="_blank" rel="noopener noreferrer"><strong>View full</strong></a>
 {{ else }}
 <p><i>No image found</i></p>
 <!-- Fallback text -->
 {{ end }}
 {{ .Content }}
 <!-- Structured data for Google rich search results -->
-<script type="application/ld+json">
+<script type="application/ld+json" defer>
 {{ dict
   "@context" "https://schema.org"
   "@type" "ImageObject"

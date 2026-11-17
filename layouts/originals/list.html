@@ -29,7 +29,7 @@
 <h3>2020–2021 years</h3>
 <div class="gallery">
     {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
-    (slice "Montenegro")) "Date.Year" "in" (slice 2020 2021) }}
+    (slice "Montenegro")) "Date.Year" 2024 }}
     <a href="{{ .RelPermalink }}">
         {{ $postTitle := .Title }} {{ with .Params.preview }}
         <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">
@@ -65,7 +65,7 @@
 <h3>2020–2021 years</h3>
 <div class="gallery">
     {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
-    (slice "Misc. OC")) "Date.Year" "in" (slice 2020 2021) }}
+    (slice "Misc. OC")) "Date.Year" 2024 }}
     <a href="{{ .RelPermalink }}">
         {{ $postTitle := .Title }} {{ with .Params.preview }}
         <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">
@@ -101,7 +101,7 @@
 <h3>2021 year</h3>
 <div class="gallery">
     {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
-    (slice "Study")) "Date.Year" 2021 }}
+    (slice "Study")) "Date.Year" 2024 }}
     <a href="{{ .RelPermalink }}">
         {{ $postTitle := .Title }} {{ with .Params.preview }}
         <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">
@@ -126,7 +126,7 @@
 <h3>2020–2021 years</h3>
 <div class="gallery">
     {{ range where (where .Pages.ByDate.Reverse "Params.categories" "intersect"
-    (slice "Blender")) "Date.Year" 2021 }}
+    (slice "Blender")) "Date.Year" 2024 }}
     <a href="{{ .RelPermalink }}">
         {{ $postTitle := .Title }} {{ with .Params.preview }}
         <img src="{{ . | relURL }}" alt="{{ $postTitle }}" loading="lazy" class="preview">

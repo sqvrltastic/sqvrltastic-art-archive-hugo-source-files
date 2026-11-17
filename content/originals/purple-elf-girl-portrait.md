@@ -1,7 +1,7 @@
 ---
 title: Purple elf girl portrait
 alt: "Digital painting in a semi-realism artstyle depicting a floating head of a purple-skinned elf girl with a short purple bob haircut looking at the viewer with a neutral expression on her face"
-date: 2021-01-01
+date: 2024-12-03
 categories: ["Misc. OC"]
 preview: "assets/images/art/preview/purple-elf-girl-portrait.avif"
 compressed: "assets/images/art/compressed/purple-elf-girl-portrait.avif"
