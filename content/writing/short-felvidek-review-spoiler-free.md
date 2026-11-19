@@ -1,7 +1,7 @@
 ---
 title: Short Felvidek review (spoiler free)
 description: "They do still make them like they used to, sometimes."
-date: 2026-11-16
+date: 2026-11-19
 categories: ["Reviews"]
 ---
 

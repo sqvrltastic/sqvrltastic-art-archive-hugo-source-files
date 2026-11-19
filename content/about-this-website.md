@@ -27,7 +27,7 @@ I use a custom Hugo theme that I made from scratch. For non-techie people, yes, 
 
 On a side note, I care a lot about web accessibility, so if you notice anything that I can improve regarding this website, please don't hesitate to reach out to me.
 
-This site is made to be browsed primarily **on desktop**, because that's the patricians's way to surf the web. I do not subscribe to the "mobile-first" design philosophy because I think it's RETARDED. However, this site is, in fact, "mobile-compatible".
+This site is made to be browsed primarily **on desktop**, because that's the patricians's way to surf the web. I do not subscribe to the "mobile-first" design philosophy because I think it's STUPID. However, this site is, in fact, "mobile-compatible".
 
 Also, **do** feel free to copy some parts of the code of this website! Just don't rip everything word for word. No need to credit me either, although I always appreciate it.
 
